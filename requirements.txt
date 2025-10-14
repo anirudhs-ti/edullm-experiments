@@ -1,0 +1,61 @@
+# Core data science and ML libraries
+pandas==2.3.3
+numpy==2.3.3
+scikit-learn==1.7.2
+scipy==1.16.2
+
+# Google AI/ML services
+google-generativeai==0.8.5
+google-api-python-client==2.184.0
+google-auth==2.41.1
+google-auth-httplib2==0.2.0
+google-api-core==2.26.0
+google-ai-generativelanguage==0.6.15
+googleapis-common-protos==1.70.0
+
+# Utilities and environment management
+python-dotenv==1.1.1
+tqdm==4.67.1
+joblib==1.5.2
+
+# HTTP and networking
+requests==2.32.5
+httplib2==0.31.0
+urllib3==2.5.0
+certifi==2025.10.5
+charset-normalizer==3.4.3
+idna==3.11
+
+# Date and time handling
+python-dateutil==2.9.0.post0
+pytz==2025.2
+tzdata==2025.2
+
+# Data validation and parsing
+pydantic==2.12.0
+pydantic_core==2.41.1
+annotated-types==0.7.0
+
+# Google protocol buffers and gRPC
+protobuf==5.29.5
+proto-plus==1.26.1
+grpcio==1.75.1
+grpcio-status==1.71.2
+
+# Security and authentication
+rsa==4.9.1
+pyasn1==0.6.1
+pyasn1_modules==0.4.2
+cachetools==6.2.1
+
+# Text processing and parsing
+pyparsing==3.2.5
+six==1.17.0
+uritemplate==4.2.0
+
+# Type checking and introspection
+typing_extensions==4.15.0
+typing-inspection==0.4.2
+
+# Threading utilities
+threadpoolctl==3.6.0
