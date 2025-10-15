@@ -9,57 +9,28 @@ edullm-experiments/
 ├── data/                           # Data files (CSV, JSON)
 │   ├── curriculum.csv              # Curriculum standards data
 │   ├── di_formats.json            # Direct instruction formats
-│   ├── format-based/              # Format-based analysis data
 │   └── *.csv                      # Various extracted instruction files
-├── scripts/                       # Python scripts organized by function
-│   ├── matching/                  # Curriculum matching algorithms
-│   │   ├── llm_match_curriculum.py
-│   │   ├── llm_match_very_low.py
-│   │   ├── match_curriculum_hybrid*.py
-│   │   ├── match_curriculum_gemini*.py
-│   │   └── tfidf_match_curriculum.py
-│   ├── extraction/                # Data extraction scripts
-│   │   ├── extract_all_formats.py
-│   │   └── extract_grade3_progressions.py
-│   └── utilities/                 # Utility and demo scripts
-│       ├── demo_llm_matching.py
-│       ├── test_llm_setup.py
-│       └── generate_hybrid_report.py
 ├── docs/                          # Documentation
 │   ├── README_LLM_MATCHING.md
 │   └── LLM_MATCHING_SUMMARY.md
 ├── output/                        # Generated reports and results
 │   └── hybrid_report.html
 ├── logs/                          # Log files (created during execution)
+├── llm_match_curriculum.py        # Main LLM-based curriculum matching script
 ├── requirements.txt               # Python dependencies
 └── README.md                      # This file
 ```
 
 ## Overview
 
-This project implements multiple approaches to match curriculum standards with direct instruction formats:
+This project implements LLM-based matching to connect curriculum standards with direct instruction formats:
 
-### 1. LLM-Based Matching
+### LLM-Based Matching
 - Uses Google's Gemini 2.0 Flash Lite model
 - Intelligent assessment of scaffolding quality
 - Considers conceptual alignment, skill progression, cognitive load
 - Produces detailed explanations for each match
-
-### 2. TF-IDF Similarity
-- Vector-based text similarity using scikit-learn
-- Fast keyword-based matching
-- Good baseline for comparison
-
-### 3. Hybrid Approach
-- Combines TF-IDF with LLM validation
-- Uses local TF-IDF for initial filtering
-- Escalates borderline matches to LLM for final scoring
-- Balances speed and accuracy
-
-### 4. Vector-Based Matching
-- Pure Python implementation using stdlib only
-- No external API dependencies
-- Useful for offline analysis
+- Processes curriculum standards in batches for efficiency
 
 ## Quick Start
 
@@ -72,26 +43,9 @@ pip install -r requirements.txt
 export GEMINI_API_KEY="your_api_key_here"
 ```
 
-### 2. Test Setup
+### 2. Run LLM Matching
 ```bash
-python scripts/utilities/test_llm_setup.py
-```
-
-### 3. Run Demo
-```bash
-python scripts/utilities/demo_llm_matching.py
-```
-
-### 4. Run Full Analysis
-```bash
-# LLM-based matching
-python scripts/matching/llm_match_curriculum.py
-
-# TF-IDF matching
-python scripts/matching/tfidf_match_curriculum.py
-
-# Hybrid matching
-python scripts/matching/match_curriculum_hybrid.py
+python llm_match_curriculum.py
 ```
 
 ## Data Files
@@ -104,11 +58,11 @@ python scripts/matching/match_curriculum_hybrid.py
 ## Key Features
 
 - **Grade-specific analysis**: Focus on 3rd grade curriculum standards
-- **Multiple matching algorithms**: LLM, TF-IDF, hybrid, and vector-based
+- **LLM-based matching**: Intelligent assessment using Gemini 2.0 Flash Lite
 - **Comprehensive logging**: Detailed progress tracking and error handling
 - **Progress saving**: Prevents data loss during long runs
 - **Batch processing**: Efficient handling of large datasets
-- **Report generation**: HTML reports with visualizations
+- **Detailed explanations**: LLM provides reasoning for each match decision
 
 ## Documentation
 
@@ -135,8 +89,4 @@ Results are saved as CSV files with the following format:
 
 ## Contributing
 
-When adding new scripts:
-- Place matching algorithms in `scripts/matching/`
-- Place data extraction scripts in `scripts/extraction/`
-- Place utility scripts in `scripts/utilities/`
-- Update this README if adding new functionality
+This repository focuses on LLM-based curriculum matching. The main script `llm_match_curriculum.py` contains the core functionality for matching curriculum standards with direct instruction formats using Google's Gemini model.
