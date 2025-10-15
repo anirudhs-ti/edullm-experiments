@@ -9,7 +9,8 @@ edullm-experiments/
 ├── data/                           # Data files (CSV, JSON)
 │   ├── curriculum.csv              # Curriculum standards data
 │   ├── di_formats.json            # Direct instruction formats
-│   └── *.csv                      # Various extracted instruction files
+│   ├── all_formats_extracted.csv   # Flattened format data for analysis
+│   └── llm-extracted-instructions.csv # LLM matching results
 ├── docs/                          # Documentation
 │   ├── README_LLM_MATCHING.md
 │   └── LLM_MATCHING_SUMMARY.md
@@ -53,7 +54,7 @@ python llm_match_curriculum.py
 - **curriculum.csv**: Curriculum standards with grade levels and descriptions
 - **di_formats.json**: Direct instruction formats with detailed sequences
 - **all_formats_extracted.csv**: Flattened format data for analysis
-- **hybrid-extracted-instructions-*.csv**: Results from hybrid matching by grade
+- **llm-extracted-instructions.csv**: Results from LLM-based matching
 
 ## Key Features
 
