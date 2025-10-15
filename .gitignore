@@ -196,7 +196,6 @@ local.properties
 .recommenders
 
 # Project-specific
-*.csv
 *.log
 *.html
 *.json
