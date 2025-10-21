@@ -1,0 +1,114 @@
+grade,substandard_id,substandard_description,format_number
+3,CCSS.MATH.CONTENT.3.MD.C.6+1,Measure areas by counting unit squares.,4.5
+3,CCSS.MATH.CONTENT.3.NBT.A.1+1,Round to the nearest 10 or 100 using the number line.,5.12
+3,CCSS.MATH.CONTENT.3.NBT.A.1+2,Round to the nearest 10 or 100.,5.12
+3,CCSS.MATH.CONTENT.3.NBT.A.3+1,Use place value understanding and operation properties to multiply single-digit numbers by 10 through 90 in multiples of 10.,5.7
+3,CCSS.MATH.CONTENT.3.OA.C.7+1,Fluently multiply within 100.,6.3
+3,CCSS.MATH.CONTENT.3.OA.B.5+1,Apply the commutative property of multiplication as a strategy to multiply whole numbers.,6.3
+3,CCSS.MATH.CONTENT.3.OA.B.6+4,Relate multiplication and division facts.,6.4
+3,CCSS.MATH.CONTENT.3.OA.B.6+2,Find a missing factor for a multiplication fact.,6.4
+3,CCSS.MATH.CONTENT.3.OA.C.7+2,Fluently divide within 100.,6.4
+3,CCSS.MATH.CONTENT.3.OA.A.3+2,Solve word problems involving two step multiplication.,7.2
+3,CCSS.MATH.CONTENT.3.OA.D.9+9,Explain patterns in an arithmetic pattern.,7.2
+3,CCSS.MATH.CONTENT.3.OA.D.8+2,Solve two-step word problems involving any combination of the four operations.,7.2
+3,CCSS.MATH.CONTENT.3.MD.D.8+2,Solve word problems involving perimeters of polygons.,7.2
+3,CCSS.MATH.CONTENT.3.MD.A.2+3,"Solve word problems involving the addition, subtraction, multiplication, or division of masses or volumes, with all measurements provided in the same unit",7.2
+3,CCSS.MATH.CONTENT.3.OA.D.8+6,"Judge whether a given estimate in a two-step word problem (addition, subtraction, multiplication, or division) is reasonable, too high, or too low with reasoning.",7.2
+3,CCSS.MATH.CONTENT.3.OA.D.9+3,Identify the rule for an addition or subtraction pattern.,7.3
+3,CCSS.MATH.CONTENT.3.NBT.A.2+1,Fluently add within 1000 using strategies and algorithms based on place value and properties of operations.,7.6
+3,CCSS.MATH.CONTENT.3.NBT.A.2+4,Add within 1000 using models.,7.6
+3,CCSS.MATH.CONTENT.3.NBT.A.1+3,"Estimate sums and differences of whole numbers (≤ 1,000) by rounding each addend or subtrahend to the nearest ten or hundred.",8.2
+3,CCSS.MATH.CONTENT.3.NBT.A.2+2,Fluently subtract within 1000 using strategies and algorithms based on place value and properties of operations.,8.5
+3,CCSS.MATH.CONTENT.3.NBT.A.2+3,Solve word problems with addition and subtraction,8.5
+3,CCSS.MATH.CONTENT.3.OA.B.5+4,Identify the properties of multiplication.,9.1
+3,CCSS.MATH.CONTENT.3.OA.A.1+1,Write a multiplication equation that represents an equal sets of objects.,9.1
+3,CCSS.MATH.CONTENT.3.OA.B.5+2,Apply the associative property of multiplication as a strategy to multiply whole numbers.,9.1
+3,CCSS.MATH.CONTENT.3.OA.A.1+4,Solve real-world multiplication problems.,9.1
+3,CCSS.MATH.CONTENT.3.OA.A.1+5,Solve multiplication facts.,9.1
+3,CCSS.MATH.CONTENT.3.OA.A.1+2,Represent a product of whole numbers as repeated addition.,9.1
+3,CCSS.MATH.CONTENT.3.MD.C.7.A+1,"Find the area of a rectangle with whole-number side lengths by tiling it, and show that the area is the same as would be found by multiplying the side lengths",9.1
+3,CCSS.MATH.CONTENT.3.OA.A.1+3,Write a multiplication equation that represents an array.,9.1
+3,CCSS.MATH.CONTENT.3.OA.A.3+1,Use multiplication and division within 100 to solve word problems.,9.2
+3,CCSS.MATH.CONTENT.3.OA.B.6+1,Understand division as an unknown-factor problem using arrays.,9.2
+3,CCSS.MATH.CONTENT.3.OA.D.9+1,"Given a rule, create numbers in a multiplication pattern.",9.2
+3,CCSS.MATH.CONTENT.3.OA.D.9+7,Identify the rule for a multiplication pattern.,9.2
+3,CCSS.MATH.CONTENT.3.OA.B.6+5,"Solve for the missing number in a multiplication context (e.g., ""2 groups of ____ equal 4, or ___ x 5 = 15"").",9.2
+3,CCSS.MATH.CONTENT.3.OA.A.4+1,Determine the unknown whole number in a multiplication or division equation relating three whole numbers.,9.2
+3,CCSS.MATH.CONTENT.3.OA.B.5+3,Apply the distributive property as a strategy to multiply and divide whole numbers.,9.3
+3,CCSS.MATH.CONTENT.3.OA.B.6+3,Solve division facts.,10.1
+3,CCSS.MATH.CONTENT.3.OA.A.2+1,"Understand division as the process of sharing or grouping by solving division problems using counters, drawings, or arrays.",10.2
+3,CCSS.MATH.CONTENT.3.OA.A.2+3,Write a division equation that represents an equal sets of objects.,10.2
+3,CCSS.MATH.CONTENT.3.OA.A.1+6,Relate division to equal groups.,10.2
+3,CCSS.MATH.CONTENT.3.OA.D.8+5,Solve two-step word problems involving multiplication and division.,10.2
+3,CCSS.MATH.CONTENT.3.OA.A.2+4,Write a multiplication or division equation to represent an array.,10.2
+3,CCSS.MATH.CONTENT.3.OA.A.2+2,Write a division equation that represents an array.,10.2
+3,CCSS.MATH.CONTENT.3.OA.A.2+5,Solve real-world division problems.,10.2
+3,CCSS.MATH.CONTENT.3.OA.D.9+8,Identify the rule for a division pattern.,10.3
+3,CCSS.MATH.CONTENT.3.OA.D.9+6,"Given a rule, create numbers in a division pattern.",10.3
+3,CCSS.MATH.CONTENT.3.OA.D.9+5,Identify whether a number(s) is/are even or odd.,10.3
+3,CCSS.MATH.CONTENT.3.OA.A.3+3,Solve word problems involving two step division.,10.6
+3,CCSS.MATH.CONTENT.3.MD.A.2+2,Measure and estimate the masses of objects using standard units of grams (g) and kilograms (kg).,12.2
+3,CCSS.MATH.CONTENT.3.MD.A.2+1,Measure and estimate liquid volumes using liters (l).,12.2
+3,CCSS.MATH.CONTENT.3.MD.A.1+7,Solve two step start and end time word problems.,12.3
+3,CCSS.MATH.CONTENT.3.MD.D.8+4,"Solve word problems involving area, perimeter, and side length.",12.3
+3,CCSS.MATH.CONTENT.3.MD.D.8+5,Solve problems with rectangles with the same perimeter and different areas or with the same area and different perimeters.,12.3
+3,CCSS.MATH.CONTENT.3.MD.C.7.D+2,Solve problems involving the area of composite figures.,12.3
+3,CCSS.MATH.CONTENT.3.MD.D.8+1,Solve mathematical problems involving perimeters of polygons.,12.4
+3,CCSS.MATH.CONTENT.3.MD.A.1+6,"Solve word problems to find the start, end, or elapsed time.",12.4
+3,CCSS.MATH.CONTENT.3.MD.A.1+5,Solve word problems to find the end time.,12.4
+3,CCSS.MATH.CONTENT.3.MD.A.1+4,Find the elapsed time: word problems.,12.5
+3,CCSS.MATH.CONTENT.3.MD.A.1+2,Find the elapsed time in mathematical problems.,12.5
+3,CCSS.MATH.CONTENT.3.MD.A.1+1,"Distinguish between hour and minute hands on analog clocks, demonstrate accurate minute reading using multiplication by fives and individual tick mark counting, and analyze hour hand positioning relative to elapsed time within each hour.",12.6
+3,CCSS.MATH.CONTENT.3.MD.A.1+3,Write the time shown on the clock.,12.6
+3,CCSS.MATH.CONTENT.3.NF.A.2.B+4,Identify the fraction that represents the length of a highlighted segment on a number line partitioned into equal intervals (denominators ≤ 12).,13.1
+3,CCSS.MATH.CONTENT.3.NF.A.2.B+2,"Represent a fraction a/b on a number line diagram by marking off a lengths 1/b from 0, recognizinng that the resulting interval has size a/b and that its endpoint locates the number a/b on the number line.",13.1
+3,CCSS.MATH.CONTENT.3.NF.A.3.A+3,"Given a fraction, graph and equivalent fraction on a number line.",13.1
+3,CCSS.MATH.CONTENT.3.NF.A.2.A+1,Plot given unit fractions (1/n) on a number line that is partitioned into n equal intervals.,13.1
+3,CCSS.MATH.CONTENT.3.NF.A.2.A+2,Identify unit fractions on number lines.,13.1
+3,CCSS.MATH.CONTENT.3.NF.A.2.A+3,Graph unit fractions on number lines.,13.1
+3,CCSS.MATH.CONTENT.3.MD.B.4+2,"Create line plots to display measurement data with a horizontal scale marked off in whole numbers, halves, or quarters.",13.12
+3,CCSS.MATH.CONTENT.3.NF.A.3.C+3,Select fractions equivalent to whole numbers,13.12
+3,CCSS.MATH.CONTENT.3.NF.A.3.C+4,Find fractions equivalent to whole numbers.,13.12
+3,CCSS.MATH.CONTENT.3.NF.A.3.C+2,Select fractions equivalent to whole numbers using models,13.12
+3,CCSS.MATH.CONTENT.3.NF.A.3.C+1,"Express whole numbers as fractions, and recognize fractions that are equivalent to whole numbers. ",13.13
+3,CCSS.MATH.CONTENT.3.NF.A.3.D+3,Compare two fractions that have the same denominator.,13.14
+3,CCSS.MATH.CONTENT.3.NF.A.3.D+4,Compare two fractions that have the same numerator or denominator.,13.14
+3,CCSS.MATH.CONTENT.3.G.A.2+1,"Partition shapes into parts with equal areas. Express the area of each part as a unit fraction of the whole. For example, partition a shape into 4 parts with equal area, and describe the area of each part as 1/4 of the area of the shape",13.2
+3,CCSS.MATH.CONTENT.3.NF.A.1+1,Understand a fraction 1/b as the quantity formed by 1 part when a whole is partitioned into b equal parts.,13.2
+3,CCSS.MATH.CONTENT.3.NF.A.1+2,Identify visual models that represent unit fractions (1/n).,13.3
+3,CCSS.MATH.CONTENT.3.NF.A.2.B+1,Represent a fraction a/b with a fraction model.,13.3
+3,CCSS.MATH.CONTENT.3.NF.A.3.D+1,Compare two unit fractions.,13.3
+3,CCSS.MATH.CONTENT.3.NF.A.2.B+3,"Determine the fraction of a whole described in a word problem and select the visual model that correctly represents that fraction (denominators ≤ 12).
+",13.3
+3,CCSS.MATH.CONTENT.3.NF.A.3.D+2,Compare two fractions that have the same numerator.,13.3
+3,CCSS.MATH.CONTENT.3.MD.B.4+1,Generate measurement data by measuring lengths using rulers marked with halves and fourths of an inch.,13.6
+3,CCSS.MATH.CONTENT.3.NF.A.3.A+1,"Understand two fractions as equivalent (equal) if they are the same size, or the same point on a number line.",13.8
+3,CCSS.MATH.CONTENT.3.NF.A.3.A+2,"Given multiple number lines with different fractions, identify two equivalent fractions.",13.8
+3,CCSS.MATH.CONTENT.3.NF.A.3.B+1,"Recognize and generate simple equivalent fractions, explaining why the fractions are equivalent.",13.8
+3,CCSS.MATH.CONTENT.3.MD.B.3+1,Draw a scaled picture graph to represent a data set with several categories.,16.2
+3,CCSS.MATH.CONTENT.3.MD.B.3+4,"Solve two-step additive-comparison problems that require combining or comparing results from categorical data represented in a pictograph, or bar graph with scaled intervals.",16.3
+3,CCSS.MATH.CONTENT.3.MD.B.4+3,Interpret a line plot.,16.3
+3,CCSS.MATH.CONTENT.3.MD.B.3+3,Solve problems on scaled bar graphs.,16.3
+3,CCSS.MATH.CONTENT.3.MD.B.3+5,Interpret a picture graph.,16.3
+3,CCSS.MATH.CONTENT.3.MD.B.3+6,Interpret a scaled bar graph.,16.4
+3,CCSS.MATH.CONTENT.3.MD.B.3+2,Draw a scaled bar graph to represent a data set with several categories,16.4
+3,CCSS.MATH.CONTENT.3.G.A.1+3,"Recognize and describe basic geometric features: edges, vertices, parallel sides, and right angles.",17.1
+3,CCSS.MATH.CONTENT.3.G.A.1+1,"Identify quadrilaterals —including rhombuses, rectangles, squares, and parallelograms—by analyzing visible attributes such as number of sides, right angles, and equal-length sides.",17.1
+3,CCSS.MATH.CONTENT.3.G.A.1+6,Identify rhombuses.,17.1
+3,CCSS.MATH.CONTENT.3.G.A.1+5,Identify parallelograms.,17.1
+3,CCSS.MATH.CONTENT.3.G.A.1+2,"Compare quadrilaterals to determine how shared attributes group them into larger or overlapping categories (e.g., explaining why every square is both a rectangle and a rhombus).",17.1
+3,CCSS.MATH.CONTENT.3.MD.C.7.C+1,Use tiling to demonstrate that the area of a rectangle with whole-number side lengths a and b + c equals the sum of the areas a × b and a × c.,17.2
+3,CCSS.MATH.CONTENT.3.MD.D.8+6,"Solve perimeter problems for squares and rectangles where students must infer equal opposite sides: only one side is given for a square, and only the length and width are given for a rectangle.",17.2
+3,CCSS.MATH.CONTENT.3.MD.C.5.B+1,Understand that the area of a plane figure is the number of unit squares needed to cover it without gaps or overlaps.,17.2
+3,CCSS.MATH.CONTENT.3.MD.C.7.B+1,Multiply side lengths to find areas of rectangles with whole-number side lengths for solving mathematical problems.,17.2
+3,CCSS.MATH.CONTENT.3.MD.C.7.D+1,Recognize area as an additive property.,17.2
+3,CCSS.MATH.CONTENT.3.MD.C.7.B+3,"Given the area and a side, find the missing side length.",17.2
+3,CCSS.MATH.CONTENT.3.MD.C.7.B+2,Solve real-world word problems involving areas of rectangles with whole-number side lengths,17.2
+3,CCSS.MATH.CONTENT.3.MD.C.5.A+1,"Understand that a square with side length 1 unit (""unit square"") has an area of one square unit and can be used to measure area.",17.2
+3,CCSS.MATH.CONTENT.3.MD.D.8+7,"Given multiple shapes, determine which shapes have the same area.",17.2
+3,CCSS.MATH.CONTENT.3.G.A.1+4,"Determine if an angle is greater than, equal to, or less than a right angle.",17.7
+3,CCSS.MATH.CONTENT.3.OA.D.9+2,Explain patterns in an arithmetic pattern.,18.1
+3,CCSS.MATH.CONTENT.3.OA.D.9+4,Find missing terms in a pattern.,18.3
+3,CCSS.MATH.CONTENT.3.OA.D.8+7,Represent one-step word problems using equations with a letter standing for the unknown number. ,18.3
+3,CCSS.MATH.CONTENT.3.OA.D.8+1,Represent two-step word problems using equations with a letter standing for the unknown number. ,18.3
+3,CCSS.MATH.CONTENT.3.MD.D.8+3,Solve perimeter problems in which the perimeter is given but a side length is missing.,18.3
