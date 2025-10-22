@@ -197,8 +197,6 @@ local.properties
 
 # Project-specific
 *.log
-*.html
-*.json
 !requirements.txt
 !di_formats.json
 !curriculum.csv

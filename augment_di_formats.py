@@ -67,42 +67,70 @@ def create_format_mapping(df: pd.DataFrame) -> Dict[str, str]:
     return format_mapping
 
 def augment_sequences_with_formats(data: Dict, format_mapping: Dict[str, str]) -> Dict:
-    """Augment sequences with format numbers based on grade and sequence_number"""
+    """Augment sequences with format references based on existing format-to-sequence mappings"""
     augmented_data = data.copy()
     
     total_skills = len(augmented_data['skills'])
     skill_count = 0
+    total_mappings_created = 0
     
     for skill_name, skill_data in augmented_data['skills'].items():
         skill_count += 1
         logger.info(f"Processing skill {skill_count}/{total_skills}: {skill_name}")
         
-        total_sequences = sum(len(progression['sequence']) for progression in skill_data['progression'])
-        sequence_count = 0
-        
-        for progression in skill_data['progression']:
-            grade = progression['grade']
-            logger.debug(f"  Processing grade {grade} with {len(progression['sequence'])} sequences")
-            
+        # Step 1: Initialize all sequences with empty related_formats list
+        # Remove old format_number and format_title fields if they exist
+        for progression in skill_data.get('progression', []):
             for sequence_item in progression['sequence']:
-                sequence_count += 1
-                sequence_number = sequence_item['sequence_number']
-                
-                # Create a key to match against format mappings
-                # This is a simplified approach - you may need to adjust based on your specific mapping logic
-                sequence_key = f"grade_{grade}_seq_{sequence_number}"
-                
-                # Try to find matching format
-                # For now, we'll add a placeholder that can be updated with actual mapping logic
-                sequence_item['format_number'] = None
-                sequence_item['format_title'] = None
-                
-                # You can implement more sophisticated matching logic here
-                # based on your specific requirements for mapping sequences to formats
+                # Remove old singular fields if they exist
+                sequence_item.pop('format_number', None)
+                sequence_item.pop('format_title', None)
+                # Initialize new list field
+                sequence_item['related_formats'] = []
         
-        logger.info(f"  Completed {skill_name}: {sequence_count} sequences processed")
+        # Step 2: Iterate through formats and populate sequences
+        formats_list = skill_data.get('formats', [])
+        logger.debug(f"  Found {len(formats_list)} formats for {skill_name}")
+        
+        for format_item in formats_list:
+            format_number = format_item.get('format_number')
+            format_title = format_item.get('title')
+            format_grade = format_item.get('grade')
+            sequence_numbers = format_item.get('sequence_numbers', [])
+            
+            if not format_number or format_grade is None or not sequence_numbers:
+                logger.debug(f"  Skipping incomplete format: {format_number}")
+                continue
+            
+            # For each sequence number referenced by this format
+            for seq_num in sequence_numbers:
+                # Find the matching sequence in progression
+                for progression in skill_data.get('progression', []):
+                    if progression['grade'] == format_grade:
+                        for sequence_item in progression['sequence']:
+                            if sequence_item['sequence_number'] == seq_num:
+                                # Append format info to this sequence's related_formats list
+                                format_ref = {
+                                    "format_number": format_number,
+                                    "format_title": format_title
+                                }
+                                sequence_item['related_formats'].append(format_ref)
+                                total_mappings_created += 1
+                                logger.debug(f"    Mapped Format {format_number} to Grade {format_grade}, Seq {seq_num}")
+        
+        # Count how many sequences got formats
+        sequences_with_formats = 0
+        sequences_without_formats = 0
+        for progression in skill_data.get('progression', []):
+            for sequence_item in progression['sequence']:
+                if sequence_item['related_formats']:
+                    sequences_with_formats += 1
+                else:
+                    sequences_without_formats += 1
+        
+        logger.info(f"  Completed {skill_name}: {sequences_with_formats} sequences mapped, {sequences_without_formats} unmapped")
     
-    logger.info(f"Format augmentation complete: {total_skills} skills processed")
+    logger.info(f"Format augmentation complete: {total_mappings_created} format-to-sequence mappings created")
     return augmented_data
 
 def create_skill_summary_prompt(skill_name: str, skill_data: Dict, grades_list: List[int]) -> str:
@@ -219,13 +247,17 @@ def save_augmented_data(data: Dict, output_filepath: str):
     """Save the augmented data to a new file"""
     try:
         # Update metadata
+        existing_version = data['metadata'].get('augmentation_version', '0.0.0')
         data['metadata']['last_updated'] = datetime.now().isoformat()
-        data['metadata']['augmentation_version'] = "1.0.0"
-        data['metadata']['augmentation_summary'] = {
-            "format_mappings_added": True,
-            "skill_summaries_added": True,
-            "total_skills_processed": len(data['skills'])
-        }
+        data['metadata']['augmentation_version'] = "2.0.0"  # Increment for format mapping update
+        
+        # Preserve existing augmentation summary and add format mapping info
+        if 'augmentation_summary' not in data['metadata']:
+            data['metadata']['augmentation_summary'] = {}
+        
+        data['metadata']['augmentation_summary']['format_mappings_added'] = True
+        data['metadata']['augmentation_summary']['total_skills_processed'] = len(data['skills'])
+        data['metadata']['augmentation_summary']['previous_version'] = existing_version
         
         with open(output_filepath, 'w', encoding='utf-8') as f:
             json.dump(data, f, indent=2, ensure_ascii=False)
@@ -236,55 +268,39 @@ def save_augmented_data(data: Dict, output_filepath: str):
         logger.error(f"Error saving augmented data: {e}")
 
 def main():
-    """Main function to run the augmentation process"""
-    
-    # Load environment variables
-    env_path = "/workspaces/github-com-anirudhs-ti-edullm-experiments/.env"
-    load_dotenv(env_path)
-    logger.info(f"Loaded environment variables from {env_path}")
+    """Main function to run the format mapping process"""
     
     # Configuration
-    DI_FORMATS_FILE = "/workspaces/github-com-anirudhs-ti-edullm-experiments/data/di_formats.json"
-    FORMAT_MAPPINGS_FILE = "/workspaces/github-com-anirudhs-ti-edullm-experiments/output/enhanced_llm_instructions.csv"
-    OUTPUT_FILE = "/workspaces/github-com-anirudhs-ti-edullm-experiments/data/di_formats_augmented.json"
+    DI_FORMATS_FILE = "/workspaces/github-com-anirudhs-ti-edullm-experiments/data/di_formats_augmented.json"
+    OUTPUT_FILE = "/workspaces/github-com-anirudhs-ti-edullm-experiments/data/di_formats_with_mappings.json"
     
-    # Get API key
-    api_key = os.getenv('GEMINI_API_KEY')
-    if not api_key:
-        logger.error("GEMINI_API_KEY environment variable not set")
-        return
-    
-    logger.info("GEMINI_API_KEY found, proceeding with augmentation")
-    
-    # Initialize Gemini
-    model = initialize_gemini(api_key)
+    logger.info("=" * 60)
+    logger.info("Starting Format-to-Sequence Mapping Process")
+    logger.info("=" * 60)
     
     # Load data
     logger.info("Loading data...")
     di_formats_data = load_di_formats(DI_FORMATS_FILE)
     if not di_formats_data:
-        logger.error("Failed to load di_formats.json")
+        logger.error("Failed to load di_formats_augmented.json")
         return
     
-    format_mappings_df = load_format_mappings(FORMAT_MAPPINGS_FILE)
-    if format_mappings_df.empty:
-        logger.warning("No format mappings loaded - proceeding without format augmentation")
-        format_mapping = {}
-    else:
-        format_mapping = create_format_mapping(format_mappings_df)
+    # Note: We're using internal format-to-sequence mappings from the formats array
+    # The format_mappings_df and CSV file are not needed for this process
+    logger.info("Using internal format-to-sequence mappings from formats array")
     
-    # Augment data
-    logger.info("Augmenting sequences with format mappings...")
-    augmented_data = augment_sequences_with_formats(di_formats_data, format_mapping)
-    
-    logger.info("Generating skill summaries...")
-    augmented_data = add_skill_summaries(augmented_data, model)
+    # Augment data with format mappings
+    logger.info("Augmenting sequences with format references...")
+    augmented_data = augment_sequences_with_formats(di_formats_data, {})
     
     # Save results
     logger.info("Saving augmented data...")
     save_augmented_data(augmented_data, OUTPUT_FILE)
     
-    logger.info("Augmentation complete!")
+    logger.info("=" * 60)
+    logger.info("Format mapping complete!")
+    logger.info(f"Output saved to: {OUTPUT_FILE}")
+    logger.info("=" * 60)
 
 if __name__ == "__main__":
     main()
