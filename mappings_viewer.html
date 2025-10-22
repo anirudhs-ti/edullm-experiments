@@ -1,0 +1,562 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curriculum Substandard Mappings Viewer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 30px;
+            border-radius: 10px;
+            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+        }
+        
+        header h1 {
+            font-size: 2em;
+            margin-bottom: 10px;
+        }
+        
+        .metadata {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .metadata-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 15px;
+            margin-top: 15px;
+        }
+        
+        .metadata-item {
+            padding: 10px;
+            background: #f8f9fa;
+            border-radius: 5px;
+            border-left: 4px solid #667eea;
+        }
+        
+        .metadata-item strong {
+            color: #667eea;
+            display: block;
+            margin-bottom: 5px;
+        }
+        
+        .search-box {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .search-box input {
+            width: 100%;
+            padding: 12px;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        
+        .search-box input:focus {
+            outline: none;
+            border-color: #667eea;
+        }
+        
+        .substandards-nav {
+            background: white;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            max-height: 400px;
+            overflow-y: auto;
+        }
+        
+        .substandards-nav h2 {
+            margin-bottom: 15px;
+            color: #667eea;
+        }
+        
+        .substandard-btn {
+            display: block;
+            width: 100%;
+            text-align: left;
+            padding: 10px 15px;
+            margin-bottom: 8px;
+            background: #f8f9fa;
+            border: 2px solid #e0e0e0;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: all 0.3s;
+            font-size: 14px;
+        }
+        
+        .substandard-btn:hover {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .substandard-btn.active {
+            background: #667eea;
+            color: white;
+            border-color: #667eea;
+        }
+        
+        .substandard-btn.has-match {
+            border-left: 4px solid #28a745;
+        }
+        
+        .substandard-btn.no-match {
+            border-left: 4px solid #dc3545;
+        }
+        
+        .substandard-content {
+            background: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            display: none;
+        }
+        
+        .substandard-content.active {
+            display: block;
+        }
+        
+        .substandard-header {
+            border-bottom: 3px solid #667eea;
+            padding-bottom: 15px;
+            margin-bottom: 25px;
+        }
+        
+        .substandard-header h2 {
+            color: #667eea;
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+        
+        .substandard-id {
+            color: #666;
+            font-size: 0.9em;
+            font-family: monospace;
+        }
+        
+        .section {
+            margin-bottom: 30px;
+        }
+        
+        .section h3 {
+            color: #764ba2;
+            margin-bottom: 15px;
+            padding-bottom: 8px;
+            border-bottom: 2px solid #f0f0f0;
+        }
+        
+        .assessment-boundary {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            white-space: pre-wrap;
+        }
+        
+        .skill-tag {
+            display: inline-block;
+            padding: 5px 12px;
+            background: #e8eaf6;
+            color: #5e35b1;
+            border-radius: 15px;
+            font-size: 0.9em;
+            margin-right: 8px;
+            margin-bottom: 8px;
+        }
+        
+        .match-card {
+            background: #f8f9fa;
+            padding: 20px;
+            margin-bottom: 20px;
+            border-radius: 8px;
+            border-left: 5px solid #667eea;
+        }
+        
+        .match-card.excellent {
+            background: #d4edda;
+            border-left-color: #28a745;
+        }
+        
+        .match-card.fair {
+            background: #fff3cd;
+            border-left-color: #ffc107;
+        }
+        
+        .match-card.poor {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+        
+        .match-card.non-existent {
+            background: #e2e3e5;
+            border-left-color: #6c757d;
+        }
+        
+        .match-card h4 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 1.1em;
+        }
+        
+        .match-quality {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: bold;
+            margin-left: 10px;
+        }
+        
+        .match-quality.EXCELLENT {
+            background: #28a745;
+            color: white;
+        }
+        
+        .match-quality.FAIR {
+            background: #ffc107;
+            color: #333;
+        }
+        
+        .match-quality.POOR {
+            background: #dc3545;
+            color: white;
+        }
+        
+        .match-quality.NON-EXISTENT {
+            background: #6c757d;
+            color: white;
+        }
+        
+        .explanation {
+            margin-top: 12px;
+            line-height: 1.8;
+            color: #555;
+        }
+        
+        .no-excellent {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+        
+        .excellent-summary {
+            background: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+        }
+        
+        .excellent-summary h3 {
+            color: #155724;
+            margin-bottom: 15px;
+        }
+        
+        .excellent-match-item {
+            background: white;
+            padding: 12px;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #28a745;
+        }
+        
+        .badge {
+            display: inline-block;
+            padding: 4px 8px;
+            background: #667eea;
+            color: white;
+            border-radius: 3px;
+            font-size: 0.85em;
+            margin-right: 5px;
+        }
+        
+        .loading {
+            text-align: center;
+            padding: 50px;
+            font-size: 1.2em;
+            color: #667eea;
+        }
+        
+        @media (max-width: 768px) {
+            .container {
+                padding: 10px;
+            }
+            
+            header h1 {
+                font-size: 1.5em;
+            }
+            
+            .substandard-content {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Curriculum Substandard to Sequence Mappings</h1>
+            <p>Interactive viewer for mapping curriculum substandards to Direct Instruction sequences</p>
+        </header>
+        
+        <div id="metadata" class="metadata"></div>
+        
+        <div class="search-box">
+            <input type="text" id="searchInput" placeholder="Search substandards by ID or description...">
+        </div>
+        
+        <div class="substandards-nav">
+            <h2>Select a Substandard</h2>
+            <div id="substandardButtons"></div>
+        </div>
+        
+        <div id="substandardsContainer"></div>
+        
+        <div class="loading" id="loading">Loading data...</div>
+    </div>
+
+    <script>
+        let data = null;
+        let allSubstandards = [];
+        
+        // Load the JSON file
+        async function loadData() {
+            try {
+                const response = await fetch('output/substandard_to_sequence_mappings.json');
+                data = await response.json();
+                document.getElementById('loading').style.display = 'none';
+                renderMetadata();
+                allSubstandards = data.mappings;
+                renderSubstandardButtons(allSubstandards);
+                setupSearch();
+            } catch (error) {
+                document.getElementById('loading').innerHTML = 'Error loading data: ' + error.message;
+            }
+        }
+        
+        function renderMetadata() {
+            const metadata = data.metadata;
+            const metadataHtml = `
+                <h2>📋 Mapping Information</h2>
+                <div class="metadata-grid">
+                    <div class="metadata-item">
+                        <strong>Target Grade</strong>
+                        ${metadata.target_grade}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Total Substandards</strong>
+                        ${metadata.total_substandards}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Processed</strong>
+                        ${metadata.processed_substandards}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Completion Status</strong>
+                        ${metadata.completion_status}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>LLM Model</strong>
+                        ${metadata.llm_model}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Processing Date</strong>
+                        ${new Date(metadata.processing_date).toLocaleDateString()}
+                    </div>
+                </div>
+            `;
+            document.getElementById('metadata').innerHTML = metadataHtml;
+        }
+        
+        function renderSubstandardButtons(substandards) {
+            const buttonsHtml = substandards.map(sub => {
+                const hasMatch = sub.final_excellent_matches && sub.final_excellent_matches.length > 0;
+                const matchClass = hasMatch ? 'has-match' : 'no-match';
+                return `
+                    <button class="substandard-btn ${matchClass}" onclick="showSubstandard('${sub.substandard_id}')">
+                        <strong>${sub.substandard_id}</strong>
+                        <div style="font-size: 0.85em; margin-top: 5px; color: #666;">
+                            ${sub.substandard_description.substring(0, 80)}${sub.substandard_description.length > 80 ? '...' : ''}
+                        </div>
+                        ${hasMatch ? '<div style="color: #28a745; font-size: 0.8em; margin-top: 5px;">✓ Has excellent matches</div>' : '<div style="color: #dc3545; font-size: 0.8em; margin-top: 5px;">✗ No excellent matches</div>'}
+                    </button>
+                `;
+            }).join('');
+            document.getElementById('substandardButtons').innerHTML = buttonsHtml;
+        }
+        
+        function setupSearch() {
+            const searchInput = document.getElementById('searchInput');
+            searchInput.addEventListener('input', (e) => {
+                const searchTerm = e.target.value.toLowerCase();
+                const filtered = allSubstandards.filter(sub => 
+                    sub.substandard_id.toLowerCase().includes(searchTerm) ||
+                    sub.substandard_description.toLowerCase().includes(searchTerm)
+                );
+                renderSubstandardButtons(filtered);
+            });
+        }
+        
+        function showSubstandard(substandardId) {
+            // Update active button
+            document.querySelectorAll('.substandard-btn').forEach(btn => {
+                btn.classList.remove('active');
+                if (btn.textContent.includes(substandardId)) {
+                    btn.classList.add('active');
+                }
+            });
+            
+            // Hide all substandard contents
+            document.querySelectorAll('.substandard-content').forEach(content => {
+                content.classList.remove('active');
+            });
+            
+            // Show selected substandard or render it if it doesn't exist
+            let substandardElement = document.getElementById(`substandard-${substandardId.replace(/\./g, '-')}`);
+            if (!substandardElement) {
+                renderSubstandard(substandardId);
+                substandardElement = document.getElementById(`substandard-${substandardId.replace(/\./g, '-')}`);
+            }
+            substandardElement.classList.add('active');
+            substandardElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+        
+        function renderSubstandard(substandardId) {
+            const substandard = data.mappings.find(s => s.substandard_id === substandardId);
+            const substandardDomId = `substandard-${substandardId.replace(/\./g, '-')}`;
+            
+            let html = `
+                <div id="${substandardDomId}" class="substandard-content">
+                    <div class="substandard-header">
+                        <h2>${substandard.substandard_description}</h2>
+                        <div class="substandard-id">ID: ${substandard.substandard_id} | Grade: ${substandard.grade}</div>
+                    </div>
+            `;
+            
+            // Excellent matches summary
+            if (substandard.final_excellent_matches && substandard.final_excellent_matches.length > 0) {
+                html += `
+                    <div class="excellent-summary">
+                        <h3>✓ Excellent Matches Found (${substandard.final_excellent_matches.length})</h3>
+                `;
+                substandard.final_excellent_matches.forEach(match => {
+                    html += `
+                        <div class="excellent-match-item">
+                            <strong>${match.skill}</strong> (Grade ${match.grade}) - 
+                            <span class="badge">Sequence ${match.sequence_number}</span>
+                        </div>
+                    `;
+                });
+                html += `</div>`;
+            }
+            
+            // Assessment boundary
+            if (substandard.assessment_boundary) {
+                html += `
+                    <div class="section">
+                        <h3>⚠️ Assessment Boundary</h3>
+                        <div class="assessment-boundary">${substandard.assessment_boundary}</div>
+                    </div>
+                `;
+            }
+            
+            // Phase 1 selected skills
+            if (substandard.phase1_selected_skills && substandard.phase1_selected_skills.length > 0) {
+                html += `
+                    <div class="section">
+                        <h3>🎯 Phase 1: Selected Skills</h3>
+                `;
+                substandard.phase1_selected_skills.forEach(skill => {
+                    html += `<span class="skill-tag">${skill}</span>`;
+                });
+                html += `</div>`;
+            }
+            
+            // Phase 2 results
+            if (substandard.phase2_results && substandard.phase2_results.length > 0) {
+                html += `
+                    <div class="section">
+                        <h3>📊 Phase 2: Sequence Ratings</h3>
+                `;
+                
+                substandard.phase2_results.forEach(result => {
+                    html += `<h4 style="color: #5e35b1; margin-top: 20px; margin-bottom: 15px;">Skill: ${result.skill_name} (Grade ${result.grade})</h4>`;
+                    
+                    if (result.all_ratings && result.all_ratings.length > 0) {
+                        result.all_ratings.forEach(rating => {
+                            const matchClass = rating.match_quality.toLowerCase().replace('-', '-');
+                            html += `
+                                <div class="match-card ${matchClass}">
+                                    <h4>
+                                        <span class="badge">Sequence ${rating.sequence_number}</span>
+                                        ${rating.problem_type}
+                                        <span class="match-quality ${rating.match_quality}">${rating.match_quality}</span>
+                                    </h4>
+                                    <div class="explanation">${rating.explanation}</div>
+                                </div>
+                            `;
+                        });
+                    } else {
+                        html += `<p style="color: #666; font-style: italic;">No sequences available for grade ${result.grade}</p>`;
+                    }
+                    
+                    // No excellent explanation
+                    if (result.no_excellent_explanation && result.no_excellent_explanation.trim() !== '') {
+                        html += `
+                            <div class="no-excellent">
+                                <strong>Why no EXCELLENT ratings?</strong>
+                                <p style="margin-top: 10px;">${result.no_excellent_explanation}</p>
+                            </div>
+                        `;
+                    }
+                });
+                
+                html += `</div>`;
+            }
+            
+            html += `</div>`;
+            
+            document.getElementById('substandardsContainer').insertAdjacentHTML('beforeend', html);
+        }
+        
+        // Load data on page load
+        loadData();
+    </script>
+</body>
+</html>
+
