@@ -105,7 +105,7 @@ def augment_sequences_with_formats(data: Dict, format_mapping: Dict[str, str]) -
     logger.info(f"Format augmentation complete: {total_skills} skills processed")
     return augmented_data
 
-def create_skill_summary_prompt(skill_name: str, skill_data: Dict) -> str:
+def create_skill_summary_prompt(skill_name: str, skill_data: Dict, grades_list: List[int]) -> str:
     """Create prompt for generating grade-based skill summary"""
     
     # Collect all progressions and their sequences
@@ -121,40 +121,73 @@ def create_skill_summary_prompt(skill_name: str, skill_data: Dict) -> str:
         
         progressions_text += f"Grade {grade}:\n{sequences_text}\n"
     
+    # Create expected grade keys for the output
+    expected_keys = ", ".join([f'"grade_{g}"' for g in grades_list])
+    
     prompt = f"""
-You are an expert educational content specialist. Create a comprehensive summary for the skill "{skill_name}" that explains:
+You are an expert educational content specialist. Create a separate summary for the skill "{skill_name}" FOR EACH GRADE.
 
-1. The types of tasks/progressions covered across different grades
-2. The instructional formats used for this skill
-3. How the skill builds and progresses across grade levels
+For each grade, explain:
+1. The specific types of tasks/progressions covered in that grade
+2. The instructional formats used at that grade level
+3. What students are learning and how it relates to the overall skill
 
 SKILL DATA:
 {progressions_text}
 
-Please provide a clear, educational summary that would be useful for teachers and curriculum developers. Focus on the learning progression and instructional approaches.
+IMPORTANT: You must provide a summary for EACH grade present in the data. Return a JSON object with the structure:
+{{
+  "grade_summaries": {{
+    "grade_0": "Summary for grade 0...",
+    "grade_1": "Summary for grade 1...",
+    ...
+  }}
+}}
 
-Return your response in a structured format with clear sections.
+The keys must be: {expected_keys}
+
+Each summary should be 2-4 sentences that clearly describe what students learn about "{skill_name}" in that specific grade.
 """
     
     return prompt
 
-def generate_skill_summary(model, skill_name: str, skill_data: Dict) -> str:
-    """Generate grade-based skill summary using Gemini"""
+def generate_skill_summary(model, skill_name: str, skill_data: Dict) -> Optional[Dict[str, str]]:
+    """Generate grade-based skill summary using Gemini with JSON output"""
     try:
-        prompt = create_skill_summary_prompt(skill_name, skill_data)
+        # Get list of grades for this skill
+        grades_list = [progression['grade'] for progression in skill_data['progression']]
         
-        response = model.generate_content(prompt)
+        prompt = create_skill_summary_prompt(skill_name, skill_data, grades_list)
+        
+        # Use JSON mode without strict schema enforcement (since Dict keys are dynamic)
+        response = model.generate_content(
+            prompt,
+            generation_config=genai.GenerationConfig(
+                response_mime_type="application/json"
+            )
+        )
         
         if response.text:
-            logger.info(f"Generated summary for skill: {skill_name}")
-            return response.text.strip()
+            # Parse the JSON response
+            parsed_response = json.loads(response.text)
+            grade_summaries = parsed_response.get('grade_summaries', {})
+            
+            # Validate that we got summaries for all expected grades
+            expected_keys = {f"grade_{g}" for g in grades_list}
+            actual_keys = set(grade_summaries.keys())
+            
+            if expected_keys != actual_keys:
+                logger.warning(f"Expected grades {expected_keys} but got {actual_keys} for {skill_name}")
+            
+            logger.info(f"Generated summaries for {len(grade_summaries)} grades for skill: {skill_name}")
+            return grade_summaries
         else:
             logger.warning(f"No response generated for skill: {skill_name}")
-            return ""
+            return None
             
     except Exception as e:
         logger.error(f"Error generating summary for {skill_name}: {e}")
-        return ""
+        return None
 
 def add_skill_summaries(data: Dict, model) -> Dict:
     """Add grade-based skill summaries to the data"""
@@ -168,14 +201,15 @@ def add_skill_summaries(data: Dict, model) -> Dict:
         skill_count += 1
         logger.info(f"Generating summary {skill_count}/{total_skills} for skill: {skill_name}")
         
-        summary = generate_skill_summary(model, skill_name, skill_data)
+        grade_summaries = generate_skill_summary(model, skill_name, skill_data)
         
-        if summary:
-            skill_data['grade_based_summary'] = summary
+        if grade_summaries:
+            # Store as dictionary with grade keys
+            skill_data['grade_based_summary'] = grade_summaries
             successful_summaries += 1
-            logger.info(f"  ✓ Successfully added summary for {skill_name}")
+            logger.info(f"  ✓ Successfully added summaries for {len(grade_summaries)} grades for {skill_name}")
         else:
-            skill_data['grade_based_summary'] = "Summary generation failed"
+            skill_data['grade_based_summary'] = {}
             logger.warning(f"  ✗ Failed to generate summary for {skill_name}")
     
     logger.info(f"Skill summary generation complete: {successful_summaries}/{total_skills} successful")
