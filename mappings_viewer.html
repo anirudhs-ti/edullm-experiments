@@ -349,6 +349,66 @@
             color: #667eea;
         }
         
+        .export-controls {
+            position: sticky;
+            top: 20px;
+            background: white;
+            padding: 15px;
+            border-radius: 8px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+            margin-bottom: 20px;
+            display: none;
+            z-index: 100;
+        }
+        
+        .export-controls.visible {
+            display: flex;
+            gap: 10px;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        
+        .export-btn {
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+            font-weight: 500;
+            transition: all 0.3s;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+        
+        .export-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+        
+        .export-btn.png {
+            background: #4CAF50;
+            color: white;
+        }
+        
+        .export-btn.pdf {
+            background: #2196F3;
+            color: white;
+        }
+        
+        .export-btn:disabled {
+            background: #ccc;
+            cursor: not-allowed;
+            transform: none;
+        }
+        
+        .export-status {
+            color: #666;
+            font-size: 0.9em;
+            font-style: italic;
+        }
+        
         @media (max-width: 768px) {
             .container {
                 padding: 10px;
@@ -382,14 +442,133 @@
             <div id="substandardButtons"></div>
         </div>
         
+        <div id="exportControls" class="export-controls">
+            <div>
+                <strong style="color: #667eea;">📥 Export Current View:</strong>
+            </div>
+            <div style="display: flex; gap: 10px; align-items: center;">
+                <button class="export-btn png" onclick="exportAsPNG()">
+                    <span>📷</span> Export as PNG
+                </button>
+                <button class="export-btn pdf" onclick="exportAsPDF()">
+                    <span>📄</span> Export as PDF
+                </button>
+                <span id="exportStatus" class="export-status"></span>
+            </div>
+        </div>
+        
         <div id="substandardsContainer"></div>
         
         <div class="loading" id="loading">Loading data...</div>
     </div>
 
+    <!-- External libraries for export functionality -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+    
     <script>
         let data = null;
         let allSubstandards = [];
+        let currentSubstandardId = null;
+        
+        // Export functionality
+        async function exportAsPNG() {
+            const activeSubstandard = document.querySelector('.substandard-content.active');
+            if (!activeSubstandard) {
+                alert('Please select a substandard first');
+                return;
+            }
+            
+            setExportStatus('Generating PNG...');
+            disableExportButtons(true);
+            
+            try {
+                const canvas = await html2canvas(activeSubstandard, {
+                    backgroundColor: '#ffffff',
+                    scale: 2, // Higher quality
+                    logging: false,
+                    useCORS: true
+                });
+                
+                const link = document.createElement('a');
+                link.download = `substandard_${currentSubstandardId}.png`;
+                link.href = canvas.toDataURL('image/png');
+                link.click();
+                
+                setExportStatus('✓ PNG exported successfully!');
+                setTimeout(() => setExportStatus(''), 3000);
+            } catch (error) {
+                console.error('Export error:', error);
+                setExportStatus('✗ Export failed');
+                setTimeout(() => setExportStatus(''), 3000);
+            } finally {
+                disableExportButtons(false);
+            }
+        }
+        
+        async function exportAsPDF() {
+            const activeSubstandard = document.querySelector('.substandard-content.active');
+            if (!activeSubstandard) {
+                alert('Please select a substandard first');
+                return;
+            }
+            
+            setExportStatus('Generating PDF...');
+            disableExportButtons(true);
+            
+            try {
+                const canvas = await html2canvas(activeSubstandard, {
+                    backgroundColor: '#ffffff',
+                    scale: 2,
+                    logging: false,
+                    useCORS: true
+                });
+                
+                const imgData = canvas.toDataURL('image/png');
+                const { jsPDF } = window.jspdf;
+                
+                // Calculate PDF dimensions
+                const imgWidth = 210; // A4 width in mm
+                const pageHeight = 297; // A4 height in mm
+                const imgHeight = (canvas.height * imgWidth) / canvas.width;
+                let heightLeft = imgHeight;
+                
+                const pdf = new jsPDF('p', 'mm', 'a4');
+                let position = 0;
+                
+                // Add image to PDF (handle multiple pages if needed)
+                pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+                heightLeft -= pageHeight;
+                
+                while (heightLeft > 0) {
+                    position = heightLeft - imgHeight;
+                    pdf.addPage();
+                    pdf.addImage(imgData, 'PNG', 0, position, imgWidth, imgHeight);
+                    heightLeft -= pageHeight;
+                }
+                
+                pdf.save(`substandard_${currentSubstandardId}.pdf`);
+                
+                setExportStatus('✓ PDF exported successfully!');
+                setTimeout(() => setExportStatus(''), 3000);
+            } catch (error) {
+                console.error('Export error:', error);
+                setExportStatus('✗ Export failed');
+                setTimeout(() => setExportStatus(''), 3000);
+            } finally {
+                disableExportButtons(false);
+            }
+        }
+        
+        function setExportStatus(message) {
+            document.getElementById('exportStatus').textContent = message;
+        }
+        
+        function disableExportButtons(disabled) {
+            document.querySelectorAll('.export-btn').forEach(btn => {
+                btn.disabled = disabled;
+            });
+        }
         
         // Load the JSON file
         async function loadData() {
@@ -487,6 +666,9 @@
         }
         
         function showSubstandard(substandardId) {
+            // Set current substandard for export
+            currentSubstandardId = substandardId;
+            
             // Update active button
             document.querySelectorAll('.substandard-btn').forEach(btn => {
                 btn.classList.remove('active');
@@ -507,6 +689,10 @@
                 substandardElement = document.getElementById(`substandard-${substandardId.replace(/\./g, '-')}`);
             }
             substandardElement.classList.add('active');
+            
+            // Show export controls
+            document.getElementById('exportControls').classList.add('visible');
+            
             substandardElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
         }
         
