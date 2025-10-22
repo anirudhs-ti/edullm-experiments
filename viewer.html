@@ -340,7 +340,7 @@
         // Load the JSON file
         async function loadData() {
             try {
-                const response = await fetch('data/di_formats_augmented.json');
+                const response = await fetch('data/di_formats_with_mappings.json');
                 data = await response.json();
                 document.getElementById('loading').style.display = 'none';
                 renderMetadata();
@@ -456,6 +456,22 @@
                             html += `
                                 <div class="visual-aids">
                                     <strong>Visual Aids:</strong> ${seq.visual_aids.join(', ')}
+                                </div>
+                            `;
+                        }
+                        
+                        if (seq.related_formats && seq.related_formats.length > 0) {
+                            html += `
+                                <div style="margin-top: 10px; padding: 10px; background: #e8eaf6; border-radius: 4px;">
+                                    <strong style="color: #5e35b1;">📋 Related Teaching Formats:</strong>
+                                    <div style="margin-top: 5px;">
+                                        ${seq.related_formats.map(fmt => `
+                                            <div style="margin-top: 5px;">
+                                                <span class="badge" style="background: #5e35b1;">Format ${fmt.format_number}</span>
+                                                <span style="color: #5e35b1;">${fmt.format_title}</span>
+                                            </div>
+                                        `).join('')}
+                                    </div>
                                 </div>
                             `;
                         }
