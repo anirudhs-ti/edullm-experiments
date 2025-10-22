@@ -305,6 +305,43 @@
             margin-right: 5px;
         }
         
+        .format-section {
+            margin-top: 15px;
+            padding: 12px;
+            background: rgba(102, 126, 234, 0.08);
+            border-radius: 5px;
+            border-left: 3px solid #667eea;
+        }
+        
+        .format-item {
+            margin-left: 10px;
+            margin-top: 8px;
+            padding: 8px;
+            background: white;
+            border-radius: 4px;
+        }
+        
+        .format-number-badge {
+            background: #667eea;
+            color: white;
+            padding: 2px 8px;
+            border-radius: 3px;
+            font-weight: bold;
+            font-size: 0.85em;
+        }
+        
+        .format-title {
+            margin-left: 8px;
+            font-weight: 500;
+            color: #333;
+        }
+        
+        .format-parts {
+            margin-top: 6px;
+            font-size: 0.85em;
+            color: #666;
+        }
+        
         .loading {
             text-align: center;
             padding: 50px;
@@ -357,7 +394,7 @@
         // Load the JSON file
         async function loadData() {
             try {
-                const response = await fetch('output/substandard_to_sequence_mappings.json');
+                const response = await fetch('output/substandard_to_sequence_mappings_with_formats.json');
                 data = await response.json();
                 document.getElementById('loading').style.display = 'none';
                 renderMetadata();
@@ -371,7 +408,7 @@
         
         function renderMetadata() {
             const metadata = data.metadata;
-            const metadataHtml = `
+            let metadataHtml = `
                 <h2>📋 Mapping Information</h2>
                 <div class="metadata-grid">
                     <div class="metadata-item">
@@ -398,6 +435,23 @@
                         <strong>Processing Date</strong>
                         ${new Date(metadata.processing_date).toLocaleDateString()}
                     </div>
+            `;
+            
+            // Add format augmentation info if available
+            if (metadata.format_augmentation) {
+                metadataHtml += `
+                    <div class="metadata-item">
+                        <strong>Formats Added</strong>
+                        ${metadata.format_augmentation.total_formats_added}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Format Augmentation Date</strong>
+                        ${new Date(metadata.format_augmentation.augmented_at).toLocaleDateString()}
+                    </div>
+                `;
+            }
+            
+            metadataHtml += `
                 </div>
             `;
             document.getElementById('metadata').innerHTML = metadataHtml;
@@ -479,8 +533,28 @@
                         <div class="excellent-match-item">
                             <strong>${match.skill}</strong> (Grade ${match.grade}) - 
                             <span class="badge">Sequence ${match.sequence_number}</span>
-                        </div>
                     `;
+                    
+                    // Add related formats if available
+                    if (match.related_formats && match.related_formats.length > 0) {
+                        html += `<div style="margin-top: 10px; padding-top: 10px; border-top: 1px solid #c3e6cb;">`;
+                        html += `<strong style="color: #155724; font-size: 0.9em;">📚 Related Formats:</strong>`;
+                        match.related_formats.forEach(format => {
+                            html += `
+                                <div style="margin-left: 15px; margin-top: 8px; font-size: 0.9em;">
+                                    <span style="background: #28a745; color: white; padding: 2px 6px; border-radius: 3px; font-weight: bold;">
+                                        ${format.format_number}
+                                    </span>
+                                    <span style="margin-left: 8px; color: #155724;">
+                                        ${format.format_title}
+                                    </span>
+                                </div>
+                            `;
+                        });
+                        html += `</div>`;
+                    }
+                    
+                    html += `</div>`;
                 });
                 html += `</div>`;
             }
@@ -528,8 +602,51 @@
                                         <span class="match-quality ${rating.match_quality}">${rating.match_quality}</span>
                                     </h4>
                                     <div class="explanation">${rating.explanation}</div>
-                                </div>
                             `;
+                            
+                            // Add related formats if available
+                            if (rating.related_formats && rating.related_formats.length > 0) {
+                                html += `
+                                    <div style="margin-top: 15px; padding: 12px; background: rgba(102, 126, 234, 0.08); border-radius: 5px; border-left: 3px solid #667eea;">
+                                        <strong style="color: #667eea; font-size: 0.9em;">📚 Related Formats:</strong>
+                                `;
+                                rating.related_formats.forEach(format => {
+                                    html += `
+                                        <div style="margin-left: 10px; margin-top: 8px; padding: 8px; background: white; border-radius: 4px;">
+                                            <div>
+                                                <span style="background: #667eea; color: white; padding: 2px 8px; border-radius: 3px; font-weight: bold; font-size: 0.85em;">
+                                                    Format ${format.format_number}
+                                                </span>
+                                                <span style="margin-left: 8px; font-weight: 500; color: #333;">
+                                                    ${format.format_title}
+                                                </span>
+                                            </div>
+                                    `;
+                                    
+                                    // Show number of parts
+                                    if (format.parts && format.parts.length > 0) {
+                                        html += `
+                                            <div style="margin-top: 6px; font-size: 0.85em; color: #666;">
+                                                ${format.parts.length} part${format.parts.length > 1 ? 's' : ''}
+                                        `;
+                                        
+                                        // List part names
+                                        const partNames = format.parts.map(p => p.part_name).filter(n => n);
+                                        if (partNames.length > 0 && partNames.length <= 3) {
+                                            html += `: ${partNames.join(', ')}`;
+                                        } else if (partNames.length > 3) {
+                                            html += `: ${partNames.slice(0, 2).join(', ')}, ...`;
+                                        }
+                                        
+                                        html += `</div>`;
+                                    }
+                                    
+                                    html += `</div>`;
+                                });
+                                html += `</div>`;
+                            }
+                            
+                            html += `</div>`;
                         });
                     } else {
                         html += `<p style="color: #666; font-style: italic;">No sequences available for grade ${result.grade}</p>`;
