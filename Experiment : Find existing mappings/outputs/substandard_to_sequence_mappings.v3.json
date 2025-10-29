@@ -1,0 +1,2446 @@
+{
+  "metadata": {
+    "source_csv": "/workspaces/github-com-anirudhs-ti-edullm-experiments/data/curricululm_with_assesment_boundary.csv",
+    "source_json": "/workspaces/github-com-anirudhs-ti-edullm-experiments/data/di_formats_with_mappings.json",
+    "target_grade": 3,
+    "run_scope": "grade_3_all",
+    "total_substandards": 112,
+    "processed_substandards": 112,
+    "bruteforce_remap_date": "2025-10-27T09:22:39.146733",
+    "llm_model": "gemini-2.0-flash-exp",
+    "completion_status": "complete"
+  },
+  "mappings": [
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.1+1",
+      "grade": 3,
+      "substandard_description": "Write a multiplication equation that represents an equal sets of objects.",
+      "assessment_boundary": "Assessment is restricted to:\n- Factors are limited to up to 5\n- Exclusion of fractions, decimals, mixed numbers, and non-equal groupings\n- No real world problems.\n- No reference to division either as word or as a symbol is allowed.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- No use of vocabulary, numbers and symbols only",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 75
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 2,
+        "processing_timestamp": "2025-10-27T08:05:06.494365"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.1+3",
+      "grade": 3,
+      "substandard_description": "Write a multiplication equation that represents an array.",
+      "assessment_boundary": "Assessment is restricted to:\n- Single-digit multipliers and multiplicands (up to 10 \u00d7 10)\n- At least one factor is always 5 or less.\n- Exclusion of fractions, decimals, mixed numbers, and non-equal groupings\n- No real world problems.\n- No reference to division either as word or as a symbol is allowed.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- No use of anything besides numbers in the multiplication equation\n- Questions should say, \"Complete the multiplication sentence that describes the array.\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:05:52.759464"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.1+2",
+      "grade": 3,
+      "substandard_description": "Represent a product of whole numbers as repeated addition.",
+      "assessment_boundary": "Assessment is restricted to:\n- None of the multiplication factors may be greater than 5.\n- Exclusion of fractions, decimals, mixed numbers, and non-equal groupings\n- No real world problems.\n- No reference to division either as word or as a symbol is allowed.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- NEVER ask for the end product (e.g. 5 \u00d7 4 = ?)\n- Never mention the term, \"repeated addition,\" only phrase the question as, Which expression equals __\u00d7___?",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:06:34.358946"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.1+5",
+      "grade": 3,
+      "substandard_description": "Solve multiplication facts.",
+      "assessment_boundary": "Assessment is restricted to:\n- One of the multiplication factors should be 2, 3, 4, 5, and 10.\n- No real world problems.\n- No reference to division either as word or as a symbol is allowed.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "EXCELLENT",
+          "alignment_score": 100
+        },
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        },
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Measurement",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 5,
+        "processing_timestamp": "2025-10-27T08:07:19.384163"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.1+4",
+      "grade": 3,
+      "substandard_description": "Solve real-world multiplication problems.",
+      "assessment_boundary": "Assessment is restricted to:\n- One of the factor in multiplication should be 5 or 10.\n- Exclusion of fractions, decimals, mixed numbers, and non-equal groupings\n- Real world problems required.\n- No reference to division either as word or as a symbol is allowed.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.",
+      "final_excellent_matches": [
+        {
+          "skill": "Measurement",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 65
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 70
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 4,
+        "processing_timestamp": "2025-10-27T08:08:04.759993"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.1+6",
+      "grade": 3,
+      "substandard_description": "Relate division to equal groups.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number dividends up to 100\n- Single-digit divisors and quotients \n- Avoidance of abstract algebraic notation; use symbols (\u25a1, ?, __) for unknowns\n- Problems with one unknown per equation (no multi-step operations)\n- Exclusion of remainders, fractions, decimals, or mixed numbers\n- All problems have an image of sets of equal groups.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- Question stem MUST be either \"The model has ___ dots divided into ___ equal groups.<br/>There are <blank> dots in each group.\" or \"The model has ___ dots divided into groups of ____.<br/>There are <blank> equal groups.\" or \"The model has ___ dots divided into <blank-1> groups of <blank-2> dots.\"",
+      "final_excellent_matches": [
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 4,
+        "processing_timestamp": "2025-10-27T08:08:54.136735"
+      },
+      "phase1_selected_skills": [
+        "Division",
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.2+1",
+      "grade": 3,
+      "substandard_description": "Understand division as the process of sharing or grouping by solving division problems using counters, drawings, or arrays.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number dividends up to 100\n- Single-digit divisors and quotients\n- Visual representations of arrays and equal groups must be used\n- Problems with one unknown per equation (no multi-step operations)\n- Exclusion of multiplicative comparison language (e.g., \"times as many\")\n- Exclusion of remainders, fractions, decimals, or mixed numbers\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- When solving, only solve for the quotient\n- Division sentence to be solved for must be included.",
+      "final_excellent_matches": [
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 4,
+        "processing_timestamp": "2025-10-27T08:09:39.194960"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.2+3",
+      "grade": 3,
+      "substandard_description": "Write a division equation that represents an equal sets of objects.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number dividends up to 45\n- Single-digit divisors and quotients \n- Avoidance of abstract algebraic notation; use symbols (\u25a1, ?, __) for unknowns\n- Problems with one unknown per equation (no multi-step operations)\n- Exclusion of remainders, fractions, decimals, or mixed numbers\n- All problems have an image of sets of equal groups.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- Never ask the students to a select a statement that is already explicitly stated in the question.",
+      "final_excellent_matches": [
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 2,
+        "processing_timestamp": "2025-10-27T08:10:24.193942"
+      },
+      "phase1_selected_skills": [
+        "Division"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.2+2",
+      "grade": 3,
+      "substandard_description": "Write a division equation that represents an array.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number dividends up to 100\n- Single-digit divisors and quotients \n- Avoidance of abstract algebraic notation; use symbols (\u25a1, ?, __) for unknowns\n- Problems with one unknown per equation (no multi-step operations)\n- Exclusion of remainders, fractions, decimals, or mixed numbers\n- All problems have an image of an array.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- Never ask the students to a select a statement that is already explicitly stated in the question.\n- When students have to provide the dividend, it should never be greater than 36.",
+      "final_excellent_matches": [
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:11:10.352866"
+      },
+      "phase1_selected_skills": [
+        "Division"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.2+4",
+      "grade": 3,
+      "substandard_description": "Write a multiplication or division equation to represent an array.",
+      "assessment_boundary": "Assessment is restricted to:\n- Single-digit multipliers and multiplicands (up to 10 \u00d7 10)\n- Exclusion of fractions, decimals, mixed numbers, and non-equal groupings\"\n- Whole number dividends up to 100\n- Single-digit divisors and quotients \n- Avoidance of abstract algebraic notation; use symbols (\u25a1, ?, __) for unknowns\n- All problems have an image of an array.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- For question that require the student to choose or enter the divident, the dividend may not exceed 40.",
+      "final_excellent_matches": [
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 70
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:11:58.449742"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.6+1",
+      "grade": 3,
+      "substandard_description": "Understand division as an unknown-factor problem using arrays.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number dividends up to 100 and only involves multiplication facts up to 10.\n- No real world problems.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "EXCELLENT",
+          "alignment_score": 90
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 70
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 5,
+        "processing_timestamp": "2025-10-27T08:12:45.821535"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.6+5",
+      "grade": 3,
+      "substandard_description": "Solve for the missing number in a multiplication context (e.g., \"2 groups of ____ equal 4, or ___ x 5 = 15\").",
+      "assessment_boundary": "Assessment is restricted to:\n- Only use factors 2-5 and 10\n- Context but no word problems\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:13:30.928430"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.6+2",
+      "grade": 3,
+      "substandard_description": "Find a missing factor for a multiplication fact.",
+      "assessment_boundary": "Assessment is restricted to:\n- Single-digit unknown factors (1\u201310)\n- No real world problems.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:14:16.541065"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.6+4",
+      "grade": 3,
+      "substandard_description": "Relate multiplication and division facts.",
+      "assessment_boundary": "Assessment is restricted to:\n- Only divisors of 2 3, 4, 5, and 10.\n- The quotient should be less than or equal to 10.\n- No real world problems.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 90
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 4,
+        "processing_timestamp": "2025-10-27T08:15:00.614596"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.6+3",
+      "grade": 3,
+      "substandard_description": "Solve division facts.",
+      "assessment_boundary": "Assessment is restricted to:\n- Only division facts for 2, 3, 4, 5, and 10.\n- The quotient should be less than or equal to 10.\n- No real world problems.\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 75
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 3,
+        "processing_timestamp": "2025-10-27T08:15:43.248570"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.2+5",
+      "grade": 3,
+      "substandard_description": "Solve real-world division problems.",
+      "assessment_boundary": "Assessment is restricted to:\n- Requires word problems.\n- Whole number dividends up to 100\n- Single-digit divisors and quotients\n- Avoidance of abstract algebraic notation; use symbols (\u25a1, ?, __) for unknowns\n- Problems with one unknown per equation (no multi-step operations)\n- Exclusion of multiplicative comparison language (e.g., \"times as many\")\n- Exclusion of remainders, fractions, decimals, or mixed numbers\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- One step problems only",
+      "final_excellent_matches": [
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 2,
+        "processing_timestamp": "2025-10-27T08:16:28.864747"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts",
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+4",
+      "grade": 3,
+      "substandard_description": "Identify the properties of multiplication.",
+      "assessment_boundary": "Assessment is restricted to:\n- commutative property of multiplication, associative property of multiplication, identity property of mutliplication, zero property of multiplication, and distributive property of mutliplication\n- Only ONE property should be used in an example at one time",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:17:12.751388"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.3+2",
+      "grade": 3,
+      "substandard_description": "Solve word problems involving two step multiplication.",
+      "assessment_boundary": "Assessment is restricted to:\n- Single-digit multipliers and multiplicands (up to 10 \u00d7 10)\n- Must be two step problems involving multiplication.\n- No step can require mutliplication that uses facts outside of 10 x 10.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:17:57.220141"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+1",
+      "grade": 3,
+      "substandard_description": "Apply the commutative property of multiplication as a strategy to multiply whole numbers.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number factors only (no fractions, decimals, or negative numbers).\n- Factors and products must be within the range of 0\u201310 for each factor.\n- Products must not exceed 100.\n- Equations and expressions should involve no more than two factors (e.g., 3 \u00d7 5, not 3 \u00d7 5 \u00d7 2 for this substandard; associative and distributive properties are addressed in other substandards).\n- Contexts and representations may include objects, pictures, words, and symbols\n- Problems may require students to identify, create, or explain equivalent multiplication expressions by switching the order of factors (e.g., 4 \u00d7 7 = 7 \u00d7 4).\n- No abstract variables (e.g., n, x); use symbols such as \u25a1, ?, or __ for unknowns if needed.\n- Division is not assessed under this substandard (commutative property does not apply to division).\n- Exclude multi-step problems or problems that require applying more than one property at once (focus is solely on the commutative property for this substandard).\n- Contexts are allowed but should be simple and clearly illustrate the commutative property (e.g., \"3 bags of 5 apples is the same as 5 bags of 3 apples\")\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- Cannot combine properties. Commutitive property ONLY.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:18:39.335929"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+2",
+      "grade": 3,
+      "substandard_description": "Apply the associative property of multiplication as a strategy to multiply whole numbers.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number factors only (no fractions, decimals, or negative numbers).\n- All factors must be single-digit numbers (1\u201310).\n- Products must not exceed 100.\n- Expressions must include exactly three factors (e.g., 3 \u00d7 5 \u00d7 2), as the associative property involves regrouping three numbers.\n- Grouping of factors may be shown with or without parentheses, but parentheses should only be used to indicate grouping, not to introduce order of operations beyond multiplication.\n- No division, subtraction, or addition within the expressions\u2014multiplication only.\n- No use of variables (e.g., n, x); symbols such as \u25a1, ?, or __ may be used for unknowns if needed.\n- Contexts and representations (objects, pictures, words, or symbols) are allowed but should remain simple and directly illustrate the associative property.\n- Multi-step problems that require applying more than one property at once are excluded (focus solely on the associative property for this substandard)\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- Cannot combine properties. Associative property ONLY.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:19:25.157831"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+3",
+      "grade": 3,
+      "substandard_description": "Apply the distributive property as a strategy to multiply and divide whole numbers.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number factors, addends, products, dividends, and quotients only (no fractions, decimals, or negative numbers).\n- All factors, addends, divisors, and quotients must be single-digit numbers (1\u201310).\n- Products and dividends must not exceed 100.\n- Limited to 2 addends\n- Decomposition of a factor is limited to sums of whole numbers within 10 (e.g., 7 can be decomposed as 5 + 2, not 4 + 3 + 0).\n- Distributive property must be applied to multiplication and division expressions within 100.\n- Expressions should involve distributing a factor across a sum of two addends only (e.g., a \u00d7 (b + c)), not more than two addends.\n- Parentheses may be used to indicate grouping, but not to introduce order of operations beyond multiplication and addition within the distributive property context.\n- No use of variables (e.g., n, x); use symbols such as \u25a1, ?, or __ for unknowns if needed.\n- Contexts and representations (objects, pictures, words, or symbols) are allowed but should remain simple and directly illustrate the distributive property.\n- Exclude multi-step problems or problems that require applying more than one property at once (focus solely on the distributive property for this substandard\n- No use of variables (e.g., a, n, x); use symbols such as a box (\u25a1), question mark (?), or blank line (__) for unknown values.\n- Cannot combine properties. Distributive property ONLY.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:20:15.563767"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NBT.A.3+1",
+      "grade": 3,
+      "substandard_description": "Use place value understanding and operation properties to multiply single-digit numbers by 10 through 90 in multiples of 10.",
+      "assessment_boundary": "Assessment is restricted to:\n- Products must not exceed 810 (the largest product is 9 \u00d7 90).\n- Single-digit whole number factors only (1\u20139).\n- Multiples of ten are limited to 10, 20, 30, 40, 50, 60, 70, 80, and 90.\n- Only whole numbers are used; exclude fractions, decimals, and negative numbers.\n- Multiplication only (no division, addition, or subtraction in the same item).\n- No word problems\n- Visual models (base ten blocks, diagrams, hundreds charts) are permitted but not required.\n- No use of variables (e.g., n, x); symbols such as \u25a1, ?, or __ may be used for unknowns if needed.\n- No multi-step problems; each item should require only a single multiplication operation.\n- Exclude exponential notation (e.g., 2 \u00d7 10\u00b9).\n- Exclude rounding.\n- Multiply a single-digit number by a multiple of 10 by recognizing groups of tens (e.g., 4 \u00d7 30 as 4 groups of 30).  \n- For vertical multiplication problems, write the multiple of ten first (e.g. 40 x 5)",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:21:01.431907"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.3+3",
+      "grade": 3,
+      "substandard_description": "Solve word problems involving two step division.",
+      "assessment_boundary": "Assessment is restricted to:\n- Requires word problems.\n- Whole number dividends up to 100\n- Single-digit divisors and quotients\n- Avoidance of abstract algebraic notation; use symbols (\u25a1, ?, __) for unknowns\n- Problems with one unknown per equation (no multi-step operations)\n- Exclusion of multiplicative comparison language (e.g., \"times as many\")\n- Exclusion of remainders, fractions, decimals, or mixed numbers\n- Must be two step problems involving division.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:21:51.959252"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.3+1",
+      "grade": 3,
+      "substandard_description": "Use multiplication and division within 100 to solve word problems.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers only; \n- Multiplication and division facts limited to factors, divisors, and quotients less than or equal to 10 (i.e., within the 10\u00d710 multiplication table).\n- Word problems must involve one-step operations only, using multiplication or division within 100.\n- Situations involve equal groups, arrays, or measurement quantities.\n- Writing equations is not necessary.\n- Contexts must be clearly stated and straightforward; no multiplicative comparison language (e.g., \u201ctimes as many\u201d).\n- Problems should be solvable using basic multiplication and division facts without requiring multi-step reasoning.",
+      "final_excellent_matches": [
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 90
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 2,
+        "processing_timestamp": "2025-10-27T08:23:00.419690"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+5",
+      "grade": 3,
+      "substandard_description": "Solve two-step word problems involving multiplication and division.",
+      "assessment_boundary": "Assessment is restricted to:\n- No step can require facts beyond 10 x 10.",
+      "final_excellent_matches": [
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 3,
+        "processing_timestamp": "2025-10-27T08:23:44.896088"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+7",
+      "grade": 3,
+      "substandard_description": "Represent one-step word problems using equations with a letter standing for the unknown number. ",
+      "assessment_boundary": "Assessment is restricted to:\n- operations include single step addition, subtraction, multiplication and division (without remainders)\n- Whole numbers only; all numbers (factors, products, dividends, quotients) must be whole numbers within 1 to 100.\n- Multiplication and division facts limited to factors, divisors, and quotients less than or equal to 10 (i.e., within the 10\u00d710 multiplication table).\n- Word problems must involve one-step operations only, using multiplication or division within 100.\n- Situations involve equal groups, arrays, or measurement quantities.\n- Contexts must be clearly stated and straightforward; no multiplicative comparison language (e.g., \u201ctimes as many\u201d).\n- Problems should be solvable using basic multiplication and division facts without requiring multi-step reasoning.\n- No step can require facts beyond 10 x 10.\n- The problem has to have a sentence that explains what letter the variable is and what it represents. For example, \"Pablo has 12 freshwater fish in one tank. He also has 4 saltwater fish in another tank.\nThe letter f stands for the total number of fish. Which equation can you use to find f?\"",
+      "final_excellent_matches": [
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 2,
+        "processing_timestamp": "2025-10-27T08:24:29.060721"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+1",
+      "grade": 3,
+      "substandard_description": "Represent two-step word problems using equations with a letter standing for the unknown number. ",
+      "assessment_boundary": "Assessment is restricted to:\n- Exactly two operations per problem (two steps only)\n- Only addition, subtraction, multiplication, and division\n- When writing equations, no parentheses; compute strictly left to right\n- Whole numbers only; no negatives, fractions, or decimals\n- Addition/subtraction operands and results \u2264 100\n- Multiplication/division factors, divisors, and quotients between 1\u201310; products and dividends \u2264 100\n- One letter variable per equation representing the final answer; variable appears on right side of \u201c=\u201d only\n- No multiplicative-comparison phrasing (e.g., \u201ctimes as many\u201d)\n- No exponents, powers, or other advanced operations\n- Knowledge of order of operations must not be necessary to write an equation\n- The estimate has to be significantly different than the actual answer. Students will use compatible numberes to estimate (they have not learned rounding yet), and the numbers used in the problem should be conducive to that.",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:25:16.139437"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+2",
+      "grade": 3,
+      "substandard_description": "Solve two-step word problems involving any combination of the four operations.",
+      "assessment_boundary": "Assessment is restricted to:\n- Exactly two operations per problem (two steps only)\n- Only addition, subtraction, multiplication, and division\n- Whole numbers only; no negatives, fractions, or decimals\n- Addition/subtraction operands and results \u2264 1 000\n- Multiplication/division factors, divisors, and quotients between 1\u201310; products and dividends \u2264 100\n- \"x\" should never be used as the variable.\n- No multiplicative-comparison phrasing (e.g., \u201ctimes as many\u201d)\n- No exponents, powers, or other advanced operations\n- No remainders. When division is used it must be divided evenly.",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 75
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:25:58.964991"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving",
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+6",
+      "grade": 3,
+      "substandard_description": "Judge whether a given estimate in a two-step word problem (addition, subtraction, multiplication, or division) is reasonable, too high, or too low with reasoning.",
+      "assessment_boundary": "Assessment is restricted to:\n- Facts limited to the 1 \u00d7 1 through 10 \u00d7 10 tables quotients \u2264 100.\n- Addition and subtraction involving number \u2264 100.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:26:44.803916"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+1",
+      "grade": 3,
+      "substandard_description": "Given a rule, create numbers in a multiplication pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers only; no fractions, decimals, or negative numbers are permitted in patterns, tables, or explanations.\n- Limited to only within the 10 by 10 times tables.\n- Rules may only be multiplication.\n- Input is in ascending order, but not necessarily consecutive or increasing by the same amount.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:27:42.728411"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+6",
+      "grade": 3,
+      "substandard_description": "Given a rule, create numbers in a division pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers only; no fractions, decimals, or negative numbers are permitted in patterns, tables, or explanations.\n- Limited to only within the 10 by 10 times tables.\n- Rules may only be division.\n- Input is in ascending order, but not necessarily consecutive or increasing by the same amount.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:28:22.884660"
+      },
+      "phase1_selected_skills": [
+        "Division"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+3",
+      "grade": 3,
+      "substandard_description": "Identify the rule for an addition or subtraction pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- All include images of tables where the question is asking for the rule but NO tables in the question stem\n- Whole numbers only; no fractions, decimals, or negative numbers are permitted in patterns, tables, or explanations.\n- Addition and subtraction patterns are limited to numbers within 100.\n- Input is in ascending order, but not necessarily consecutive or increasing by the same amount.\n- For missing output problems, the rule is not given.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:29:05.974827"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+7",
+      "grade": 3,
+      "substandard_description": "Identify the rule for a multiplication pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- All include tables where the question is asking for the rule.\n- Whole numbers only; no fractions, decimals, or negative numbers are permitted in patterns, tables, or explanations.\n- Multiplication is limited to only within the 10 by 10 times tables.\n- Input is in ascending order, but not necessarily consecutive or increasing by the same amount.\n- For missing output problems, the rule is not given.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:29:46.025464"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+8",
+      "grade": 3,
+      "substandard_description": "Identify the rule for a division pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- All include tables where the question is asking for the rule.\n- Whole numbers only; no fractions, decimals, or negative numbers are permitted in patterns, tables, or explanations.\n- Division is limited to only within the 10 by 10 times tables.\n- Input is in ascending order, but not necessarily consecutive or increasing by the same amount.\n- For missing output problems, the rule is not given.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:30:27.029268"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts",
+        "Division"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+4",
+      "grade": 3,
+      "substandard_description": "Find missing terms in a pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers only; no fractions, decimals, or negative numbers are permitted in patterns, tables, or explanations.\n- Addition and subtraction patterns are limited to numbers within 100.\n- Multiplication and division are limited to only within the 10 by 10 times tables.\n- The inputs may or may not follow a pattern (increase by a constant amount).",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:31:08.384538"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving",
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+5",
+      "grade": 3,
+      "substandard_description": "Identify whether a number(s) is/are even or odd.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers up to 1000\n- No real world context.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:31:48.788501"
+      },
+      "phase1_selected_skills": [
+        "Division"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+9",
+      "grade": 3,
+      "substandard_description": "Explain patterns in an arithmetic pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- Products are whole numbers up to 100 and only include mutliplication facts within 10 x 10 times tables.\n- Options are just even or odd.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:32:27.786623"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NBT.A.1+1",
+      "grade": 3,
+      "substandard_description": "Round to the nearest 10 or 100 using the number line.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers only; no fractions, decimals, or negative numbers.\n- Numbers to be rounded must be less than or equal to 1,000.\n- Items must specify rounding to the nearest 10 or 100.\n- No use of variables; only numeric values are provided.\n- No word problems.\n- Must ask, \"What is ___ rounded to the nearest _____?\"\n- Explanations must round using number lines. First determine which two numbers the number is between on the number line, and then decide which it is closer to.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:33:08.775508"
+      },
+      "phase1_selected_skills": [
+        "Symbol Identification and Place Value"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NBT.A.1+2",
+      "grade": 3,
+      "substandard_description": "Round to the nearest 10 or 100.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers only; no fractions, decimals, or negative numbers.\n- Numbers to be rounded must be less than or equal to 1,000.\n- Items must specify rounding to the nearest 10 or 100.\n- No use of variables; only numeric values are provided.\n- Numbers that are two digits must be rounded to the nearest ten and numbers that are three digits must be rounded to the nearest hundred.\n- No word problems.\n- Must ask, \"What is ___ rounded to the nearest _____?\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:33:47.723691"
+      },
+      "phase1_selected_skills": [
+        "Symbol Identification and Place Value"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.C+3",
+      "grade": 3,
+      "substandard_description": "Select fractions equivalent to whole numbers",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers only.\n- No word problems\n- Do not require students to divide numbers beyond the 10 \u00d7 10 multiplication tables.",
+      "final_excellent_matches": [
+        {
+          "skill": "Fractions",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:34:27.728816"
+      },
+      "phase1_selected_skills": [
+        "Fractions",
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NBT.A.1+3",
+      "grade": 3,
+      "substandard_description": "Estimate sums and differences of whole numbers (\u2264 1,000) by rounding each addend or subtrahend to the nearest ten or hundred.",
+      "assessment_boundary": "Assessment is restricted to:\n- operations within 1,000\n- sums and differences\n- one step problems\n- Questions must say, \"Choose the better estimate.\"\n- Two digit numbers MUST be rounded to nearest 10\n- Three digit numbers MUST be rounded to nearest 100\n- Must be word problems",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:35:06.094384"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NBT.A.2+4",
+      "grade": 3,
+      "substandard_description": "Add within 1000 using models.",
+      "assessment_boundary": "Assessment is restricted to:\n- Every problem requires place value blocks\n- Three digits plus three digits\n- No word problems\n- Question stem should follow this pattern with four blanks. Only change is the actual numbers to be added \"The blocks show 251+182. You could regroup to have fewer than 10 tens and 10 ones. How many hundreds, tens, and ones would you have if you regrouped? <blank> hundreds, <balnk> tens, and <blank> ones. Complete the addition sentence. 251+182= <blank>\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:35:45.373614"
+      },
+      "phase1_selected_skills": [
+        "Addition"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NBT.A.2+1",
+      "grade": 3,
+      "substandard_description": "Fluently add within 1000 using strategies and algorithms based on place value and properties of operations.",
+      "assessment_boundary": "Assessment is restricted to:\n- Addends and sums must be whole numbers less than or equal to 1,000.\n- Both problems that require and do not require regrouping are included.\n- No use of fractions, decimals, negative numbers, or variables; only whole numbers are used.\n- No context or word problems; items are strictly computational and not embedded in real-world scenarios.\n- No Visual models\n- No estimation or rounding; answers must be exact sums\n- Only vertical addition",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:36:26.629608"
+      },
+      "phase1_selected_skills": [
+        "Addition",
+        "Symbol Identification and Place Value"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NBT.A.2+2",
+      "grade": 3,
+      "substandard_description": "Fluently subtract within 1000 using strategies and algorithms based on place value and properties of operations.",
+      "assessment_boundary": "Assessment is restricted to:\n- Minuends, subtrahends, and differences must be whole numbers less than or equal to 1,000.\n- Each problem involves only two numbers (no multi-step or multi-equation problems).\n- Problems only include three-digit numbers\n- Both problems that require and do not require regrouping are included.\n- No use of fractions, decimals, negative numbers, or variables; only whole numbers are used.\n- Only vertical horizontal forms of subtraction may be presented.\n- No context or word problems; items are strictly computational and not embedded in real-world scenarios.\n- No estimation or rounding; answers must be exact differences\n- Number sentences only - do not write the problem in words; A - B = ?",
+      "final_excellent_matches": [
+        {
+          "skill": "Subtraction",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 5,
+          "quality": "FAIR",
+          "alignment_score": 65
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 3,
+        "processing_timestamp": "2025-10-27T08:37:08.787633"
+      },
+      "phase1_selected_skills": [
+        "Subtraction"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NBT.A.2+3",
+      "grade": 3,
+      "substandard_description": "Solve word problems with addition and subtraction",
+      "assessment_boundary": "Assessment is restricted to:\n- All numbers (addends, minuends, subtrahends, sums, differences) must be whole numbers less than or equal to 1,000.\n- Each word problem must require only a single addition or subtraction operation (no multi-step or mixed-operation problems).\n- Problems must involve three-digit numbers, with or without regrouping.\n- Contexts must be clear, grade-appropriate, and solvable using addition or subtraction only; problems should not require multiplication, division, or other operations.\n- No use of fractions, decimals, negative numbers, or variables; only whole numbers are used.\n- No estimation, rounding, or comparison tasks; answers must be exact sums or differences.\n- Problems should not require students to interpret or create equations with unknowns; the focus is on solving the word problem directly\n- To solve, have students line up the number vertically.",
+      "final_excellent_matches": [
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 5,
+          "quality": "EXCELLENT",
+          "alignment_score": 90
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 2,
+        "processing_timestamp": "2025-10-27T08:37:50.170483"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.C.7+1",
+      "grade": 3,
+      "substandard_description": "Fluently multiply within 100.",
+      "assessment_boundary": "x",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "EXCELLENT",
+          "alignment_score": 100
+        },
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        },
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "EXCELLENT",
+          "alignment_score": 90
+        },
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "EXCELLENT",
+          "alignment_score": 90
+        },
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 70
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 5,
+        "processing_timestamp": "2025-10-27T08:38:25.936027"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.1+1",
+      "grade": 3,
+      "substandard_description": "Understand a fraction 1/b as the quantity formed by 1 part when a whole is partitioned into b equal parts.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, 7 or 8 only.\n- Only unit fractions (1/b) are included; focus is on understanding one part of a whole partitioned into equal parts.\n- Shapes used for partitioning may include circles, rectangles, squares, and other simple geometric figures appropriate for third grade (e.g., no irregular shapes).\n- Visual models must clearly show equal partitioning; no ambiguous or unequal parts.\n- Contexts may be included (e.g., \u201cone slice of pizza out of eight\u201d)\n- No requirement to simplify, compare, or order fractions.\n- No improper fractions, mixed numbers, or fractions greater than 1.\n- No formal addition or subtraction of fractions; combining unit fractions is limited to conceptual understanding, not computation.\n- No use of number lines\n- Question should ONLY ask, \"Which figure shows equal parts?\" or \"Which of the figures show equal parts?\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:39:05.764565"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.1+2",
+      "grade": 3,
+      "substandard_description": "Identify visual models that represent unit fractions (1/n).",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, 7 or 8 only.\n- Only unit fractions (1/b) are included\n- Must include fraction model",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:39:44.105056"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.A+1",
+      "grade": 3,
+      "substandard_description": "Plot given unit fractions (1/n) on a number line that is partitioned into n equal intervals.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, 7 or 8 only.\n- Only unit fractions (1/b) are included\n- Text Entry question stem MUST be \"What is the length of the colored segment?<br/><i>Use a slash ( / ) to write your answer as a fraction.<i><br/><blank\" and MCQ question stem MUST be \"Which number line shows a colored segment with a length of _____?\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:40:33.575800"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.A+2",
+      "grade": 3,
+      "substandard_description": "Identify unit fractions on number lines.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must be unit fractions (numerator of 1) with denominators limited to 2, 3, 4, 6, or 8.\n- The number line must be partitioned such as unit fraction being tested fall on a minor or major division in the number line.\n- The unit fraction being accessed can't be an improper fraction, mixed number, or fractions greater than 1.\n- No use of variables or algebraic symbols; only numeric fractions and points.\n- Visual models must be clear, with evenly spaced partitions and no ambiguous markings.\n- Context is not allowed; items must be purely mathematical and not embedded in real-world scenarios.\n- Number lines only label 0 and 1\n- No comparison, ordering, or equivalence of fractions; focus is solely on representing or identifying a single unit fraction on the number line\n- Must ask, \"What fraction does the number line show?\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:41:23.906835"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.A+3",
+      "grade": 3,
+      "substandard_description": "Graph unit fractions on number lines.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must be unit fractions (numerator of 1) with denominators limited to 2, 3, 4, 6, or 8.\n- The number line must be partitioned so that the unit fraction being tested falls on a minor or major division of the number line.\n- The unit fraction being accessed can't be an improper fraction, mixed number, or fractions greater than 1.\n- No use of variables or algebraic symbols; only numeric fractions and points.\n- Visual models must be clear, with evenly spaced partitions and no ambiguous markings.\n- Context is not allowed; items must be purely mathematical and not embedded in real-world scenarios.\n- No comparison, ordering, or equivalence of fractions; focus is solely on representing or identifying a single unit fraction on the number line",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:42:03.271912"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.B+1",
+      "grade": 3,
+      "substandard_description": "Represent a fraction a/b with a fraction model.",
+      "assessment_boundary": "Assessment is restricted to: \n- Fractions must have denominators of 2, 3, 4, 6, or 8. \n- Fractions must be less than one. \n- No use of mixed numbers and do not represent or convert fractions as mixed numbers. \n- No use of variables or algebraic symbols; only numeric fractions and points. \n- No comparison, ordering, or equivalence of fractions; focus is solely on representing or identifying a single fraction a/b on the fraction model. \n- If students enter an equivalent fraction, it should be marked as correct.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:42:38.688728"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.B+3",
+      "grade": 3,
+      "substandard_description": "Determine the fraction of a whole described in a word problem and select the visual model that correctly represents that fraction (denominators \u2264 12).\n",
+      "assessment_boundary": "Assessment is restricted to:\n- Word problems describing a fraction of a whole, \n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- Must have visual models\n- Context is required; data must be presented within a real-world scenario. The problem must begin with an introduction that sets up the context. For example, \"The Blue Bay pirates have found a chest of gold coins. Captain Sharktooth divides the coins into 2 equal shares. He buries 1 share in a secret place. Which model represents the fraction of the chest of gold coins that Captain Sharktooth buries?\", ",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:43:17.812122"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.B+4",
+      "grade": 3,
+      "substandard_description": "Identify the fraction that represents the length of a highlighted segment on a number line partitioned into equal intervals (denominators \u2264 12).",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must be fractions with denominators limited to 2, 3, 4, 6, or 8.\n- The number line must be partitioned into equal parts matching the denominator (e.g., halves, thirds, fourths, sixths, eighths).\n- Context is not allowed; items must be purely mathematical and not embedded in real-world scenarios.\n- No comparison, ordering, or equivalence of fractions; focus is solely on representing or identifying a single unit fraction on the number line\n- Requires number line interval stimulus\n- Fraction must be less than 1\n- Number line must end at 1\n- Text Entry question stem MUST be \"What is the length of the colored segment?<br/><i>Use a slash ( / ) to write your answer as a fraction.<i><br/><blank\" and MCQ question stem MUST be \"Which number line shows the fraction _____?\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:43:56.488471"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.B+2",
+      "grade": 3,
+      "substandard_description": "Represent a fraction a/b on a number line diagram by marking off a lengths 1/b from 0, recognizinng that the resulting interval has size a/b and that its endpoint locates the number a/b on the number line.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- Numerators (a) may be any whole number from 1 up to and including values greater than the denominator (improper fractions are allowed), but all fractions must be in the form a/b where b is 2, 3, 4, 6 or 8.\n- The number line must be partitioned into equal intervals based on the denominator, with each interval representing a unit fraction of the whole.\n- No converting between improper fractions and mixed numbers.\n- No use of variables or algebraic symbols; only numeric fractions and points.\n- No comparison, ordering, or equivalence of fractions; focus is solely on representing or identifying a single fraction a/b on the number line\n- Fractions may be proper or improper but no mixed numbers\n- Do not use unit fractions as answers\n- Labels must be written as proper or improper fractions.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:44:33.437546"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.4+1",
+      "grade": 3,
+      "substandard_description": "Generate measurement data by measuring lengths using rulers marked with halves and fourths of an inch.",
+      "assessment_boundary": "Assessment is restricted to:\n- Measurements must be in inches only; metric units are not included.\n- Rulers used must be marked with whole inches, and include tick marks for halves (1/2 inch), and fourths (1/4 inch) only; do not use rulers marked with smaller increments such as eighths or tenths.\n- Objects to be measured should have lengths that can be accurately represented as whole numbers, halves, or fourths of an inch; avoid objects whose lengths do not align with these increments.\n- All stimuli include ain image of a rules with an objecti above it, which starts at the 0 mark.\n- No negative numbers, decimals, or mixed units in measurement data.\n- No requirement to convert between units (e.g., inches to centimeters).\n- The question should not ask how many quarter or half inches something is. It should only ask how many inches something is and the answer is written as a fraction with quarter or half inches if necessary.\n- Question stem must be \"What is the length of the _____ to the nearest inch/ 1/2 inch/ 1/4 inch?\"\n- NEVER make any references to mixed numbers",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:45:26.654066"
+      },
+      "phase1_selected_skills": [
+        "Measurement"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.C+4",
+      "grade": 3,
+      "substandard_description": "Find fractions equivalent to whole numbers.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers only.\n- Solution is restricted to only the knowledge of the 10 x 10 multiplication tables..\n- Fractions must have denominators of 2, 3, 4, 5, 6, 8, or 10.\n- The initial given whole number may only be up to 5.\n- The denominators of the equivalent fractions \n- Do NOT spell out numbers (e.g. \"one\" instead of 1)\n- No word problems\n- The whole number fraction should ALWAYS have denominator 1 (e.g. in the form 3/1)",
+      "final_excellent_matches": [
+        {
+          "skill": "Fractions",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:46:08.102200"
+      },
+      "phase1_selected_skills": [
+        "Fractions",
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.A+1",
+      "grade": 3,
+      "substandard_description": "Understand two fractions as equivalent (equal) if they are the same size, or the same point on a number line.",
+      "assessment_boundary": "Assessment is restricted to:\n- If a question has multiple fraction models, they need to all be the same size and shape, and but different parts and shading. \n- Only fractions that refer to the same whole may be compared or examined for equivalence unless the explicit intent is to assess reasoning about different wholes.\n- Visual models (fraction models or number lines) are required for all questions and must clearly show equal-sized wholes and partitions.\n- Items may require students to compare, match, or explain equivalence using visuals or words, but not to generate or simplify fractions algorithmically.\n- No improper fractions, mixed numbers, or fractions greater than 1 for equivalence tasks; focus is on proper fractions and whole numbers as fractions (e.g., 2/2 = 1).\n- No requirement to order fractions.\n- No use of variables or algebraic symbols; only numeric fractions and visuals are used.\n- No formal computation of least common denominators or cross-multiplication; reasoning must be based on size, visuals, or shared location on a number line\n- For Yes or No question, question stem MUST be \"Is ___ equivalent to ____?\" and for Multiselects, question stem MUST be \"Which points in the figure show fractions equivalent to point $P$?\"",
+      "final_excellent_matches": [
+        {
+          "skill": "Fractions",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 70
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:46:52.497244"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.A+2",
+      "grade": 3,
+      "substandard_description": "Given multiple number lines with different fractions, identify two equivalent fractions.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:47:38.291669"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.A+3",
+      "grade": 3,
+      "substandard_description": "Given a fraction, graph and equivalent fraction on a number line.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- Number line always starts at 0",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:48:19.375448"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.B+1",
+      "grade": 3,
+      "substandard_description": "Recognize and generate simple equivalent fractions, explaining why the fractions are equivalent.",
+      "assessment_boundary": "Assessment is restricted to: \n- ALL fractions must have denominators of 2, 3, 4, 6, or 8. \n- No improper fractions, mixed numbers, or fractions greater than 1 are required for equivalence tasks at this grade level. \n- No more than two fractions should be used to find equivalence for. \n- No use of variables or algebraic symbols; only numeric fractions and visuals are used. \n- No requirement to compare or order non-equivalent fractions; focus is solely on recognizing or generating equivalent fractions and explaining why they are equivalent\n- No real world context\n- Students should solve these by placing the fractions on number lines and seeing which are at the same point on the number line.\n- The fraction given and the fraction answer may either both be non-simplified, or one of them is simplified.\n- Question stems MUST ask, \"Which fraction is equivalent to _____?\"",
+      "final_excellent_matches": [
+        {
+          "skill": "Fractions",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:49:08.128809"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.C+2",
+      "grade": 3,
+      "substandard_description": "Select fractions equivalent to whole numbers using models",
+      "assessment_boundary": "Assessment is restricted to:\n- The simplified fractions must have denominators of 2, 3, 4, 6, or 8\n- Models will show whole numbers broken up into the same number of equal parts.\n- Answers will be improper fractions",
+      "final_excellent_matches": [
+        {
+          "skill": "Fractions",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:49:50.064678"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.C+1",
+      "grade": 3,
+      "substandard_description": "Express whole numbers as fractions, and recognize fractions that are equivalent to whole numbers. ",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- Whole numbers may be expressed as fractions with a denominator of 1 (e.g., 3 = 3/1) or as fractions where the numerator and denominator are equal (e.g., 4/4 = 1).\n- Only proper fractions and whole numbers are included; improper fractions may be used only when the numerator equals the denominator (e.g., 5/5 = 1).\n- Items may require students to express a whole number as a fraction or identify fractions that are equivalent to whole numbers.\n- Number line diagrams may be used, but must clearly show the interval from 0 to at least 1 (and may extend beyond 1 if needed to show equivalence, e.g., 8/4 = 2).\n- Visual models (area models, number lines) may be used and must maintain the concept of the same whole when illustrating equivalence.\n- No requirement to use or identify formal vocabulary such as \u201cnumerator,\u201d \u201cdenominator,\u201d \u201cimproper fraction,\u201d or \u201cmixed number\u201d; focus is on conceptual understanding and recognition of equivalence.\n- No use of variables or algebraic symbols; only numeric fractions.\n- Do not require students to divide numbers beyond the 10 \u00d7 10 multiplication tables.",
+      "final_excellent_matches": [
+        {
+          "skill": "Fractions",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:50:49.511898"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.D+1",
+      "grade": 3,
+      "substandard_description": "Compare two unit fractions.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- Comparisons are only among two fractions\n- Students should not only enter a numerator or denominator. They should enter both or choose from options",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:51:32.763021"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.D+2",
+      "grade": 3,
+      "substandard_description": "Compare two fractions that have the same numerator.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- All fractions are less than 1\n- Answer choices must ALWAYS be '>','<','='\n- The answer is never \"=\"\n- Don't use 0 as numerator or denominator.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:52:15.944065"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.D+3",
+      "grade": 3,
+      "substandard_description": "Compare two fractions that have the same denominator.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- All fractions are less than 1\n- Answer choices must ALWAYS be '>','<','='\n- The answer is never \"=\"\n- Don't use 0 as numerator or denominator.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:52:55.248614"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.D+4",
+      "grade": 3,
+      "substandard_description": "Compare two fractions that have the same numerator or denominator.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- Only comparisons between two fractions with either the same numerator or the same denominator are allowed.\n- Fractions must refer to the same whole unless the explicit intent is to assess reasoning about different wholes.\n- Students must record the result of the comparison using the symbols >, =, or <.\n- No more than two fractions are compared in a single item; no ordering or ranking of more than two fractions at once.\n- No improper fractions, mixed numbers, or fractions greater than 1 are required for comparison tasks at this grade level.\n- No use of variables or algebraic symbols; only numeric fractions and visuals are used.\n- No formal computation of least common denominators or cross-multiplication; reasoning must be based on size, visuals, or shared location on a number line\n- No real world context",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:53:51.911354"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.1+1",
+      "grade": 3,
+      "substandard_description": "Distinguish between hour and minute hands on analog clocks, demonstrate accurate minute reading using multiplication by fives and individual tick mark counting, and analyze hour hand positioning relative to elapsed time within each hour.",
+      "assessment_boundary": "Assessment is restricted to:\n- Student is only asked to write either the hours or the minutes, but not both. In these cases, they are given one of the two.\n- Times must be shown to the nearest minute; no seconds or intervals smaller than one minute.\n- Clocks may be analog or digital; all times should be between 12:00 a.m. and 11:59 p.m..\n- Problems may require identifying the exact time shown on an analog clock (hour and minute), or matching a digital time to an analog clock.\n- Items may include times described as \u201cquarter past,\u201d \u201chalf past,\u201d or \u201cquarter till,\u201d (or quarter to\"), but must also require students to state or write the time numerically (e.g., 3:15, 4:30, 5:45).\n- No elapsed time, addition, or subtraction of time intervals in this substandard (those are assessed separately under 3.MD.A.1b).\n- No use of military time or 24-hour clock notation; only standard 12-hour clock format is used.\n- Visuals must be clear and unambiguous, with minute and hour hands distinguishable and minute marks visible.\n- No requirement to use or identify formal vocabulary such as \u201canalog,\u201d \u201cdigital,\u201d \u201ca.m.,\u201d or \u201cp.m.\u201d, though these may appear incidentally.\n- No estimation or rounding; exact time to the minute is required.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:54:28.085986"
+      },
+      "phase1_selected_skills": [
+        "Multiplication"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.1+2",
+      "grade": 3,
+      "substandard_description": "Find the elapsed time in mathematical problems.",
+      "assessment_boundary": "Assessment is restricted to:\n- Time intervals and clock times must be whole minutes; no seconds or intervals smaller than one minute.\n- Elapsed time may cross bewteen am and pm\n- All times must be between 12:00 a.m. and 11:59 p.m.; no use of military (24-hour) time or seconds.\n- Always include a.m. or p.m. with time.\n- No word problems.\n- Single step problem.\n- The answer must may not exceed one hour",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:55:07.274939"
+      },
+      "phase1_selected_skills": [
+        "Subtraction"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.1+4",
+      "grade": 3,
+      "substandard_description": "Find the elapsed time: word problems.",
+      "assessment_boundary": "Assessment is restricted to:\n- Time intervals and clock times must be whole minutes; no seconds or intervals smaller than one minute.\n- Start times, end times, and elapsed times must all be within the same 12-hour period (e.g., no problems crossing noon or midnight).\n- All times must be between 12:00 a.m. and 11:59 p.m.; no use of military (24-hour) time or seconds.\n- Always include a.m. or p.m. with time.\n- Must be word problems.\n- Single step problem.\n- Elapsed time that is more than one hour need to be written as ___ hours and ____ minutes. Mintutes cannot exceed 59.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:55:49.723904"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.1+5",
+      "grade": 3,
+      "substandard_description": "Solve word problems to find the end time.",
+      "assessment_boundary": "Assessment is restricted to:\n- Time intervals and clock times must be whole minutes; no seconds or intervals smaller than one minute.\n- Start times, end times, and elapsed times must all be within the same 12-hour period (e.g., no problems crossing noon or midnight).\n- All times must be between 12:00 a.m. and 11:59 p.m.; no use of military (24-hour) time or seconds.\n- Always include a.m. or p.m. with time.\n- Must be word problems.\n- Single step problem.\n- When a time is greater than one hour, it should be written as hours and minutes. Minutes should never exceed 59.\n- a.m. and p.m. should always be given to the student and they shouldn't have to decide between the two.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:56:30.233433"
+      },
+      "phase1_selected_skills": [
+        "Measurement"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.1+6",
+      "grade": 3,
+      "substandard_description": "Solve word problems to find the start, end, or elapsed time.",
+      "assessment_boundary": "Assessment is restricted to:\n- Time intervals and clock times must be whole minutes; no seconds or intervals smaller than one minute.\n- All times must be between 12:00 a.m. and 11:59 p.m.; no use of military (24-hour) time or seconds.\n- Always include a.m. or p.m. with time.\n- Must be word problems.\n- Single step problem.\n- Elapsed time that is more than one hour need to be written as ___ hours and ____ minutes. Mintutes cannot exceed 59.\n- For start and end times, students are asked to \"Include A.M. or P.M. in your answer (for example, 10:38 A.M.).\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:57:15.132228"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.1+7",
+      "grade": 3,
+      "substandard_description": "Solve two step start and end time word problems.",
+      "assessment_boundary": "Assessment is restricted to:\n- Time intervals and clock times must be whole minutes; no seconds or intervals smaller than one minute.\n- All times must be between 12:00 a.m. and 11:59 p.m.; no use of military (24-hour) time or seconds.\n- Always include a.m. or p.m. with time.\n- Must be word problems.\n- Students are asked to \"Include A.M. or P.M. in your answer (for example, 10:38 A.M.).\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T08:57:53.108950"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.2+1",
+      "grade": 3,
+      "substandard_description": "Measure and estimate liquid volumes using liters (l).",
+      "assessment_boundary": "Assessment is restricted to:\n\nMust ask, \"Which is the better estimate (ml or L) for the volume of ________? <br> X <blank>\".\n\ne.g. \"Which is a better estimate (ml or L) for the volume of a pepper shaker? <br> 33 <blank>\" Answer: ml\n\nAnswer can ONLY be mL or L (Never any numbers or the long form \"liters\" and \"mililiters\")\n\nOnly use liters and mililiters",
+      "final_excellent_matches": [
+        {
+          "skill": "Measurement",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 70
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:58:33.123304"
+      },
+      "phase1_selected_skills": [
+        "Measurement"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.2+2",
+      "grade": 3,
+      "substandard_description": "Measure and estimate the masses of objects using standard units of grams (g) and kilograms (kg).",
+      "assessment_boundary": "Assessment is restricted to:\n\nMust ask, \"Which is the better estimate (g or kg) for the mass of ________? <br> X <blank>\".\n\ne.g. \"Which is a better estimate (g or kg) for the mass of a toothbrush? <br> 26 <blank>\" Answer: g\n\nAnswer can ONLY be g or kg (Never any numbers or the long form \"grams\" and \"kilograms\")\n\nOnly use kilograms and grams",
+      "final_excellent_matches": [
+        {
+          "skill": "Measurement",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:59:12.298700"
+      },
+      "phase1_selected_skills": [
+        "Measurement"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+5",
+      "grade": 3,
+      "substandard_description": "Identify parallelograms.",
+      "assessment_boundary": "Assessment is restricted to:\n- Images of quadrilaterals\n- Side lengths are not labeled",
+      "final_excellent_matches": [
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 5,
+          "quality": "EXCELLENT",
+          "alignment_score": 100
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T08:59:49.733544"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.C.7+2",
+      "grade": 3,
+      "substandard_description": "Fluently divide within 100.",
+      "assessment_boundary": "x",
+      "final_excellent_matches": [
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Division",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 75
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 5,
+        "processing_timestamp": "2025-10-27T09:00:31.570557"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.2+3",
+      "grade": 3,
+      "substandard_description": "Solve word problems involving the addition, subtraction, multiplication, or division of masses or volumes, with all measurements provided in the same unit",
+      "assessment_boundary": "Assessment is restricted to:\n\nArithmetic students know is multiplication/division only including up to 10 by 10 multiplication facts, and addition and subtraction within 1000,\n\nAll measurements of mass and volume must use standard metric units: grams (g), kilograms (kg), or liters (l); no other units (such as milligrams, pounds, or milliliters) are permitted.\n\nAll measurements in a given problem must use the same unit (e.g., all in grams, all in kilograms, or all in liters); no conversion between units required or allowed.\n\nAll numbers used in problems must be whole numbers; no decimals, fractions, or negative numbers.\n\nNo compound units (e.g., cm\u00b3) or problems involving geometric volume calculations.\n\nNo multiplicative comparison language (e.g., \u201ctimes as much\u201d).\n\nVisual models (such as beakers or scales) may be included but are not required.\n\nNo context or word problems requiring conversion between units (e.g., grams to kilograms).\n\nNo use of variables or algebraic symbols; only numeric values are used.\n\nNo use of negative numbers or zero as a divisor.\n\nNo requirement to estimate; all answers should be exact and based on the given data.\n\nWhen three digit numbers are used, at least one of them must be a multiple of ten.\n\nOne step problems only.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:01:12.411083"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.3+1",
+      "grade": 3,
+      "substandard_description": "Draw a scaled picture graph to represent a data set with several categories.",
+      "assessment_boundary": "Assessment is restricted to:\n- Data sets must have no more than five categories.\n- All data values must be whole numbers within 0\u2013100.\n- Each picture symbol in the graph must represent a set number of items. This is restricted to 2, 5 or 10; scales of 1 are not permitted.\n- Each category must have a value that is a whole number multiple of the scale (e.g., if the scale is 5, category totals must be 0, 5, 10, 15, etc.).\n- No fractional or partial symbols should be used; each symbol must represent a whole number of items.\n- No negative numbers, decimals, or fractions in the data or graph.\n- Context is required; data must be presented within a real-world scenario.\n- No requirement to create or interpret graphs with more than one scale per graph.\n- No multi-step problems requiring calculations beyond simple addition or subtraction of category totals.\n- No use of variables or algebraic symbols; only numeric values and picture symbols are used.\n- All data should be a multiple of the scale being used. For example, if every object represents 3 object, then the data should always be a multiple of 3.\n- Question should ask, \"Which picture graph matches the following data:\"",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:01:55.546759"
+      },
+      "phase1_selected_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.3+5",
+      "grade": 3,
+      "substandard_description": "Interpret a picture graph.",
+      "assessment_boundary": "Assessment is restricted to:\n- Data sets must have no more than five categories.\n- All data values must be whole numbers within 0\u2013100.\n- Each picture symbol in the graph must represent a set number of items. This is restricted to 2, 5 or 10; scales of 1 are not permitted.\n- Each category must have a value that is a whole number multiple of the scale (e.g., if the scale is 5, category totals must be 0, 5, 10, 15, etc.).\n- No negative numbers, decimals, or fractions in the data or graph.\n- Context is required; data must be presented within a real-world scenario.\n- No requirement to create or interpret graphs with more than one scale per graph.\n- No multi-step problems requiring calculations beyond simple addition or subtraction of category totals.\n- No use of variables or algebraic symbols; only numeric values and picture symbols are used.\n- When the whole object in the key represents a set of objects, if a half symbol is used, it also needs to be on the key. For example, if a whole cookie is 10 batches of cookies, then half a cookie is 5 batches of cookies, and both need to be represented on the key.",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:02:35.306638"
+      },
+      "phase1_selected_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.3+2",
+      "grade": 3,
+      "substandard_description": "Draw a scaled bar graph to represent a data set with several categories",
+      "assessment_boundary": "Assessment is restricted to:\n- Data sets must have no more than five categories.\n- All data values must be whole numbers.\n- The frequencies for the bar graph must be a whole number 1-10, or a multiple of 10, or 100; scales of 1 are not permitted for scaled graphs.\n- The scale must be consistent.\n- No fractional, partial, or negative bars; each bar must represent a whole number of items.\n- No decimals or fractions in the data or graph.\n- Context is required; data must be presented within a real-world scenario.\n- No requirement to create or interpret graphs with more than one scale per graph.\n- No use of variables or algebraic symbols; only numeric values and bar heights are used\n- Interpreting questions are only one step.\n- Every bar graph requires an intro sentence setting up the context (e.g. Vijay kept a driving log to see how many miles he drove each day.)",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:03:20.662501"
+      },
+      "phase1_selected_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.3+6",
+      "grade": 3,
+      "substandard_description": "Interpret a scaled bar graph.",
+      "assessment_boundary": "Assessment is restricted to:\n- Data sets must have no more than five categories.\n- All data values must be whole numbers.\n- The scale for the bar graph must be 2, 3, 4, 5, 10, 50, and 100; scales of 1 are not permitted for scaled graphs. ALL values must share the same scale ALWAYS\n- The scale must be consistent.\n- A bar could be between two scale markings, but must still be a whole number.\n- No fractional, partial, or negative bars; each bar must represent a whole number of items.\n- No decimals or fractions in the data or graph.\n- Context is required; data must be presented within a real-world scenario.\n- No requirement to create or interpret graphs with more than one scale per graph.\n- No use of variables or algebraic symbols; only numeric values and bar heights are used\n- Interpreting questions are only one step.\n- Every bar graph requires an intro sentence setting up the context (e.g. Vijay kept a driving log to see how many miles he drove each day.)",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:03:57.493557"
+      },
+      "phase1_selected_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.3+3",
+      "grade": 3,
+      "substandard_description": "Solve problems on scaled bar graphs.",
+      "assessment_boundary": "Assessment is restricted to:\n- Must use bar graph.\n- All data values must be whole numbers within 0\u2013100.\n- Each category\u2019s value must be a whole number and every vertical tick mark must be labeled.\n- No fractional, partial, or negative values in data or graphs.\n- Context is required; data must be presented within a real-world scenario. The problem must begin with an introduction that sets up the context. For example, \"Caleb collects battle trading cards. He made a bar graph to show the kinds of cards he had.\", \n- No use of variables or algebraic symbols; only numeric values and standard data display notation are used.\n- In the question stem do NOT use \"in the image...\", instead ask the question directly.",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:04:41.008758"
+      },
+      "phase1_selected_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.4+2",
+      "grade": 3,
+      "substandard_description": "Create line plots to display measurement data with a horizontal scale marked off in whole numbers, halves, or quarters.",
+      "assessment_boundary": "Assessment is restricted to:\n- Measurement data must be generated by measuring lengths using rulers marked only with whole numbers, halves (1/2), or quarters (1/4) of an inch.\n- All measurements must be in inches; metric units are not permitted.\n- Line plots must use a horizontal scale marked in whole numbers, halves, or quarters only; no other fractional increments, decimals, or negative numbers are allowed.\n- Data sets must be manageable in size for third grade (generally 5\u201310 data points per set).\n- Each line plot must represent a single set of measurement data; no compound or multi-variable plots.\n- No requirement to interpret or create line plots with scales other than whole numbers, halves, or quarters.\n- No word problems requiring multi-step analysis; focus is on constructing or interpreting the line plot and answering straightforward questions about quantity.\n- No use of variables or algebraic symbols; only numeric values and standard line plot notation are used.\n- No requirement to calculate mean, median, or mode; items may only require counting or comparing quantities represented on the plot.\n- Problems require context before the data (e.g. Jennifer was curious about how much syrup her brother put on his favorite food, pancakes. Before breakfast each day, Jennifer recorded how much syrup was in the bottle. After breakfast, she figured out how much syrup he had eaten by remeasuring the amount of syrup in the bottle. She recorded the results.)",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:05:25.271520"
+      },
+      "phase1_selected_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.4+3",
+      "grade": 3,
+      "substandard_description": "Interpret a line plot.",
+      "assessment_boundary": "Assessment is restricted to:\n- Measurement data must be generated by measuring lengths using rulers marked only with whole numbers, halves (1/2), or quarters (1/4) of an inch.\n- All measurements must be in inches; metric units are not permitted.\n- Line plots must use a horizontal scale marked in whole numbers, halves, or quarters only; no other fractional increments, decimals, or negative numbers are allowed.\n- Data sets must be manageable in size for third grade (generally 5\u201310 data points per set).\n- Each line plot must represent a single set of measurement data; no compound or multi-variable plots.\n- No requirement to interpret or create line plots with scales other than whole numbers, halves, or quarters.\n- No word problems requiring multi-step analysis; focus is on constructing or interpreting the line plot and answering straightforward questions about quantity.\n- No use of variables or algebraic symbols; only numeric values and standard line plot notation are used.\n- No requirement to calculate mean, median, or mode; items may only require counting or comparing quantities represented on the plot.\n- All single step problems.\n- Problems require context before the data (e.g. Jennifer was curious about how much syrup her brother put on his favorite food, pancakes. Before breakfast each day, Jennifer recorded how much syrup was in the bottle. After breakfast, she figured out how much syrup he had eaten by remeasuring the amount of syrup in the bottle. She recorded the results.)",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:06:18.933094"
+      },
+      "phase1_selected_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+6",
+      "grade": 3,
+      "substandard_description": "Identify rhombuses.",
+      "assessment_boundary": "Assessment is restricted to:\n- Images of quadrilaterals all with all side lengths labeled or identified as being the same.",
+      "final_excellent_matches": [
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 5,
+          "quality": "FAIR",
+          "alignment_score": 70
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:06:59.172750"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.3+4",
+      "grade": 3,
+      "substandard_description": "Solve two-step additive-comparison problems that require combining or comparing results from categorical data represented in a pictograph, or bar graph with scaled intervals.",
+      "assessment_boundary": "Assessment is restricted to:\n- Data displays (frequency tables, pictographs, bar graphs, line plots) must include no more than five categories.\n- All data values must be whole numbers.\n- Scaled intervals for pictographs must be whole numbers between 1-10, or a multiple of 10; scales of 1 are not permitted.\n- Scaled intervals for bar graphs and frequency charts must be whole numbers between 1-10, a multiple of 10, or 100; scales of 1 are not permitted.\n- Each category\u2019s value must be a whole number.\n- No fractional, partial, or negative values in data or graphs.\n- Only two-step problems are included; no single step problems and no problems that require more than two steps.\n- Context is required; data must be presented within a real-world scenario\n- No use of variables or algebraic symbols; only numeric values and standard data display notation are used.\n- No more than one scale per graph\n- No comparing more than three categories in a single question",
+      "final_excellent_matches": [
+        {
+          "skill": "Data Analysis",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:07:37.675653"
+      },
+      "phase1_selected_skills": [
+        "Data Analysis"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.6+1",
+      "grade": 3,
+      "substandard_description": "Measure areas by counting unit squares.",
+      "assessment_boundary": "Assessment is restricted to:\n- Plane figures must be able to be completely covered by unit squares without gaps or overlaps \n- Only whole-number counts of unit squares are used; no partial, fractional, or decimal units..\n- Shapes must be presented on a grid or with clear unit squares delineated;\n- No word problems\n- No requirement to use formulas for area; students must find area by direct counting of unit squares.\n- No requirement to decompose or compose shapes for this substandard (that is assessed in later standards)..\n- Only use square units for area.\n- Area is less than 20\n- Always spell out units. Do not use abbreviations.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:08:15.455650"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.B+1",
+      "grade": 3,
+      "substandard_description": "Multiply side lengths to find areas of rectangles with whole-number side lengths for solving mathematical problems.",
+      "assessment_boundary": "Assessment is restricted to:\n- Rectangles and squares only; other polygons or irregular shapes are not included.\n- Side lengths must be whole numbers and may be expressed in standard units (e.g., centimeters, meters, inches, feet, yards).\n- Both side lengths must be given\n- All areas and side lengths must be whole numbers; no fractions, decimals, or negative numbers.\n- Areas must only use mutliplication up to 10 by 10 times tables.\n- Must be mathematical without real world context.\n- No requirement to use or interpret exponential notation (e.g., cm\u00b2); \u201csquare centimeters\u201d or similar language is acceptable.\n- No requirement to decompose or compose shapes (this is assessed in other substandards).\n- No multi-step problems; each item should require only a single multiplication to find area or a single selection from given options.\n- No requirement to solve for missing side lengths when only area is given; both side lengths must be provided for area calculation.\n- No use of variables or algebraic symbols; only numeric values and standard unit labels are used.\n- Only mathematical problems and no real world context.",
+      "final_excellent_matches": [
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        },
+        {
+          "skill": "Measurement",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "EXCELLENT",
+          "alignment_score": 90
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 2,
+        "processing_timestamp": "2025-10-27T09:08:54.175705"
+      },
+      "phase1_selected_skills": [
+        "Geometry",
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.B+3",
+      "grade": 3,
+      "substandard_description": "Given the area and a side, find the missing side length.",
+      "assessment_boundary": "Assessment is restricted to:\n- Rectangles (not squares) only; other polygons or irregular shapes are not included.\n- Side lengths must be whole numbers and may be expressed in standard units (e.g., centimeters, meters, inches, feet, yards).\n- All areas and side lengths must be whole numbers; no fractions, decimals, or negative numbers.\n- Side length may only be single digits, \n- No requirement to use or interpret exponential notation (e.g., cm\u00b2); only use thw word form, e.g. \u201csquare centimeters.\u201d\n- No requirement to decompose or compose shapes (this is assessed in other substandards).\n- No multi-step problems; each item should require only a single multiplication to find area or a single selection from given options.\n- No use of variables or algebraic symbols; only numeric values and standard unit labels are used.\n- Questions must say: The <length/width> of the rectangle is <___> <units>. The area is <___> square <units>.\nWhat is the <length/width> of the rectangle?\n- Always spell out units. Do not use abbreviations.",
+      "final_excellent_matches": [
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "EXCELLENT",
+          "alignment_score": 90
+        },
+        {
+          "skill": "Multiplication",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 70
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        },
+        {
+          "skill": "Problem Solving",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 4,
+        "processing_timestamp": "2025-10-27T09:09:31.415636"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+1",
+      "grade": 3,
+      "substandard_description": "Identify quadrilaterals \u2014including rhombuses, rectangles, squares, and parallelograms\u2014by analyzing visible attributes such as number of sides, right angles, and equal-length sides.",
+      "assessment_boundary": "Assessment is restricted to:\n- Shapes are limited to two-dimensional figures, specifically quadrilaterals: rhombuses, rectangles, squares, parallelograms, and trapezoids. \n- Pictures of kites and trapezoids can be included but should only be referenced as quadrilaterals and not named.\n- Only geometric attributes appropriate for grade 3 are assessed: number of sides, number of angles, presence of right angles, and whether sides are of equal length or are straight lines.\n- Shapes may be presented in various orientations, but must remain recognizable and not be irregular or ambiguous.\n- No three-dimensional shapes or polygons with more or fewer than four sides.\n- No requirement to use or identify formal vocabulary for \u201cperpendicular,\u201d \u201ccongruent,\u201d or \u201cdiagonal.\u201d\n- Visual models (drawings, tables, or diagrams) may be used, but must clearly display the relevant attributes for comparison or classification.\n- No use of variables or algebraic symbols; only numeric values and shape names are used.",
+      "final_excellent_matches": [
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 5,
+          "quality": "FAIR",
+          "alignment_score": 75
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:10:12.922040"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.B+2",
+      "grade": 3,
+      "substandard_description": "Solve real-world word problems involving areas of rectangles with whole-number side lengths",
+      "assessment_boundary": "Assessment is restricted to:\n- Real-world contect is required.\n- Rectangles and squares only; other polygons or irregular shapes are not included.\n- Both side lengths must be whole numbers and may be expressed in standard units (e.g., centimeters, meters, inches, feet, yards).\n- Calculating the area may only involve single digit multiplication up to ten,\n- All side lengths and areas must be whole numbers; no fractions, decimals, or negative numbers.\n- All problems must be set in a real-world context appropriate for third grade\n- Both side lengths must be provided, either in an image or in a verbal description; students are not required to solve for a missing side given only the area.\n- No requirement to use or interpret exponential notation (e.g., cm\u00b2); \u201csquare centimeters\u201d or similar language is acceptable.\n- No requirement to decompose or compose shapes for this substandard; focus is on multiplying given side lengths to find area.\n- Each item should require only a single multiplication to find area or a single selection from given options; no multi-step problems.\n- No use of variables or algebraic symbols; only numeric values and standard unit labels are used.",
+      "final_excellent_matches": [
+        {
+          "skill": "Measurement",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 75
+        },
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 2,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 2,
+        "processing_timestamp": "2025-10-27T09:10:53.108490"
+      },
+      "phase1_selected_skills": [
+        "Geometry",
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.C+1",
+      "grade": 3,
+      "substandard_description": "Use tiling to demonstrate that the area of a rectangle with whole-number side lengths a and b + c equals the sum of the areas a \u00d7 b and a \u00d7 c.",
+      "assessment_boundary": "Assessment is restricted to:\n- Figures must be rectangles with whole-number side lengths; side lengths and resulting areas must be whole numbers.\n- The sum of the side lengths (a and b + c) must not exceed 10 for any dimension, and the total area must not exceed 100 square units (e.g., 4 \u00d7 (2 + 3) = 4 \u00d7 5 = 20).\n- Tiling and area models must be used to visually represent the distributive property; diagrams must clearly show partitioning of the rectangle into two smaller rectangles.\n- Only one equation or diagram is required per item; no multi-step or compound distributive property problems.\n- Equations must be limited to the form a\u00d7(b+c)=(a\u00d7b)+(a\u00d7c) using whole numbers only.\n- No requirement to use or interpret exponential notation (e.g., cm\u00b2); \u201csquare units\u201d or similar language is acceptable.\n- No use of variables or algebraic symbols; only numeric values and standard mathematical symbols are used.\n- Visual required\n- No word problems\n- Should be worded as, \"Which equation uses the distributive property to find the area of the rectangle. Each small square represents 1 square unit.\u201d",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:11:37.381664"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.D+1",
+      "grade": 3,
+      "substandard_description": "Recognize area as an additive property.",
+      "assessment_boundary": "Assessment is restricted to:\n- Figures must be rectilinear (composed entirely of non-overlapping rectangles and/or squares) with whole-number side lengths.\n- All side lengths and areas must be whole numbers; no fractions, decimals, or negative numbers.\n- Each composite figure may be partitioned into 2\u20134 non-overlapping rectangles or squares.\n- The total area of the composite figure and the areas of all component rectangles must not exceed 100 square units.\n- All component rectangles must be clearly delineated and labeled with side lengths or areas as needed; missing side lengths can be determined using shared sides, but each must be solvable with a single logical step.\n- Only addition and subtraction are used to find total area (e.g., add the areas of all non-overlapping rectangles, or subtract the area of a cut-out from the whole).\n- No requirement to use or interpret exponential notation (e.g., cm\u00b2); \u201csquare units\u201d or similar language is acceptable.\n- No requirement to use variables or algebraic symbols; only numeric values and standard mathematical symbols are used.\n- No requirement to solve for perimeter or other attributes; focus is solely on area.\nAll sides are labeled.\n- No word problems.\n- Every question should ask, \"What is the area of this figure?\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:12:16.268934"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.D+2",
+      "grade": 3,
+      "substandard_description": "Solve problems involving the area of composite figures.",
+      "assessment_boundary": "Assessment is restricted to:\n- Figures must be rectilinear (composed entirely of non-overlapping rectangles and/or squares) with whole-number side lengths.\n- All side lengths and areas must be whole numbers; no fractions, decimals, or negative numbers.\n- Each composite figure may be partitioned into 2\u20134 non-overlapping rectangles or squares.\n- The total area of the composite figure and the areas of all component rectangles must not exceed 100 square units.\n- Prohibited to use or interpret exponential notation (e.g., cm\u00b2, units^2); \u201csquare units\u201d or similar language is the only acceptable form.\n- No requirement to use variables or algebraic symbols; only numeric values and standard mathematical symbols are used.\n- No requirement to solve for perimeter or other attributes; focus is solely on area.\n- Two side lengths are missing. The problem must still be solveable with third grade appropriate reasoning though.\n- Missing sides may only require addition.\n- Figures CANNOT be referred to as \"L-shaped\", \"T-shaped\", \"composite figure\" or \"complex figure\" in question stem, ONLY \"figure\"",
+      "final_excellent_matches": [
+        {
+          "skill": "Measurement",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 70
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:13:10.890642"
+      },
+      "phase1_selected_skills": [
+        "Problem Solving"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.D.8+1",
+      "grade": 3,
+      "substandard_description": "Solve mathematical problems involving perimeters of polygons.",
+      "assessment_boundary": "Assessment is restricted to:\n- Polygons must have whole-number side lengths; no fractions, decimals, or negative numbers are permitted.\n- The sides are one or two digit numbers.\n- Problems must require finding the perimeter by adding all side lengths\n- Visuals (diagrams or labeled figures) may be included but are not required.\n- No requirement to use or interpret exponential notation (e.g., cm\u00b2); \u201cunits\u201d or \u201cunits long\u201d is acceptable for perimeter.\n- No requirement to solve for area in the same item; focus is solely on perimeter.\n- No context or word problems \n- No use of variables or algebraic symbols; only numeric values and standard mathematical symbols are used.\n- For shapes where only one side length is given, the problem must state that \"All of its sides are the same length.\"\n- Side lengths should not exceed 25",
+      "final_excellent_matches": [
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:13:48.811924"
+      },
+      "phase1_selected_skills": [
+        "Geometry",
+        "Addition"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.D.8+6",
+      "grade": 3,
+      "substandard_description": "Solve perimeter problems for squares and rectangles where students must infer equal opposite sides: only one side is given for a square, and only the length and width are given for a rectangle.",
+      "assessment_boundary": "Assessment is restricted to:\n- Polygons must have whole-number side lengths; no fractions, decimals, or negative numbers are permitted.\n- Perimeter problems are limited to squares and rectangles.\n- The sides are less than 20 with at most, one side being double digits.\n- Problems must require finding the perimeter by adding all side lengths\n- Visuals (diagrams or labeled figures) may be included but are not required.\n- No requirement to use or interpret exponential notation (e.g., cm\u00b2); \u201cunits\u201d or \u201cunits long\u201d is acceptable for perimeter.\n- No requirement to solve for area in the same item; focus is solely on perimeter.\n- No context or word problems \n- No use of variables or algebraic symbols; only numeric values and standard mathematical symbols are used.\n- If the shape is a square, only one side length is provided. If the shape is a rectangle, both the length and width are provided (only two sides, not all four).\n- If the shape is a square, the problem must state that it is a square so that the student knows they can assume all sides are equal.\n- If the shape is a rectangle, the problem must state that it is a rectangle so that the student knows they can assume opposite sides are equal.",
+      "final_excellent_matches": [
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "EXCELLENT",
+          "alignment_score": 95
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:14:31.117962"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.D.8+3",
+      "grade": 3,
+      "substandard_description": "Solve perimeter problems in which the perimeter is given but a side length is missing.",
+      "assessment_boundary": "Assessment is restricted to:\n- Polygons must have whole-number side lengths; no fractions, decimals, or negative numbers are permitted.\n- Perimeter problems are limited to polygons\n- The sides are single digits\n- Problems must require finding a missing side length when the total perimeter and all other side lengths are given.\n- Side length is labeled with abbreviated units and answer includes fulled spelled units.\n- No requirement to solve for area in the same item; focus is solely on perimeter.\n- No context or word problems \n- No use of variables or algebraic symbols; only numeric values and standard mathematical symbols are used.\n- Real world units are limited to feet, yards, meters, centimeters, inches and units.\n- Cannot involve dividing a number larger than 20 by 2.\n- Cannot require dividing a number larger than 40 by 4.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:15:08.472975"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.D.8+2",
+      "grade": 3,
+      "substandard_description": "Solve word problems involving perimeters of polygons.",
+      "assessment_boundary": "Assessment is restricted to:\n- Polygons must have whole-number side lengths; no fractions, decimals, or negative numbers are permitted.\n- Squares and rectangles only.\n- All calculations and given values must be within 100.\n- Problems require real-world context.\n- No requirement to solve for area in the same item; focus is solely on perimeter.\n- Units can be centimeters, meteres, inches, feet, or units\n- No use of variables or algebraic symbols; only numeric values and standard mathematical symbols are used.\n- No image\n- Cannot require dividing a number larger than 20 by 2.\n- Cannot require dividing a number larger than 40 by 4.",
+      "final_excellent_matches": [
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 1,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:15:42.797302"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+2",
+      "grade": 3,
+      "substandard_description": "Compare quadrilaterals to determine how shared attributes group them into larger or overlapping categories (e.g., explaining why every square is both a rectangle and a rhombus).",
+      "assessment_boundary": "Assessment is restricted to:\n- Shapes are limited to two-dimensional figures, specifically quadrilaterals: rhombuses, rectangles, squares, and parallelograms \n- Pictures of kites can be included but should only be referenced as quadrilaterals and not named.\n- Only geometric attributes appropriate for grade 3 are assessed: number of sides, number of angles, presence of right angles, and whether sides are of equal length or are straight lines.\n- Shapes may be presented in various orientations, but must remain recognizable and not be irregular or ambiguous.\n- No three-dimensional shapes or polygons with more or fewer than four sides.\n- No requirement to use or identify formal vocabulary for \u201cperpendicular,\u201d \u201ccongruent,\u201d or \u201cdiagonal.\u201d\n- Visual models (drawings, tables, or diagrams) may be used, but must clearly display the relevant attributes for comparison or classification.\n- No use of variables or algebraic symbols; only numeric values and shape names are used.\n- Shapes that are rhombuses need to indicate that side lengths are the same.\n- Question should ask, \"Select all the ________\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:16:38.253826"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.D.8+4",
+      "grade": 3,
+      "substandard_description": "Solve word problems involving area, perimeter, and side length.",
+      "assessment_boundary": "Assessment is restricted to:\n- Must have whole-number side lengths; no fractions, decimals, or negative numbers are permitted.\n- Perimeter problems are limited to squares and rectangles onle\n- No composite shapes\n- The sides are all either within ten or are multiples of ten.\n- Problems may require finding the perimeter by adding all side lengths, or finding a missing side length when the total perimeter and other side lengths are given.\n- No visuals (diagrams or labeled figures) may be included but are not required.\n- No requirement to use or interpret exponential notation (e.g., cm\u00b2); \u201cunits\u201d or \u201cunits long\u201d is acceptable for perimeter.\n- No requirement to solve for area in the same item; focus is solely on perimeter.\n- No use of variables or algebraic symbols; only numeric values and standard mathematical symbols are used.\n- Word problem are required\n- Problems to find perimeter or area, squares give one side length only.\n- Perimeter problems to find a missing side of a square are given the perimeter only and no side lengths.\n- Area problems to find a missing side of a square are given the area only and no side lengths. To solve these, the students think about what times itself is equal to that area. DO NOT EXPLAIN with square roots.\n- Perimeter problems to find a missing side of a rectangle (that is not a square) are given the perimeter only and one side length.\n- Area problems to find a missing side of a rectangle (that is not a square) are given the area only and one side lengths. ",
+      "final_excellent_matches": [
+        {
+          "skill": "Measurement",
+          "grade": 3,
+          "sequence_number": 4,
+          "quality": "FAIR",
+          "alignment_score": 65
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:17:15.442513"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.D.8+7",
+      "grade": 3,
+      "substandard_description": "Given multiple shapes, determine which shapes have the same area.",
+      "assessment_boundary": "Assessment is restricted to:\n- Must use shapes made out of unit squares.\n- Questions must ask students to \"Select the two shapes that have the same area. The shapes are made of unit squares.\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:17:59.739257"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.D.8+5",
+      "grade": 3,
+      "substandard_description": "Solve problems with rectangles with the same perimeter and different areas or with the same area and different perimeters.",
+      "assessment_boundary": "Assessment is restricted to:\n- Rectangles only; all side lengths must be whole numbers.\n- Perimeter and area calculations are limited adding with sums less than 30, and multipliying single digits by single digits\n- Problems must focus on identifying, comparing, or selecting rectangles that have:\nThe same perimeter but different areas, or The same area but different perimeters.\n- All side lengths and calculated values must be whole numbers; no fractions, decimals, or negative numbers.\n- Visuals (diagrams, grids, or labeled rectangles) may be included but are not required.\n- Perimeter is measured in centimeters, meters, inches, yard, or units, and area is measured in centimeters squared, inches squared, yards squared, or units squared.\n- No use of variables or algebraic symbols; only numeric values and standard mathematical symbols are used.\n- Question stem MUST be either \"Which rectangles have the same perimeter but different areas?\\nSelect TWO correct answers\" or \"Which rectangles have the same area but different perimeters?\\nSelect TWO correct answers\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:18:39.519458"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+3",
+      "grade": 3,
+      "substandard_description": "Recognize and describe basic geometric features: edges, vertices, parallel sides, and right angles.",
+      "assessment_boundary": "Assessment is restricted to:\n- Shapes are limited to two-dimensional figures\n- No requirement to use or identify formal vocabulary for \u201cperpendicular,\u201d \u201ccongruent,\u201d or \u201cdiagonal.\u201d\n- right angles must have right angle markings\n- Right angles are defined as square corners and degrees are not discussed yet in third grade.\n- Only refer to one shape at a time. Do not combine shapes.\n- No use of || to indicate parallel sides\n- There are always 0, 1 or 2 parallel sides.\n- Questions should ask, \"How many pairs of opposite sides are parallel?\"",
+      "final_excellent_matches": [
+        {
+          "skill": "Geometry",
+          "grade": 3,
+          "sequence_number": 3,
+          "quality": "FAIR",
+          "alignment_score": 75
+        }
+      ],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 1,
+        "processing_timestamp": "2025-10-27T09:19:16.053429"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+4",
+      "grade": 3,
+      "substandard_description": "Determine if an angle is greater than, equal to, or less than a right angle.",
+      "assessment_boundary": "Assessment is restricted to:\n- Angles less than or equal to 180.\n- DO NOT refer to angles as acute or obtuse.\n- DO NOT explain the angles in terms of degrees. The stimulus can use a number measurement to draw the angle.\n- Angles should not be described as \"open wider\" or \"open less\", just greater than or less than\n- Must have 3 answer options\n- Question stem CANNOT use \"corner angle\", instead ALWAYS use \"right angle\"\n- Polygons only",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:20:06.696117"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.1+3",
+      "grade": 3,
+      "substandard_description": "Write the time shown on the clock.",
+      "assessment_boundary": "Assessment is restricted to:\nTimes must be shown to the nearest minute; no seconds or intervals smaller than one minute.\nClocks may be analog or digital; all times should be between 12:00 a.m. and 11:59 p.m..\nProblems may require identifying the exact time shown on an analog clock (hour and minute), or matching a digital time to an analog clock.\nNo elapsed time, addition, or subtraction of time intervals in this substandard \nNo use of military time or 24-hour clock notation; only standard 12-hour clock format is used.\nVisuals must be clear and unambiguous, with minute and hour hands distinguishable and minute marks visible.\nNo requirement to use or identify formal vocabulary such as \u201canalog,\u201d \u201cdigital,\u201d \u201ca.m.,\u201d or \u201cp.m.\u201d, though these may appear incidentally.\nNo estimation or rounding; exact time to the minute is required.",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:20:43.457934"
+      },
+      "phase1_selected_skills": [
+        "Measurement"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+2",
+      "grade": 3,
+      "substandard_description": "Explain patterns in an arithmetic pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole numbers only; no fractions, decimals, or negative numbers are permitted in patterns, tables, or explanations.\n- Addition and subtraction patterns are limited to numbers within 100.\n- Multiplication and division patterns are limited to products, dividends, and quotients within 100, with factors, divisors, and quotients not exceeding 10.\n- Patterns are presented in the form of number sequences, tables, or charts.\n- Context is not allowed; items must be abstract and not embedded in word problems or real-world scenarios.\n- Patterns may include identifying even/odd numbers, multiples, skip-counting, or regular increases/decreases by a fixed amount.\n- The term the student must find MUST be the very next term of the sequence.\n- No use of variables (e.g., n, x); symbols such as \u25a1, ?, or __ may be used for a missing term if needed.\n- Visual supports (e.g., tables, charts) may be provided, but are not required.\n- No requirement for students to extend patterns beyond what is shown or to generalize to algebraic rules.\n- May discuss numbers going in evenly but may not use the term \"remainders.\"",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:21:19.070890"
+      },
+      "phase1_selected_skills": [
+        "Basic Facts"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.2+1",
+      "grade": 3,
+      "substandard_description": "Partition shapes into parts with equal areas. Express the area of each part as a unit fraction of the whole. For example, partition a shape into 4 parts with equal area, and describe the area of each part as 1/4 of the area of the shape",
+      "assessment_boundary": "x",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:21:50.212278"
+      },
+      "phase1_selected_skills": [
+        "Fractions"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.5.A+1",
+      "grade": 3,
+      "substandard_description": "Understand that a square with side length 1 unit (\"unit square\") has an area of one square unit and can be used to measure area.",
+      "assessment_boundary": "x",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:22:01.283178"
+      },
+      "phase1_selected_skills": [
+        "Measurement"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.5.B+1",
+      "grade": 3,
+      "substandard_description": "Understand that the area of a plane figure is the number of unit squares needed to cover it without gaps or overlaps.",
+      "assessment_boundary": "x",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:22:12.784225"
+      },
+      "phase1_selected_skills": [
+        "Measurement"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.A+1",
+      "grade": 3,
+      "substandard_description": "Find the area of a rectangle with whole-number side lengths by tiling it, and show that the area is the same as would be found by multiplying the side lengths",
+      "assessment_boundary": "x",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:22:23.997923"
+      },
+      "phase1_selected_skills": [
+        "Geometry"
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.4+1",
+      "grade": 3,
+      "substandard_description": "Determine the unknown whole number in a multiplication or division equation relating three whole numbers.",
+      "assessment_boundary": "x",
+      "final_excellent_matches": [],
+      "bruteforce_metadata": {
+        "total_sequences_evaluated": 38,
+        "top_5_count": 0,
+        "processing_timestamp": "2025-10-27T09:22:39.146405"
+      },
+      "phase1_selected_skills": [
+        "Multiplication",
+        "Division"
+      ]
+    }
+  ]
+}

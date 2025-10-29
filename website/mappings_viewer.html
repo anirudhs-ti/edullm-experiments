@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Curriculum Substandard Mappings Viewer</title>
+    <title>Grade 3 Substandard Mappings - Brute-Force Results</title>
     <style>
         * {
             margin: 0;
@@ -427,8 +427,8 @@
 <body>
     <div class="container">
         <header>
-            <h1>📊 Curriculum Substandard to Sequence Mappings</h1>
-            <p>Interactive viewer for mapping curriculum substandards to Direct Instruction sequences</p>
+            <h1>📊 Grade 3 Substandard to Sequence Mappings</h1>
+            <p>Brute-Force Validation Results - Complete Grade 3 mappings with EXCELLENT and FAIR matches</p>
         </header>
         
         <div id="metadata" class="metadata"></div>
@@ -573,7 +573,7 @@
         // Load the JSON file
         async function loadData() {
             try {
-                const response = await fetch('output/substandard_to_sequence_mappings_with_formats.json');
+                const response = await fetch('data.json');
                 data = await response.json();
                 document.getElementById('loading').style.display = 'none';
                 renderMetadata();
@@ -612,9 +612,23 @@
                     </div>
                     <div class="metadata-item">
                         <strong>Processing Date</strong>
-                        ${new Date(metadata.processing_date).toLocaleDateString()}
+                        ${metadata.bruteforce_remap_date ? new Date(metadata.bruteforce_remap_date).toLocaleDateString() : (metadata.processing_date ? new Date(metadata.processing_date).toLocaleDateString() : 'N/A')}
                     </div>
             `;
+            
+            // Add bruteforce remap info if available
+            if (metadata.bruteforce_remap_date) {
+                metadataHtml += `
+                    <div class="metadata-item">
+                        <strong>Brute-Force Remap Date</strong>
+                        ${new Date(metadata.bruteforce_remap_date).toLocaleDateString()}
+                    </div>
+                    <div class="metadata-item">
+                        <strong>Run Scope</strong>
+                        ${metadata.run_scope || 'N/A'}
+                    </div>
+                `;
+            }
             
             // Add format augmentation info if available
             if (metadata.format_augmentation) {
@@ -646,7 +660,7 @@
                         <div style="font-size: 0.85em; margin-top: 5px; color: #666;">
                             ${sub.substandard_description.substring(0, 80)}${sub.substandard_description.length > 80 ? '...' : ''}
                         </div>
-                        ${hasMatch ? '<div style="color: #28a745; font-size: 0.8em; margin-top: 5px;">✓ Has excellent matches</div>' : '<div style="color: #dc3545; font-size: 0.8em; margin-top: 5px;">✗ No excellent matches</div>'}
+                        ${hasMatch ? `<div style="color: #28a745; font-size: 0.8em; margin-top: 5px;">✓ Has ${sub.final_excellent_matches.length} match${sub.final_excellent_matches.length > 1 ? 'es' : ''}</div>` : '<div style="color: #dc3545; font-size: 0.8em; margin-top: 5px;">✗ No matches</div>'}
                     </button>
                 `;
             }).join('');
@@ -708,17 +722,26 @@
                     </div>
             `;
             
-            // Excellent matches summary
+            // Excellent matches summary (v3 format with quality field)
             if (substandard.final_excellent_matches && substandard.final_excellent_matches.length > 0) {
+                const excellentCount = substandard.final_excellent_matches.filter(m => m.quality === 'EXCELLENT').length;
+                const fairCount = substandard.final_excellent_matches.filter(m => m.quality === 'FAIR').length;
                 html += `
                     <div class="excellent-summary">
-                        <h3>✓ Excellent Matches Found (${substandard.final_excellent_matches.length})</h3>
+                        <h3>✓ Matches Found (${substandard.final_excellent_matches.length})</h3>
+                        <div style="margin-bottom: 15px; font-size: 0.9em; color: #155724;">
+                            ${excellentCount > 0 ? `<span style="background: #28a745; color: white; padding: 4px 8px; border-radius: 4px; margin-right: 10px;">${excellentCount} EXCELLENT</span>` : ''}
+                            ${fairCount > 0 ? `<span style="background: #ffc107; color: #333; padding: 4px 8px; border-radius: 4px;">${fairCount} FAIR</span>` : ''}
+                        </div>
                 `;
                 substandard.final_excellent_matches.forEach(match => {
+                    const qualityClass = match.quality === 'EXCELLENT' ? 'excellent' : 'fair';
                     html += `
-                        <div class="excellent-match-item">
+                        <div class="excellent-match-item" style="border-left-color: ${match.quality === 'EXCELLENT' ? '#28a745' : '#ffc107'};">
                             <strong>${match.skill}</strong> (Grade ${match.grade}) - 
                             <span class="badge">Sequence ${match.sequence_number}</span>
+                            ${match.quality ? `<span class="match-quality ${match.quality}" style="margin-left: 10px;">${match.quality}</span>` : ''}
+                            ${match.alignment_score ? `<span style="color: #666; font-size: 0.9em; margin-left: 10px;">Score: ${match.alignment_score}</span>` : ''}
                     `;
                     
                     // Add related formats if available
@@ -743,6 +766,20 @@
                     html += `</div>`;
                 });
                 html += `</div>`;
+            }
+            
+            // Brute-force metadata (v3 format)
+            if (substandard.bruteforce_metadata) {
+                html += `
+                    <div class="section">
+                        <h3>🔍 Brute-Force Evaluation Metadata</h3>
+                        <div style="background: #e8eaf6; padding: 15px; border-radius: 5px; border-left: 4px solid #667eea;">
+                            <div style="margin-bottom: 8px;"><strong>Total Sequences Evaluated:</strong> ${substandard.bruteforce_metadata.total_sequences_evaluated}</div>
+                            <div style="margin-bottom: 8px;"><strong>Top Matches Selected:</strong> ${substandard.bruteforce_metadata.top_5_count}</div>
+                            ${substandard.bruteforce_metadata.processing_timestamp ? `<div style="font-size: 0.9em; color: #666;">Processed: ${new Date(substandard.bruteforce_metadata.processing_timestamp).toLocaleString()}</div>` : ''}
+                        </div>
+                    </div>
+                `;
             }
             
             // Assessment boundary

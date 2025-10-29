@@ -1,28 +1,22 @@
 #!/usr/bin/env python3
 """
-Generate new substandard-to-sequence mappings using brute-force validation.
-Fills gaps for substandards with no EXCELLENT/FAIR matches by rating all sequences.
+Generate complete Grade 3 substandard-to-sequence mappings using brute-force validation.
+Processes ALL Grade 3 substandards (not just those with no matches).
+Uses CSV as canonical source for descriptions and assessment boundaries.
 """
 
 import json
 import os
 import time
+import pandas as pd
 from datetime import datetime
-from typing import List, Dict, Optional, Tuple
+from typing import List, Dict, Optional
 import logging
 from dotenv import load_dotenv
 import google.generativeai as genai
 from pydantic import BaseModel, Field
 
-# Set up logging
-logging.basicConfig(
-    level=logging.INFO,
-    format='%(asctime)s - %(levelname)s - %(message)s',
-    handlers=[
-        logging.FileHandler('generate_new_mappings.log'),
-        logging.StreamHandler()
-    ]
-)
+# Set up logging (will be configured in main() after paths are set)
 logger = logging.getLogger(__name__)
 
 # ============================================================================
@@ -61,6 +55,17 @@ def initialize_gemini(api_key: str):
     genai.configure(api_key=api_key)
     return genai.GenerativeModel('gemini-2.0-flash-exp')
 
+def load_curriculum_csv(filepath: str, grade: int = 3) -> pd.DataFrame:
+    """Load curriculum CSV and filter by grade"""
+    try:
+        df = pd.read_csv(filepath)
+        df_filtered = df[df['grade'] == grade].reset_index(drop=True)
+        logger.info(f"Loaded curriculum CSV: {len(df_filtered)} Grade {grade} substandards")
+        return df_filtered
+    except Exception as e:
+        logger.error(f"Error loading curriculum CSV: {e}")
+        return pd.DataFrame()
+
 def load_json(filepath: str) -> Dict:
     """Load JSON file"""
     try:
@@ -71,32 +76,6 @@ def load_json(filepath: str) -> Dict:
     except Exception as e:
         logger.error(f"Error loading {filepath}: {e}")
         return {}
-
-def find_substandards_without_good_matches(mappings: List[Dict]) -> List[Dict]:
-    """Find substandards with no FAIR or EXCELLENT matches"""
-    no_good_matches = []
-    
-    for mapping in mappings:
-        has_good_match = False
-        
-        # Check final_excellent_matches
-        if mapping.get('final_excellent_matches') and len(mapping['final_excellent_matches']) > 0:
-            has_good_match = True
-            continue
-        
-        # Check all ratings for FAIR/EXCELLENT
-        for phase2_result in mapping.get('phase2_results', []):
-            for rating in phase2_result.get('all_ratings', []):
-                if rating.get('match_quality') in ['FAIR', 'EXCELLENT']:
-                    has_good_match = True
-                    break
-            if has_good_match:
-                break
-        
-        if not has_good_match:
-            no_good_matches.append(mapping)
-    
-    return no_good_matches
 
 def extract_all_sequences_for_grade(di_data: Dict, grade: int) -> List[Dict]:
     """Extract all sequences from DI data for a specific grade"""
@@ -124,19 +103,13 @@ def create_batch_rating_prompt(grade: int, substandard_desc: str, assessment_bou
                                 sequences: List[Dict]) -> str:
     """Create batch rating prompt with scoring metrics"""
     
-    # Build sequences array
-    sequences_json = []
-    for seq in sequences:
-        seq_obj = {
-            "skill_name": seq['skill_name'],
-            "sequence_number": seq['sequence_number'],
-            "problem_type": seq['problem_type'],
-            "example_questions": seq['example_questions'],
-            "visual_aids": seq['visual_aids']
-        }
-        sequences_json.append(seq_obj)
-    
-    sequences_text = json.dumps(sequences_json, indent=2)
+    sequences_json = json.dumps([{
+        "skill_name": seq['skill_name'],
+        "sequence_number": seq['sequence_number'],
+        "problem_type": seq['problem_type'],
+        "example_questions": seq['example_questions'],
+        "visual_aids": seq['visual_aids']
+    } for seq in sequences], indent=2)
     
     prompt = f"""You are an impartial expert evaluator validating whether Grade {grade} math substandards align with problem sequences. Judge alignment ONLY using the substandard text, its assessment boundary, and the grade. For each sequence, independently assign one of: EXCELLENT, FAIR, POOR, or NON-EXISTENT, and provide structured rationale.
 
@@ -182,7 +155,7 @@ ASSESSMENT BOUNDARY
 {assessment_boundary}
 
 SEQUENCES TO RATE (evaluate every item exactly once)
-{sequences_text}
+{sequences_json}
 
 Return ONLY valid JSON with no prose before or after, in exactly this structure:
 {{
@@ -223,7 +196,7 @@ def rate_sequences_in_batches(model, grade: int, substandard_desc: str, assessme
         end_idx = min(start_idx + batch_size, len(all_sequences))
         batch = all_sequences[start_idx:end_idx]
         
-        logger.info(f"  Processing batch {batch_idx + 1}/{total_batches} ({len(batch)} sequences)")
+        logger.info(f"  Batch {batch_idx + 1}/{total_batches} ({len(batch)} sequences)")
         
         prompt = create_batch_rating_prompt(grade, substandard_desc, assessment_boundary, batch)
         
@@ -249,16 +222,15 @@ def rate_sequences_in_batches(model, grade: int, substandard_desc: str, assessme
                 for rating in validated.sequence_ratings:
                     all_ratings.append(rating.dict())
                 
-                # Success - break retry loop
+                # Success
                 break
                 
             except Exception as e:
                 logger.warning(f"    Attempt {attempt + 1}/{max_retries} failed: {e}")
                 if attempt < max_retries - 1:
-                    time.sleep(2 ** attempt)  # Exponential backoff
+                    time.sleep(2 ** attempt)
                 else:
                     logger.error(f"    Batch {batch_idx + 1} failed after {max_retries} attempts")
-                    # Add placeholder ratings for this batch
                     for seq in batch:
                         all_ratings.append({
                             'skill_name': seq['skill_name'],
@@ -272,13 +244,9 @@ def rate_sequences_in_batches(model, grade: int, substandard_desc: str, assessme
                             'explanation': f'Error during evaluation: {str(e)}'
                         })
         
-        # Small delay between batches
         time.sleep(0.5)
     
-    return {
-        'all_ratings': all_ratings,
-        'total_sequences_evaluated': len(all_ratings)
-    }
+    return {'all_ratings': all_ratings, 'total_sequences_evaluated': len(all_ratings)}
 
 def select_top_5_sequences(ratings: List[Dict]) -> List[Dict]:
     """Select top 5 sequences using deterministic scoring and tie-breaking"""
@@ -286,27 +254,20 @@ def select_top_5_sequences(ratings: List[Dict]) -> List[Dict]:
     # Filter eligible sequences
     eligible = []
     for rating in ratings:
-        # Only EXCELLENT or FAIR
         if rating['match_quality'] not in ['EXCELLENT', 'FAIR']:
             continue
-        # Exclude MAJOR_VIOLATION
         if rating['boundary_classification'] == 'MAJOR_VIOLATION':
             continue
-        # Exclude OFF_GRADE (prefer ON_GRADE and SLIGHTLY_OFF)
         if rating['grade_alignment'] == 'OFF_GRADE':
             continue
         eligible.append(rating)
     
     if not eligible:
-        logger.warning("  No eligible sequences found")
         return []
     
     # Calculate final scores
     for rating in eligible:
-        # Base weight
         base_weight = 1.0 if rating['match_quality'] == 'EXCELLENT' else 0.75
-        
-        # Penalties
         penalties = 0.0
         if rating['boundary_classification'] == 'MINOR_VIOLATION':
             penalties += 0.10
@@ -316,64 +277,74 @@ def select_top_5_sequences(ratings: List[Dict]) -> List[Dict]:
             penalties += 0.05
         elif rating['extraneous_skill_load'] == 'HIGH':
             penalties += 0.15
-        
-        # Final score
         rating['final_score'] = base_weight * (rating['alignment_score'] / 100.0) - penalties
     
     # Sort with tie-breakers
     def sort_key(r):
         return (
-            1 if r['match_quality'] == 'EXCELLENT' else 0,  # EXCELLENT first
-            r['final_score'],  # Higher score better
-            0 if r['boundary_classification'] == 'COMPLIANT' else 1,  # COMPLIANT first
-            {'LOW': 0, 'MODERATE': 1, 'HIGH': 2}[r['extraneous_skill_load']],  # LOW first
-            0 if r['grade_alignment'] == 'ON_GRADE' else 1,  # ON_GRADE first
-            r['sequence_number']  # Deterministic tie-break
+            1 if r['match_quality'] == 'EXCELLENT' else 0,
+            r['final_score'],
+            0 if r['boundary_classification'] == 'COMPLIANT' else 1,
+            {'LOW': 0, 'MODERATE': 1, 'HIGH': 2}[r['extraneous_skill_load']],
+            0 if r['grade_alignment'] == 'ON_GRADE' else 1,
+            r['sequence_number']
         )
     
     eligible.sort(key=sort_key, reverse=True)
-    
-    # Take top 5
-    top_5 = eligible[:5]
-    
-    logger.info(f"  Selected {len(top_5)} sequences from {len(eligible)} eligible")
-    for i, rating in enumerate(top_5, 1):
-        logger.info(f"    {i}. Seq #{rating['sequence_number']} ({rating['skill_name']}): "
-                   f"{rating['match_quality']} | score={rating['final_score']:.2f} | "
-                   f"align={rating['alignment_score']}")
-    
-    return top_5
+    return eligible[:5]
 
 def generate_final_matches_list(top_5: List[Dict], grade: int) -> List[Dict]:
     """Generate final_excellent_matches list with augmented fields"""
-    final_matches = []
-    for rating in top_5:
-        match_obj = {
-            'skill': rating['skill_name'],
-            'grade': grade,
-            'sequence_number': rating['sequence_number'],
-            'quality': rating['match_quality'],
-            'alignment_score': rating['alignment_score']
-        }
-        final_matches.append(match_obj)
-    return final_matches
+    return [{
+        'skill': r['skill_name'],
+        'grade': grade,
+        'sequence_number': r['sequence_number'],
+        'quality': r['match_quality'],
+        'alignment_score': r['alignment_score']
+    } for r in top_5]
+
+def save_incremental_progress(mappings: List[Dict], metadata: Dict, filepath: str):
+    """Save incremental progress"""
+    try:
+        with open(filepath, 'w') as f:
+            json.dump({'metadata': metadata, 'mappings': mappings}, f, indent=2)
+    except Exception as e:
+        logger.error(f"Error saving progress: {e}")
 
 def main():
     """Main execution function"""
     
     # Configuration
     BATCH_SIZE = 15
+    TARGET_GRADE = 3
     
-    MAPPINGS_FILE = "/workspaces/github-com-anirudhs-ti-edullm-experiments/output/substandard_to_sequence_mappings.json"
-    DI_FORMATS_FILE = "/workspaces/github-com-anirudhs-ti-edullm-experiments/data/di_formats_with_mappings.json"
-    OUTPUT_FILE = "/workspaces/github-com-anirudhs-ti-edullm-experiments/output/substandard_to_sequence_mappings.v2.json"
-    REPORT_FILE = "/workspaces/github-com-anirudhs-ti-edullm-experiments/output/bruteforce_remap_report.md"
+    # Get script directory and compute paths relative to experiment folder
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    experiment_dir = os.path.dirname(script_dir)
     
-    # Load environment
+    CSV_FILE = os.path.join(experiment_dir, "inputs", "curricululm_with_assesment_boundary.csv")
+    DI_FORMATS_FILE = os.path.join(experiment_dir, "inputs", "di_formats_with_mappings.json")
+    OLD_MAPPINGS_FILE = os.path.join(experiment_dir, "inputs", "substandard_to_sequence_mappings.json")
+    OUTPUT_FILE = os.path.join(experiment_dir, "outputs", "substandard_to_sequence_mappings.v3.json")
+    TEMP_FILE = os.path.join(experiment_dir, "outputs", "substandard_to_sequence_mappings.v3.json.tmp")
+    REPORT_FILE = os.path.join(experiment_dir, "outputs", "bruteforce_remap_report_all_grade3.md")
+    
+    # Configure logging now that we have the output path
+    log_file = os.path.join(experiment_dir, "outputs", "generate_all_grade3_mappings.log")
+    logging.basicConfig(
+        level=logging.INFO,
+        format='%(asctime)s - %(levelname)s - %(message)s',
+        handlers=[
+            logging.FileHandler(log_file),
+            logging.StreamHandler()
+        ],
+        force=True  # Override any existing configuration
+    )
+    
     load_dotenv()
     
     logger.info("="*80)
-    logger.info("GENERATE NEW MAPPINGS USING BRUTE-FORCE VALIDATION")
+    logger.info("GENERATE ALL GRADE 3 MAPPINGS USING BRUTE-FORCE VALIDATION")
     logger.info(f"Started: {datetime.now()}")
     logger.info("="*80)
     
@@ -390,48 +361,46 @@ def main():
         logger.error(f"Failed to initialize Gemini: {e}")
         return
     
-    # Load data
-    mappings_data = load_json(MAPPINGS_FILE)
+    # Load curriculum CSV (canonical source)
+    curriculum_df = load_curriculum_csv(CSV_FILE, TARGET_GRADE)
+    if curriculum_df.empty:
+        logger.error("Failed to load curriculum CSV")
+        return
+    
+    # Load DI formats
     di_data = load_json(DI_FORMATS_FILE)
-    
-    if not mappings_data or not di_data:
-        logger.error("Failed to load required data files")
+    if not di_data:
+        logger.error("Failed to load DI formats JSON")
         return
     
-    # Find substandards without good matches
-    mappings = mappings_data.get('mappings', [])
-    no_good_matches = find_substandards_without_good_matches(mappings)
+    # Load old mappings (for phase1_selected_skills preservation)
+    old_mappings_data = load_json(OLD_MAPPINGS_FILE)
+    old_mappings_lookup = {m['substandard_id']: m for m in old_mappings_data.get('mappings', [])}
     
-    logger.info(f"\n📊 Found {len(no_good_matches)} substandards with no FAIR/EXCELLENT matches")
+    logger.info(f"\n📊 Processing {len(curriculum_df)} Grade {TARGET_GRADE} substandards")
     
-    if len(no_good_matches) == 0:
-        logger.info("✅ All substandards have at least FAIR matches - no work needed!")
-        return
+    # Get all sequences once (reused for all substandards)
+    all_grade_sequences = extract_all_sequences_for_grade(di_data, TARGET_GRADE)
+    all_grade_sequences.sort(key=lambda x: (x['skill_name'], x['sequence_number']))
     
     # Process each substandard
-    updated_mappings = []
-    flipped_count = 0
-    report_entries = []
+    new_mappings = []
+    stats = {'total': 0, 'with_matches': 0, 'excellent_count': 0, 'fair_count': 0}
     
-    for idx, substandard in enumerate(no_good_matches, 1):
-        substandard_id = substandard['substandard_id']
-        grade = substandard['grade']
-        substandard_desc = substandard['substandard_description']
-        assessment_boundary = substandard.get('assessment_boundary', 'No specific boundaries provided')
+    for idx, row in curriculum_df.iterrows():
+        substandard_id = row['substandard_id']
+        grade = row['grade']
+        substandard_desc = row['substandard_description']
+        assessment_boundary = row.get('assessment_boundary', 'No specific boundaries provided')
+        
+        stats['total'] += 1
         
         logger.info(f"\n{'='*80}")
-        logger.info(f"[{idx}/{len(no_good_matches)}] Processing: {substandard_id}")
-        logger.info(f"Grade: {grade}")
-        logger.info(f"Description: {substandard_desc[:100]}...")
+        logger.info(f"[{idx + 1}/{len(curriculum_df)}] {substandard_id}")
+        logger.info(f"Desc: {substandard_desc[:80]}...")
         logger.info(f"{'='*80}")
         
-        # Get ALL sequences for this grade
-        all_grade_sequences = extract_all_sequences_for_grade(di_data, grade)
-        all_grade_sequences.sort(key=lambda x: (x['skill_name'], x['sequence_number']))
-        
-        logger.info(f"Evaluating {len(all_grade_sequences)} total sequences across all skills")
-        
-        # Rate all sequences in batches
+        # Rate all sequences
         batch_results = rate_sequences_in_batches(
             model, grade, substandard_desc, assessment_boundary,
             all_grade_sequences, batch_size=BATCH_SIZE
@@ -443,103 +412,105 @@ def main():
         # Generate final matches
         final_matches = generate_final_matches_list(top_5, grade)
         
-        # Update the mapping
-        updated_mapping = substandard.copy()
-        updated_mapping['final_excellent_matches'] = final_matches
-        updated_mapping['bruteforce_metadata'] = {
-            'total_sequences_evaluated': batch_results['total_sequences_evaluated'],
-            'top_5_count': len(top_5),
-            'processing_timestamp': datetime.now().isoformat()
+        # Build mapping entry
+        mapping = {
+            'substandard_id': substandard_id,
+            'grade': grade,
+            'substandard_description': substandard_desc,
+            'assessment_boundary': assessment_boundary,
+            'final_excellent_matches': final_matches,
+            'bruteforce_metadata': {
+                'total_sequences_evaluated': batch_results['total_sequences_evaluated'],
+                'top_5_count': len(top_5),
+                'processing_timestamp': datetime.now().isoformat()
+            }
         }
-        updated_mappings.append(updated_mapping)
         
-        # Track flips
-        if len(final_matches) > 0:
-            flipped_count += 1
-            report_entries.append({
-                'substandard_id': substandard_id,
-                'description': substandard_desc,
-                'matches': final_matches
-            })
+        # Preserve phase1_selected_skills from old mapping if available
+        if substandard_id in old_mappings_lookup:
+            old_mapping = old_mappings_lookup[substandard_id]
+            if 'phase1_selected_skills' in old_mapping:
+                mapping['phase1_selected_skills'] = old_mapping['phase1_selected_skills']
         
-        logger.info(f"\n  📊 RESULT for {substandard_id}:")
-        logger.info(f"    Sequences evaluated: {batch_results['total_sequences_evaluated']}")
-        logger.info(f"    Top 5 selected: {len(final_matches)}")
+        new_mappings.append(mapping)
+        
+        # Update stats
         if len(final_matches) > 0:
-            logger.info(f"    ✅ FLIPPED: Now has {len(final_matches)} matches!")
-        else:
-            logger.info(f"    ⚠️  Still no matches found")
-    
-    # Merge with original mappings
-    logger.info(f"\n{'='*80}")
-    logger.info("MERGING WITH ORIGINAL MAPPINGS")
-    logger.info(f"{'='*80}")
-    
-    # Create lookup
-    updated_lookup = {m['substandard_id']: m for m in updated_mappings}
-    
-    # Build final mappings list
-    final_mappings = []
-    for original in mappings:
-        if original['substandard_id'] in updated_lookup:
-            final_mappings.append(updated_lookup[original['substandard_id']])
-        else:
-            final_mappings.append(original)
-    
-    # Build output
-    output_data = {
-        'metadata': {
-            'source_csv': mappings_data['metadata']['source_csv'],
-            'source_json': mappings_data['metadata']['source_json'],
-            'target_grade': mappings_data['metadata']['target_grade'],
-            'total_substandards': mappings_data['metadata']['total_substandards'],
-            'processed_substandards': mappings_data['metadata']['processed_substandards'],
-            'original_processing_date': mappings_data['metadata']['processing_date'],
+            stats['with_matches'] += 1
+            for match in final_matches:
+                if match['quality'] == 'EXCELLENT':
+                    stats['excellent_count'] += 1
+                else:
+                    stats['fair_count'] += 1
+        
+        logger.info(f"  Result: {len(final_matches)} matches selected")
+        if len(final_matches) > 0:
+            for i, m in enumerate(final_matches, 1):
+                logger.info(f"    {i}. Seq #{m['sequence_number']} ({m['skill']}): "
+                           f"{m['quality']} score={m['alignment_score']}")
+        
+        # Incremental save
+        metadata = {
+            'source_csv': CSV_FILE,
+            'source_json': DI_FORMATS_FILE,
+            'target_grade': TARGET_GRADE,
+            'run_scope': 'grade_3_all',
+            'total_substandards': len(curriculum_df),
+            'processed_substandards': len(new_mappings),
             'bruteforce_remap_date': datetime.now().isoformat(),
-            'bruteforce_remapped_count': len(updated_mappings),
             'llm_model': 'gemini-2.0-flash-exp',
-            'completion_status': 'complete'
-        },
-        'mappings': final_mappings
-    }
+            'completion_status': 'in_progress'
+        }
+        save_incremental_progress(new_mappings, metadata, TEMP_FILE)
     
-    # Write output
+    # Final metadata
+    metadata['completion_status'] = 'complete'
+    
+    # Write final output
+    output_data = {'metadata': metadata, 'mappings': new_mappings}
     with open(OUTPUT_FILE, 'w') as f:
         json.dump(output_data, f, indent=2)
-    logger.info(f"✓ Wrote new mappings to: {OUTPUT_FILE}")
+    logger.info(f"\n✓ Wrote final mappings to: {OUTPUT_FILE}")
     
     # Generate report
     with open(REPORT_FILE, 'w') as f:
-        f.write("# Brute-Force Remap Report\n\n")
+        f.write("# Grade 3 Brute-Force Remap Report\n\n")
         f.write(f"**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M:%S')}\n\n")
         f.write("## Summary\n\n")
-        f.write(f"- **Total substandards remapped:** {len(updated_mappings)}\n")
-        f.write(f"- **Flipped to having matches:** {flipped_count}\n")
-        f.write(f"- **Still no matches:** {len(updated_mappings) - flipped_count}\n\n")
+        f.write(f"- **Total substandards:** {stats['total']}\n")
+        f.write(f"- **With matches:** {stats['with_matches']} ({stats['with_matches']/stats['total']*100:.1f}%)\n")
+        f.write(f"- **Without matches:** {stats['total'] - stats['with_matches']} ({(stats['total']-stats['with_matches'])/stats['total']*100:.1f}%)\n\n")
+        f.write(f"### Match Quality\n\n")
+        f.write(f"- **EXCELLENT matches:** {stats['excellent_count']}\n")
+        f.write(f"- **FAIR matches:** {stats['fair_count']}\n")
+        f.write(f"- **Total sequence matches:** {stats['excellent_count'] + stats['fair_count']}\n\n")
         
-        if report_entries:
-            f.write("## ✅ Substandards with New Matches\n\n")
-            for entry in report_entries:
-                f.write(f"### {entry['substandard_id']}\n\n")
-                f.write(f"**Description:** {entry['description']}\n\n")
-                f.write(f"**New matches ({len(entry['matches'])}):**\n")
-                for match in entry['matches']:
+        f.write("## Substandards with Matches\n\n")
+        for mapping in new_mappings:
+            if mapping['final_excellent_matches']:
+                f.write(f"### {mapping['substandard_id']}\n\n")
+                f.write(f"**Description:** {mapping['substandard_description']}\n\n")
+                f.write(f"**Matches ({len(mapping['final_excellent_matches'])}):**\n")
+                for match in mapping['final_excellent_matches']:
                     f.write(f"- Seq #{match['sequence_number']} ({match['skill']}): "
                            f"{match['quality']} | score={match['alignment_score']}\n")
-                f.write("\n---\n\n")
+                f.write("\n")
     
     logger.info(f"✓ Wrote report to: {REPORT_FILE}")
     
+    # Clean up temp file
+    if os.path.exists(TEMP_FILE):
+        os.remove(TEMP_FILE)
+    
     # Final summary
     logger.info(f"\n{'='*80}")
-    logger.info("BRUTE-FORCE REMAP COMPLETE!")
+    logger.info("COMPLETE!")
     logger.info(f"{'='*80}")
-    logger.info(f"Substandards processed: {len(updated_mappings)}")
-    logger.info(f"Flipped to having matches: {flipped_count}")
-    logger.info(f"Still no matches: {len(updated_mappings) - flipped_count}")
-    logger.info(f"\n📁 Outputs:")
-    logger.info(f"  - New mappings: {OUTPUT_FILE}")
-    logger.info(f"  - Report: {REPORT_FILE}")
+    logger.info(f"Total substandards: {stats['total']}")
+    logger.info(f"With matches: {stats['with_matches']} ({stats['with_matches']/stats['total']*100:.1f}%)")
+    logger.info(f"EXCELLENT: {stats['excellent_count']}")
+    logger.info(f"FAIR: {stats['fair_count']}")
+    logger.info(f"\n📁 Output: {OUTPUT_FILE}")
 
 if __name__ == "__main__":
     main()

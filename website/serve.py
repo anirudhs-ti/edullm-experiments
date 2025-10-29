@@ -1,12 +1,9 @@
 #!/usr/bin/env python3
 """
-Simple HTTP server to serve the curriculum viewer website.
+Simple HTTP server to serve the Grade 3 mappings viewer website.
 Run this script and open http://localhost:8000 in your browser.
 
-Usage:
-    python serve.py                  # Serves viewer.html (DI formats viewer)
-    python serve.py formats          # Serves viewer.html (DI formats viewer)
-    python serve.py mappings         # Serves mappings_viewer.html (substandard mappings)
+The website displays the brute-force mapping results from substandard_to_sequence_mappings.v3.json
 """
 
 import http.server
@@ -26,28 +23,12 @@ class MyHTTPRequestHandler(http.server.SimpleHTTPRequestHandler):
         super().end_headers()
 
 def main():
-    # Determine which viewer to open based on command line argument
-    viewer = 'viewer.html'  # Default
-    viewer_name = 'DI Formats Viewer'
+    # Change to the script's directory
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    os.chdir(script_dir)
     
-    if len(sys.argv) > 1:
-        arg = sys.argv[1].lower()
-        if arg in ['mappings', 'mapping', 'm']:
-            viewer = 'mappings_viewer.html'
-            viewer_name = 'Substandard Mappings Viewer'
-        elif arg in ['formats', 'format', 'f', 'viewer']:
-            viewer = 'viewer.html'
-            viewer_name = 'DI Formats Viewer'
-        elif arg in ['help', '-h', '--help']:
-            print(__doc__)
-            return
-        else:
-            print(f"Unknown option: {arg}")
-            print("\nAvailable options:")
-            print("  formats   - DI Formats Viewer (default)")
-            print("  mappings  - Substandard Mappings Viewer")
-            print("  help      - Show this help message")
-            return
+    viewer = 'mappings_viewer.html'
+    viewer_name = 'Grade 3 Substandard Mappings Viewer (Brute-Force Results)'
     
     handler = MyHTTPRequestHandler
     
@@ -57,6 +38,7 @@ def main():
         print(f"Serving: {viewer_name}")
         print(f"Directory: {os.getcwd()}")
         print(f"{'='*60}")
+        print(f"\nOpen your browser to: http://localhost:{PORT}/{viewer}")
         print("\nPress Ctrl+C to stop the server")
         
         # Try to open browser automatically
@@ -72,5 +54,3 @@ def main():
 
 if __name__ == "__main__":
     main()
-
-
