@@ -1,0 +1,305 @@
+{
+  "metadata": {
+    "generation_timestamp": "2025-10-30T10:58:22.635475",
+    "total_substandards_processed": 5,
+    "llm_model": "gemini-2.5-pro",
+    "generation_version": "1.0"
+  },
+  "generated_sequences": [
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.1+3",
+      "grade": 3,
+      "substandard_description": "Write a multiplication equation that represents an array.",
+      "assessment_boundary": "Assessment is restricted to:\n- Single-digit multipliers and multiplicands (up to 10 × 10)\n- At least one factor is always 5 or less.\n- Exclusion of fractions, decimals, mixed numbers, and non-equal groupings\n- No real world problems.\n- No reference to division either as word or as a symbol is allowed.\n- No use of variables (e.g., a, n, x); use symbols such as a box (□), question mark (?), or blank line (__) for unknown values.\n- No use of anything besides numbers in the multiplication equation\n- Questions should say, \"Complete the multiplication sentence that describes the array.\"",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Writing complete multiplication sentences for arrays with both factors 5 or less.",
+          "example_questions": [
+            "Given a 3 by 4 array of dots, complete the multiplication sentence that describes the array: __ × __ = __",
+            "Given a 5 by 2 array of dots, complete the multiplication sentence that describes the array: __ × __ = __",
+            "Given a 4 by 4 array of dots, complete the multiplication sentence that describes the array: __ × __ = __"
+          ],
+          "visual_aids": [
+            "Image of an array of dots or shapes"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Writing complete multiplication sentences for arrays with one factor greater than 5.",
+          "example_questions": [
+            "Given a 4 by 7 array of dots, complete the multiplication sentence that describes the array: __ × __ = __",
+            "Given a 5 by 9 array of dots, complete the multiplication sentence that describes the array: __ × __ = __",
+            "Given a 3 by 8 array of dots, complete the multiplication sentence that describes the array: __ × __ = __"
+          ],
+          "visual_aids": [
+            "Image of an array of dots or shapes"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Writing multiplication sentences for arrays with horizontal and vertical orientations to show commutation.",
+          "example_questions": [
+            "Given a 2 by 8 array of dots, complete the multiplication sentence that describes the array: __ × __ = __",
+            "Given an 8 by 2 array of dots, complete the multiplication sentence that describes the array: __ × __ = __",
+            "Given a 4 by 6 array of dots, complete the multiplication sentence that describes the array: __ × __ = __",
+            "Given a 6 by 4 array of dots, complete the multiplication sentence that describes the array: __ × __ = __"
+          ],
+          "visual_aids": [
+            "Image of an array of dots or shapes"
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Completing partially filled multiplication sentences for arrays.",
+          "example_questions": [
+            "Given a 5 by 6 array of dots, complete the multiplication sentence that describes the array: 5 × __ = __",
+            "Given a 9 by 4 array of dots, complete the multiplication sentence that describes the array: __ × 4 = __",
+            "Given a 3 by 7 array of dots, complete the multiplication sentence that describes the array: 3 × 7 = __"
+          ],
+          "visual_aids": [
+            "Image of an array of dots or shapes"
+          ]
+        }
+      ],
+      "generation_reasoning": "The generated sequences follow a systematic, DI-style progression for interpreting arrays as multiplication. Sequence 1 establishes the core skill with small, manageable numbers (both factors ≤ 5), minimizing cognitive load. Sequence 2 increases complexity by introducing a larger factor (> 5), as allowed by the assessment boundary. Sequence 3 introduces the concept of orientation (e.g., 2x8 vs. 8x2) to reinforce that the number of rows and columns must be represented correctly. Sequence 4 provides scaffolding by partially completing the equation, focusing the student on identifying specific missing components (a factor or the total). All sequences adhere strictly to the assessment boundary by using single-digit factors (one ≤ 5), the specified question format, blank lines for unknowns, and avoiding real-world contexts or division.",
+      "generated_at": "2025-10-30T10:56:26.518563"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.1+2",
+      "grade": 3,
+      "substandard_description": "Represent a product of whole numbers as repeated addition.",
+      "assessment_boundary": "Assessment is restricted to:\n- None of the multiplication factors may be greater than 5.\n- Exclusion of fractions, decimals, mixed numbers, and non-equal groupings\n- No real world problems.\n- No reference to division either as word or as a symbol is allowed.\n- No use of variables (e.g., a, n, x); use symbols such as a box (□), question mark (?), or blank line (__) for unknown values.\n- NEVER ask for the end product (e.g. 5 × 4 = ?)\n- Never mention the term, \"repeated addition,\" only phrase the question as, Which expression equals __×___?",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Matching a multiplication expression with a factor of 2 to its equivalent addition expression.",
+          "example_questions": [
+            "Which expression equals 2 × 3?",
+            "Which expression equals 2 × 5?",
+            "Which expression equals 2 × 1?"
+          ],
+          "visual_aids": [
+            "Diagrams of equal groups (e.g., 2 groups of 3 dots)"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Matching a multiplication expression with factors of 3, 4, or 5 to its equivalent addition expression.",
+          "example_questions": [
+            "Which expression equals 3 × 4?",
+            "Which expression equals 4 × 2?",
+            "Which expression equals 5 × 3?"
+          ],
+          "visual_aids": [
+            "Diagrams of equal groups (e.g., 3 groups of 4 dots)"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Discriminating between correct and incorrect addition expressions for a given multiplication.",
+          "example_questions": [
+            "Which expression equals 4 × 5?",
+            "Which expression equals 3 × 2?",
+            "Which expression equals 5 × 4?"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Matching an addition expression with equal addends to its equivalent multiplication expression.",
+          "example_questions": [
+            "Which multiplication expression equals 4 + 4 + 4?",
+            "Which multiplication expression equals 5 + 5?",
+            "Which multiplication expression equals 2 + 2 + 2 + 2?",
+            "Which multiplication expression equals 3 + 3 + 3 + 3 + 3?"
+          ],
+          "visual_aids": null
+        }
+      ],
+      "generation_reasoning": "The sequences directly address the substandard by teaching students to connect a multiplication expression to its equivalent addition representation. The progression follows DI principles by starting with the simplest case (a factor of 2), gradually increasing the size of the factors, introducing more complex discrimination tasks, and finally reversing the problem type to ensure flexible understanding. All sequences strictly adhere to the assessment boundary: factors are 5 or less, no final product is requested, questions are phrased as specified, and the term 'repeated addition' is not used.",
+      "generated_at": "2025-10-30T10:56:57.231825"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+4",
+      "grade": 3,
+      "substandard_description": "Identify the properties of multiplication.",
+      "assessment_boundary": "Assessment is restricted to:\n- commutative property of multiplication, associative property of multiplication, identity property of mutliplication, zero property of multiplication, and distributive property of mutliplication\n- Only ONE property should be used in an example at one time",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identifying the Zero Property of Multiplication",
+          "example_questions": [
+            "Which property is shown in the equation 14 x 0 = 0?",
+            "Look at this equation: 0 x 8 = 0. What property of multiplication does it show?",
+            "Find the missing number using the zero property: 45 x ___ = 0."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identifying the Identity Property of Multiplication",
+          "example_questions": [
+            "Which property is shown in the equation 27 x 1 = 27?",
+            "Look at this equation: 1 x 62 = 62. What property of multiplication does it show?",
+            "Find the missing number using the identity property: ___ x 19 = 19."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identifying the Commutative Property of Multiplication",
+          "example_questions": [
+            "Which property shows that 3 x 8 is the same as 8 x 3?",
+            "Look at this equation: 5 x 9 = 9 x 5. What property of multiplication does it show?",
+            "Use the commutative property to find the missing number: 12 x 7 = 7 x ___."
+          ],
+          "visual_aids": [
+            "Array diagrams showing rows and columns flipped (e.g., a 3x8 array and an 8x3 array)"
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Identifying the Associative Property of Multiplication",
+          "example_questions": [
+            "Which property is shown in the equation (2 x 5) x 3 = 2 x (5 x 3)?",
+            "Look at this equation: 4 x (6 x 1) = (4 x 6) x 1. What property of multiplication does it show?",
+            "Use the associative property to find the missing number: (8 x 2) x 5 = ___ x (2 x 5)."
+          ],
+          "visual_aids": [
+            "Diagrams showing grouping of objects, such as (2 groups of 5) arranged in 3 rows"
+          ]
+        },
+        {
+          "sequence_number": 5,
+          "problem_type": "Identifying the Distributive Property of Multiplication",
+          "example_questions": [
+            "Which property is shown in the equation 4 x (5 + 3) = (4 x 5) + (4 x 3)?",
+            "Look at this equation: 7 x 8 = 7 x (5 + 3). Which property lets us rewrite this as (7 x 5) + (7 x 3)?",
+            "Use the distributive property to find the missing number: 6 x (10 + 2) = (6 x ___) + (6 x 2)."
+          ],
+          "visual_aids": [
+            "Area models showing a rectangle partitioned (e.g., a 4 by 8 rectangle split into a 4x5 and a 4x3 rectangle)"
+          ]
+        }
+      ],
+      "generation_reasoning": "The sequences are designed to systematically introduce the five properties of multiplication listed in the assessment boundary. The progression starts with the simplest properties (Zero and Identity), which involve special numbers, then moves to properties that rearrange factors (Commutative and Associative), and concludes with the most complex property that combines two operations (Distributive). This scaffolding aligns with DI principles by introducing one new concept per sequence and building complexity gradually. Each question isolates a single property, strictly adhering to the assessment boundary.",
+      "generated_at": "2025-10-30T10:57:21.704586"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.3+2",
+      "grade": 3,
+      "substandard_description": "Solve word problems involving two step multiplication.",
+      "assessment_boundary": "Assessment is restricted to:\n- Single-digit multipliers and multiplicands (up to 10 × 10)\n- Must be two step problems involving multiplication.\n- No step can require mutliplication that uses facts outside of 10 x 10.",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Word problems: Multiplication followed by addition",
+          "example_questions": [
+            "A baker makes 5 batches of cookies. Each batch has 9 cookies. He then bakes another 7 cookies. How many cookies did he bake in total?",
+            "Mia reads 8 pages of her book each day for 7 days. On the eighth day, she reads 10 more pages. How many pages did she read in total?",
+            "There are 4 flower pots. Each pot has 3 flowers. The gardener plants 6 more flowers. How many flowers are there now?"
+          ],
+          "visual_aids": [
+            "Bar model diagram",
+            "Number line"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Word problems: Multiplication followed by subtraction",
+          "example_questions": [
+            "Tom buys 6 packs of stickers. Each pack has 10 stickers. He gives 8 stickers to his friend. How many stickers does Tom have left?",
+            "A classroom has 7 rows of desks with 5 desks in each row. The teacher removes 3 desks. How many desks are left in the classroom?",
+            "Sara collected 9 boxes of seashells with 8 shells in each box. She lost 5 shells on her way home. How many shells does she have now?"
+          ],
+          "visual_aids": [
+            "Bar model diagram",
+            "Counters or objects"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Word problems: Addition or subtraction followed by multiplication",
+          "example_questions": [
+            "Emily has 2 red markers and 5 blue markers. Her art box has 8 times as many markers as she is holding. How many markers are in her art box?",
+            "There were 10 birds on a wire. 3 flew away. If each remaining bird has 2 wings, how many wings are on the wire in total?",
+            "A small zoo has 4 lions and 3 tigers. Each of these big cats eats 6 pounds of meat a day. How many pounds of meat do they eat in total each day?"
+          ],
+          "visual_aids": [
+            "Bar model diagram"
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Word problems: Adding the results of two multiplication facts",
+          "example_questions": [
+            "In a garden, there are 3 rows of tomato plants with 8 plants in each row. There are also 5 rows of pepper plants with 4 plants in each row. How many plants are in the garden altogether?",
+            "David bought 4 packs of juice boxes with 6 boxes in each pack. He also bought 2 packs of water bottles with 8 bottles in each pack. How many drinks did he buy in total?",
+            "For a party, Maria made 5 bags of treats with 7 candies in each. John made 6 bags of treats with 5 candies in each. How many candies do they have in total?"
+          ],
+          "visual_aids": [
+            "Bar model diagram"
+          ]
+        }
+      ],
+      "generation_reasoning": "The sequences directly address the substandard by focusing on two-step word problems involving multiplication. They adhere to the assessment boundary by ensuring all multiplication steps use single-digit factors within the 10x10 fact family. The progression follows Direct Instruction principles by systematically increasing complexity: Sequence 1 introduces the basic 'multiply, then add' structure. Sequence 2 substitutes the second step with subtraction. Sequence 3 reverses the operational order ('add/subtract, then multiply'). Finally, Sequence 4 presents a more complex structure requiring students to calculate two separate products before combining them, building on the skills from prior sequences.",
+      "generated_at": "2025-10-30T10:57:56.532983"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+1",
+      "grade": 3,
+      "substandard_description": "Apply the commutative property of multiplication as a strategy to multiply whole numbers.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number factors only (no fractions, decimals, or negative numbers).\n- Factors and products must be within the range of 0–10 for each factor.\n- Products must not exceed 100.\n- Equations and expressions should involve no more than two factors (e.g., 3 × 5, not 3 × 5 × 2 for this substandard; associative and distributive properties are addressed in other substandards).\n- Contexts and representations may include objects, pictures, words, and symbols\n- Problems may require students to identify, create, or explain equivalent multiplication expressions by switching the order of factors (e.g., 4 × 7 = 7 × 4).\n- No abstract variables (e.g., n, x); use symbols such as □, ?, or __ for unknowns if needed.\n- Division is not assessed under this substandard (commutative property does not apply to division).\n- Exclude multi-step problems or problems that require applying more than one property at once (focus is solely on the commutative property for this substandard).\n- Contexts are allowed but should be simple and clearly illustrate the commutative property (e.g., \"3 bags of 5 apples is the same as 5 bags of 3 apples\")\n- No use of variables (e.g., a, n, x); use symbols such as a box (□), question mark (?), or blank line (__) for unknown values.\n- Cannot combine properties. Commutitive property ONLY.",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identifying equivalent groupings and arrays",
+          "example_questions": [
+            "Look at the first picture showing 4 rows of 5 stars. Which other picture shows the same total number of stars?",
+            "An array shows 7 rows of 3 dots. Which of the following arrays is equal to it: A) An array with 3 rows of 7 dots, B) An array with 7 rows of 4 dots, or C) An array with 3 rows of 6 dots?",
+            "Here are 8 groups of 2 circles. Draw a picture that shows the same total number of circles but with only 2 groups."
+          ],
+          "visual_aids": [
+            "Images of arrays and grouped objects"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Writing two equivalent equations for one visual model",
+          "example_questions": [
+            "An array has 6 rows and 4 columns. Write two different multiplication equations that describe the total number of items in the array.",
+            "A picture shows 9 boxes with 3 balls in each box. Write two multiplication facts this picture shows.",
+            "Look at the array of squares. Write two multiplication sentences that equal the total number of squares shown. [Show a 5 by 8 array]"
+          ],
+          "visual_aids": [
+            "Images of arrays and grouped objects"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Completing equivalent multiplication equations with symbols",
+          "example_questions": [
+            "If you know 7 × 9 = 63, what other multiplication fact do you know?",
+            "Fill in the blank to make the equation true: 5 × 8 = 8 × __.",
+            "Complete the number sentence: __ × 6 = 6 × 10.",
+            "Which equation is the same as 3 × 4 = 12? A) 4 × 3 = 12, B) 3 + 4 = 7, C) 12 - 4 = 8"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Applying the commutative property in word problems",
+          "example_questions": [
+            "There are 3 boats with 6 people in each boat. Is this the same number of people as 6 boats with 3 people in each? Write two number sentences to show your work.",
+            "A bookshelf has 5 shelves with 7 books on each shelf. Write a different multiplication sentence that shows another way to arrange the same total number of books.",
+            "Sam says that 2 packs of 9 pencils is more than 9 packs of 2 pencils. Is he correct? Explain why or why not."
+          ],
+          "visual_aids": null
+        }
+      ],
+      "generation_reasoning": "The sequences are designed to build understanding of the commutative property of multiplication by following a concrete-to-abstract progression, a core principle of Direct Instruction. Sequence 1 starts with concrete visual models (arrays) to establish the concept visually. Sequence 2 connects these visual models to their symbolic representations (equations), solidifying the link. Sequence 3 removes the visual aids, requiring students to work purely with symbolic equations. Finally, Sequence 4 asks students to apply the property in simple word problems, demonstrating mastery in a contextual setting. This progression respects the assessment boundary by using only two whole-number factors between 0-10, keeping products at or below 100, and focusing exclusively on the commutative property without combining other operations or properties.",
+      "generated_at": "2025-10-30T10:58:22.632826"
+    }
+  ]
+}
