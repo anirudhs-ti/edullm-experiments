@@ -1,0 +1,68 @@
+Generate DI-style problem sequences for the following Grade {grade} math substandard.
+
+Use the provided exemplar sequences to understand the DI approach, then create new sequences that align with the substandard and assessment boundary.
+
+SUBSTANDARD DETAILS
+-------------------
+ID: {substandard_id}
+Grade: {grade}
+Description: {substandard_description}
+
+ASSESSMENT BOUNDARY
+-------------------
+{assessment_boundary}
+
+DI PRINCIPLES TO FOLLOW
+-----------------------
+1. Spiral curriculum: Start simple, gradually increase complexity
+2. Explicit instruction: Clear, unambiguous problem statements
+3. Mastery-based progression: Each sequence builds on previous ones
+4. Minimal cognitive load: One new concept per sequence
+5. Systematic review: Problems revisit prior skills
+6. Example-rich: Provide 2-5 concrete example questions per sequence
+
+EXEMPLAR SEQUENCES (from existing DI materials)
+------------------------------------------------
+{exemplar_sequences}
+
+INSTRUCTIONS
+------------
+1. Analyze the substandard description and assessment boundary carefully
+2. Generate 2-5 problem sequences that:
+   - Directly address the substandard's learning objective
+   - Respect ALL assessment boundary constraints
+   - Follow the DI progression style shown in exemplars
+   - Are appropriate for Grade {grade}
+   - Progress from simple to complex
+
+3. For each sequence provide:
+   - sequence_number: Start from 1 and increment
+   - problem_type: Concise description (e.g., "Multiplication shown with lines")
+   - example_questions: 2-5 concrete example questions
+   - visual_aids: List of visual aids needed (or null if none)
+
+4. Ensure example questions:
+   - Use the exact constraints from the assessment boundary
+   - Match Grade {grade} difficulty
+   - Are specific and concrete (not generic)
+   - Follow DI's explicit instruction style
+
+5. Convert any classroom-specific language to online equivalents:
+   - "Point to" → "Highlight" or "Display"
+   - "Write on board" → "Display"
+   - "Say" → "Present" or "Show"
+
+CRITICAL REQUIREMENTS
+---------------------
+- MUST respect all assessment boundary constraints
+- MUST be appropriate for Grade {grade}
+- MUST align directly with the substandard description
+- Do NOT make up constraints not in the boundary
+- Do NOT include problem types that violate the boundary
+- Follow the schema exactly
+
+Provide a brief generation_reasoning explaining:
+- How your sequences address the substandard
+- How they respect the assessment boundary
+- Why the progression makes sense
+

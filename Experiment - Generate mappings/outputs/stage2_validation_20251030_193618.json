@@ -1,0 +1,138 @@
+{
+  "metadata": {
+    "stage1_path": "C:\\Users\\Trilogy Innovations\\Documents\\Trilogy\\edullm-experiments\\Experiment - Generate mappings\\outputs\\stage1_chapter_mapping_20251030_185325.json",
+    "generated_formats_path": "C:\\Users\\Trilogy Innovations\\Documents\\Trilogy\\edullm-experiments\\Experiment - Generate mappings\\outputs\\generated_formats_20251030_125804.json",
+    "pdf_path": "C:\\Users\\Trilogy Innovations\\Documents\\Trilogy\\edullm-experiments\\Experiment - Generate mappings\\data\\Direct_Instruction_Mathematics.pdf",
+    "validated_at": "2025-10-30T19:36:18.554135",
+    "total_items": 6
+  },
+  "results": [
+    {
+      "skill": "Subtraction",
+      "problem_type": "Subtracting a one-, two-, three-, or four-digit number from a four-digit number with zeros in the hundreds, tens, and ones columns",
+      "format_title": "SUBTRACTION FROM 1000 WITH REGROUPING",
+      "chapter": {
+        "title": "Chapter 8 Subtraction",
+        "start_page": 132,
+        "end_page": 153,
+        "page_offset": 17,
+        "book_content_preview": "Chapter 8 Subtraction LEARNING OUTCOMES 8.1 Discuss the two stages of teaching subtraction to young students and the sequence of problem types appropriate for each stage. 8.2 Describe the procedures recommended to promote conceptual understanding of beginning subtraction. 8.3 Outline instructional procedures to teach beginning subtraction including the cross-out strategy and missing subtrahend strategy. 8.4 Discuss the differences in the instructional strategies for teaching subtraction without renaming and subtraction with renaming. SKILL HIERARCHY Subtraction instruction, like addition instruction, may be divided into two stages. During the beginning stage, introducing the concept, the teacher presents strategies for solving sim­ ple subtraction"
+      },
+      "judgment": {
+        "is_supported": true,
+        "confidence": 1.0,
+        "evidence_pages": [
+          133,
+          134
+        ],
+        "reasoning": "The chapter's \"INSTRUCTIONAL SEQUENCE AND ASSESSMENT CHART\" on page 133 explicitly lists the problem type: \"Subtracting a one-, two-, three-, or four-digit number from a four-digit number with zeros in the hundreds, tens, and ones columns,\" providing examples such as \"1000 - 283\" and \"1000 - 82\". Additionally, page 134 illustrates the renaming process for a similar problem (4000)."
+      }
+    },
+    {
+      "skill": "Geometry",
+      "problem_type": "Draw a line segment",
+      "format_title": "DRAWING LINE SEGMENTS",
+      "chapter": {
+        "title": "Chapter 17 Geometry",
+        "start_page": 460,
+        "end_page": 494,
+        "page_offset": 17,
+        "book_content_preview": "Chapter Geometry With Don Crawford LEARNING OUTCOMES 17.1 Describe the scope of concepts that should be included in teaching geometry. 17.2 Describe the role language plays in the development of conceptual understanding of geometry. 17.3 Explain how nonexamples are used to teach students to identify and define geometric shapes. 17.4 Discuss the rationale for the formulas used to teach students to calculate area and volume. 17.5 Discuss the importance of modeling when teaching students to measure or construct figures using tools. 17.6 Outline the facts about angles and lines that are prerequisites for more advanced geometry. 17.7 Describe the general"
+      },
+      "judgment": {
+        "is_supported": true,
+        "confidence": 1.0,
+        "evidence_pages": [
+          462
+        ],
+        "reasoning": "The 'Instructional Sequence and Assessment Chart' on page 462 explicitly lists 'Draw a line segment' as a problem type for Grade Level 3, with the corresponding performance indicator being 'Draw the line segment CD.'"
+      }
+    },
+    {
+      "skill": "Data Analysis",
+      "problem_type": "Represent a data set with several categories using scaled picture and bar graphs",
+      "format_title": "REPRESENTING DATA WITH SCALED PICTURE AND BAR GRAPHS",
+      "chapter": {
+        "title": "Chapter 16 Data Analysis",
+        "start_page": 435,
+        "end_page": 459,
+        "page_offset": 17,
+        "book_content_preview": "C hapter 16 Data Analysis LEARNING OUTCOMES Outline the recommended sequence for teaching tables and different types 16.1 of graphs. Discuss activities that may be used to promote conceptual understanding 16.2 of graphs and statistics. Outline the teaching procedures for reading and interpreting different types 16.3 of graphs. Explain the general teaching procedures recommended for teaching descriptive 16.4 statistics. Describe the diagnosis and remediation procedures for addressing common 16.5 errors in data analysis. SKILL HIERARCHY • ∙ An understanding of mathematics is often required to comprehend material from content areas such as science, social studies, or health. Mathematics in content-area"
+      },
+      "judgment": {
+        "is_supported": true,
+        "confidence": 1.0,
+        "evidence_pages": [
+          436,
+          441
+        ],
+        "reasoning": "The 'INSTRUCTIONAL SEQUENCE AND ASSESSMENT CHART' on page 436 explicitly lists 'Represent a data set with several categories using scaled picture and bar graphs' as a Grade 3 problem type. Furthermore, page 441 explains the concept of scaled picture graphs where 'each picture stands for a quantity other than one' and provides an example."
+      }
+    },
+    {
+      "skill": "Division",
+      "problem_type": "Division equation with ÷ sign; no remainder; single-digit divisor and quotient.",
+      "format_title": "SOLVING DIVISION EQUATIONS",
+      "chapter": {
+        "title": "Chapter 10 Division",
+        "start_page": 181,
+        "end_page": 217,
+        "page_offset": 17,
+        "book_content_preview": "Chapter 10 Division LEARNING OUTCOMES 10.1 Discuss the two stages of teaching division to young students and the sequence of problem types appropriate for each stage. 10.2 Describe the ways in which division can be introduced using concrete demonstrations. 10.3 Outline instructional strategies to teach single-digit division including problems without remainders, division facts, and problems with remainders. 10.4 Discuss the differences in the instructional strategies for teaching multi-digit division problems with one-digit divisors and two-digit divisors. SKILL HIERARCHY ♦ ••••••• As with all major operations, division is introduced in two stages: the beginning stage and the multi-digit division stage. During"
+      },
+      "judgment": {
+        "is_supported": false,
+        "confidence": 1.0,
+        "evidence_pages": [
+          182,
+          184
+        ],
+        "reasoning": "Although the 'Instructional Sequence and Assessment Chart' on page 182 lists 'Division equation with ÷ sign' as a problem type, the chapter provides no instructional procedures for this format. All teaching examples and formats focus exclusively on the long division notation (e.g., 5)20). Page 184 even recommends against the phrasing '20 divided by 5 equals 4', which is associated with the equation format, in favor of '5 goes into 20 four times'."
+      }
+    },
+    {
+      "skill": "Measurement",
+      "problem_type": "Customary units: area and volume",
+      "format_title": "CALCULATING AREA OF RECTANGLES",
+      "chapter": {
+        "title": "Chapter 17 Geometry",
+        "start_page": 460,
+        "end_page": 494,
+        "page_offset": 17,
+        "book_content_preview": "Chapter Geometry With Don Crawford LEARNING OUTCOMES 17.1 Describe the scope of concepts that should be included in teaching geometry. 17.2 Describe the role language plays in the development of conceptual understanding of geometry. 17.3 Explain how nonexamples are used to teach students to identify and define geometric shapes. 17.4 Discuss the rationale for the formulas used to teach students to calculate area and volume. 17.5 Discuss the importance of modeling when teaching students to measure or construct figures using tools. 17.6 Outline the facts about angles and lines that are prerequisites for more advanced geometry. 17.7 Describe the general"
+      },
+      "judgment": {
+        "is_supported": true,
+        "confidence": 1.0,
+        "evidence_pages": [
+          462,
+          464,
+          470,
+          471,
+          473
+        ],
+        "reasoning": "The chapter explicitly covers the calculation of area and volume. The 'Instructional Sequence and Assessment Chart' lists 'Find the area of rectangle or square' (p. 462) and 'Find the volume of a box (rectangular prism)' (p. 464) as problem types, with examples using inches. The section 'CALCULATING PERIMETER, AREA, AND VOLUME' (p. 470) describes teaching the procedure for calculating area and volume, and notes that formats use 'a variety of common units such as inches, feet, yards'. A format for calculating the volume of boxes is also described (p. 473)."
+      }
+    },
+    {
+      "skill": "Subtraction",
+      "problem_type": "Hundreds minus 1 facts",
+      "format_title": "SUBTRACTING 1 FROM HUNDREDS",
+      "chapter": {
+        "title": "Chapter 8 Subtraction",
+        "start_page": 132,
+        "end_page": 153,
+        "page_offset": 17,
+        "book_content_preview": "Chapter 8 Subtraction LEARNING OUTCOMES 8.1 Discuss the two stages of teaching subtraction to young students and the sequence of problem types appropriate for each stage. 8.2 Describe the procedures recommended to promote conceptual understanding of beginning subtraction. 8.3 Outline instructional procedures to teach beginning subtraction including the cross-out strategy and missing subtrahend strategy. 8.4 Discuss the differences in the instructional strategies for teaching subtraction without renaming and subtraction with renaming. SKILL HIERARCHY Subtraction instruction, like addition instruction, may be divided into two stages. During the beginning stage, introducing the concept, the teacher presents strategies for solving sim­ ple subtraction"
+      },
+      "judgment": {
+        "is_supported": true,
+        "confidence": 1.0,
+        "evidence_pages": [
+          133
+        ],
+        "reasoning": "The chapter's 'Instructional Sequence and Assessment Chart' explicitly lists 'Hundreds minus 1 facts' as a problem type for Grade 3, providing the examples '700 - 1 = □', '400 - 1 = □', and '800 - 1 = □'."
+      }
+    }
+  ]
+}

@@ -1,0 +1,79 @@
+Generate a DI-style teaching format for the following problem sequence.
+
+The format should provide explicit, step-by-step teaching instructions following Direct Instruction methodology.
+
+SEQUENCE DETAILS
+----------------
+Skill: {skill}
+Grade: {grade}
+Sequence Number: {sequence_number}
+Problem Type: {problem_type}
+
+Example Questions:
+{example_questions}
+
+Visual Aids: {visual_aids}
+
+DI FORMAT PRINCIPLES
+--------------------
+1. **Model-Test-Practice**: Teacher models, students practice with guidance, then independently
+2. **Explicit Instruction**: Clear, unambiguous teacher actions and expected student responses
+3. **Systematic Scaffolding**: Break complex tasks into small, manageable steps
+4. **Error Correction**: Include notes on how to correct common mistakes
+5. **Gradual Release**: Move from teacher-led to student-independent
+6. **Discrimination Practice**: Help students distinguish between similar concepts
+7. **Online Application Context**: Teacher is an app, not a person
+   - Use "Display", "Highlight", "Show" instead of "Point to", "Say", "Write on board"
+   - Use "Present" instead of "Tell students"
+   - Remove physical classroom references
+
+EXEMPLAR FORMATS (from existing DI materials)
+----------------------------------------------
+{exemplar_formats}
+
+INSTRUCTIONS
+------------
+1. Analyze the sequence's problem type and example questions
+2. Create a format that teaches students how to solve these problems step-by-step
+3. Structure the format with:
+   - **format_number**: Will be assigned automatically (use "TBD" as placeholder)
+   - **title**: UPPERCASE descriptive title (e.g., "MULTIPLICATION WITH ARRAYS")
+   - **parts**: 1-3 parts breaking down the instruction
+     - Each part has a part_name (e.g., "Part A: Introduction")
+     - Optional description for context/setup
+     - Steps with sequential step_numbers
+   - **grade**: The grade level ({grade})
+   - **sequence_numbers**: List containing [{sequence_number}]
+   - **grade_assignment_reasoning**: Brief explanation of why this format fits this grade/sequence
+
+4. For each step, provide:
+   - **step_number**: Sequential number
+   - **teacher_action**: What the app displays/does (be specific and concrete)
+   - **student_response**: Expected student answer (null if no response expected)
+   - **notes**: Optional correction procedures or guidance (null if none needed)
+
+5. Teaching progression:
+   - Start with modeling/demonstration
+   - Move to guided practice with feedback
+   - End with independent practice
+   - Include 3-8 steps per part (not too short, not too long)
+
+6. Use concrete examples from the sequence's example_questions
+7. If visual_aids are specified, incorporate them in teacher actions
+8. Make teacher actions specific enough that a developer could implement them
+
+CRITICAL REQUIREMENTS
+---------------------
+- MUST follow DI methodology: Model → Lead → Test
+- MUST use online application language (Display, Highlight, Show, Present)
+- MUST be specific and actionable for Grade {grade}
+- MUST directly teach the problem type: {problem_type}
+- Steps MUST be sequential and build on each other
+- Each step MUST have a clear teacher_action
+- Follow the schema exactly
+
+Provide a brief generation_reasoning explaining:
+- How your format teaches the sequence's problem type
+- Why the steps are in this order
+- How it follows DI principles
+

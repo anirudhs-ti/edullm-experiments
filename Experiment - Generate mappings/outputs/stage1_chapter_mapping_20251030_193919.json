@@ -1,0 +1,768 @@
+{
+  "metadata": {
+    "generated_formats_path": "C:\\Users\\Trilogy Innovations\\Documents\\Trilogy\\edullm-experiments\\Experiment - Generate mappings\\outputs\\generated_formats_new_sequences_20251030_153007.json",
+    "pdf_path": "C:\\Users\\Trilogy Innovations\\Documents\\Trilogy\\edullm-experiments\\Experiment - Generate mappings\\data\\Direct_Instruction_Mathematics.pdf",
+    "validated_at": "2025-10-30T19:41:38.844689",
+    "toc_pages": "10-14",
+    "num_items": 10
+  },
+  "toc_entries": [
+    {
+      "chapter_title": "Chapter 1 Direct Instruction",
+      "start_page": 1,
+      "subtopics": [
+        {
+          "title": "Mathematical Proficiency",
+          "start_page": 1
+        },
+        {
+          "title": "Instructional Design",
+          "start_page": 2
+        },
+        {
+          "title": "Preskills, 4; Example Selection, 4; Practice and Review,",
+          "start_page": 4
+        },
+        {
+          "title": "Instructional Delivery",
+          "start_page": 5
+        },
+        {
+          "title": "Procedures, 7; Diagnosis and Remediation,",
+          "start_page": 7
+        },
+        {
+          "title": "Instructional Language",
+          "start_page": 8
+        },
+        {
+          "title": "Sequencing Guidelines Applied to Language Instruction,",
+          "start_page": 9
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 2 Research Support for Direct Instruction Mathematics",
+      "start_page": 10,
+      "subtopics": [
+        {
+          "title": "The Need for Excellent Math Instruction",
+          "start_page": 10
+        },
+        {
+          "title": "Current Performance of U.S. Math Students,",
+          "start_page": 11
+        },
+        {
+          "title": "Research on Direct Instruction",
+          "start_page": 12
+        },
+        {
+          "title": "Research Recommendations for Math Instruction",
+          "start_page": 15
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 3 Curriculum Evaluation and Modification",
+      "start_page": 17,
+      "subtopics": [
+        {
+          "title": "The Curriculum Adoption Process",
+          "start_page": 17
+        },
+        {
+          "title": "Time Allocation and Committee Responsibilities, 18; Screening Process,",
+          "start_page": 18
+        },
+        {
+          "title": "Topics for Curriculum Evaluation",
+          "start_page": 19
+        },
+        {
+          "title": "General Program Design, 19; Specific Content Design,",
+          "start_page": 21
+        },
+        {
+          "title": "Modifying Mathematics Curriculum",
+          "start_page": 23
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 4 Counting",
+      "start_page": 25,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 25
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 27
+        },
+        {
+          "title": "Instructional Procedures",
+          "start_page": 27
+        },
+        {
+          "title": "Counting,",
+          "start_page": 32
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 5 Symbol Identification and Place Value",
+      "start_page": 39,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 39
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 41
+        },
+        {
+          "title": "Instructional Procedures: Symbol Identification",
+          "start_page": 42
+        },
+        {
+          "title": "Correspondence, 45; Practice and Review,",
+          "start_page": 46
+        },
+        {
+          "title": "Instructional Procedures: Place Value",
+          "start_page": 47
+        },
+        {
+          "title": "Column Alignment,",
+          "start_page": 53
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 6 Basic Facts",
+      "start_page": 68,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 69
+        },
+        {
+          "title": "Conceptual Understanding and Organization",
+          "start_page": 73
+        },
+        {
+          "title": "Instructional Procedures: Relationship Activities",
+          "start_page": 73
+        },
+        {
+          "title": "Plus-One Facts, 73; Series Saying, 74; Three-Number Fact Families,",
+          "start_page": 75
+        },
+        {
+          "title": "Activities",
+          "start_page": 75
+        },
+        {
+          "title": "Systematic Review, 76; Record-Keeping Procedures,",
+          "start_page": 76
+        },
+        {
+          "title": "Instructional Procedures: Two Fact Mastery Programs",
+          "start_page": 77
+        },
+        {
+          "title": "Commercial Programs,",
+          "start_page": 81
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 7 Addition",
+      "start_page": 88,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 88
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 90
+        },
+        {
+          "title": "Instructional Procedures: Beginning Addition",
+          "start_page": 91
+        },
+        {
+          "title": "Fast Way, 93; Diagnosis and Remediation,",
+          "start_page": 94
+        },
+        {
+          "title": "Instructional Procedures: Multi-Digit Addition",
+          "start_page": 95
+        },
+        {
+          "title": "Three or More Addends, 98; Diagnosis and Remediation,",
+          "start_page": 99
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 8 Subtraction",
+      "start_page": 115,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 115
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 117
+        },
+        {
+          "title": "Instructional Procedures: Beginning Subtraction",
+          "start_page": 117
+        },
+        {
+          "title": "Remediation, 119; Fact Memorization,",
+          "start_page": 119
+        },
+        {
+          "title": "Instructional Procedures: Multi-Digit Subtraction Problems",
+          "start_page": 120
+        },
+        {
+          "title": "Complex Renaming Problems, 122; Diagnosis and Remediation,",
+          "start_page": 125
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 9 Multiplication",
+      "start_page": 137,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 137
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 140
+        },
+        {
+          "title": "Instructional Procedures: Beginning Multiplication",
+          "start_page": 140
+        },
+        {
+          "title": "Diagnosis and Remediation,",
+          "start_page": 142
+        },
+        {
+          "title": "Instructional Procedures: Multi-Digit Multiplication",
+          "start_page": 143
+        },
+        {
+          "title": "Diagnosis and Remediation,",
+          "start_page": 148
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 10 Division",
+      "start_page": 164,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 164
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 165
+        },
+        {
+          "title": "Instructional Procedures: Beginning Division",
+          "start_page": 166
+        },
+        {
+          "title": "Remainders, 167; Remainder Facts, 168; Diagnosis and Remediation,",
+          "start_page": 169
+        },
+        {
+          "title": "Instructional Procedures: Multi-Digit Division",
+          "start_page": 172
+        },
+        {
+          "title": "Remediation,",
+          "start_page": 179
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 11 Problem Solving",
+      "start_page": 201,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 201
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 204
+        },
+        {
+          "title": "Instructional Procedures: Addition and Subtraction Problems",
+          "start_page": 204
+        },
+        {
+          "title": "Classification Problems, 212; Distractors, 215; Multi-step Word Problems,",
+          "start_page": 215
+        },
+        {
+          "title": "Instructional Procedures: Multiplication and Division Problems",
+          "start_page": 216
+        },
+        {
+          "title": "Diagnosis and Remediation",
+          "start_page": 218
+        },
+        {
+          "title": "Errors, 219; Translation Errors,",
+          "start_page": 219
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 12 Measurement, Time, and Money",
+      "start_page": 245,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 245
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 249
+        },
+        {
+          "title": "Measurement, 249; Time, 249; Money,",
+          "start_page": 249
+        },
+        {
+          "title": "Measurement: Customary and Metric Units",
+          "start_page": 249
+        },
+        {
+          "title": "Conversion Problems, 255; Operations, 258; Word Problems,",
+          "start_page": 259
+        },
+        {
+          "title": "Time",
+          "start_page": 260
+        },
+        {
+          "title": "Minutes After the Hour, 260; Alternate Ways of Expressing Time,",
+          "start_page": 262
+        },
+        {
+          "title": "Money",
+          "start_page": 263
+        },
+        {
+          "title": "Skills, 265; Decimal Notation in Money,",
+          "start_page": 266
+        },
+        {
+          "title": "Diagnosis and Remediation",
+          "start_page": 266
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 13 Fractions",
+      "start_page": 284,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 284
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 292
+        },
+        {
+          "title": "Than One Whole, 296; Reading and Writing Mixed Numerals,",
+          "start_page": 297
+        },
+        {
+          "title": "Instructional Procedures: Rewriting Fractions",
+          "start_page": 298
+        },
+        {
+          "title": "Converting Mixed Numerals and Improper Fractions,",
+          "start_page": 304
+        },
+        {
+          "title": "Instructional Procedures: Addition and Subtraction of Fractions",
+          "start_page": 306
+        },
+        {
+          "title": "Comparing Fractions, 310; Word Problems,",
+          "start_page": 311
+        },
+        {
+          "title": "Instructional Procedures: Multiplication and Division of Fractions",
+          "start_page": 311
+        },
+        {
+          "title": "Dividing Fractions, 314; Word Problems—Multiplication and Division,",
+          "start_page": 315
+        },
+        {
+          "title": "Diagnosis and Remediation of Common Fraction Errors",
+          "start_page": 317
+        },
+        {
+          "title": "Errors in Reading and Writing Fractions and Mixed Numerals,",
+          "start_page": 317
+        },
+        {
+          "title": "Errors in Adding and Subtracting Fractions,",
+          "start_page": 317
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 14 Decimals",
+      "start_page": 359,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 359
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 362
+        },
+        {
+          "title": "Instructional Procedures: Reading and Writing Decimals",
+          "start_page": 362
+        },
+        {
+          "title": "Reading and Writing Decimals and Mixed Decimals,",
+          "start_page": 362
+        },
+        {
+          "title": "Instructional Procedures: Decimal Operations",
+          "start_page": 365
+        },
+        {
+          "title": "Fractions and Decimals,",
+          "start_page": 372
+        },
+        {
+          "title": "Diagnosis and Remediation",
+          "start_page": 374
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 15 Percent, Ratio, and Probability",
+      "start_page": 391,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 391
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 393
+        },
+        {
+          "title": "Percentage Problems",
+          "start_page": 393
+        },
+        {
+          "title": "Simple Percentage Word Problems, 394; Complex Percentage Problems,",
+          "start_page": 395
+        },
+        {
+          "title": "Ratio Problems",
+          "start_page": 395
+        },
+        {
+          "title": "Complex Ratio Word Problems,",
+          "start_page": 397
+        },
+        {
+          "title": "Probability Problems",
+          "start_page": 398
+        },
+        {
+          "title": "Problems,",
+          "start_page": 400
+        },
+        {
+          "title": "Diagnosis and Remediation",
+          "start_page": 400
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 16 Data Analysis",
+      "start_page": 418,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 418
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 420
+        },
+        {
+          "title": "Graphs",
+          "start_page": 421
+        },
+        {
+          "title": "Bar Graphs, 424; Line Plots, Stem and Leaf Plots,",
+          "start_page": 424
+        },
+        {
+          "title": "Descriptive Statistics",
+          "start_page": 425
+        },
+        {
+          "title": "Measures of Central Tendency, 425; Measures of Variability,",
+          "start_page": 427
+        },
+        {
+          "title": "Diagnosis and Remediation",
+          "start_page": 428
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 17 Geometry",
+      "start_page": 443,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 443
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 450
+        },
+        {
+          "title": "Identifying and Defining Geometric Figures and Concepts",
+          "start_page": 450
+        },
+        {
+          "title": "Calculating Perimeter, Area, and Volume",
+          "start_page": 453
+        },
+        {
+          "title": "Perimeter and Area, 453; Volume,",
+          "start_page": 455
+        },
+        {
+          "title": "Measuring and Constructing Figures Using Tools",
+          "start_page": 456
+        },
+        {
+          "title": "Using Logic in Working with Angles and Lines",
+          "start_page": 456
+        },
+        {
+          "title": "Diagnosis and Remediation",
+          "start_page": 458
+        }
+      ]
+    },
+    {
+      "chapter_title": "Chapter 18 Pre-algebra",
+      "start_page": 478,
+      "subtopics": [
+        {
+          "title": "Skill Hierarchy",
+          "start_page": 479
+        },
+        {
+          "title": "Conceptual Understanding",
+          "start_page": 482
+        },
+        {
+          "title": "Coordinate System and Functions (CSF)",
+          "start_page": 482
+        },
+        {
+          "title": "Other Types of Numbers: Primes, Factors, Integers, and Exponents",
+          "start_page": 483
+        },
+        {
+          "title": "Primes and Factors, 483; Integers, 484; Exponents,",
+          "start_page": 485
+        },
+        {
+          "title": "Expressions and Equations",
+          "start_page": 485
+        },
+        {
+          "title": "Word Problems,",
+          "start_page": 487
+        },
+        {
+          "title": "Ratios and Proportions (R∕P)",
+          "start_page": 487
+        },
+        {
+          "title": "Using Ratio Tables with Percent Problems,",
+          "start_page": 493
+        },
+        {
+          "title": "Diagnosis and Remediation",
+          "start_page": 494
+        }
+      ]
+    },
+    {
+      "chapter_title": "Appendix A: Direct Instruction Mathematics and Common Core State Standards",
+      "start_page": 513,
+      "subtopics": []
+    },
+    {
+      "chapter_title": "Appendix B: Frequently Asked Questions About Direct Instruction Mathematics",
+      "start_page": 529,
+      "subtopics": []
+    },
+    {
+      "chapter_title": "Glossary",
+      "start_page": 532,
+      "subtopics": []
+    },
+    {
+      "chapter_title": "References",
+      "start_page": 534,
+      "subtopics": []
+    },
+    {
+      "chapter_title": "Index",
+      "start_page": 536,
+      "subtopics": []
+    }
+  ],
+  "results": [
+    {
+      "skill": null,
+      "problem_type": "Completing equations to show the associative property of multiplication",
+      "format_title": "ASSOCIATIVE PROPERTY OF MULTIPLICATION",
+      "pick": {
+        "chapter_title": "Multiplication",
+        "start_page": 137,
+        "confidence": 0.9,
+        "reasoning": "The user is asking about the associative property of multiplication. Chapter 9, 'Multiplication', is the most relevant chapter as it focuses on this specific arithmetic operation. The properties of multiplication, such as the associative property, are fundamental concepts that would be covered under the 'Conceptual Understanding' section of this chapter."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Counting unit squares in small, fully tiled rectangles",
+      "format_title": "FINDING AREA BY COUNTING UNIT SQUARES",
+      "pick": {
+        "chapter_title": "Geometry",
+        "start_page": 443,
+        "confidence": 1.0,
+        "reasoning": "The user wants to find the area of a shape by counting unit squares. This is a fundamental concept in geometry. Chapter 17, titled 'Geometry', explicitly lists 'Calculating Perimeter, Area, and Volume' as one of its topics, making it the most relevant chapter."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Identify a single-digit subtraction rule from a table",
+      "format_title": "IDENTIFYING SUBTRACTION RULES IN INPUT-OUTPUT TABLES",
+      "pick": {
+        "chapter_title": "Subtraction",
+        "start_page": 115,
+        "confidence": 0.8,
+        "reasoning": "The user wants to find a chapter about 'IDENTIFYING SUBTRACTION RULES IN INPUT-OUTPUT TABLES'. The core mathematical operation is subtraction. Chapter 8 is titled 'Subtraction' and focuses on this skill. While the 'input-output table' is a format often used to introduce functions (a pre-algebra topic found in Chapter 18), the problem specifies a simple 'single-digit subtraction rule', which places the concept firmly within the instructional scope of a foundational chapter on subtraction itself."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Matching the distributive property equation to rectangles with mixed orientations and larger side lengths (one or more sides > 5, but all sides ≤ 10).",
+      "format_title": "FINDING AREA USING THE DISTRIBUTIVE PROPERTY",
+      "pick": {
+        "chapter_title": "Geometry",
+        "start_page": 443,
+        "confidence": 0.9,
+        "reasoning": "The user wants to find the chapter related to 'FINDING AREA USING THE DISTRIBUTIVE PROPERTY'. Chapter 17, 'Geometry', is the most relevant because it explicitly lists 'Calculating Perimeter, Area, and Volume' as a key topic. Finding the area of rectangles is a fundamental concept in geometry, and the distributive property is often visually represented and taught using area models of rectangles."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Finding the area of a solid rectangle by counting unit squares.",
+      "format_title": "FINDING AREA BY COUNTING UNIT SQUARES",
+      "pick": {
+        "chapter_title": "Chapter 17 Geometry",
+        "start_page": 443,
+        "confidence": 1.0,
+        "reasoning": "The request is about finding the area of a rectangle by counting unit squares. Chapter 17 is titled 'Geometry' and its topics explicitly include 'Calculating Perimeter, Area, and Volume', making it the most relevant chapter."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Completing an equation to show the relationship between multiplication and addition.",
+      "format_title": "CONNECTING MULTIPLICATION AND REPEATED ADDITION",
+      "pick": {
+        "chapter_title": "Chapter 9 Multiplication",
+        "start_page": 137,
+        "confidence": 0.9,
+        "reasoning": "The format describes the fundamental concept of multiplication as repeated addition. This foundational topic would be covered in the chapter dedicated to multiplication, specifically within the sections on 'Conceptual Understanding' and 'Beginning Multiplication'."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Word problems requiring division to create groups, followed by subtraction from one of those groups.",
+      "format_title": "SOLVING TWO-STEP DIVISION AND SUBTRACTION WORD PROBLEMS",
+      "pick": {
+        "chapter_title": "Problem Solving",
+        "start_page": 201,
+        "confidence": 1.0,
+        "reasoning": "The format specifies 'SOLVING TWO-STEP DIVISION AND SUBTRACTION WORD PROBLEMS'. Chapter 11, 'Problem Solving', is the only chapter dedicated to word problems. It explicitly lists 'Addition and Subtraction Problems', 'Multiplication and Division Problems', and 'Multi-step Word Problems' as topics, which directly matches the user's request."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Finding elapsed time crossing noon (12:00 p.m.) or midnight (12:00 a.m.)",
+      "format_title": "FINDING ELAPSED TIME ACROSS NOON OR MIDNIGHT",
+      "pick": {
+        "chapter_title": "Measurement, Time, and Money",
+        "start_page": 245,
+        "confidence": 1.0,
+        "reasoning": "The user is asking about 'finding elapsed time'. Chapter 12, titled 'Measurement, Time, and Money', is the only chapter that explicitly covers the topic of 'Time', making it the most relevant choice."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Finding the next number in an addition or subtraction pattern presented in a table",
+      "format_title": "FINDING PATTERNS IN INPUT/OUTPUT TABLES",
+      "pick": {
+        "chapter_title": "Pre-algebra",
+        "start_page": 478,
+        "confidence": 0.9,
+        "reasoning": "The user is asking for content related to finding patterns in input/output tables using addition and subtraction. This is a foundational concept for functions, which is a core topic in pre-algebra. Chapter 18, 'Pre-algebra', explicitly lists 'Coordinate System and Functions (CSF)' and 'Using Ratio Tables' as sub-topics, making it the most relevant chapter for this skill."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Identifying two visually deceptive irregular shapes (e.g., long and thin vs. compact and blocky) with the same area from a set of 4 shapes.",
+      "format_title": "FINDING EQUAL AREA IN IRREGULAR SHAPES",
+      "pick": {
+        "chapter_title": "Chapter 17 Geometry",
+        "start_page": 443,
+        "confidence": 0.9,
+        "reasoning": "The user's problem involves identifying irregular shapes that have the same area. This is a core concept in geometry. Chapter 17 is titled 'Geometry' and its table of contents explicitly lists 'Calculating Perimeter, Area, and Volume' as a main topic, making it the most relevant chapter for this task."
+      }
+    }
+  ]
+}

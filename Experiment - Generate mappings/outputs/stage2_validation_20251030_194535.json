@@ -1,0 +1,215 @@
+{
+  "metadata": {
+    "stage1_path": "C:\\Users\\Trilogy Innovations\\Documents\\Trilogy\\edullm-experiments\\Experiment - Generate mappings\\outputs\\stage1_chapter_mapping_20251030_193919.json",
+    "generated_formats_path": "C:\\Users\\Trilogy Innovations\\Documents\\Trilogy\\edullm-experiments\\Experiment - Generate mappings\\outputs\\generated_formats_new_sequences_20251030_153007.json",
+    "pdf_path": "C:\\Users\\Trilogy Innovations\\Documents\\Trilogy\\edullm-experiments\\Experiment - Generate mappings\\data\\Direct_Instruction_Mathematics.pdf",
+    "validated_at": "2025-10-30T19:45:35.188321",
+    "total_items": 10
+  },
+  "results": [
+    {
+      "skill": null,
+      "problem_type": "Completing equations to show the associative property of multiplication",
+      "format_title": "ASSOCIATIVE PROPERTY OF MULTIPLICATION",
+      "chapter": {
+        "title": "Chapter 9 Multiplication",
+        "start_page": 154,
+        "end_page": 180,
+        "page_offset": 17,
+        "book_content_preview": "Chapter Multiplication LEARNING OUTCOMES 9.1 Discuss the two stages of teaching multiplication to young students and the sequence of problem types appropriate for each stage. 9.2 Describe the procedures recommended to promote conceptual understanding of beginning multiplication. 9.3 Outline instructional procedures to teach single-digit and missing factor multiplication strategies. 9.4 Explain the instructional procedures to teach multi-digit multiplication. SKILL HIERARCHY Our discussion of multiplication is divided into two stages. The beginning stage involves pre­ senting strategies designed to establish a conceptual understanding of the process of multipli­ cation. These strategies typically are taught to students in second grade. The advanced"
+      },
+      "judgment": {
+        "is_supported": false,
+        "confidence": 1.0,
+        "evidence_pages": [],
+        "reasoning": "The chapter does not mention or provide instruction on the associative property of multiplication. The text covers conceptual understanding, single-digit multiplication, missing-factor problems, and multi-digit algorithms. While it explicitly discusses the distributive property on page 160, the associative property is never addressed."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Counting unit squares in small, fully tiled rectangles",
+      "format_title": "FINDING AREA BY COUNTING UNIT SQUARES",
+      "chapter": {
+        "title": "Chapter 17 Geometry",
+        "start_page": 460,
+        "end_page": 494,
+        "page_offset": 17,
+        "book_content_preview": "Chapter Geometry With Don Crawford LEARNING OUTCOMES 17.1 Describe the scope of concepts that should be included in teaching geometry. 17.2 Describe the role language plays in the development of conceptual understanding of geometry. 17.3 Explain how nonexamples are used to teach students to identify and define geometric shapes. 17.4 Discuss the rationale for the formulas used to teach students to calculate area and volume. 17.5 Discuss the importance of modeling when teaching students to measure or construct figures using tools. 17.6 Outline the facts about angles and lines that are prerequisites for more advanced geometry. 17.7 Describe the general"
+      },
+      "judgment": {
+        "is_supported": true,
+        "confidence": 1.0,
+        "evidence_pages": [
+          470,
+          471
+        ],
+        "reasoning": "The text describes a specific instructional format for teaching the area of rectangles (Format 17.2). A key part of this format is to first illustrate the concept of area by 'showing how a rectangle may be divided into square units with horizontal and vertical lines drawn at the unit intervals' and conveying the meaning of 'square unit' by referring to these illustrated squares before introducing the multiplication formula."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Identify a single-digit subtraction rule from a table",
+      "format_title": "IDENTIFYING SUBTRACTION RULES IN INPUT-OUTPUT TABLES",
+      "chapter": {
+        "title": "Chapter 8 Subtraction",
+        "start_page": 132,
+        "end_page": 153,
+        "page_offset": 17,
+        "book_content_preview": "Chapter 8 Subtraction LEARNING OUTCOMES 8.1 Discuss the two stages of teaching subtraction to young students and the sequence of problem types appropriate for each stage. 8.2 Describe the procedures recommended to promote conceptual understanding of beginning subtraction. 8.3 Outline instructional procedures to teach beginning subtraction including the cross-out strategy and missing subtrahend strategy. 8.4 Discuss the differences in the instructional strategies for teaching subtraction without renaming and subtraction with renaming. SKILL HIERARCHY Subtraction instruction, like addition instruction, may be divided into two stages. During the beginning stage, introducing the concept, the teacher presents strategies for solving sim­ ple subtraction"
+      },
+      "judgment": {
+        "is_supported": false,
+        "confidence": 1.0,
+        "evidence_pages": [],
+        "reasoning": "The chapter provides a comprehensive guide to teaching the mechanics of subtraction, from single-digit problems using a 'cross-out' strategy to complex multi-digit problems involving renaming. However, it does not mention or provide any instruction on analyzing input-output tables to identify an underlying subtraction rule."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Matching the distributive property equation to rectangles with mixed orientations and larger side lengths (one or more sides > 5, but all sides ≤ 10).",
+      "format_title": "FINDING AREA USING THE DISTRIBUTIVE PROPERTY",
+      "chapter": {
+        "title": "Chapter 17 Geometry",
+        "start_page": 460,
+        "end_page": 494,
+        "page_offset": 17,
+        "book_content_preview": "Chapter Geometry With Don Crawford LEARNING OUTCOMES 17.1 Describe the scope of concepts that should be included in teaching geometry. 17.2 Describe the role language plays in the development of conceptual understanding of geometry. 17.3 Explain how nonexamples are used to teach students to identify and define geometric shapes. 17.4 Discuss the rationale for the formulas used to teach students to calculate area and volume. 17.5 Discuss the importance of modeling when teaching students to measure or construct figures using tools. 17.6 Outline the facts about angles and lines that are prerequisites for more advanced geometry. 17.7 Describe the general"
+      },
+      "judgment": {
+        "is_supported": false,
+        "confidence": 1.0,
+        "evidence_pages": [
+          470,
+          471
+        ],
+        "reasoning": "The chapter explicitly describes teaching the area of a rectangle by multiplying base times height (A = b x h). While it mentions using visual representations of square units to explain the concept, it does not mention or provide any examples of using the distributive property to break a rectangle into smaller parts to find its total area."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Finding the area of a solid rectangle by counting unit squares.",
+      "format_title": "FINDING AREA BY COUNTING UNIT SQUARES",
+      "chapter": {
+        "title": "Chapter 17 Geometry",
+        "start_page": 460,
+        "end_page": 494,
+        "page_offset": 17,
+        "book_content_preview": "Chapter Geometry With Don Crawford LEARNING OUTCOMES 17.1 Describe the scope of concepts that should be included in teaching geometry. 17.2 Describe the role language plays in the development of conceptual understanding of geometry. 17.3 Explain how nonexamples are used to teach students to identify and define geometric shapes. 17.4 Discuss the rationale for the formulas used to teach students to calculate area and volume. 17.5 Discuss the importance of modeling when teaching students to measure or construct figures using tools. 17.6 Outline the facts about angles and lines that are prerequisites for more advanced geometry. 17.7 Describe the general"
+      },
+      "judgment": {
+        "is_supported": true,
+        "confidence": 1.0,
+        "evidence_pages": [
+          470,
+          471
+        ],
+        "reasoning": "The chapter explicitly describes an instructional method for teaching the area of a rectangle. On page 470, in the description of 'Format 17.2: Finding the Area of Rectangles', it states, 'In Part A, the teacher illustrates the concept of area by showing how a rectangle may be divided into square units with horizontal and vertical lines drawn at the unit intervals.' This directly supports teaching area by visualizing or counting unit squares as a foundational concept before introducing the multiplication formula."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Completing an equation to show the relationship between multiplication and addition.",
+      "format_title": "CONNECTING MULTIPLICATION AND REPEATED ADDITION",
+      "chapter": {
+        "title": "Chapter 9 Multiplication",
+        "start_page": 154,
+        "end_page": 180,
+        "page_offset": 17,
+        "book_content_preview": "Chapter Multiplication LEARNING OUTCOMES 9.1 Discuss the two stages of teaching multiplication to young students and the sequence of problem types appropriate for each stage. 9.2 Describe the procedures recommended to promote conceptual understanding of beginning multiplication. 9.3 Outline instructional procedures to teach single-digit and missing factor multiplication strategies. 9.4 Explain the instructional procedures to teach multi-digit multiplication. SKILL HIERARCHY Our discussion of multiplication is divided into two stages. The beginning stage involves pre­ senting strategies designed to establish a conceptual understanding of the process of multipli­ cation. These strategies typically are taught to students in second grade. The advanced"
+      },
+      "judgment": {
+        "is_supported": false,
+        "confidence": 1.0,
+        "evidence_pages": [
+          157,
+          158
+        ],
+        "reasoning": "The chapter mentions that repeated addition is a common way to introduce the concept of multiplication (page 157). However, it explicitly states that its recommended procedure is to use an equivalent sets (array) demonstration and a skip-counting strategy (page 157-158). The instructional formats do not include having students write or complete equations that show the relationship between multiplication and repeated addition."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Word problems requiring division to create groups, followed by subtraction from one of those groups.",
+      "format_title": "SOLVING TWO-STEP DIVISION AND SUBTRACTION WORD PROBLEMS",
+      "chapter": {
+        "title": "Chapter 11 Problem Solving",
+        "start_page": 218,
+        "end_page": 261,
+        "page_offset": 17,
+        "book_content_preview": "C hapter 11 Problem Solving LEARNING OUTCOMES 11.1 Discuss the recommended sequence for introducing word problems and the rationale for that sequence. 11.2 Describe the introductory strategy for teaching students to solve basic addition and subtractions problems. 11.3 Outline the number-family instructional strategies recommended to teach students to solve addition/subtraction word problems. 11.4 Discuss the differences in the instructional strategies for teaching addition/ subtraction word problems and multiplication/di vision word problems. 11.5 Describe the common types of errors students make when solving word problems. SKILL HIERARCHY ∙∙∙∙∙∙.. This chapter discusses procedures for teaching students to apply the four basic operations"
+      },
+      "judgment": {
+        "is_supported": false,
+        "confidence": 1.0,
+        "evidence_pages": [
+          219,
+          220
+        ],
+        "reasoning": "The chapter's 'Instructional Sequence and Assessment Chart' on pages 219-220 provides a detailed list of the types of word problems to be taught, including various multi-step problems. However, this specific combination of division to create groups followed by subtraction from one of those groups is not listed or exemplified in the chart. The chart does include other two-step problems, such as addition then division, or multiplication then subtraction, but not the requested type."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Finding elapsed time crossing noon (12:00 p.m.) or midnight (12:00 a.m.)",
+      "format_title": "FINDING ELAPSED TIME ACROSS NOON OR MIDNIGHT",
+      "chapter": {
+        "title": "Chapter 12 Measurement, Time, and Money",
+        "start_page": 262,
+        "end_page": 300,
+        "page_offset": 17,
+        "book_content_preview": "C hapter 12 Measurement, Time, and Money LEARNING OUTCOMES 12.1 Outline the recommended sequence for introducing measurement, time, and money and the rationale for that sequence. 12.2 Discuss how the basic concepts of measurement, time, and money are related. 12.3 Describe how the recommended teaching procedures for measurement are organized for both metric and customary measurement systems. 12.4 Outline the critical discriminations that students must make in order to tell time on an analog clock accurately. 12.5 Discuss the recommended sequence for teaching change-related money skills. 12.6 Outline procedures for diagnosing and remediating common error patterns in measurement, time, and"
+      },
+      "judgment": {
+        "is_supported": false,
+        "confidence": 1.0,
+        "evidence_pages": [],
+        "reasoning": "The chapter's section on time focuses on reading analog and digital clocks and learning basic time equivalencies (e.g., 60 minutes in an hour). The instructional chart on pages 264-265 only lists reading a clock (e.g., \"Put an X on the line under the clock that says 7:25\"). There is no mention or instruction on calculating elapsed time, especially not the complex case of crossing noon or midnight."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Finding the next number in an addition or subtraction pattern presented in a table",
+      "format_title": "FINDING PATTERNS IN INPUT/OUTPUT TABLES",
+      "chapter": {
+        "title": "Chapter 18 Pre-algebra",
+        "start_page": 495,
+        "end_page": 529,
+        "page_offset": 17,
+        "book_content_preview": "Chapter 18 Pre-algebra With Don Crawford LEARNING OUTCOMES 18.1 Identify the recommended sequences for teaching skills in each of the following topics: introducing the coordinate system and algebraic functions, other types of numbers, expressions and equations, and ratio and proportions. 18.2 Outline two ways in which teachers can integrate conceptual understanding activities into instruction on specific instructional strategies. 18.3 Discuss how the strategy in this text for teaching students about the coordinate system differs from traditional algebra instruction on the coordinate system and how the differences reduce student confusion. 18.4 Discuss how understanding “other numbers,” such as integers, serves as"
+      },
+      "judgment": {
+        "is_supported": true,
+        "confidence": 1.0,
+        "evidence_pages": [
+          496,
+          499,
+          500
+        ],
+        "reasoning": "The chapter explicitly covers teaching students how to complete a function table (an input/output table). The Instructional Sequence and Assessment Chart on page 496 lists this skill. Page 499 provides a detailed explanation and an example of a function table using an addition pattern (the function x + 2), and page 500 shows a completed table for a word problem based on the same addition pattern."
+      }
+    },
+    {
+      "skill": null,
+      "problem_type": "Identifying two visually deceptive irregular shapes (e.g., long and thin vs. compact and blocky) with the same area from a set of 4 shapes.",
+      "format_title": "FINDING EQUAL AREA IN IRREGULAR SHAPES",
+      "chapter": {
+        "title": "Chapter 17 Geometry",
+        "start_page": 460,
+        "end_page": 494,
+        "page_offset": 17,
+        "book_content_preview": "Chapter Geometry With Don Crawford LEARNING OUTCOMES 17.1 Describe the scope of concepts that should be included in teaching geometry. 17.2 Describe the role language plays in the development of conceptual understanding of geometry. 17.3 Explain how nonexamples are used to teach students to identify and define geometric shapes. 17.4 Discuss the rationale for the formulas used to teach students to calculate area and volume. 17.5 Discuss the importance of modeling when teaching students to measure or construct figures using tools. 17.6 Outline the facts about angles and lines that are prerequisites for more advanced geometry. 17.7 Describe the general"
+      },
+      "judgment": {
+        "is_supported": false,
+        "confidence": 1.0,
+        "evidence_pages": [
+          462,
+          464,
+          465,
+          471
+        ],
+        "reasoning": "The chapter focuses on calculating the area of regular geometric shapes like rectangles, squares, triangles, and parallelograms using formulas. It also addresses 'complex figures' by subtracting the area of one regular shape from another (e.g., a wall with a window). However, it does not cover finding the area of single irregular shapes or the specific problem type of comparing multiple visually deceptive irregular shapes to identify which ones have an equal area."
+      }
+    }
+  ]
+}
