@@ -40,12 +40,31 @@ Experiment - Generate mappings/
   - Validates against assessment boundaries
   - Outputs structured JSON with generated sequences
 
+- **`scripts/generate_formats.py`**
+  - Finds sequences without teaching formats
+  - Uses existing DI formats as exemplars
+  - Generates complete teaching formats (teacher actions + student responses)
+  - Follows DI instructional methodology
+  - Outputs structured JSON with generated formats
+
+- **`scripts/generate_formats_for_new_sequences.py`**
+  - Generates formats specifically for newly generated sequences
+  - Loads from latest `generated_sequences_*.json` file
+  - Uses existing DI formats as exemplars
+  - Outputs separate format file for new content
+
 ### Prompts
 
 - **`scripts/prompts/sequence_generation.txt`**
   - Template for sequence generation prompt
   - Includes DI principles, exemplar format, and constraints
   - Ensures generated sequences follow DI methodology
+
+- **`scripts/prompts/format_generation.txt`**
+  - Template for format generation prompt
+  - Includes DI teaching principles (Model-Test-Practice)
+  - Ensures formats follow explicit instruction methodology
+  - Converts classroom language to online equivalents
 
 ### Output Files
 
@@ -84,18 +103,34 @@ Experiment - Generate mappings/
 
 ## Usage
 
+### Step 1: Generate Sequences
 ```bash
 cd "Experiment - Generate mappings"
 python scripts/generate_sequences.py
 ```
+Generates sequences for substandards with poor/no matches.
+
+### Step 2: Generate Formats (Existing Sequences)
+```bash
+python scripts/generate_formats.py
+```
+Generates formats for existing sequences that lack them.
+
+### Step 3: Generate Formats (New Sequences)
+```bash
+python scripts/generate_formats_for_new_sequences.py
+```
+Generates formats for newly created sequences.
 
 **Requirements:**
 - GEMINI_API_KEY environment variable must be set
 - Python packages: google-generativeai, pydantic, python-dotenv
 
 **Configuration:**
-- Currently processes first 5 substandards for testing
-- Remove the `[:5]` limit in `main()` to process all gaps
+- `generate_sequences.py`: Processes all substandards needing sequences
+- `generate_formats.py`: Processes first 3 existing sequences for testing
+- `generate_formats_for_new_sequences.py`: Processes first 3 new sequences for testing
+- Remove `[:3]` limits to process all
 
 ---
 
