@@ -281,9 +281,9 @@ def main():
     print("\n🔨 Generating sequences...")
     results = []
     
-    # Process first 5 for testing (remove limit for full run)
-    for i, substandard in enumerate(needs_sequences[:5], 1):
-        print(f"\n[{i}/{min(5, len(needs_sequences))}]")
+    # Process all substandards
+    for i, substandard in enumerate(needs_sequences, 1):
+        print(f"\n[{i}/{len(needs_sequences)}]")
         
         try:
             response = generate_sequences_for_substandard(
