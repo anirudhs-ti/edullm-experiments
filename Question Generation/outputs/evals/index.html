@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question Generation Evaluation Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.0/dist/chart.umd.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        h1 {
+            color: #333;
+            font-size: 2em;
+            margin-bottom: 15px;
+        }
+
+        .file-selector {
+            margin-top: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .file-selector label {
+            font-weight: 600;
+            color: #555;
+        }
+
+        select {
+            padding: 10px 15px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 14px;
+            background: white;
+            cursor: pointer;
+            transition: all 0.3s;
+            min-width: 300px;
+        }
+
+        select:hover {
+            border-color: #667eea;
+        }
+
+        select:focus {
+            outline: none;
+            border-color: #667eea;
+            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+        }
+
+        .metadata {
+            display: flex;
+            gap: 20px;
+            margin-top: 15px;
+            flex-wrap: wrap;
+        }
+
+        .metadata-item {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            color: #666;
+            font-size: 14px;
+        }
+
+        .metadata-item strong {
+            color: #333;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 30px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .stat-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+        }
+
+        .stat-card h3 {
+            color: #666;
+            font-size: 0.9em;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .stat-value {
+            font-size: 2.5em;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .stat-value.excellent { color: #10b981; }
+        .stat-value.good { color: #3b82f6; }
+        .stat-value.warning { color: #f59e0b; }
+        .stat-value.poor { color: #ef4444; }
+
+        .stat-subtitle {
+            color: #999;
+            font-size: 0.85em;
+        }
+
+        .section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+
+        .section h2 {
+            color: #333;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #667eea;
+        }
+
+        .tabs {
+            display: flex;
+            gap: 10px;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #e5e7eb;
+            flex-wrap: wrap;
+        }
+
+        .tab {
+            padding: 12px 24px;
+            background: transparent;
+            border: none;
+            cursor: pointer;
+            color: #666;
+            font-weight: 500;
+            transition: all 0.3s;
+            border-bottom: 3px solid transparent;
+            margin-bottom: -2px;
+        }
+
+        .tab:hover {
+            color: #667eea;
+        }
+
+        .tab.active {
+            color: #667eea;
+            border-bottom-color: #667eea;
+        }
+
+        .tab-content {
+            display: none;
+        }
+
+        .tab-content.active {
+            display: block;
+        }
+
+        .metrics-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .metric-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            background: #f9fafb;
+            border-radius: 8px;
+            border-left: 4px solid #667eea;
+        }
+
+        .metric-label {
+            color: #555;
+            font-weight: 500;
+        }
+
+        .metric-value {
+            font-size: 1.3em;
+            font-weight: bold;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        thead {
+            background: #f9fafb;
+        }
+
+        th {
+            padding: 15px;
+            text-align: left;
+            font-weight: 600;
+            color: #555;
+            border-bottom: 2px solid #e5e7eb;
+        }
+
+        td {
+            padding: 15px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        tbody tr:hover {
+            background: #f9fafb;
+        }
+
+        .badge {
+            display: inline-block;
+            padding: 4px 12px;
+            border-radius: 12px;
+            font-size: 0.85em;
+            font-weight: 600;
+        }
+
+        .badge.pass { background: #d1fae5; color: #065f46; }
+        .badge.fail { background: #fee2e2; color: #991b1b; }
+        .badge.accept { background: #dbeafe; color: #1e40af; }
+        .badge.reject { background: #fef3c7; color: #92400e; }
+
+        .score-bar {
+            height: 8px;
+            background: #e5e7eb;
+            border-radius: 4px;
+            overflow: hidden;
+            margin-top: 5px;
+        }
+
+        .score-fill {
+            height: 100%;
+            transition: width 0.3s;
+        }
+
+        .chart-container {
+            position: relative;
+            height: 300px;
+            margin: 20px 0;
+        }
+
+        .loading {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+        }
+
+        .error {
+            background: #fee2e2;
+            color: #991b1b;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+
+        .expand-btn {
+            background: none;
+            border: none;
+            color: #667eea;
+            cursor: pointer;
+            font-weight: 600;
+            padding: 5px 10px;
+        }
+
+        .expand-btn:hover {
+            text-decoration: underline;
+        }
+
+        .details {
+            background: #f9fafb;
+            padding: 15px;
+            margin-top: 10px;
+            border-radius: 8px;
+            display: none;
+        }
+
+        .details.show {
+            display: block;
+        }
+
+        .no-data {
+            text-align: center;
+            padding: 40px;
+            color: #999;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 Question Generation Evaluation Dashboard</h1>
+            <div class="file-selector">
+                <label for="fileSelect">Select Evaluation File:</label>
+                <select id="fileSelect">
+                    <option value="">Loading files...</option>
+                </select>
+                <button onclick="loadData()" style="padding: 10px 20px; background: #667eea; color: white; border: none; border-radius: 8px; cursor: pointer; font-weight: 600;">Refresh</button>
+            </div>
+            <div class="metadata" id="metadata"></div>
+        </header>
+
+        <div id="content">
+            <div class="loading">Select a file to view evaluation statistics</div>
+        </div>
+    </div>
+
+    <script>
+        let currentData = null;
+        let charts = {};
+
+        // Load available files
+        async function loadFileList() {
+            try {
+                const response = await fetch('.');
+                const text = await response.text();
+                const parser = new DOMParser();
+                const doc = parser.parseFromString(text, 'text/html');
+                const links = Array.from(doc.querySelectorAll('a'))
+                    .map(a => a.getAttribute('href'))
+                    .filter(href => href && href.endsWith('.json') && href.startsWith('results_'));
+                
+                const select = document.getElementById('fileSelect');
+                select.innerHTML = links.length > 0 
+                    ? links.map(file => `<option value="${file}">${file}</option>`).join('')
+                    : '<option value="">No evaluation files found</option>';
+                
+                if (links.length > 0) {
+                    select.selectedIndex = 0;
+                    loadData();
+                }
+            } catch (error) {
+                console.error('Error loading file list:', error);
+                document.getElementById('fileSelect').innerHTML = '<option value="">Error loading files</option>';
+            }
+        }
+
+        // Load and display data
+        async function loadData() {
+            const select = document.getElementById('fileSelect');
+            const filename = select.value;
+            
+            if (!filename) {
+                document.getElementById('content').innerHTML = '<div class="no-data">No file selected</div>';
+                return;
+            }
+
+            document.getElementById('content').innerHTML = '<div class="loading">Loading data...</div>';
+
+            try {
+                const response = await fetch(filename);
+                currentData = await response.json();
+                displayData(currentData);
+            } catch (error) {
+                console.error('Error loading data:', error);
+                document.getElementById('content').innerHTML = 
+                    `<div class="error">Error loading file: ${error.message}</div>`;
+            }
+        }
+
+        // Calculate statistics
+        function calculateStats(data) {
+            const questions = Object.values(data.evaluations);
+            const numQuestions = questions.length;
+
+            if (numQuestions === 0) {
+                return null;
+            }
+
+            // Overall scores
+            const overallScores = questions.map(q => q.score);
+            const avgScore = overallScores.reduce((a, b) => a + b, 0) / numQuestions;
+
+            // Pass rate
+            const passCount = questions.filter(q => q.reading_question_qc?.passed === true).length;
+            const passRate = passCount / numQuestions;
+
+            // Acceptance rate
+            const acceptCount = questions.filter(q => q.ti_question_qa?.recommendation === 'accept').length;
+            const acceptRate = acceptCount / numQuestions;
+
+            // TI Question QA metrics
+            const tiScores = questions.map(q => q.ti_question_qa?.overall || 0);
+            const avgTiScore = tiScores.reduce((a, b) => a + b, 0) / numQuestions;
+
+            // Individual TI metrics
+            const tiMetrics = {};
+            const sampleScores = questions[0]?.ti_question_qa?.scores || {};
+            Object.keys(sampleScores).forEach(key => {
+                const scores = questions.map(q => q.ti_question_qa?.scores?.[key] || 0);
+                tiMetrics[key] = scores.reduce((a, b) => a + b, 0) / numQuestions;
+            });
+
+            // Answer verification
+            const correctCount = questions.filter(q => q.answer_verification?.is_correct === true).length;
+            const correctRate = correctCount / numQuestions;
+            const avgConfidence = questions
+                .map(q => q.answer_verification?.confidence || 0)
+                .reduce((a, b) => a + b, 0) / numQuestions;
+
+            // Reading QC
+            const qcScores = questions.map(q => q.reading_question_qc?.overall_score || 0);
+            const avgQcScore = qcScores.reduce((a, b) => a + b, 0) / numQuestions;
+
+            // Math Content Evaluator
+            const mathScores = questions.map(q => q.math_content_evaluator?.overall_score || 0);
+            const avgMathScore = mathScores.reduce((a, b) => a + b, 0) / numQuestions;
+            const mathRatings = questions.map(q => q.math_content_evaluator?.overall_rating || 'N/A');
+            const ratingCounts = {};
+            mathRatings.forEach(r => {
+                ratingCounts[r] = (ratingCounts[r] || 0) + 1;
+            });
+
+            // Score distribution
+            const scoreDistribution = {};
+            overallScores.forEach(score => {
+                const bucket = Math.floor(score * 10) / 10;
+                scoreDistribution[bucket] = (scoreDistribution[bucket] || 0) + 1;
+            });
+
+            return {
+                numQuestions,
+                avgScore,
+                passRate,
+                acceptRate,
+                avgTiScore,
+                tiMetrics,
+                correctRate,
+                avgConfidence,
+                avgQcScore,
+                avgMathScore,
+                ratingCounts,
+                scoreDistribution,
+                overallScores,
+                questions
+            };
+        }
+
+        // Get color class based on score
+        function getScoreColor(score) {
+            if (score >= 0.9) return 'excellent';
+            if (score >= 0.75) return 'good';
+            if (score >= 0.6) return 'warning';
+            return 'poor';
+        }
+
+        // Get color for score bar
+        function getScoreBarColor(score) {
+            if (score >= 0.9) return '#10b981';
+            if (score >= 0.75) return '#3b82f6';
+            if (score >= 0.6) return '#f59e0b';
+            return '#ef4444';
+        }
+
+        // Display data
+        function displayData(data) {
+            const stats = calculateStats(data);
+            
+            if (!stats) {
+                document.getElementById('content').innerHTML = '<div class="no-data">No questions found in file</div>';
+                return;
+            }
+
+            // Update metadata
+            const metadataHtml = `
+                <div class="metadata-item">
+                    <strong>Request ID:</strong> ${data.request_id || 'N/A'}
+                </div>
+                <div class="metadata-item">
+                    <strong>Evaluation Time:</strong> ${data.evaluation_time_seconds?.toFixed(2) || 'N/A'}s
+                </div>
+                <div class="metadata-item">
+                    <strong>Version:</strong> ${data.inceptbench_version || 'N/A'}
+                </div>
+                <div class="metadata-item">
+                    <strong>Questions:</strong> ${stats.numQuestions}
+                </div>
+            `;
+            document.getElementById('metadata').innerHTML = metadataHtml;
+
+            // Build main content
+            const contentHtml = `
+                <!-- Summary Cards -->
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Average Score</h3>
+                        <div class="stat-value ${getScoreColor(stats.avgScore)}">
+                            ${(stats.avgScore * 100).toFixed(1)}%
+                        </div>
+                        <div class="stat-subtitle">Overall quality score</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Pass Rate</h3>
+                        <div class="stat-value ${getScoreColor(stats.passRate)}">
+                            ${(stats.passRate * 100).toFixed(1)}%
+                        </div>
+                        <div class="stat-subtitle">Reading QC passed</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Acceptance Rate</h3>
+                        <div class="stat-value ${getScoreColor(stats.acceptRate)}">
+                            ${(stats.acceptRate * 100).toFixed(1)}%
+                        </div>
+                        <div class="stat-subtitle">Recommended to accept</div>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Answer Correctness</h3>
+                        <div class="stat-value ${getScoreColor(stats.correctRate)}">
+                            ${(stats.correctRate * 100).toFixed(1)}%
+                        </div>
+                        <div class="stat-subtitle">Verified correct answers</div>
+                    </div>
+                </div>
+
+                <!-- Detailed Metrics -->
+                <div class="section">
+                    <h2>Detailed Metrics</h2>
+                    <div class="tabs">
+                        <button class="tab active" onclick="switchTab('overview')">Overview</button>
+                        <button class="tab" onclick="switchTab('ti-qa')">TI Question QA</button>
+                        <button class="tab" onclick="switchTab('answer-verify')">Answer Verification</button>
+                        <button class="tab" onclick="switchTab('reading-qc')">Reading QC</button>
+                        <button class="tab" onclick="switchTab('math-eval')">Math Content</button>
+                        <button class="tab" onclick="switchTab('questions')">Questions Table</button>
+                    </div>
+
+                    <!-- Overview Tab -->
+                    <div id="tab-overview" class="tab-content active">
+                        <div class="chart-container">
+                            <canvas id="scoreDistChart"></canvas>
+                        </div>
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <span class="metric-label">Total Questions</span>
+                                <span class="metric-value">${stats.numQuestions}</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Min Score</span>
+                                <span class="metric-value">${(Math.min(...stats.overallScores) * 100).toFixed(1)}%</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Max Score</span>
+                                <span class="metric-value">${(Math.max(...stats.overallScores) * 100).toFixed(1)}%</span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Median Score</span>
+                                <span class="metric-value">${(stats.overallScores.sort()[Math.floor(stats.numQuestions / 2)] * 100).toFixed(1)}%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- TI Question QA Tab -->
+                    <div id="tab-ti-qa" class="tab-content">
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <span class="metric-label">Overall TI Score</span>
+                                <span class="metric-value ${getScoreColor(stats.avgTiScore)}">
+                                    ${(stats.avgTiScore * 100).toFixed(1)}%
+                                </span>
+                            </div>
+                            ${Object.entries(stats.tiMetrics).map(([key, value]) => `
+                                <div class="metric-item">
+                                    <span class="metric-label">${key.replace(/_/g, ' ')}</span>
+                                    <span class="metric-value">${(value * 100).toFixed(1)}%</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="chart-container" style="margin-top: 30px;">
+                            <canvas id="tiMetricsChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Answer Verification Tab -->
+                    <div id="tab-answer-verify" class="tab-content">
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <span class="metric-label">Correct Answers</span>
+                                <span class="metric-value ${getScoreColor(stats.correctRate)}">
+                                    ${(stats.correctRate * 100).toFixed(1)}%
+                                </span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Average Confidence</span>
+                                <span class="metric-value">${stats.avgConfidence.toFixed(1)}/10</span>
+                            </div>
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="correctnessChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Reading QC Tab -->
+                    <div id="tab-reading-qc" class="tab-content">
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <span class="metric-label">Average QC Score</span>
+                                <span class="metric-value ${getScoreColor(stats.avgQcScore)}">
+                                    ${(stats.avgQcScore * 100).toFixed(1)}%
+                                </span>
+                            </div>
+                            <div class="metric-item">
+                                <span class="metric-label">Pass Rate</span>
+                                <span class="metric-value ${getScoreColor(stats.passRate)}">
+                                    ${(stats.passRate * 100).toFixed(1)}%
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Math Content Evaluator Tab -->
+                    <div id="tab-math-eval" class="tab-content">
+                        <div class="metrics-grid">
+                            <div class="metric-item">
+                                <span class="metric-label">Average Math Score</span>
+                                <span class="metric-value ${getScoreColor(stats.avgMathScore)}">
+                                    ${(stats.avgMathScore * 100).toFixed(1)}%
+                                </span>
+                            </div>
+                            ${Object.entries(stats.ratingCounts).map(([rating, count]) => `
+                                <div class="metric-item">
+                                    <span class="metric-label">${rating}</span>
+                                    <span class="metric-value">${count}</span>
+                                </div>
+                            `).join('')}
+                        </div>
+                        <div class="chart-container">
+                            <canvas id="ratingsChart"></canvas>
+                        </div>
+                    </div>
+
+                    <!-- Questions Table Tab -->
+                    <div id="tab-questions" class="tab-content">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Overall Score</th>
+                                    <th>Pass Status</th>
+                                    <th>Recommendation</th>
+                                    <th>TI Score</th>
+                                    <th>Math Score</th>
+                                    <th>Details</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                ${Object.entries(data.evaluations).map(([id, q]) => `
+                                    <tr>
+                                        <td><strong>${id}</strong></td>
+                                        <td>
+                                            <span class="${getScoreColor(q.score)}" style="font-weight: bold;">
+                                                ${(q.score * 100).toFixed(1)}%
+                                            </span>
+                                            <div class="score-bar">
+                                                <div class="score-fill" style="width: ${q.score * 100}%; background: ${getScoreBarColor(q.score)};"></div>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <span class="badge ${q.reading_question_qc?.passed ? 'pass' : 'fail'}">
+                                                ${q.reading_question_qc?.passed ? 'PASS' : 'FAIL'}
+                                            </span>
+                                        </td>
+                                        <td>
+                                            <span class="badge ${q.ti_question_qa?.recommendation === 'accept' ? 'accept' : 'reject'}">
+                                                ${q.ti_question_qa?.recommendation || 'N/A'}
+                                            </span>
+                                        </td>
+                                        <td>${((q.ti_question_qa?.overall || 0) * 100).toFixed(1)}%</td>
+                                        <td>${((q.math_content_evaluator?.overall_score || 0) * 100).toFixed(1)}%</td>
+                                        <td>
+                                            <button class="expand-btn" onclick="toggleDetails('${id}')">
+                                                View Details
+                                            </button>
+                                            <div id="details-${id}" class="details">
+                                                <strong>Answer Verification:</strong><br>
+                                                Correct: ${q.answer_verification?.is_correct ? 'Yes' : 'No'}<br>
+                                                Confidence: ${q.answer_verification?.confidence || 'N/A'}/10<br>
+                                                <br>
+                                                <strong>Strengths:</strong><br>
+                                                ${(q.ti_question_qa?.strengths || []).join('<br>') || 'None listed'}<br>
+                                                <br>
+                                                <strong>Suggested Improvements:</strong><br>
+                                                ${(q.ti_question_qa?.suggested_improvements || []).join('<br>') || 'None listed'}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                `).join('')}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            `;
+
+            document.getElementById('content').innerHTML = contentHtml;
+
+            // Render charts
+            renderCharts(stats);
+        }
+
+        // Switch tabs
+        function switchTab(tabName) {
+            document.querySelectorAll('.tab').forEach(tab => tab.classList.remove('active'));
+            document.querySelectorAll('.tab-content').forEach(content => content.classList.remove('active'));
+            
+            event.target.classList.add('active');
+            document.getElementById(`tab-${tabName}`).classList.add('active');
+        }
+
+        // Toggle details
+        function toggleDetails(id) {
+            const details = document.getElementById(`details-${id}`);
+            details.classList.toggle('show');
+        }
+
+        // Render charts
+        function renderCharts(stats) {
+            // Destroy existing charts
+            Object.values(charts).forEach(chart => chart.destroy());
+            charts = {};
+
+            // Score Distribution Chart
+            const distLabels = Object.keys(stats.scoreDistribution).sort().map(k => `${(parseFloat(k) * 100).toFixed(0)}%`);
+            const distData = Object.keys(stats.scoreDistribution).sort().map(k => stats.scoreDistribution[k]);
+            
+            charts.scoreDist = new Chart(document.getElementById('scoreDistChart'), {
+                type: 'bar',
+                data: {
+                    labels: distLabels,
+                    datasets: [{
+                        label: 'Number of Questions',
+                        data: distData,
+                        backgroundColor: 'rgba(102, 126, 234, 0.7)',
+                        borderColor: 'rgba(102, 126, 234, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Score Distribution'
+                        }
+                    }
+                }
+            });
+
+            // TI Metrics Chart
+            const tiLabels = Object.keys(stats.tiMetrics).map(k => k.replace(/_/g, ' '));
+            const tiData = Object.values(stats.tiMetrics).map(v => v * 100);
+            
+            charts.tiMetrics = new Chart(document.getElementById('tiMetricsChart'), {
+                type: 'radar',
+                data: {
+                    labels: tiLabels,
+                    datasets: [{
+                        label: 'TI Question QA Metrics',
+                        data: tiData,
+                        backgroundColor: 'rgba(102, 126, 234, 0.2)',
+                        borderColor: 'rgba(102, 126, 234, 1)',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    scales: {
+                        r: {
+                            beginAtZero: true,
+                            max: 100
+                        }
+                    }
+                }
+            });
+
+            // Correctness Chart
+            charts.correctness = new Chart(document.getElementById('correctnessChart'), {
+                type: 'doughnut',
+                data: {
+                    labels: ['Correct', 'Incorrect'],
+                    datasets: [{
+                        data: [stats.correctRate * 100, (1 - stats.correctRate) * 100],
+                        backgroundColor: ['#10b981', '#ef4444']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Answer Correctness'
+                        }
+                    }
+                }
+            });
+
+            // Ratings Chart
+            charts.ratings = new Chart(document.getElementById('ratingsChart'), {
+                type: 'pie',
+                data: {
+                    labels: Object.keys(stats.ratingCounts),
+                    datasets: [{
+                        data: Object.values(stats.ratingCounts),
+                        backgroundColor: ['#10b981', '#3b82f6', '#f59e0b', '#ef4444']
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        title: {
+                            display: true,
+                            text: 'Overall Ratings Distribution'
+                        }
+                    }
+                }
+            });
+        }
+
+        // Event listener for file selection
+        document.getElementById('fileSelect').addEventListener('change', loadData);
+
+        // Load file list on page load
+        loadFileList();
+    </script>
+</body>
+</html>
+
