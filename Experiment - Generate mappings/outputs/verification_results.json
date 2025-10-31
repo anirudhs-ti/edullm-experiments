@@ -1,0 +1,113 @@
+{
+  "task1": {
+    "success": true,
+    "info": {
+      "total_lessons": 112,
+      "lessons_with_good_sequences": 53,
+      "lessons_without_good_sequences": 59,
+      "expected": 59,
+      "substandard_ids": [
+        "CCSS.MATH.CONTENT.3.OA.D.9+2",
+        "CCSS.MATH.CONTENT.3.NBT.A.3+1",
+        "CCSS.MATH.CONTENT.3.OA.B.5+1",
+        "CCSS.MATH.CONTENT.3.NF.A.2.A+1",
+        "CCSS.MATH.CONTENT.3.NF.A.3.D+3",
+        "CCSS.MATH.CONTENT.3.MD.A.1+4",
+        "CCSS.MATH.CONTENT.3.MD.C.7.D+1",
+        "CCSS.MATH.CONTENT.3.OA.A.3+2",
+        "CCSS.MATH.CONTENT.3.NBT.A.1+1",
+        "CCSS.MATH.CONTENT.3.G.A.1+4",
+        "CCSS.MATH.CONTENT.3.NBT.A.1+2",
+        "CCSS.MATH.CONTENT.3.G.A.1+2",
+        "CCSS.MATH.CONTENT.3.NF.A.2.B+4",
+        "CCSS.MATH.CONTENT.3.OA.D.9+1",
+        "CCSS.MATH.CONTENT.3.OA.D.9+7",
+        "CCSS.MATH.CONTENT.3.NF.A.1+2",
+        "CCSS.MATH.CONTENT.3.NBT.A.2+1",
+        "CCSS.MATH.CONTENT.3.NF.A.3.D+1",
+        "CCSS.MATH.CONTENT.3.MD.C.6+1",
+        "CCSS.MATH.CONTENT.3.MD.A.1+1",
+        "CCSS.MATH.CONTENT.3.NF.A.2.A+3",
+        "CCSS.MATH.CONTENT.3.OA.B.5+2",
+        "CCSS.MATH.CONTENT.3.NF.A.3.D+4",
+        "CCSS.MATH.CONTENT.3.NF.A.3.A+2",
+        "CCSS.MATH.CONTENT.3.NF.A.1+1",
+        "CCSS.MATH.CONTENT.3.MD.A.1+5",
+        "CCSS.MATH.CONTENT.3.MD.D.8+3",
+        "CCSS.MATH.CONTENT.3.OA.D.9+3",
+        "CCSS.MATH.CONTENT.3.MD.A.2+3",
+        "CCSS.MATH.CONTENT.3.MD.A.1+7",
+        "CCSS.MATH.CONTENT.3.MD.C.7.C+1",
+        "CCSS.MATH.CONTENT.3.NF.A.2.B+2",
+        "CCSS.MATH.CONTENT.3.OA.A.1+3",
+        "CCSS.MATH.CONTENT.3.MD.D.8+5",
+        "CCSS.MATH.CONTENT.3.OA.A.4+1",
+        "CCSS.MATH.CONTENT.3.OA.D.9+8",
+        "CCSS.MATH.CONTENT.3.MD.A.1+6",
+        "CCSS.MATH.CONTENT.3.NF.A.2.A+2",
+        "CCSS.MATH.CONTENT.3.MD.D.8+7",
+        "CCSS.MATH.CONTENT.3.OA.A.1+2",
+        "CCSS.MATH.CONTENT.3.OA.B.5+4",
+        "CCSS.MATH.CONTENT.3.MD.A.1+3",
+        "CCSS.MATH.CONTENT.3.NBT.A.1+3",
+        "CCSS.MATH.CONTENT.3.MD.C.7.A+1",
+        "CCSS.MATH.CONTENT.3.OA.A.3+3",
+        "CCSS.MATH.CONTENT.3.NF.A.3.A+3",
+        "CCSS.MATH.CONTENT.3.NF.A.3.D+2",
+        "CCSS.MATH.CONTENT.3.NBT.A.2+4",
+        "CCSS.MATH.CONTENT.3.OA.D.9+9",
+        "CCSS.MATH.CONTENT.3.OA.B.5+3",
+        "CCSS.MATH.CONTENT.3.G.A.2+1",
+        "CCSS.MATH.CONTENT.3.OA.D.9+6",
+        "CCSS.MATH.CONTENT.3.MD.C.5.A+1",
+        "CCSS.MATH.CONTENT.3.OA.D.9+5",
+        "CCSS.MATH.CONTENT.3.NF.A.2.B+1",
+        "CCSS.MATH.CONTENT.3.MD.A.1+2",
+        "CCSS.MATH.CONTENT.3.OA.D.8+6",
+        "CCSS.MATH.CONTENT.3.NF.A.2.B+3",
+        "CCSS.MATH.CONTENT.3.MD.C.5.B+1"
+      ]
+    }
+  },
+  "task2": {
+    "success": false,
+    "info": {
+      "total_sequences_generated": 59,
+      "expected": 59,
+      "lessons_with_keep": 58,
+      "lessons_without_keep": 1,
+      "lessons_without_keep_details": [
+        {
+          "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.5.B+1",
+          "lesson_title": "N/A",
+          "total_sequences": 3,
+          "sequences_rejected": 3
+        }
+      ],
+      "missing_lessons": [],
+      "extra_lessons": []
+    }
+  },
+  "task3": {
+    "success": true,
+    "info": {
+      "total_sequences": 235,
+      "total_formats": 242,
+      "sequences_with_formats": 235,
+      "sequences_without_formats": 0,
+      "sequences_without_formats_details": [],
+      "formats_without_sequences": 7
+    }
+  },
+  "task4": {
+    "success": true,
+    "info": {
+      "total_sequences_in_original": 38,
+      "sequences_originally_with_formats": 19,
+      "sequences_originally_without_formats": 19,
+      "formats_generated": 19,
+      "still_missing_formats": 0,
+      "still_missing_details": []
+    }
+  }
+}

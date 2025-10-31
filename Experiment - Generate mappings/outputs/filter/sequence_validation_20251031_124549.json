@@ -1,0 +1,400 @@
+{
+  "metadata": {
+    "validation_timestamp": "2025-10-31T12:45:49.203533",
+    "total_lessons_processed": 10,
+    "total_sequences_evaluated": 34,
+    "sequences_kept": 27,
+    "sequences_rejected": 7,
+    "llm_model": "gemini-2.5-pro",
+    "validation_version": "2.0"
+  },
+  "summary_statistics": {
+    "average_alignment_score": 0.825,
+    "keep_rate": 0.794,
+    "reject_rate": 0.206
+  },
+  "validation_results": [
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+4",
+      "lesson_title": "Properties of Multiplication",
+      "grade": "3.0",
+      "total_sequences": 5,
+      "sequences_kept": 5,
+      "sequences_rejected": 0,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identify an example of the zero property of multiplication",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended curriculum. The problem type directly matches the first task, and the example questions are well-designed to assess a student's ability to identify the zero property of multiplication among relevant distractors, following the specified step-by-step process.",
+          "suggestions": "No suggestions are needed as this sequence is well-aligned."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identify an example of the identity property of multiplication",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended curriculum task 'Identify an example of the identity property of multiplication'. The example questions are well-crafted, using appropriate distractors that test against other properties (zero, commutative) and different operations, which aligns with the pedagogical goal of isolating and identifying a specific property. The sequence fully complies with all assessment boundaries.",
+          "suggestions": "No suggestions are needed as this sequence is well-aligned."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identify an example of the commutative property of multiplication",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended curriculum task to 'Identify an example of the commutative property of multiplication'. The example questions are well-designed for a 3rd-grade level, using other properties and operations as plausible distractors. The sequence adheres to all assessment boundaries and directly supports the specified step-by-step instructional plan.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the lesson."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Identify an example of the associative property of multiplication",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the lesson design. The problem type directly targets identifying the associative property of multiplication, as intended. The example questions are well-crafted, using other properties as effective distractors, which reinforces the learning objective.",
+          "suggestions": "No suggestions are needed as this sequence is well-aligned."
+        },
+        {
+          "sequence_number": 5,
+          "problem_type": "Identify an example of the distributive property of multiplication",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended curriculum. The problem type directly matches a specified task, and the example questions are well-designed multiple-choice items that require students to identify the distributive property from among other properties, which is an excellent way to assess understanding.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent example of the intended curriculum."
+        }
+      ],
+      "validated_at": "2025-10-31T12:39:18.911279"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.3+2",
+      "lesson_title": "Two-Step Multiplication Problems",
+      "grade": "3.0",
+      "total_sequences": 2,
+      "sequences_kept": 2,
+      "sequences_rejected": 0,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Two-step multiplication problems (M -> M) with small intermediate products",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended curriculum task of solving two-step problems where both steps involve multiplication. The example questions are well-crafted, use numbers within the specified boundaries (single-digit facts), and directly support the step-by-step instructional flow.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the intended curriculum."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Two-step multiplication problems (M -> M) with larger intermediate products",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence is an excellent match for the intended curriculum. The problem type directly addresses the task of solving a two-step problem where both steps involve multiplication. The example questions are perfectly structured for the step-by-step explanation and fully comply with the assessment boundary, using only single-digit multipliers and keeping all calculations within 10x10 facts.",
+          "suggestions": "No suggestions are needed as this sequence aligns perfectly with the lesson goals."
+        }
+      ],
+      "validated_at": "2025-10-31T12:39:45.691862"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+3",
+      "lesson_title": "Distributive Property",
+      "grade": "3.0",
+      "total_sequences": 4,
+      "sequences_kept": 4,
+      "sequences_rejected": 0,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Using known products to solve a larger multiplication problem with the distributive property.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the first intended curriculum task, using the exact phrasing and structure provided. It fully complies with all assessment boundaries, utilizing single-digit factors and addends to build towards a larger product in a heavily scaffolded manner.",
+          "suggestions": "No suggestions are needed as this sequence is an ideal match for the lesson design."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Use the distributive property of multiplication to find the missing number.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended curriculum task 'Use the distributive property of multiplication to find the missing number.' The example questions are well-constructed, directly support the problem type, and fully comply with all assessment boundaries, including number ranges and the use of allowed symbols.",
+          "suggestions": "No suggestions are needed. This sequence is an excellent fit for the lesson design."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identify which equations correctly use the distributive property.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "The sequence perfectly aligns with the intended curriculum. The problem type, 'Identify which equations correctly use the distributive property,' is one of the specified tasks. The example questions are concrete, appropriate, and adhere to all assessment boundary constraints, such as using single-digit factors.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the curriculum."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Select the single multiplication expression that is equal to a given sum of two products.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "The sequence perfectly aligns with the intended curriculum. The problem type 'Select the single multiplication expression that is equal to a given sum of two products' is explicitly listed as an intended task. The example questions are well-formed, use numbers that comply with all assessment boundaries, and directly support the specified pedagogical steps.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the curriculum."
+        }
+      ],
+      "validated_at": "2025-10-31T12:40:40.858734"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+6",
+      "lesson_title": "Identifying Reasonable Answers",
+      "grade": "3.0",
+      "total_sequences": 3,
+      "sequences_kept": 3,
+      "sequences_rejected": 0,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Judging an estimate for a two-step word problem (addition/subtraction) by rounding and estimating.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence is in perfect alignment with the lesson's objective. The problem type directly addresses judging an estimate for a two-step word problem, and the example questions are excellent, grade-appropriate scenarios that use addition and subtraction within the specified number boundaries.",
+          "suggestions": "No suggestions needed as this is an excellent fit for the curriculum."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Judging an estimate for a two-step word problem (mixed operations) by estimating.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence is perfectly aligned with the lesson's objective. The problem type directly addresses the standard, and the example questions provide clear, grade-appropriate scenarios for judging the reasonableness of an estimate in two-step problems. All examples comply with the assessment boundaries for multiplication, division, and subtraction.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Judging an estimate for a two-step word problem and explaining the reasoning.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "The sequence aligns perfectly with the lesson's objective to judge the reasonableness of an estimate in a two-step word problem. All example problems are well-crafted, use the specified operations, and adhere strictly to the number range constraints in the assessment boundary.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit."
+        }
+      ],
+      "validated_at": "2025-10-31T12:41:19.463754"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+3",
+      "lesson_title": "Identify Rules in Addition and Subtraction Patterns",
+      "grade": "3.0",
+      "total_sequences": 4,
+      "sequences_kept": 4,
+      "sequences_rejected": 0,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identify an addition rule from an input-output table",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence is in perfect alignment with the first task specified in the intended curriculum, which is to 'Identify the rule for an input/output table in which the rule is addition.' The problem type, example questions, and visual aids all directly support this foundational skill for the lesson.",
+          "suggestions": "No suggestions are needed. This sequence perfectly matches the intended curriculum design as the first step in the lesson."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identify a subtraction rule from an input-output table",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended curriculum task 'Identify the rule for an input/output table in which the rule is subtraction.' The example questions are appropriate and directly ask students to find the rule, and the visual aid is correct. The sequence description does not violate any assessment boundaries.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the lesson plan."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Find a missing output in a table with an unstated addition rule",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended curriculum task to 'Identify the missing input or output for an input/output table in which the rule is addition'. The problem type is specific and accurate, the example questions are appropriate for the grade level, and the visual aid is correct. It fits logically within the instructional flow and adheres to all assessment boundaries.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the curriculum."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Find a missing output in a table with an unstated subtraction rule",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence is an excellent match for the intended curriculum. It directly addresses the task of finding a missing output with a subtraction rule, and the example questions prompt students to follow the intended pedagogical steps of first finding the rule and then applying it.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the curriculum."
+        }
+      ],
+      "validated_at": "2025-10-31T12:42:04.086490"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.A+3",
+      "lesson_title": "Graph Equivalent Fractions",
+      "grade": "3.0",
+      "total_sequences": 2,
+      "sequences_kept": 2,
+      "sequences_rejected": 0,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Graphing a proper fraction on a number line partitioned into a different, equivalent denominator",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "The sequence perfectly aligns with the intended curriculum tasks, specifically 'Given a proper fraction less than 1... and a 0-1 number line already partitioned into a different, equivalent set of fractional units... plot the fraction’s location.' The example questions and visual aids directly support this task, and all specified denominators (2, 3, 4, 6, 8) comply with the assessment boundary.",
+          "suggestions": "No suggestions needed. This sequence is an excellent starting point for the lesson."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Graphing an improper fraction on a number line partitioned into a different, equivalent denominator",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended curriculum, specifically addressing Task 4: graphing an improper fraction greater than 1 on a number line with a different, equivalent set of units. All example questions and denominators (2, 3, 4, 6, 8) strictly adhere to the assessment boundaries. The visual aid is appropriate for the task.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the lesson design."
+        }
+      ],
+      "validated_at": "2025-10-31T12:42:31.279705"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.D+2",
+      "lesson_title": "Comparing Fractions with the Same Numerator",
+      "grade": "3.0",
+      "total_sequences": 3,
+      "sequences_kept": 3,
+      "sequences_rejected": 0,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Comparing two unit fractions (numerator of 1) using inequality symbols.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "The sequence has excellent alignment with the lesson's primary task of comparing fractions with the same numerator. It correctly starts with unit fractions, which is a foundational concept for this standard, and all examples strictly adhere to the specified assessment boundaries, including denominator choice and fraction value.",
+          "suggestions": "No suggestions are needed as this sequence is well-aligned and serves as an excellent introduction to the concept."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Comparing two non-unit fractions with the same numerator using inequality symbols.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the primary intended task of comparing two fractions with the same numerator. The example questions are well-crafted, directly match the problem type description, and adhere to all assessment boundaries, including the specific list of allowed denominators.",
+          "suggestions": "No suggestions are needed as this sequence is perfectly aligned with the lesson design."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Mixed practice comparing fractions with the same numerator.",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the primary task of comparing two fractions with the same numerator. All example questions are well-formed and strictly adhere to all assessment boundaries, using only the allowed denominators (2, 3, 6, 8) and ensuring the answer is never '='.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the lesson."
+        }
+      ],
+      "validated_at": "2025-10-31T12:43:06.165073"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+2",
+      "lesson_title": "Sorting Quadrilaterals",
+      "grade": "3.0",
+      "total_sequences": 4,
+      "sequences_kept": 3,
+      "sequences_rejected": 1,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Picking all the names for a given shape, starting with the most specific case",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "The sequence perfectly aligns with the intended curriculum's task of 'Pick all the names for a given shape.' It correctly starts with a square, which is the most specific quadrilateral, to introduce the concept of hierarchical classification. The example questions and specified visual aids are grade-appropriate and adhere to all assessment boundaries.",
+          "suggestions": "This sequence is well-designed and requires no changes."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Picking all the names for other given quadrilaterals",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "This sequence perfectly aligns with the intended task 'Pick all the names for a given shape.' The example questions are well-crafted to assess understanding of the attributes of rectangles and rhombuses and their relationships to other quadrilaterals. It fully complies with all assessment boundaries, including the question format and use of visual aids with appropriate markings.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the curriculum."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Selecting all true statements that classify a shape and explain why",
+          "alignment_score": 0.95,
+          "should_keep": true,
+          "reasoning": "This sequence shows excellent alignment. The problem type effectively merges the two intended tasks by requiring students to select all true classification statements that include reasoning. This directly assesses the core concept of overlapping categories (e.g., a rectangle is also a parallelogram), which is central to the lesson's standard. The examples are well-crafted and fully compliant with all assessment boundaries.",
+          "suggestions": "No suggestions are needed as this is a strong and well-aligned sequence."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Selecting all true statements to distinguish a shape from other quadrilaterals using attributes",
+          "alignment_score": 0.6,
+          "should_keep": false,
+          "reasoning": "This sequence deviates from the two specific task types outlined in the curriculum. The intended tasks involve either selecting a single correct classification with reasoning or selecting all applicable names for a shape. This sequence creates a new, more complex task of evaluating multiple true statements, including negative classifications (e.g., 'is not a rectangle'), which was not specified.",
+          "suggestions": "To align with the lesson design, this sequence should be rewritten to match one of the two intended tasks. For example, it could be 'Pick all the names for a given shape' or 'Given a diagram of a quadrilateral, select the statement that accurately classifies the figure and explains why', with one correct answer among distractors."
+        }
+      ],
+      "validated_at": "2025-10-31T12:44:07.704216"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.2+1",
+      "lesson_title": "Equal Parts and Unit Fractions",
+      "grade": "3.0",
+      "total_sequences": 4,
+      "sequences_kept": 1,
+      "sequences_rejected": 3,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identifying partitions with equal areas",
+          "alignment_score": 0.0,
+          "should_keep": false,
+          "reasoning": "The evaluation cannot be completed because the 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections are missing. It is impossible to determine if this sequence aligns with a non-existent specification.",
+          "suggestions": "Provide the 'Tasks' and 'Step by Step Explanation' sections of the intended curriculum. Without this information, no sequence can be meaningfully evaluated for alignment."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Naming the unit fraction based on a partitioned shape",
+          "alignment_score": 0.0,
+          "should_keep": false,
+          "reasoning": "The intended curriculum, including the 'Tasks' and 'Step by Step Explanation' sections, was not provided. Without this information, it is impossible to evaluate whether this sequence aligns with the specific intended lesson design. The evaluation cannot be completed as requested.",
+          "suggestions": "To enable a proper evaluation, provide the complete 'Intended Curriculum - Tasks' and 'Intended Curriculum - Step by Step Explanation' sections. While the sequence appears reasonable for the given standard on its own, its fit within the specific lesson cannot be determined."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Writing the unit fraction symbol for a partitioned shape",
+          "alignment_score": 0.0,
+          "should_keep": false,
+          "reasoning": "The evaluation cannot be completed because the 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections are missing. While the sequence aligns with the general standard (3.G.A.2), its alignment with the specific lesson design, tasks, and instructional flow is impossible to determine.",
+          "suggestions": "Rejecting because critical information is missing. Please provide the specific intended tasks and step-by-step explanations for the lesson. Without this context, no sequence can be meaningfully evaluated for alignment."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Partitioning a shape and writing the corresponding unit fraction",
+          "alignment_score": 1.0,
+          "should_keep": true,
+          "reasoning": "The sequence aligns perfectly with the provided substandard description (3.G.A.2). The problem type and all example questions directly address the core skills of partitioning shapes into equal areas and expressing each part as a unit fraction. Although the specific 'Intended Curriculum' sections were missing, this sequence is an ideal representation of the standard.",
+          "suggestions": "No suggestions are needed as this sequence is an excellent fit for the described learning objective."
+        }
+      ],
+      "validated_at": "2025-10-31T12:45:08.226136"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.5.B+1",
+      "lesson_title": "Counting to Find Area with Unit Squares",
+      "grade": "3.0",
+      "total_sequences": 3,
+      "sequences_kept": 0,
+      "sequences_rejected": 3,
+      "sequence_validations": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Determining the area of a rectangle by counting unit squares",
+          "alignment_score": 0.5,
+          "should_keep": false,
+          "reasoning": "The evaluation cannot be completed because the core curriculum details ('INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION') were not provided. While the sequence appears to align with the general lesson title, it is impossible to determine if it matches the specific problem types, instructional flow, or assessment boundaries intended by the curriculum designer.",
+          "suggestions": "To properly evaluate this sequence, please provide the complete 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections. Without this information, any judgment on alignment is pure speculation."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Explaining why gaps or overlaps prevent accurate area measurement",
+          "alignment_score": 0.0,
+          "should_keep": false,
+          "reasoning": "The evaluation cannot be performed because the 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections were not provided. While the sequence topic aligns with the substandard, it is impossible to verify its alignment with the specific, intended lesson design.",
+          "suggestions": "To allow for a proper evaluation, please provide the complete 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections. I cannot assess alignment with a missing specification."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Determining the area of an irregular rectilinear figure by counting unit squares",
+          "alignment_score": 0.0,
+          "should_keep": false,
+          "reasoning": "Alignment cannot be determined because the 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections were missing from the prompt. It is impossible to evaluate if the sequence aligns with a non-existent specification.",
+          "suggestions": "To properly evaluate this sequence, please provide the specific list of intended tasks and the step-by-step pedagogical explanation. Without this information, no alignment score can be meaningfully assigned."
+        }
+      ],
+      "validated_at": "2025-10-31T12:45:49.201647"
+    }
+  ]
+}
