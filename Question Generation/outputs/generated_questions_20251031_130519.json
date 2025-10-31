@@ -1,0 +1,61 @@
+{
+  "subject": "math",
+  "grade": "3",
+  "type": "mcq",
+  "generated_questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "question": "Which equation demonstrates the zero property of multiplication?",
+      "answer": "C",
+      "answer_explanation": "The zero property of multiplication states that any number multiplied by zero equals zero. You should look for the equation where a number is multiplied by zero. In this case, 6 x 0 = 0 shows that when 6 is multiplied by 0, the result is 0. Therefore, this equation demonstrates the zero property of multiplication.",
+      "answer_options": {
+        "A": "6 x 1 = 6",
+        "B": "6 + 0 = 6",
+        "C": "6 x 0 = 0",
+        "D": "6 x 0 = 6"
+      },
+      "skill": {
+        "title": "Grade 3.0",
+        "grade": "3.0",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "description": "Identify the properties of multiplication.",
+        "language": "en"
+      },
+      "additional_details": "substandard_id: CCSS.MATH.CONTENT.3.OA.B.5+4, format_number: NEW.1, question type: Identifying the zero property of multiplication"
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "question": "Which is a better estimate (ml or L) for the volume of a juice box? <br> 200 <blank>",
+      "answer": "A",
+      "answer_explanation": "You should remember that 1 liter (L) equals 1000 milliliters (mL). Think about the size of a juice box. It holds a relatively small amount of liquid. Therefore, milliliters (mL) is the more appropriate unit to measure the volume of a juice box.",
+      "answer_options": {
+        "A": "mL",
+        "B": "L"
+      },
+      "skill": {
+        "title": "Grade 3",
+        "grade": "3",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "description": "Measure and estimate liquid volumes using liters (l).",
+        "language": "en"
+      },
+      "additional_details": "substandard_id: CCSS.MATH.CONTENT.3.MD.A.2+1, format_number: GENERATED.18, metric capacity estimation"
+    }
+  ],
+  "verbose": true,
+  "metadata": {
+    "generation_timestamp": "2025-10-31T13:05:52.601522",
+    "model": "gemini/gemini-2.0-flash-exp",
+    "num_substandards_requested": 2,
+    "stats": {
+      "total_attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

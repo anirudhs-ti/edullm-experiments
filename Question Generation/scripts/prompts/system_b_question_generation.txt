@@ -1,0 +1,79 @@
+You are an educational content expert generating a multiple-choice mathematics question based on a detailed plan.
+
+PLAN FROM SYSTEM A
+------------------
+{plan}
+
+SCAFFOLDING (ANSWER EXPLANATION)
+---------------------------------
+{scaffolding}
+
+FORMAT DETAILS
+--------------
+Format Number: {format_number}
+Format Title: {format_title}
+
+SUBSTANDARD INFORMATION
+-----------------------
+ID: {substandard_id}
+Grade: {grade}
+Description: {substandard_description}
+
+YOUR TASK
+---------
+Generate a complete, ready-to-use multiple-choice question following this exact JSON structure:
+
+{{
+  "id": "{question_id}",
+  "type": "mcq",
+  "question": "<the actual question text>",
+  "answer": "<the correct answer (must match one of the option values)>",
+  "answer_explanation": "<step-by-step explanation using the scaffolding provided>",
+  "answer_options": {{
+    "A": "<option A text>",
+    "B": "<option B text>",
+    "C": "<option C text>",
+    "D": "<option D text (optional, include if plan specifies 4 options)>"
+  }},
+  "skill": {{
+    "title": "Grade {grade}",
+    "grade": "{grade}",
+    "subject": "mathematics",
+    "difficulty": "medium",
+    "description": "{substandard_description}",
+    "language": "en"
+  }},
+  "additional_details": "<metadata about generation: substandard_id, format_number, sequence info>"
+}}
+
+CRITICAL REQUIREMENTS
+----------------------
+1. QUESTION:
+   - Must be clear, specific, and concrete
+   - Must align with the plan specification
+   - Must be appropriate for Grade {grade}
+   - Use context or real-world scenarios if specified in plan
+   - No generic placeholders
+
+2. OPTIONS:
+   - One correct answer that matches the "answer" field exactly
+   - 2-3 distractor options based on misconceptions from the plan
+   - All options should be plausible and similar in format/length
+   - Options should be in logical order (numerical if applicable)
+
+3. ANSWER_EXPLANATION:
+   - Use the scaffolding provided as the foundation
+   - Write in second person ("You should...", "First, you...")
+   - Be clear and step-by-step
+   - Help student understand WHY the answer is correct
+   - Be concise but complete (3-5 sentences typically)
+
+4. ANSWER FIELD:
+   - Must be the letter (A, B, C, or D) that corresponds to the correct option
+   - Example: if correct answer is in option B, then "answer": "B"
+
+5. ADDITIONAL_DETAILS:
+   - Include: substandard_id, format_number, generation timestamp
+   - Brief note about question type and approach
+
+Generate ONLY the JSON output (no additional text before or after).

@@ -1,0 +1,61 @@
+{
+  "subject": "math",
+  "grade": "3",
+  "type": "mcq",
+  "generated_questions": [
+    {
+      "id": "q1",
+      "type": "mcq",
+      "question": "Which equation demonstrates the zero property of multiplication?",
+      "answer": "C",
+      "answer_explanation": "The zero property of multiplication states that any number multiplied by zero equals zero. To identify the correct equation, you should look for a multiplication problem where one of the factors is zero. In option C, 6 x 0 = 0, which correctly shows that when you multiply 6 by zero, the result is zero. Therefore, option C is the correct answer.",
+      "answer_options": {
+        "A": "3 x 1 = 3",
+        "B": "0 x 2 = 2 x 1",
+        "C": "6 x 0 = 0",
+        "D": "7 + 0 = 7"
+      },
+      "skill": {
+        "title": "Grade 3.0",
+        "grade": "3.0",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "description": "Identify the properties of multiplication.",
+        "language": "en"
+      },
+      "additional_details": "substandard_id: CCSS.MATH.CONTENT.3.OA.B.5+4, format_number: NEW.1, question_type: Identifying the zero property of multiplication"
+    },
+    {
+      "id": "q2",
+      "type": "mcq",
+      "question": "Which is the better estimate (ml or L) for the volume of a fish tank? <br> 20 <blank>",
+      "answer": "B",
+      "answer_explanation": "To determine the best unit, you should think about the size of a fish tank. Fish tanks hold a large amount of water, so milliliters (mL) would be too small of a unit. Remember that liters (L) are used for larger volumes, like jugs of water or buckets. Therefore, liters (L) is the better estimate for the volume of a fish tank.",
+      "answer_options": {
+        "A": "mL",
+        "B": "L"
+      },
+      "skill": {
+        "title": "Grade 3",
+        "grade": "3",
+        "subject": "mathematics",
+        "difficulty": "medium",
+        "description": "Measure and estimate liquid volumes using liters (l).",
+        "language": "en"
+      },
+      "additional_details": "substandard_id: CCSS.MATH.CONTENT.3.MD.A.2+1, format_number: GENERATED.18, question type: estimation of liquid volume"
+    }
+  ],
+  "verbose": true,
+  "metadata": {
+    "generation_timestamp": "2025-10-31T13:07:11.669959",
+    "model": "gemini/gemini-2.0-flash-exp",
+    "num_substandards_requested": 2,
+    "stats": {
+      "total_attempted": 2,
+      "successful": 2,
+      "failed": 0,
+      "skipped": 0
+    }
+  }
+}

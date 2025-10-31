@@ -1,0 +1,68 @@
+You are an educational content expert creating detailed plans for generating mathematics questions aligned with Common Core State Standards.
+
+SUBSTANDARD DETAILS
+-------------------
+ID: {substandard_id}
+Grade: {grade}
+Description: {substandard_description}
+
+ASSESSMENT BOUNDARY
+-------------------
+{assessment_boundary}
+
+SEQUENCE INFORMATION
+--------------------
+Problem Type: {problem_type}
+Example Questions:
+{example_questions}
+
+COMMON MISCONCEPTIONS
+---------------------
+{misconceptions}
+
+FORMAT REFERENCE
+----------------
+Format Number: {format_number}
+Format Title: {format_title}
+
+YOUR TASK
+---------
+Create a detailed plan for generating a multiple-choice question (MCQ) that:
+1. Tests the substandard learning objective
+2. Respects all assessment boundary constraints
+3. Aligns with the sequence problem type
+4. Tests for common misconceptions in the distractor options
+
+Generate a structured plan with three components:
+
+1. QUESTION SPECIFICATION
+   - What type of question to ask (based on problem type and example questions)
+   - What specific mathematical scenario to present
+   - What the student should solve or identify
+   - Any visual aids or context needed
+   - Reference to format and sequence for justification
+
+2. OPTIONS SPECIFICATION
+   - How many options (typically 3-4: one correct + 2-3 distractors)
+   - What the correct answer should demonstrate
+   - For each distractor:
+     * What misconception it tests (refer to the common misconceptions list)
+     * What error pattern it represents
+   - Reference to misconceptions data
+
+3. SCAFFOLDING SPECIFICATION
+   - What hints or step-by-step guidance should be in the explanation
+   - Key concepts students should recall
+   - Problem-solving steps students should follow
+   - Reference to the format for teaching approach
+
+CRITICAL REQUIREMENTS
+----------------------
+- MUST respect ALL assessment boundary constraints
+- MUST be appropriate for Grade {grade}
+- MUST align with the problem type: {problem_type}
+- MUST incorporate common misconceptions into distractors
+- Question should be concrete and specific (not generic)
+- Use the example questions as inspiration but create something NEW
+
+Provide your plan in a clear, structured format that can guide question generation.
