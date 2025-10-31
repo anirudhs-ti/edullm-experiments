@@ -139,16 +139,45 @@ def main() -> None:
     args = parser.parse_args()
     args.out_dir.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now(timezone.utc).strftime("%Y%m%d_%H%M%S")
+
+    def _try_load_existing_findings(source_filename: str) -> str:
+        """Return text from the most recent findings file for this source if present, else ''."""
+        # Mirror the naming used when saving findings
+        safe_source = source_filename.replace(' ', '_').replace('/', '_')
+        prefix = f"findings_sequence_instructional_format_{safe_source}_"
+        candidates: List[Path] = []
+        for p in args.out_dir.iterdir():
+            if p.is_file() and p.name.startswith(prefix) and p.suffix.lower() == ".md":
+                candidates.append(p)
+        if not candidates:
+            return ""
+        latest = max(candidates, key=lambda p: p.stat().st_mtime)
+        try:
+            with open(latest, 'r', encoding='utf-8') as f:
+                text = f.read()
+            print(f"Reused existing findings from: {latest}")
+            # Strip metadata header if caller expects just body; keep as-is since consolidator handles it
+            return text
+        except Exception:
+            return ""
+
     def analyze_one(pdf_path: Path) -> str:
         pages = extract_pdf_text_with_pages(pdf_path)
         annotated = build_page_annotated_text(pages)
         source = pdf_path.name
+
+        # Attempt to reuse prior findings for this exact source
+        existing = _try_load_existing_findings(source)
+        if existing:
+            return existing
+
         system_prompt = (
             "You are an assistant that must ONLY use the provided PDF content. "
             "Task: derive detailed, evidence-backed explanations of two concepts: 'sequence' and 'instructional format'.\n"
             "Rules:\n"
             "- Only make claims that are explicitly supported by the text.\n"
             "- For EVERY claim, include page citations like [" + source + ", p. 20] based on provided [Page X] markers.\n"
+            "- Include concrete examples from the source when they exist, and cite them.\n"
             "- No outside knowledge, no speculation, no unsourced claims.\n"
             "Output strictly as Markdown with two top-level sections: 'Sequence' and 'Instructional Format'."
         )
@@ -156,7 +185,7 @@ def main() -> None:
             "SOURCE: " + source + "\n\n" +
             "FULL PDF CONTENT BELOW (with [Page X] markers). From ONLY this content, produce detailed, "
             "evidence-backed explanations of 'sequence' and 'instructional format'. Every claim must "
-            "include page citations like [" + source + ", p. X].\n\n" + annotated
+            "include page citations like [" + source + ", p. X]. Where the text gives examples (e.g., sample problems, format names, or scenarios), include them with citations.\n\n" + annotated
         )
         findings = call_llm(args.model, system_prompt, user_content)
         out_file = args.out_dir / (
@@ -184,9 +213,11 @@ def main() -> None:
         "Questions to answer (as top-level headings):\n"
         "1) What is a 'good' sequence? How to check it? What rules must be followed while creating a sequence? Are there specifics on what types of questions must be there?\n"
         "2) What is a 'good' format? How to check it? What rules must be followed while creating a format? What language should be used?\n"
-        "Rules:\n"
+        "Requirements:\n"
         "- Use ONLY claims that appear in the provided sources.\n"
-        "- EVERY claim must include a citation like [<filename>, p. X].\n"
+        "- For EVERY claim, include a citation like [<filename>, p. X].\n"
+        "- Where the sources provide examples (e.g., worked problems, format names/numbers, or scenarios), include them under the relevant point with citations.\n"
+        "- After answering both questions, append a final section titled 'Rule Checklists' containing two bullet lists: 'Good Sequence must...' and 'Good Format must...'. Each bullet must correspond to rules justified by the sources and include at least one citation. For EACH bullet, also include an example: prefer a cited example from the sources; if none exists, add a clearly labeled 'Example (not in book): ...' that illustrates the rule without introducing new claims.\n"
         "- Merge duplicates, keep it concise but complete. No new claims."
     )
     sources_blob_parts: List[str] = []
