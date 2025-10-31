@@ -1,0 +1,295 @@
+{
+  "request_id": "c2dbfa6e-c84c-40eb-a663-d5ffc6a8ba3f",
+  "evaluations": {
+    "q1": {
+      "ti_question_qa": {
+        "scores": {
+          "correctness": 1.0,
+          "grade_alignment": 1.0,
+          "difficulty_alignment": 1.0,
+          "language_quality": 0.9,
+          "pedagogical_value": 0.9,
+          "explanation_quality": 0.8,
+          "instruction_adherence": 1.0,
+          "format_compliance": 1.0,
+          "query_relevance": 1.0,
+          "di_compliance": 0.9
+        },
+        "issues": [],
+        "strengths": [
+          "Correct answer mapping and presence",
+          "Clear and concise language",
+          "Well-aligned with grade level and difficulty",
+          "Good educational value and explanation"
+        ],
+        "overall": 0.9555555555555555,
+        "recommendation": "accept",
+        "suggested_improvements": [
+          "Enhance explanation by avoiding repetition and providing more context"
+        ],
+        "di_scores": {
+          "overall": 0.9,
+          "general_principles": 0.9,
+          "format_alignment": 0.9,
+          "grade_language": 0.9
+        },
+        "section_evaluations": {
+          "question": {
+            "section_score": 9.86,
+            "issues": [],
+            "strengths": [
+              "Correct answer mapping and presence",
+              "Clear and concise language",
+              "Well-aligned with grade level and difficulty"
+            ],
+            "recommendation": "accept"
+          },
+          "scaffolding": {
+            "section_score": 8.67,
+            "issues": [],
+            "strengths": [
+              "Good educational value and explanation"
+            ],
+            "recommendation": "accept"
+          }
+        }
+      },
+      "answer_verification": {
+        "is_correct": true,
+        "correct_answer": "6 x 0 = 0",
+        "confidence": 9,
+        "reasoning": "The zero property of multiplication states that any number multiplied by zero equals zero. The equation 6 x 0 = 0 correctly demonstrates this property."
+      },
+      "reading_question_qc": {
+        "overall_score": 0.9,
+        "distractor_checks": {
+          "grammatical_parallel": {
+            "score": 1,
+            "response": "All four answer choices follow the same grammatical pattern: they are all mathematical equations in the form of \"expression = expression\". Each choice presents a complete equation with numbers, mathematical operators (×, +), and an equals sign. The structural consistency is maintained across all options:\n- A) number × number = number\n- B) number × number = number × number\n- C) number × number = number\n- D) number + number = number\n\nWhile the equations vary in complexity (B has two operations on the right side), they all maintain the same fundamental grammatical structure of being complete mathematical equations. This variation does not create an unfair advantage or disadvantage in answering the question.",
+            "category": "distractor"
+          },
+          "plausibility": {
+            "score": 1,
+            "response": "All three incorrect choices are plausible distractors for a 3rd grader learning multiplication properties:\n\nA) 3 x 1 = 3 - This demonstrates the identity property of multiplication, which is closely related and often taught alongside the zero property. A student could easily confuse these two properties.\n\nB) 0 x 2 = 2 x 1 - This is a clever distractor because it contains zero and multiplication, but demonstrates equality rather than the zero property. A student who recognizes that zero is involved but doesn't fully understand the zero property might select this.\n\nD) 7 + 0 = 7 - This demonstrates the identity property of addition. Since students learn properties across operations simultaneously, confusing the zero property of multiplication with the additive identity is a common and reasonable misconception.\n\nEach distractor represents a logical confusion point related to mathematical properties involving zero or identity elements, making them educationally valuable wrong answers rather than throwaway options.",
+            "category": "distractor"
+          },
+          "homogeneity": {
+            "score": 1,
+            "response": "All answer choices are mathematical equations or expressions that demonstrate various mathematical properties. Each choice shows a different property: A) identity property of multiplication, B) an equation comparing products, C) zero property of multiplication, D) identity property of addition. While only one is correct, all choices belong to the same conceptual category of \"mathematical equations demonstrating properties of operations.\" This is appropriate homogeneity for a question asking students to identify a specific mathematical property.",
+            "category": "distractor"
+          },
+          "specificity_balance": {
+            "score": 1,
+            "response": "All four answer choices are at similar levels of specificity and detail. Each option presents a simple mathematical equation using:\n- Single-digit numbers (0-7)\n- Basic operations (multiplication or addition)\n- Simple format (number operator number = number)\n- Elementary mathematical concepts\n\nAll choices are written in the same straightforward style appropriate for teaching basic mathematical properties. There are no outliers with significantly more complex notation, verbose explanations, or different levels of technical language.",
+            "category": "distractor"
+          },
+          "too_close": {
+            "score": 0,
+            "response": "Options B and C both involve multiplication and include zero, potentially being misinterpreted as demonstrating the zero property due to confusion over the commutative property.",
+            "category": "distractor"
+          },
+          "length_check": {
+            "score": 1,
+            "response": "Choice lengths are balanced",
+            "category": "distractor"
+          }
+        },
+        "question_checks": {
+          "standard_alignment": {
+            "score": 1,
+            "response": "The question directly assesses the assigned standard \"Grade 3.0 - Identify the properties of multiplication.\" The question specifically asks students to identify the zero property of multiplication, which is one of the key properties of multiplication that third graders must learn. The correct answer (C: 6 x 0 = 0) demonstrates the zero property, while the distractors test whether students can distinguish this property from the identity property of multiplication (A), incorrect equations (B), and the identity property of addition (D). This alignment is appropriate and direct.",
+            "category": "question"
+          },
+          "clarity_precision": {
+            "score": 1,
+            "response": "The question is clear, precise, and unambiguous. It directly asks students to identify which equation demonstrates the zero property of multiplication. The language is straightforward and appropriate for 3rd grade level (CCSS.MATH.CONTENT.3.OA.B.5). There are no ambiguous pronouns, double negatives, or complex sentence structures. The term \"zero property of multiplication\" is the standard mathematical terminology students would learn at this level. Each answer choice presents a distinct equation, making it clear what students need to evaluate. There is only one correct interpretation of what is being asked.",
+            "category": "question"
+          },
+          "single_correct_answer": {
+            "score": 1,
+            "response": "The zero property of multiplication states that any number multiplied by zero equals zero.\n\nAnalyzing each choice:\n- A) 3 x 1 = 3 demonstrates the identity property of multiplication (multiplying by 1), not the zero property\n- B) 0 x 2 = 2 x 1 is actually a false equation (0 ≠ 2), so this cannot be correct\n- C) 6 x 0 = 0 correctly demonstrates the zero property of multiplication\n- D) 7 + 0 = 7 demonstrates the identity property of addition, not multiplication\n\nOnly choice C correctly demonstrates the zero property of multiplication. The other choices either demonstrate different properties or are incorrect equations. There is exactly one defensibly correct answer.",
+            "category": "question"
+          },
+          "passage_reference": {
+            "score": 1,
+            "response": "The question \"Which equation demonstrates the zero property of multiplication?\" does not contain any specific passage references such as paragraph numbers, line numbers, section titles, quotes, or page numbers. It is a standalone question asking about a mathematical concept. Since there are no passage references to verify, the answer is 1.",
+            "category": "question"
+          }
+        },
+        "passed": true
+      },
+      "math_content_evaluator": {
+        "overall_rating": "ACCEPTABLE",
+        "overall_reason": "The item is accurate, clearly written, grade-appropriate, and offers a concise explanation. It meets all guidance categories, but its simplicity and lack of additional depth or context keep it within the range of typical, not outstanding, resources.",
+        "curriculum_alignment": "PASS",
+        "curriculum_alignment_reason": "Focuses on Grade 3 property of zero in multiplication, a core standard-aligned concept.",
+        "cognitive_demand": "PASS",
+        "cognitive_demand_reason": "DOK 1 recall question, appropriate for the skill addressed.",
+        "accuracy_and_rigor": "PASS",
+        "accuracy_and_rigor_reason": "Stem, options, key, and explanation are mathematically correct; distractors are plausible.",
+        "image_quality": "PASS",
+        "image_quality_reason": "No image needed for this concept.",
+        "reveals_misconceptions": "PASS",
+        "reveals_misconceptions_reason": "Distractors expose confusions between properties and invalid equalities.",
+        "question_type_appropriateness": "PASS",
+        "question_type_appropriateness_reason": "Single-answer multiple choice with plausible distractors; no structural issues.",
+        "engagement_and_relevance": "PASS",
+        "engagement_and_relevance_reason": "Straightforward; no unnecessary complexity, albeit minimal context.",
+        "instructional_support": "PASS",
+        "instructional_support_reason": "Provides correct answer and brief explanation useful for feedback.",
+        "clarity_and_accessibility": "PASS",
+        "clarity_and_accessibility_reason": "Language is clear, concise, and age-appropriate.",
+        "pass_count": 9,
+        "fail_count": 0,
+        "overall_score": 1.0
+      },
+      "score": 0.9518518518518518
+    },
+    "q2": {
+      "ti_question_qa": {
+        "scores": {
+          "correctness": 1.0,
+          "grade_alignment": 0.9,
+          "difficulty_alignment": 0.9,
+          "language_quality": 0.9,
+          "pedagogical_value": 0.8,
+          "explanation_quality": 0.8,
+          "instruction_adherence": 0.9,
+          "format_compliance": 0.9,
+          "query_relevance": 1.0,
+          "di_compliance": 0.8
+        },
+        "issues": [],
+        "strengths": [
+          "Answer mapping is correct (B → L)",
+          "Question is well-aligned with Grade 3 expectations",
+          "Clear and concise language used",
+          "Explanation provides a good rationale for the answer"
+        ],
+        "overall": 0.8999999999999999,
+        "recommendation": "accept",
+        "suggested_improvements": [
+          "Include more context or examples in the explanation to enhance understanding"
+        ],
+        "di_scores": {
+          "overall": 0.8,
+          "general_principles": 0.8,
+          "format_alignment": 0.9,
+          "grade_language": 0.8
+        },
+        "section_evaluations": {
+          "question": {
+            "section_score": 9.29,
+            "issues": [],
+            "strengths": [
+              "Answer mapping is correct (B → L)",
+              "Question is well-aligned with Grade 3 expectations",
+              "Clear and concise language used"
+            ],
+            "recommendation": "accept"
+          },
+          "scaffolding": {
+            "section_score": 8.0,
+            "issues": [],
+            "strengths": [
+              "Explanation provides a good rationale for the answer"
+            ],
+            "recommendation": "accept"
+          }
+        }
+      },
+      "answer_verification": {
+        "is_correct": true,
+        "correct_answer": "L",
+        "confidence": 10,
+        "reasoning": "Fish tanks hold large volumes; 20 mL is far too small. Liters are appropriate for tank volumes, so 20 L is the better estimate."
+      },
+      "reading_question_qc": {
+        "overall_score": 0.9,
+        "distractor_checks": {
+          "grammatical_parallel": {
+            "score": 1,
+            "response": "Both answer choices A and B are unit abbreviations (mL and L). They follow the same grammatical pattern - both are abbreviated units of volume measurement. Choices C and D are blank, which is acceptable as they don't create inconsistency. The two actual choices are parallel in structure.",
+            "category": "distractor"
+          },
+          "plausibility": {
+            "score": 0,
+            "response": "Choice A (mL) is a plausible distractor - students might incorrectly think milliliters is appropriate for a fish tank if they don't understand the scale difference between mL and L. However, choices C and D are empty/blank options, making them \"throwaway\" options with no educational value. They are not plausible distractors representing any misconception - they're just absent answers. Since the task requires ALL incorrect choices to be plausible distractors, and C and D fail this criterion, the answer is 0.",
+            "category": "distractor"
+          },
+          "homogeneity": {
+            "score": 1,
+            "response": "This is a measurement unit estimation question. Both answer choices A (mL) and B (L) are units of volume measurement from the metric system. Choices C and D are blank/empty. The two provided choices belong to the same conceptual category - they are both metric volume units that could potentially complete the sentence about measuring a fish tank's volume.",
+            "category": "distractor"
+          },
+          "specificity_balance": {
+            "score": 1,
+            "response": "Both answer choices are metric volume units at the same level of specificity. \"mL\" (milliliters) and \"L\" (liters) are both standard metric measurements presented in their common abbreviated forms. They represent the same type of measurement (volume) at equivalent technical detail levels. Choices C and D are blank/empty, so only A and B need comparison, and they are balanced.",
+            "category": "distractor"
+          },
+          "too_close": {
+            "score": 1,
+            "response": "No explanation provided",
+            "category": "distractor"
+          },
+          "length_check": {
+            "score": 1,
+            "response": "All choices are 3 words or less",
+            "category": "distractor"
+          }
+        },
+        "question_checks": {
+          "standard_alignment": {
+            "score": 1,
+            "response": "The question directly assesses CCSS.MATH.CONTENT.3.MD.A.2, which requires students to measure and estimate liquid volumes using liters. The question asks students to determine whether milliliters (mL) or liters (L) is the better estimate for the volume of a fish tank (20 units). This requires students to:\n1) Understand the relative sizes of mL and L\n2) Estimate an appropriate liquid volume for a real-world container (fish tank)\n3) Select the appropriate unit (liters would be correct for 20 L, as a fish tank holds a substantial volume)\n\nThis is a direct application of estimating liquid volumes and selecting appropriate units, which is exactly what the standard requires. The DOK level of \"medium\" is appropriate as it requires reasoning about unit appropriateness rather than just recall.",
+            "category": "question"
+          },
+          "clarity_precision": {
+            "score": 1,
+            "response": "The question is clear and appropriate for 3rd grade level. It asks students to choose between milliliters (mL) or liters (L) as the better unit for measuring a fish tank's volume of 20 units. The task is straightforward: determine which unit makes more sense for the given quantity. A fish tank holding 20 mL would be impossibly tiny (less than 2 tablespoons), while 20 L is a reasonable size for a small fish tank. The question uses simple vocabulary, has a single clear interpretation, and directly assesses the learning standard about estimating liquid volumes using appropriate units.",
+            "category": "question"
+          },
+          "single_correct_answer": {
+            "score": 1,
+            "response": "This question asks students to choose the appropriate unit (mL or L) for measuring the volume of a fish tank with a value of 20.\n\nA fish tank would realistically hold around 20 liters (a reasonable size for a small to medium aquarium), whereas 20 milliliters would be absurdly small (less than 2 tablespoons - far too small for any fish tank).\n\nAnswer B (L/liters) is clearly and defensibly correct as the appropriate unit of measurement. Answer A (mL/milliliters) is clearly incorrect as it would represent an impossibly small fish tank. Answers C and D are blank and therefore not viable options.\n\nThis is a straightforward measurement estimation question aligned with the cited standard (CCSS.MATH.CONTENT.3.MD.A.2 - measuring and estimating liquid volumes). There is exactly one defensibly correct answer with no ambiguity.",
+            "category": "question"
+          },
+          "passage_reference": {
+            "score": 1,
+            "response": "The question does not contain any specific passage references such as paragraph numbers, line numbers, section titles, or quotes. It is a standalone math question asking students to choose between ml or L as the better estimate for the volume of a fish tank (20 units). The passage provided only contains metadata about the question (standard ID, format number, and question type) rather than actual passage content that could be referenced. Since there are no passage references to verify, the score is 1.",
+            "category": "question"
+          }
+        },
+        "passed": true
+      },
+      "math_content_evaluator": {
+        "overall_rating": "ACCEPTABLE",
+        "overall_reason": "The item is accurate, age-appropriate, and clearly written. It aligns to Grade 3 measurement standards and provides a correct answer with an understandable explanation. While sound, it is routine and offers no particularly innovative features that would elevate it above typical high-quality resources.",
+        "curriculum_alignment": "PASS",
+        "curriculum_alignment_reason": "Targets Grade 3 goal of selecting appropriate metric units (mL vs L) for capacity.",
+        "cognitive_demand": "PASS",
+        "cognitive_demand_reason": "DOK 1 recall/recognition is appropriate for this standard and difficulty claim.",
+        "accuracy_and_rigor": "PASS",
+        "accuracy_and_rigor_reason": "Correct answer (L) and rationale are accurate; no numerical or conceptual errors present.",
+        "image_quality": "PASS",
+        "image_quality_reason": "No image is needed for this prompt; absence is appropriate.",
+        "reveals_misconceptions": "PASS",
+        "reveals_misconceptions_reason": "The distractor mL surfaces the common misconception about appropriate metric units for larger volumes.",
+        "question_type_appropriateness": "PASS",
+        "question_type_appropriateness_reason": "Multiple-choice with one clear correct option and a plausible distractor; no flawed choices.",
+        "engagement_and_relevance": "PASS",
+        "engagement_and_relevance_reason": "Uses a familiar context (fish tank) without unnecessary complexity.",
+        "instructional_support": "PASS",
+        "instructional_support_reason": "Provides a succinct explanation supporting the correct reasoning.",
+        "clarity_and_accessibility": "PASS",
+        "clarity_and_accessibility_reason": "Language is simple, unambiguous, and grade-appropriate.",
+        "pass_count": 9,
+        "fail_count": 0,
+        "overall_score": 1.0
+      },
+      "score": 0.9333333333333332
+    }
+  },
+  "evaluation_time_seconds": 22.685855388641357,
+  "inceptbench_version": "1.4.1"
+}
