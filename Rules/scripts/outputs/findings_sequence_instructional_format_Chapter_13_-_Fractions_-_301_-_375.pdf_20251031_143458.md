@@ -1,0 +1,26 @@
+Model: gemini-2.5-pro
+Source PDF: Chapter 13 - Fractions - 301 - 375.pdf
+Generated UTC: 20251031_143458
+
+### Sequence
+
+A sequence in the context of teaching fractions is a deliberately designed order of instruction that ensures all prerequisite skills (preskills) for more advanced problems are taught before those advanced problems are introduced [Chapter 13 - Fractions - 301 - 375.pdf, p. 2]. The "Instructional Sequence and Assessment Chart" is presented as one possible order for introducing fraction problem types [Chapter 13 - Fractions - 301 - 375.pdf, p. 2, p. 5-9]. The goal of this sequencing is to build a solid foundation for conceptual understanding, which is critical for later success in algebra [Chapter 13 - Fractions - 301 - 375.pdf, p. 2, p. 9].
+
+The instructional sequence is described as "cyclical" [Chapter 13 - Fractions - 301 - 375.pdf, p. 2]. This means that simpler versions of a topic are introduced early, and more complex versions are introduced later after necessary preskills have been taught [Chapter 13 - Fractions - 301 - 375.pdf, p. 2]. For example, adding and subtracting fractions with like denominators is introduced "at a relatively early stage," while problems with unlike denominators are not introduced until "significantly later in the sequence" because students must first be taught several rewriting skills [Chapter 13 - Fractions - 301 - 375.pdf, p. 2].
+
+Specific examples of sequencing include:
+*   **Fraction Analysis Skills:** The text lists the skills for fraction analysis in their "order of introduction," starting with part/whole discrimination and progressing to reading mixed numerals [Chapter 13 - Fractions - 301 - 375.pdf, p. 9].
+*   **Conversion Skills:** Converting improper fractions to mixed numerals is recommended for introduction in early fourth grade [Chapter 13 - Fractions - 301 - 375.pdf, p. 22]. However, the reverse skill, converting mixed numerals to improper fractions, should not be introduced until "several months later" to "decrease the probability of students confusing the two operations" [Chapter 13 - Fractions - 301 - 375.pdf, p. 22].
+*   **Factors:** A specific sequence for introducing target numbers and their factors is provided in a table, starting with factors of 12 and 7 on Day 1 and progressing to factors of 50 by Day 31 [Chapter 13 - Fractions - 301 - 375.pdf, p. 19].
+*   **Word Problems:** The sequence dictates that a new type of fraction problem should be integrated into word problem exercises only "as soon as the students can accurately compute problems of that type" [Chapter 13 - Fractions - 301 - 375.pdf, p. 28].
+
+### Instructional Format
+
+An instructional format is a structured, step-by-step procedure for teaching a specific fraction skill [Chapter 13 - Fractions - 301 - 375.pdf, p. 10, p. 20, p. 34]. These formats are used to introduce new skills, teach preskills, and remediate student errors [Chapter 13 - Fractions - 301 - 375.pdf, p. 16, p. 34]. For remediation, a teacher might reteach using the "structured board part of the format" for a strategy error or the "structured worksheet part" for a component-skill error [Chapter 13 - Fractions - 301 - 375.pdf, p. 34].
+
+Formats typically consist of several parts, often progressing from teacher-led instruction to guided and then independent student practice. Common components include:
+*   **Part A: Teacher Modeling:** This initial part is often a "Pictorial Demonstration" or a "Structured Board Presentation" where the teacher models the strategy, introduces a rule, and demonstrates how to apply it [Chapter 13 - Fractions - 301 - 375.pdf, p. 13, p. 16, p. 20, p. 22]. For example, Format 13.11 begins with a board exercise where the teacher presents the strategy for reducing fractions [Chapter 13 - Fractions - 301 - 375.pdf, p. 20].
+*   **Part B, C, D: Guided and Independent Practice:** Subsequent parts often involve "Structured Worksheet" and "Less Structured Worksheet" exercises [Chapter 13 - Fractions - 301 - 375.pdf, p. 11, p. 20, p. 22]. During these parts, the teacher leads students through problems with prompts before allowing them to work more independently [Chapter 13 - Fractions - 301 - 375.pdf, p. 20, p. 22].
+*   **Scripted Language:** Many formats provide specific wording for the teacher to use, laid out in a script-like structure with "TEACHER" and "STUDENTS" columns [Chapter 13 - Fractions - 301 - 375.pdf, p. 38-75].
+*   **Correction Procedures:** Formats include explicit instructions for how to correct student errors [Chapter 13 - Fractions - 301 - 375.pdf, p. 38]. For instance, in Format 13.4, the correction for misreading a fraction is to "Model and test correct answer; review series" [Chapter 13 - Fractions - 301 - 375.pdf, p. 44].
+*   **Example Selection Guidelines:** Formats are accompanied by guidelines for selecting appropriate examples for exercises [Chapter 13 - Fractions - 301 - 375.pdf, p. 11, p. 17, p. 20]. These guidelines ensure a variety of problems are included to help students discriminate between problem types and avoid developing "misrules" [Chapter 13 - Fractions - 301 - 375.pdf, p. 11, p. 20]. For example, when teaching reducing fractions, about a third of the examples should already be in their simplest terms to show students that not all fractions can be reduced [Chapter 13 - Fractions - 301 - 375.pdf, p. 20].
