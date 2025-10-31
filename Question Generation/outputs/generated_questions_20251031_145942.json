@@ -21,12 +21,7 @@
         "description": "Measure and estimate liquid volumes using liters (l).",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.MD.A.2+1",
-        "format_number": "GENERATED.18",
-        "sequence_info": "Unit estimation for liquid volume (mL or L) for a small teacup.",
-        "generation_timestamp": "2023-10-27T10:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.MD.A.2+1\", \"format_number\": \"GENERATED.18\", \"sequence_info\": \"Unit estimation for liquid volume (mL or L) for a small teacup.\", \"generation_timestamp\": \"2023-10-27T10:00:00Z\"}"
     },
     {
       "id": "q3",
@@ -47,12 +42,7 @@
         "description": "Determine if an angle is greater than, equal to, or less than a right angle.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+4",
-        "format_number": "NEW.212",
-        "generation_timestamp": "2024-07-30T12:00:00Z",
-        "note": "Question asks students to identify an angle greater than a right angle within a parallelogram, aligning with Format NEW.212."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.G.A.1+4\", \"format_number\": \"NEW.212\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\", \"note\": \"Question asks students to identify an angle greater than a right angle within a parallelogram, aligning with Format NEW.212.\"}"
     },
     {
       "id": "q4",
@@ -74,19 +64,14 @@
         "description": "Identify the rule for an addition or subtraction pattern.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+3",
-        "format_number": "NEW.17",
-        "question_type": "Find missing output in table with unstated addition rule",
-        "approach": "Identify consistent addition rule and apply it."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.D.9+3\", \"format_number\": \"NEW.17\", \"question_type\": \"Find missing output in table with unstated addition rule\", \"approach\": \"Identify consistent addition rule and apply it.\"}"
     },
     {
       "id": "q5",
       "type": "mcq",
       "question": "A rectilinear figure is shaped like an 'L'. The bottom edge of the figure is made up of two segments: a left segment that is 4 units long and a right segment that is 3 units long. The vertical edge on the far left of the figure is 2 units tall. The vertical edge on the far right of the figure is 5 units tall. What is the total area of the figure in square units?",
       "answer": "B",
-      "answer_explanation": "Area is the amount of space inside a flat shape, measured in square units. To find the area of any rectangle, you simply multiply its length by its width using the formula: Area = length \u00d7 width.\n\nFirst, you need to decompose the 'L'-shaped figure into two non-overlapping rectangles. You can do this by drawing an imaginary horizontal line from the inner corner to the left edge.\n\nThis creates two rectangles:\n1.  A bottom rectangle: Its total length is 4 units + 3 units = 7 units. Its width (height) is 5 units. So, its area is 7 \u00d7 5 = 35 square units.\n2.  A top-left rectangle: Its length is 4 units. Its width (height) is 2 units. So, its area is 4 \u00d7 2 = 8 square units.\n\nFinally, add the areas of these two smaller rectangles together to find the total area of the entire figure: 35 + 8 = 43 square units.\n\nAlternatively, you could draw an imaginary vertical line from the inner corner upwards.\n1.  A left rectangle: Its length is 4 units. Its total width (height) is 2 units + 5 units = 7 units. So, its area is 4 \u00d7 7 = 28 square units.\n2.  A top-right rectangle: Its length is 3 units. Its width (height) is 5 units. So, its area is 3 \u00d7 5 = 15 square units.\nAdding these areas: 28 + 15 = 43 square units.\n\nBoth methods give the same total area of 43 square units.",
+      "answer_explanation": "Area is the amount of space inside a flat shape, measured in square units. To find the area of any rectangle, you simply multiply its length by its width using the formula: Area = length × width.\n\nFirst, you need to decompose the 'L'-shaped figure into two non-overlapping rectangles. You can do this by drawing an imaginary horizontal line from the inner corner to the left edge.\n\nThis creates two rectangles:\n1.  A bottom rectangle: Its total length is 4 units + 3 units = 7 units. Its width (height) is 5 units. So, its area is 7 × 5 = 35 square units.\n2.  A top-left rectangle: Its length is 4 units. Its width (height) is 2 units. So, its area is 4 × 2 = 8 square units.\n\nFinally, add the areas of these two smaller rectangles together to find the total area of the entire figure: 35 + 8 = 43 square units.\n\nAlternatively, you could draw an imaginary vertical line from the inner corner upwards.\n1.  A left rectangle: Its length is 4 units. Its total width (height) is 2 units + 5 units = 7 units. So, its area is 4 × 7 = 28 square units.\n2.  A top-right rectangle: Its length is 3 units. Its width (height) is 5 units. So, its area is 3 × 5 = 15 square units.\nAdding these areas: 28 + 15 = 43 square units.\n\nBoth methods give the same total area of 43 square units.",
       "answer_options": {
         "A": "28 square units",
         "B": "43 square units",
@@ -101,19 +86,14 @@
         "description": "Solve problems involving the area of composite figures.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.D+2",
-        "format_number": "GENERATED.19",
-        "sequence_info": "Question type: Calculating Area of Composite Figures",
-        "generation_timestamp": "2024-07-29T12:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.MD.C.7.D+2\", \"format_number\": \"GENERATED.19\", \"sequence_info\": \"Question type: Calculating Area of Composite Figures\", \"generation_timestamp\": \"2024-07-29T12:00:00Z\"}"
     },
     {
       "id": "q6",
       "type": "mcq",
       "question": "Ms. Clark wants to cover a rectangular bulletin board in her classroom with new paper. The bulletin board is 7 feet long and 5 feet wide. What is the area of the bulletin board that Ms. Clark needs to cover?",
       "answer": "D",
-      "answer_explanation": "To find the area of a rectangle, you multiply its length by its width. The bulletin board is 7 feet long and 5 feet wide, so you calculate 7 feet \u00d7 5 feet. This equals 35. Remember that area is measured in square units, so the correct answer is 35 square feet.",
+      "answer_explanation": "To find the area of a rectangle, you multiply its length by its width. The bulletin board is 7 feet long and 5 feet wide, so you calculate 7 feet × 5 feet. This equals 35. Remember that area is measured in square units, so the correct answer is 35 square feet.",
       "answer_options": {
         "A": "12 square feet",
         "B": "24 square feet",
@@ -128,12 +108,7 @@
         "description": "Solve real-world word problems involving areas of rectangles with whole-number side lengths",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.B+2",
-        "format_number": "GENERATED.19",
-        "sequence_info": "Question generated based on calculating area of rectangles in a real-world context.",
-        "timestamp": "2024-07-30T12:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.MD.C.7.B+2\", \"format_number\": \"GENERATED.19\", \"sequence_info\": \"Question generated based on calculating area of rectangles in a real-world context.\", \"timestamp\": \"2024-07-30T12:00:00Z\"}"
     },
     {
       "id": "q7",
@@ -155,12 +130,7 @@
         "description": "Measure areas by counting unit squares.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.6+1",
-        "format_number": "NEW.184",
-        "generation_timestamp": "2024-07-30T12:00:00Z",
-        "question_type": "Area of shaded figure with internal empty space by counting unit squares"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.MD.C.6+1\", \"format_number\": \"NEW.184\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\", \"question_type\": \"Area of shaded figure with internal empty space by counting unit squares\"}"
     },
     {
       "id": "q8",
@@ -169,10 +139,10 @@
       "answer": "A",
       "answer_explanation": "To find the correct picture graph, first understand the data from the table and the scale from the key. The key states that each fruit symbol represents 5 students. Next, calculate the number of symbols needed for each fruit by dividing the total number of students by the scale (5):\n\n*   Apples: 20 students / 5 students per symbol = 4 symbols\n*   Bananas: 15 students / 5 students per symbol = 3 symbols\n*   Oranges: 10 students / 5 students per symbol = 2 symbols\n*   Grapes: 5 students / 5 students per symbol = 1 symbol\n\nNow, compare these calculated numbers to each option. Option A correctly shows 4 apple symbols, 3 banana symbols, 2 orange symbols, and 1 grape symbol, matching our calculations.",
       "answer_options": {
-        "A": "Key: Each fruit symbol = 5 students\n*   Apples: \ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\n*   Bananas: \ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\n*   Oranges: \ud83c\udf4a\ud83c\udf4a\n*   Grapes: \ud83c\udf47",
-        "B": "Key: Each fruit symbol = 5 students\n*   Apples: \ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\n*   Bananas: \ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\n*   Oranges: \ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\n*   Grapes: \ud83c\udf47\ud83c\udf47\ud83c\udf47\ud83c\udf47\ud83c\udf47",
-        "C": "Key: Each fruit symbol = 5 students\n*   Apples: \ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\n*   Bananas: \ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\n*   Oranges: \ud83c\udf4a\ud83c\udf4a\ud83c\udf4a\n*   Grapes: \ud83c\udf47",
-        "D": "Key: Each fruit symbol = 5 students\n*   Apples: \ud83c\udf4e\ud83c\udf4e\ud83c\udf4e\n*   Bananas: \ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\ud83c\udf4c\n*   Oranges: \ud83c\udf4a\ud83c\udf4a\n*   Grapes: \ud83c\udf47"
+        "A": "Key: Each fruit symbol = 5 students\n*   Apples: 🍎🍎🍎🍎\n*   Bananas: 🍌🍌🍌\n*   Oranges: 🍊🍊\n*   Grapes: 🍇",
+        "B": "Key: Each fruit symbol = 5 students\n*   Apples: 🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎🍎\n*   Bananas: 🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌🍌\n*   Oranges: 🍊🍊🍊🍊🍊🍊🍊🍊🍊🍊\n*   Grapes: 🍇🍇🍇🍇🍇",
+        "C": "Key: Each fruit symbol = 5 students\n*   Apples: 🍎🍎🍎🍎\n*   Bananas: 🍌🍌🍌\n*   Oranges: 🍊🍊🍊\n*   Grapes: 🍇",
+        "D": "Key: Each fruit symbol = 5 students\n*   Apples: 🍎🍎🍎\n*   Bananas: 🍌🍌🍌🍌\n*   Oranges: 🍊🍊\n*   Grapes: 🍇"
       },
       "skill": {
         "title": "Grade 3",
@@ -182,13 +152,7 @@
         "description": "Draw a scaled picture graph to represent a data set with several categories.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.3+1",
-        "format_number": "GENERATED.20",
-        "generation_timestamp": "2024-07-29T12:00:00Z",
-        "question_type": "Match data table to scaled picture graph",
-        "approach": "Identify correct representation based on given data and scale, with distractors testing common misconceptions like ignoring scale, calculation errors, or data misassignment."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.MD.B.3+1\", \"format_number\": \"GENERATED.20\", \"generation_timestamp\": \"2024-07-29T12:00:00Z\", \"question_type\": \"Match data table to scaled picture graph\", \"approach\": \"Identify correct representation based on given data and scale, with distractors testing common misconceptions like ignoring scale, calculation errors, or data misassignment.\"}"
     },
     {
       "id": "q9",
@@ -215,9 +179,9 @@
     {
       "id": "q10",
       "type": "mcq",
-      "question": "What is the value of the unknown in the equation?\n54 \u00f7 6 = ?",
+      "question": "What is the value of the unknown in the equation?\n54 ÷ 6 = ?",
       "answer": "B",
-      "answer_explanation": "To solve a division problem like 54 \u00f7 6 = ?, you can think of it as a multiplication question. Ask yourself: \"What number multiplied by 6 equals 54?\" To find the answer, recall your multiplication facts for 6. Counting by 6s (6, 12, 18, 24, 30, 36, 42, 48, 54) shows that 6 goes into 54 exactly 9 times. So, 54 \u00f7 6 = 9.",
+      "answer_explanation": "To solve a division problem like 54 ÷ 6 = ?, you can think of it as a multiplication question. Ask yourself: \"What number multiplied by 6 equals 54?\" To find the answer, recall your multiplication facts for 6. Counting by 6s (6, 12, 18, 24, 30, 36, 42, 48, 54) shows that 6 goes into 54 exactly 9 times. So, 54 ÷ 6 = 9.",
       "answer_options": {
         "A": "6",
         "B": "9",
@@ -231,20 +195,14 @@
         "description": "Fluently divide within 100.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.C.7+2",
-        "format_number": "GENERATED.10",
-        "generation_timestamp": "2024-07-30T12:00:00Z",
-        "question_type": "Direct division equation problem",
-        "approach": "Assesses fluency in division facts within 100 by identifying the correct quotient."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.C.7+2\", \"format_number\": \"GENERATED.10\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\", \"question_type\": \"Direct division equation problem\", \"approach\": \"Assesses fluency in division facts within 100 by identifying the correct quotient.\"}"
     },
     {
       "id": "q11",
       "type": "mcq",
-      "question": "What is the missing number?\n10 \u00d7 4 = \u25a1",
+      "question": "What is the missing number?\n10 × 4 = □",
       "answer": "C",
-      "answer_explanation": "To find the missing number in 10 \u00d7 4 = \u25a1, you need to multiply 10 by 4. You can think of multiplication as repeated addition. For example, 10 \u00d7 4 means '4 groups of 10,' which you can calculate as 10 + 10 + 10 + 10 = 40. Alternatively, a helpful rule for multiplying by 10 is to multiply the other factor by 1, then place a zero at the end of that product. So, 4 \u00d7 1 = 4, and adding a zero gives you 40. Therefore, the missing number is 40.",
+      "answer_explanation": "To find the missing number in 10 × 4 = □, you need to multiply 10 by 4. You can think of multiplication as repeated addition. For example, 10 × 4 means '4 groups of 10,' which you can calculate as 10 + 10 + 10 + 10 = 40. Alternatively, a helpful rule for multiplying by 10 is to multiply the other factor by 1, then place a zero at the end of that product. So, 4 × 1 = 4, and adding a zero gives you 40. Therefore, the missing number is 40.",
       "answer_options": {
         "A": "4",
         "B": "14",
@@ -259,12 +217,7 @@
         "description": "Solve multiplication facts.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.1+5",
-        "format_number": "GENERATED.9",
-        "sequence_info": "Question testing basic multiplication facts, specifically 10 by a single digit, without renaming.",
-        "generation_timestamp": "2024-07-30T12:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.A.1+5\", \"format_number\": \"GENERATED.9\", \"sequence_info\": \"Question testing basic multiplication facts, specifically 10 by a single digit, without renaming.\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\"}"
     },
     {
       "id": "q12",
@@ -293,7 +246,7 @@
       "type": "mcq",
       "question": "A farmer has 2 chicken coops. Each coop has 4 nests, and each nest contains 3 eggs. How many eggs are there in total?",
       "answer": "D",
-      "answer_explanation": "To solve this two-step multiplication word problem, you need to find the total number of eggs. First, you should figure out the total number of nests. You have 2 coops, and each coop has 4 nests, so you multiply 2 \u00d7 4 to get 8 nests. Next, you use this intermediate total. Since there are 8 nests in total and each nest has 3 eggs, you multiply 8 \u00d7 3 to find the total number of eggs, which is 24. Therefore, there are 24 eggs in total.",
+      "answer_explanation": "To solve this two-step multiplication word problem, you need to find the total number of eggs. First, you should figure out the total number of nests. You have 2 coops, and each coop has 4 nests, so you multiply 2 × 4 to get 8 nests. Next, you use this intermediate total. Since there are 8 nests in total and each nest has 3 eggs, you multiply 8 × 3 to find the total number of eggs, which is 24. Therefore, there are 24 eggs in total.",
       "answer_options": {
         "A": "8",
         "B": "11",
@@ -308,12 +261,7 @@
         "description": "Solve word problems involving two step multiplication.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.3+2",
-        "format_number": "NEW.7",
-        "generation_timestamp": "2024-07-30T12:00:00Z",
-        "question_type": "Two-step multiplication word problem (M -> M) with intermediate product <= 10."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.A.3+2\", \"format_number\": \"NEW.7\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\", \"question_type\": \"Two-step multiplication word problem (M -> M) with intermediate product <= 10.\"}"
     },
     {
       "id": "q14",
@@ -335,12 +283,7 @@
         "description": "Identify unit fractions on number lines.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.A+2",
-        "format_number": "NEW.105",
-        "sequence_info": "Identifying the unit fraction on a number line with a denominator of 8.",
-        "generation_timestamp": "2024-07-30T12:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.NF.A.2.A+2\", \"format_number\": \"NEW.105\", \"sequence_info\": \"Identifying the unit fraction on a number line with a denominator of 8.\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\"}"
     },
     {
       "id": "q15",
@@ -362,19 +305,14 @@
         "description": "Identify parallelograms.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+5",
-        "format_number": "GENERATED.26",
-        "sequence_info": "Question about identifying a parallelogram from visual options, addressing common misconceptions.",
-        "timestamp": "2024-07-30T12:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.G.A.1+5\", \"format_number\": \"GENERATED.26\", \"sequence_info\": \"Question about identifying a parallelogram from visual options, addressing common misconceptions.\", \"timestamp\": \"2024-07-30T12:00:00Z\"}"
     },
     {
       "id": "q16",
       "type": "mcq",
       "question": "What rule is used in this table? Use it to find the missing number.\n\n| Input | Output |\n| :---- | :----- |\n| 2     | 8      |\n| 5     | 20     |\n| 7     | 28     |\n| 9     | ?      |",
       "answer": "C",
-      "answer_explanation": "To find the rule in an input-output table, first, examine the initial input and its output to identify a possible operation (like multiplication or division). You must then test this potential rule on *every other pair* in the table to ensure it works consistently for all of them. Once you've confirmed the single rule, you can use it to find any missing output by simply applying the rule to its corresponding input. Remember, the rule must work for *all* pairs in the table!\n\nFor the first pair (2, 8), you might consider 'Add 6' (2 + 6 = 8) or 'Multiply by 4' (2 \u00d7 4 = 8).\nNext, test 'Add 6' with the second pair (5, 20). Since 5 + 6 = 11, and not 20, 'Add 6' is not the correct rule.\nNow, test 'Multiply by 4' with the second pair (5, 20). Since 5 \u00d7 4 = 20, this rule works. You should also verify it with the third pair (7, 28): 7 \u00d7 4 = 28, which also works. So, the consistent rule is 'Multiply by 4'.\nFinally, apply this rule to the last input, 9: 9 \u00d7 4 = 36. Therefore, the missing output is 36.\nThe correct answer is 'Rule: Multiply by 4; Missing Output: 36'.",
+      "answer_explanation": "To find the rule in an input-output table, first, examine the initial input and its output to identify a possible operation (like multiplication or division). You must then test this potential rule on *every other pair* in the table to ensure it works consistently for all of them. Once you've confirmed the single rule, you can use it to find any missing output by simply applying the rule to its corresponding input. Remember, the rule must work for *all* pairs in the table!\n\nFor the first pair (2, 8), you might consider 'Add 6' (2 + 6 = 8) or 'Multiply by 4' (2 × 4 = 8).\nNext, test 'Add 6' with the second pair (5, 20). Since 5 + 6 = 11, and not 20, 'Add 6' is not the correct rule.\nNow, test 'Multiply by 4' with the second pair (5, 20). Since 5 × 4 = 20, this rule works. You should also verify it with the third pair (7, 28): 7 × 4 = 28, which also works. So, the consistent rule is 'Multiply by 4'.\nFinally, apply this rule to the last input, 9: 9 × 4 = 36. Therefore, the missing output is 36.\nThe correct answer is 'Rule: Multiply by 4; Missing Output: 36'.",
       "answer_options": {
         "A": "Rule: Add 6; Missing Output: 15",
         "B": "Rule: Multiply by 4; Missing Output: 32",
@@ -389,13 +327,7 @@
         "description": "Identify the rule for a multiplication pattern.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+7",
-        "format_number": "NEW.58",
-        "sequence_info": "Identifying the rule in tables with non-consecutive inputs and finding a missing output",
-        "generation_timestamp": "2024-07-30T12:00:00Z",
-        "question_type": "Multiple-choice question requiring identification of a multiplication rule in an input-output table and application to find a missing value."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.D.9+7\", \"format_number\": \"NEW.58\", \"sequence_info\": \"Identifying the rule in tables with non-consecutive inputs and finding a missing output\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\", \"question_type\": \"Multiple-choice question requiring identification of a multiplication rule in an input-output table and application to find a missing value.\"}"
     },
     {
       "id": "q17",
@@ -417,12 +349,7 @@
         "description": "Solve two-step word problems involving any combination of the four operations.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+2",
-        "format_number": "GENERATED.21",
-        "generation_timestamp": "2024-07-30T12:00:00Z",
-        "note": "Multi-step word problem requiring interpretation of a scaled pictograph, followed by addition and then division."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.D.8+2\", \"format_number\": \"GENERATED.21\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\", \"note\": \"Multi-step word problem requiring interpretation of a scaled pictograph, followed by addition and then division.\"}"
     },
     {
       "id": "q19",
@@ -444,19 +371,14 @@
         "description": "Find the area of a rectangle with whole-number side lengths by tiling it, and show that the area is the same as would be found by multiplying the side lengths",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.7.A+1",
-        "format_number": "NEW.235",
-        "generation_timestamp": "2024-07-30T12:00:00Z",
-        "note": "Question asks students to find the area of a fully tiled rectangle by counting unit squares, as per Format NEW.235. The rectangle is described as 4 units by 5 units."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.MD.C.7.A+1\", \"format_number\": \"NEW.235\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\", \"note\": \"Question asks students to find the area of a fully tiled rectangle by counting unit squares, as per Format NEW.235. The rectangle is described as 4 units by 5 units.\"}"
     },
     {
       "id": "q21",
       "type": "mcq",
       "question": "A teacher had some pencils. She put them equally into 3 boxes. Each box had 9 pencils. How many pencils did the teacher have in total?",
       "answer": "D",
-      "answer_explanation": "In this problem, you are looking for the total number of pencils the teacher had, which is the missing dividend in the equation `__ \u00f7 3 = 9`. Remember that division and multiplication are inverse (opposite) operations. To find the unknown total (dividend), you can use a related multiplication fact. You need to multiply the number of pencils in each box (9) by the number of boxes (3). So, you calculate 9 \u00d7 3, which equals 27. Therefore, the teacher had 27 pencils in total.",
+      "answer_explanation": "In this problem, you are looking for the total number of pencils the teacher had, which is the missing dividend in the equation `__ ÷ 3 = 9`. Remember that division and multiplication are inverse (opposite) operations. To find the unknown total (dividend), you can use a related multiplication fact. You need to multiply the number of pencils in each box (9) by the number of boxes (3). So, you calculate 9 × 3, which equals 27. Therefore, the teacher had 27 pencils in total.",
       "answer_options": {
         "A": "3",
         "B": "6",
@@ -471,25 +393,19 @@
         "description": "Determine the unknown whole number in a multiplication or division equation relating three whole numbers.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.4+1",
-        "format_number": "NEW.241",
-        "sequence_info": "Problem Type: Finding the unknown dividend in a division equation",
-        "question_type": "Multiple-choice question to find the unknown dividend using fact families.",
-        "generation_timestamp": "2024-07-30T12:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.A.4+1\", \"format_number\": \"NEW.241\", \"sequence_info\": \"Problem Type: Finding the unknown dividend in a division equation\", \"question_type\": \"Multiple-choice question to find the unknown dividend using fact families.\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\"}"
     },
     {
       "id": "q22",
       "type": "mcq",
-      "question": "Which multiplication equation can help you find the answer to 24 \u00f7 3 = \u25a1?",
+      "question": "Which multiplication equation can help you find the answer to 24 ÷ 3 = □?",
       "answer": "B",
-      "answer_explanation": "Remember that multiplication and division are inverse operations, meaning they 'undo' each other. If you have a division problem like 'dividend \u00f7 divisor = quotient', you can rewrite it as a multiplication problem: 'divisor \u00d7 quotient = dividend'. In the equation 24 \u00f7 3 = \u25a1, 24 is the dividend, 3 is the divisor, and \u25a1 is the unknown quotient. Therefore, the related multiplication equation should be 3 \u00d7 \u25a1 = 24. This asks, 'What number multiplied by 3 gives 24?' Option B correctly shows this relationship.",
+      "answer_explanation": "Remember that multiplication and division are inverse operations, meaning they 'undo' each other. If you have a division problem like 'dividend ÷ divisor = quotient', you can rewrite it as a multiplication problem: 'divisor × quotient = dividend'. In the equation 24 ÷ 3 = □, 24 is the dividend, 3 is the divisor, and □ is the unknown quotient. Therefore, the related multiplication equation should be 3 × □ = 24. This asks, 'What number multiplied by 3 gives 24?' Option B correctly shows this relationship.",
       "answer_options": {
-        "A": "24 \u00d7 3 = \u25a1",
-        "B": "3 \u00d7 \u25a1 = 24",
-        "C": "24 - 3 = \u25a1",
-        "D": "3 \u00d7 24 = \u25a1"
+        "A": "24 × 3 = □",
+        "B": "3 × □ = 24",
+        "C": "24 - 3 = □",
+        "D": "3 × 24 = □"
       },
       "skill": {
         "title": "Grade 3",
@@ -499,19 +415,14 @@
         "description": "Relate multiplication and division facts.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.6+4",
-        "format_number": "GENERATED.10",
-        "generation_timestamp": "2024-07-29T12:00:00Z",
-        "note": "Question asks to identify the related multiplication equation for a given division equation with an unknown quotient."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.B.6+4\", \"format_number\": \"GENERATED.10\", \"generation_timestamp\": \"2024-07-29T12:00:00Z\", \"note\": \"Question asks to identify the related multiplication equation for a given division equation with an unknown quotient.\"}"
     },
     {
       "id": "q23",
       "type": "mcq",
-      "question": "A baker made 28 cupcakes. She wants to put an equal number of cupcakes into 4 boxes. How many cupcakes will be in each box? Which number completes the division sentence? 28 \u00f7 4 = ?",
+      "question": "A baker made 28 cupcakes. She wants to put an equal number of cupcakes into 4 boxes. How many cupcakes will be in each box? Which number completes the division sentence? 28 ÷ 4 = ?",
       "answer": "C",
-      "answer_explanation": "When a word problem asks for the amount in 'each' group and gives you the total and the number of groups, you need to divide. First, read the word problem carefully: you have a total of 28 cupcakes (the dividend) and you are putting them into 4 equal boxes (the divisor). The problem asks how many cupcakes will be in *each* box. If you were looking at a picture showing 28 cupcakes divided into 4 equal groups, you would count 7 cupcakes in each group. So, to complete the division sentence 28 \u00f7 4 = ?, the answer is 7. You can check your answer by thinking: 4 boxes with 7 cupcakes each equals 4 \u00d7 7 = 28 cupcakes total. This confirms that 7 is the correct number of cupcakes in each box.",
+      "answer_explanation": "When a word problem asks for the amount in 'each' group and gives you the total and the number of groups, you need to divide. First, read the word problem carefully: you have a total of 28 cupcakes (the dividend) and you are putting them into 4 equal boxes (the divisor). The problem asks how many cupcakes will be in *each* box. If you were looking at a picture showing 28 cupcakes divided into 4 equal groups, you would count 7 cupcakes in each group. So, to complete the division sentence 28 ÷ 4 = ?, the answer is 7. You can check your answer by thinking: 4 boxes with 7 cupcakes each equals 4 × 7 = 28 cupcakes total. This confirms that 7 is the correct number of cupcakes in each box.",
       "answer_options": {
         "A": "4",
         "B": "6",
@@ -531,7 +442,7 @@
     {
       "id": "q24",
       "type": "mcq",
-      "question": "Mr. Lee's art class measured the length of different ribbons they were using for a project. They measured each ribbon to the nearest quarter of an inch. The line plot below shows their measurements. The horizontal line is marked in quarter-inch increments from 2 1/4 inches to 3 3/4 inches. There are 'X's above each measurement mark representing the number of ribbons of that length.\n\nRibbon Lengths (in inches)\n\n        X\n      X X\n    X X X X\n  X X X X X X\n+---+---+---+---+---+---+---+\n2\u00bc  2\u00bd  2\u00be  3   3\u00bc  3\u00bd  3\u00be\n\nHow many ribbons measured exactly 3 inches long?",
+      "question": "Mr. Lee's art class measured the length of different ribbons they were using for a project. They measured each ribbon to the nearest quarter of an inch. The line plot below shows their measurements. The horizontal line is marked in quarter-inch increments from 2 1/4 inches to 3 3/4 inches. There are 'X's above each measurement mark representing the number of ribbons of that length.\n\nRibbon Lengths (in inches)\n\n        X\n      X X\n    X X X X\n  X X X X X X\n+---+---+---+---+---+---+---+\n2¼  2½  2¾  3   3¼  3½  3¾\n\nHow many ribbons measured exactly 3 inches long?",
       "answer": "C",
       "answer_explanation": "To find out how many ribbons measured exactly 3 inches long, you need to interpret the line plot. First, locate the '3 inches' mark on the horizontal line of the plot. Next, count all the 'X's that are stacked directly above the '3 inches' mark. Each 'X' represents one ribbon. Counting the 'X's above '3 inches', you will find there are 4 'X's. Therefore, 4 ribbons measured exactly 3 inches long.",
       "answer_options": {
@@ -548,20 +459,14 @@
         "description": "Interpret a line plot.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.MD.B.4+3",
-        "format_number": "GENERATED.22",
-        "generation_timestamp": "2024-07-30T12:00:00Z",
-        "question_type": "Interpretation of Line Plot",
-        "approach": "Identify count of data points at a specific fractional measurement."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.MD.B.4+3\", \"format_number\": \"GENERATED.22\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\", \"question_type\": \"Interpretation of Line Plot\", \"approach\": \"Identify count of data points at a specific fractional measurement.\"}"
     },
     {
       "id": "q25",
       "type": "mcq",
       "question": "There are 48 students going on a field trip. They are divided into groups of 6 students. Each group needs 2 chaperones. How many chaperones are needed in total?",
       "answer": "C",
-      "answer_explanation": "To solve this problem, you need to figure out two things. First, how many groups of students there are, and second, how many chaperones are needed for all those groups.\n\n1.  **Find the number of groups:** The problem states that 48 students are divided into groups of 6. To find the number of groups, you divide the total number of students by the number of students per group: 48 \u00f7 6 = 8 groups.\n2.  **Find the total chaperones:** Each of these 8 groups needs 2 chaperones. To find the total number of chaperones, you multiply the number of groups by the chaperones per group: 8 groups \u00d7 2 chaperones/group = 16 chaperones.\n\nSo, 16 chaperones are needed in total. Always check if your final answer makes sense in the context of the problem.",
+      "answer_explanation": "To solve this problem, you need to figure out two things. First, how many groups of students there are, and second, how many chaperones are needed for all those groups.\n\n1.  **Find the number of groups:** The problem states that 48 students are divided into groups of 6. To find the number of groups, you divide the total number of students by the number of students per group: 48 ÷ 6 = 8 groups.\n2.  **Find the total chaperones:** Each of these 8 groups needs 2 chaperones. To find the total number of chaperones, you multiply the number of groups by the chaperones per group: 8 groups × 2 chaperones/group = 16 chaperones.\n\nSo, 16 chaperones are needed in total. Always check if your final answer makes sense in the context of the problem.",
       "answer_options": {
         "A": "4",
         "B": "8",
@@ -576,12 +481,7 @@
         "description": "Solve two-step word problems involving multiplication and division.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+5",
-        "format_number": "GENERATED.12",
-        "generation_timestamp": "2024-07-30T12:00:00Z",
-        "note": "Two-step word problem requiring division then multiplication, within 10x10 facts boundary."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.D.8+5\", \"format_number\": \"GENERATED.12\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\", \"note\": \"Two-step word problem requiring division then multiplication, within 10x10 facts boundary.\"}"
     },
     {
       "id": "q26",
@@ -603,12 +503,7 @@
         "description": "Plot given unit fractions (1/n) on a number line that is partitioned into n equal intervals.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.A+1",
-        "format_number": "NEW.99",
-        "sequence_info": "Identifying unit fractions on a number line (denominators 6, 7, 8).",
-        "question_type_approach": "MCQ identifying correct number line representation of a unit fraction."
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.NF.A.2.A+1\", \"format_number\": \"NEW.99\", \"sequence_info\": \"Identifying unit fractions on a number line (denominators 6, 7, 8).\", \"question_type_approach\": \"MCQ identifying correct number line representation of a unit fraction.\"}"
     },
     {
       "id": "q27",
@@ -651,12 +546,7 @@
         "description": "Represent a fraction a/b on a number line diagram by marking off a lengths 1/b from 0, recognizinng that the resulting interval has size a/b and that its endpoint locates the number a/b on the number line.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.2.B+2",
-        "format_number": "NEW.123",
-        "sequence_info": "Locating proper fractions on a number line from 0 to 1. Point P is at 5/6 on a line divided into 6 parts.",
-        "generation_timestamp": "2024-07-30T12:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.NF.A.2.B+2\", \"format_number\": \"NEW.123\", \"sequence_info\": \"Locating proper fractions on a number line from 0 to 1. Point P is at 5/6 on a line divided into 6 parts.\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\"}"
     },
     {
       "id": "q29",
@@ -677,12 +567,7 @@
         "description": "Identify whether a number(s) is/are even or odd.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+5",
-        "format_number": "NEW.64",
-        "sequence_info": "Identifying even or odd for 2-digit numbers using the last digit rule.",
-        "generation_timestamp": "2024-07-30T12:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.OA.D.9+5\", \"format_number\": \"NEW.64\", \"sequence_info\": \"Identifying even or odd for 2-digit numbers using the last digit rule.\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\"}"
     },
     {
       "id": "q30",
@@ -701,15 +586,10 @@
         "grade": "3",
         "subject": "mathematics",
         "difficulty": "medium",
-        "description": "Identify quadrilaterals \u2014including rhombuses, rectangles, squares, and parallelograms\u2014by analyzing visible attributes such as number of sides, right angles, and equal-length sides.",
+        "description": "Identify quadrilaterals —including rhombuses, rectangles, squares, and parallelograms—by analyzing visible attributes such as number of sides, right angles, and equal-length sides.",
         "language": "en"
       },
-      "additional_details": {
-        "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+1",
-        "format_number": "GENERATED.26",
-        "sequence_info": "Question about identifying parallelograms based on attributes.",
-        "generation_timestamp": "2024-07-30T12:00:00Z"
-      }
+      "additional_details": "{\"substandard_id\": \"CCSS.MATH.CONTENT.3.G.A.1+1\", \"format_number\": \"GENERATED.26\", \"sequence_info\": \"Question about identifying parallelograms based on attributes.\", \"generation_timestamp\": \"2024-07-30T12:00:00Z\"}"
     }
   ],
   "verbose": true,
