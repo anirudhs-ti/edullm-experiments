@@ -346,20 +346,18 @@
         // Load available files
         async function loadFileList() {
             try {
-                const response = await fetch('.');
-                const text = await response.text();
-                const parser = new DOMParser();
-                const doc = parser.parseFromString(text, 'text/html');
-                const links = Array.from(doc.querySelectorAll('a'))
-                    .map(a => a.getAttribute('href'))
-                    .filter(href => href && href.endsWith('.json') && href.startsWith('results_'));
+                const response = await fetch('/api/files');
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+                const files = await response.json();
                 
                 const select = document.getElementById('fileSelect');
-                select.innerHTML = links.length > 0 
-                    ? links.map(file => `<option value="${file}">${file}</option>`).join('')
+                select.innerHTML = files.length > 0 
+                    ? files.map(file => `<option value="${file}">${file}</option>`).join('')
                     : '<option value="">No evaluation files found</option>';
                 
-                if (links.length > 0) {
+                if (files.length > 0) {
                     select.selectedIndex = 0;
                     loadData();
                 }

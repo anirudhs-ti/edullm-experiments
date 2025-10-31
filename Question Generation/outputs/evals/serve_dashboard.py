@@ -42,6 +42,24 @@ class CORSRequestHandler(http.server.SimpleHTTPRequestHandler):
         self.send_header('Cache-Control', 'no-store, no-cache, must-revalidate')
         super().end_headers()
     
+    def do_GET(self):
+        """Handle GET requests with special endpoint for file listing."""
+        if self.path == '/api/files':
+            self.send_response(200)
+            self.send_header('Content-type', 'application/json')
+            self.end_headers()
+            
+            # Get list of results JSON files
+            import json
+            import glob
+            files = [os.path.basename(f) for f in glob.glob('results_*.json')]
+            files.sort(reverse=True)  # Most recent first
+            
+            self.wfile.write(json.dumps(files).encode())
+        else:
+            # Default behavior for other requests
+            super().do_GET()
+    
     def log_message(self, format, *args):
         """Custom log message format."""
         print(f"[{self.log_date_time_string()}] {format % args}")
