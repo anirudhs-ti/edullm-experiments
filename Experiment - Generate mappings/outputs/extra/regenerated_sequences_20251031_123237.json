@@ -1,0 +1,1369 @@
+{
+  "metadata": {
+    "generation_timestamp": "2025-10-31T12:32:37.228019",
+    "total_lessons_regenerated": 10,
+    "llm_model": "gemini-2.5-pro",
+    "generation_version": "2.0_with_feedback",
+    "based_on_validation": "sequence_validation_20251030_224655.json"
+  },
+  "regenerated_sequences": [
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+4",
+      "lesson_title": "Properties of Multiplication",
+      "grade": "3.0",
+      "substandard_description": "Identify the properties of multiplication.",
+      "assessment_boundary": "Assessment is restricted to:\n- commutative property of multiplication, associative property of multiplication, identity property of mutliplication, zero property of multiplication, and distributive property of mutliplication\n- Only ONE property should be used in an example at one time",
+      "tasks": "- Identify an example of the zero property of multiplication\n- Identify an example of the identity property of multiplication\n- Identify an example of the commutative property of multiplication\n- Identify an example of the associative property of multiplication\n- Identify an example of the distributive property of multiplication",
+      "step_by_step_explanation": "Task: Identify an example of the zero property of multiplication  \nSTEP 1: Read every multiplication statement given  \nSTEP 2: Use the rule: any number × 0 = 0  \nSTEP 3: Find the statement with a factor of 0 and a product of 0  \nSTEP 4: Select that statement  \n\nTask: Identify an example of the identity property of multiplication  \nSTEP 1: Read every multiplication statement given  \nSTEP 2: Use the rule: any number × 1 = that same number  \nSTEP 3: Find the statement with a factor of 1 and a product that matches the other factor  \nSTEP 4: Select that statement  \n\nTask: Identify an example of the commutative property of multiplication  \nSTEP 1: Read every pair or set of multiplication statements given  \nSTEP 2: Use the rule: switching the order of factors does not change the product  \nSTEP 3: Find the pair where the factors are reversed but the product is the same  \nSTEP 4: Select that pair  \n\nTask: Identify an example of the associative property of multiplication  \nSTEP 1: Read every group of multiplication statements with parentheses  \nSTEP 2: Use the rule: changing the grouping of the same factors does not change the product  \nSTEP 3: Find the set where the same three factors are grouped two different ways yet give the same product  \nSTEP 4: Select that set  \n\nTask: Identify an example of the distributive property of multiplication  \nSTEP 1: Read every statement that mixes multiplication and addition  \nSTEP 2: Use the rule: a × (b + c) = (a × b) + (a × c)  \nSTEP 3: Find the statement that shows one factor outside parentheses matched with two partial products added together  \nSTEP 4: Select that statement",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Applying the zero property of multiplication",
+          "example_questions": [
+            "Solve: 14 x 0 = ?",
+            "Solve: 0 x 9 = ?",
+            "Find the missing number: 55 x ___ = 0"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Applying the identity property of multiplication",
+          "example_questions": [
+            "Solve: 27 x 1 = ?",
+            "Solve: 1 x 8 = ?",
+            "Find the missing number: ___ x 16 = 16"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Completing equations to show the commutative property of multiplication",
+          "example_questions": [
+            "Complete the equation: 4 x 7 = 7 x ___",
+            "If you know 6 x 9 = 54, what is 9 x 6?",
+            "Complete the equation: 11 x 3 = ___ x 11"
+          ],
+          "visual_aids": [
+            "Array models showing rotation (e.g., a 4x7 array and a 7x4 array)"
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Completing equations to show the associative property of multiplication",
+          "example_questions": [
+            "Complete the equation: (5 x 2) x 3 = 5 x (___ x 3)",
+            "Complete the equation: 7 x (1 x 6) = (7 x ___) x 6",
+            "Are these equal? (4 x 3) x 2 and 4 x (3 x 2)"
+          ],
+          "visual_aids": [
+            "Grouped array models (e.g., 3 sets of (5x2 arrays) vs 5 sets of (2x3 arrays))"
+          ]
+        },
+        {
+          "sequence_number": 5,
+          "problem_type": "Completing equations to show the distributive property of multiplication",
+          "example_questions": [
+            "Complete the equation: 5 x (4 + 3) = (5 x 4) + (5 x ___)",
+            "Complete the equation: 8 x 9 = 8 x (5 + 4) = (___ x 5) + (___ x 4)",
+            "Rewrite using the distributive property: 6 x (10 + 2)"
+          ],
+          "visual_aids": [
+            "Split array models (e.g., a 5x7 array split into a 5x4 and a 5x3 array)"
+          ]
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Applying the zero property of multiplication",
+          "alignment_score": 0.4,
+          "should_keep": false,
+          "reasoning": "The sequence requires students to solve equations by applying the zero property, but the intended curriculum task is for students to *identify* a completed example of the property. This is a fundamental mismatch in the cognitive demand, moving from recognition to computation, which misaligns with the lesson's explicit step-by-step guide.",
+          "suggestions": "Change the problem type to 'Identify an example of the zero property of multiplication.' The questions should be in a multiple-choice format where students select the equation that correctly demonstrates the property from a list of options, aligning with the intended identification task."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Applying the identity property of multiplication",
+          "alignment_score": 0.3,
+          "should_keep": false,
+          "reasoning": "This sequence focuses on applying the identity property by asking students to solve equations. However, the lesson's intended task is for students to identify a complete, given example of the property. This is a fundamental mismatch in the required cognitive skill and pedagogical approach.",
+          "suggestions": "Change the problem type to 'Identify an example of the identity property of multiplication.' The example questions should be changed to a multiple-choice format where students must select the equation that demonstrates the property from a list of options."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Completing equations to show the commutative property of multiplication",
+          "alignment_score": 0.6,
+          "should_keep": false,
+          "reasoning": "This sequence correctly targets the commutative property of multiplication. However, it requires students to apply the property to complete equations, which misaligns with the curriculum's intended task of *identifying* a complete example of the property from a set of choices.",
+          "suggestions": "To align, change the problem type to 'Identify an example of the commutative property of multiplication.' The questions should be multiple-choice, asking students to select the pair of equations that correctly demonstrates the property from a list of different properties."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Completing equations to show the associative property of multiplication",
+          "alignment_score": 0.5,
+          "should_keep": false,
+          "reasoning": "The sequence requires students to complete equations, which is an application-level task. The intended curriculum specifies an identification task, where students must select a correct, complete example of the property from a set of options. This represents a mismatch in the cognitive demand and does not follow the provided step-by-step instructional plan.",
+          "suggestions": "To align, the problem type should be changed to 'Identify an example of the associative property of multiplication.' The example questions should be revised to a multiple-choice format where students must select the equation that correctly demonstrates the property from a list containing distractors."
+        },
+        {
+          "sequence_number": 5,
+          "problem_type": "Completing equations to show the distributive property of multiplication",
+          "alignment_score": 0.5,
+          "should_keep": false,
+          "reasoning": "This sequence requires students to complete or rewrite equations (application), but the intended curriculum task is to *identify* a pre-written example of the property (recognition). This represents a significant mismatch in the required cognitive skill and deviates from the specified step-by-step process.",
+          "suggestions": "To align with the curriculum, the problem type should be changed to 'Identify an example of the distributive property'. The questions should be multiple-choice, where students select the equation that correctly shows the property from a list of options."
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identify an example of the zero property of multiplication",
+          "example_questions": [
+            "Which equation is an example of the zero property of multiplication? A) 18 x 1 = 18, B) 18 + 0 = 18, C) 18 x 0 = 0, D) 18 - 18 = 0",
+            "Which statement correctly shows the zero property of multiplication? A) 43 x 0 = 0, B) 43 x 1 = 43, C) 1 x 43 = 43, D) 43 + 0 = 43"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identify an example of the identity property of multiplication",
+          "example_questions": [
+            "Which equation is an example of the identity property of multiplication? A) 32 x 0 = 0, B) 32 x 1 = 32, C) 32 + 1 = 33, D) 32 - 1 = 31",
+            "Which statement correctly shows the identity property of multiplication? A) 7 x 8 = 8 x 7, B) 1 + 8 = 9, C) 8 x 0 = 0, D) 8 x 1 = 8"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identify an example of the commutative property of multiplication",
+          "example_questions": [
+            "Which choice is an example of the commutative property of multiplication? A) 5 x 9 = 9 x 5, B) 5 + 9 = 9 + 5, C) (5 x 9) x 2 = 5 x (9 x 2), D) 5 x 1 = 5",
+            "Which pair of equations shows the commutative property of multiplication? A) 3 x 7 = 21 and 7 x 3 = 21, B) 3 x 7 = 21 and 3 x 1 = 3, C) (3 x 7) x 2 = 42 and 3 x (7 x 2) = 42, D) 3 x (7 + 2) = (3 x 7) + (3 x 2)"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Identify an example of the associative property of multiplication",
+          "example_questions": [
+            "Which equation shows the associative property of multiplication? A) 8 x 3 = 3 x 8, B) 8 x (3 + 4) = (8 x 3) + (8 x 4), C) (8 x 3) x 4 = 8 x (3 x 4), D) 8 + (3 + 4) = (8 + 3) + 4",
+            "Which statement is an example of the associative property of multiplication? A) (2 x 5) x 6 = 2 x (5 x 6), B) 2 x 5 = 5 x 2, C) 2 x (5 + 6) = (2 x 5) + (2 x 6), D) 2 x 1 = 2"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 5,
+          "problem_type": "Identify an example of the distributive property of multiplication",
+          "example_questions": [
+            "Which equation shows the distributive property of multiplication? A) 7 x (2 + 5) = (7 x 2) + (7 x 5), B) (7 x 2) x 5 = 7 x (2 x 5), C) 7 x 2 = 2 x 7, D) 7 x 1 = 7",
+            "Which statement correctly shows the distributive property? A) 4 x (5 + 3) = (4 x 5) + (4 x 3), B) 4 + (5 x 3) = 19, C) (4 x 5) x 3 = 4 x (5 x 3), D) 4 x 5 = 5 x 4"
+          ],
+          "visual_aids": null
+        }
+      ],
+      "generation_reasoning": "The main issue with all the original sequences was a fundamental mismatch in cognitive demand. They required students to apply properties by solving or completing equations, whereas the intended curriculum explicitly requires students to *identify* completed examples of each property. The new sequences fix this by changing the task structure entirely. First, all problem types have been updated to reflect the identification task (e.g., 'Identify an example of...'). Second, all example questions have been converted to a multiple-choice format where students must select the correct symbolic representation of a property from a list of options. This new structure directly aligns with the 'INTENDED CURRICULUM - TASKS' and the 'STEP BY STEP EXPLANATION' which focus on reading statements and finding the one that matches a rule. The distractors in the multiple-choice questions are designed to include other properties or common errors, ensuring a robust assessment of the identification skill. Visual aids were removed to maintain focus on the abstract, symbolic recognition task outlined in the curriculum.",
+      "regenerated_at": "2025-10-31T12:28:11.663965"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.3+2",
+      "lesson_title": "Two-Step Multiplication Problems",
+      "grade": "3.0",
+      "substandard_description": "Solve word problems involving two step multiplication.",
+      "assessment_boundary": "Assessment is restricted to:\n- Single-digit multipliers and multiplicands (up to 10 × 10)\n- Must be two step problems involving multiplication.\n- No step can require mutliplication that uses facts outside of 10 x 10.",
+      "tasks": "- Solve a two-step problem where both steps involve multiplication.",
+      "step_by_step_explanation": "Task: Solve a two-step problem where both steps involve multiplication.\n\nSTEP 1: Read the problem and find the first multiplication needed to solve it\n\nSTEP 2: Multiply the first two numbers to get your first answer\n\nSTEP 3: Find the second multiplication using your first answer or other numbers from the problem\n\nSTEP 4: Multiply to get your final answer",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Two-step word problems involving multiplication then addition (M -> A).",
+          "example_questions": [
+            "Maria bought 4 packs of stickers. Each pack has 8 stickers. Her friend gave her 7 more stickers. How many stickers does Maria have now?",
+            "There are 5 boxes of pencils. Each box has 10 pencils. The teacher finds 6 more pencils in her desk. How many pencils are there in total?",
+            "Juan makes 3 bracelets. He uses 9 beads for each bracelet. He has 12 beads left over. How many beads did he start with?"
+          ],
+          "visual_aids": [
+            "Diagrams showing equal groups and extra items"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Two-step word problems involving multiplication then subtraction (M -> S).",
+          "example_questions": [
+            "A baker makes 8 batches of cookies. Each batch has 6 cookies. He sells 15 cookies. How many cookies are left?",
+            "There are 7 flower pots on a porch. Each pot has 5 flowers. A storm knocks over some pots and ruins 11 flowers. How many flowers remain?",
+            "Li has 9 pages of photos. Each page holds 4 photos. She takes out 10 photos to give to her grandmother. How many photos are left in her album?"
+          ],
+          "visual_aids": [
+            "Diagrams of grouped items with some crossed out"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Two-step word problems involving two multiplication steps followed by addition.",
+          "example_questions": [
+            "The red team has 6 players. Each player scored 5 points. The blue team has 4 players. Each player scored 8 points. What is the total number of points scored by both teams?",
+            "A farmer plants 7 rows of corn with 10 seeds in each row. He also plants 5 rows of beans with 9 seeds in each row. How many seeds did he plant in all?",
+            "In a classroom, there are 3 tables with 4 students at each table, and 2 tables with 5 students at each table. How many students are there in total?"
+          ],
+          "visual_aids": [
+            "Bar models",
+            "Tape diagrams"
+          ]
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Two-step word problems involving multiplication then addition (M -> A).",
+          "alignment_score": 0.1,
+          "should_keep": false,
+          "reasoning": "The sequence is fundamentally misaligned with the lesson's core task. The curriculum explicitly requires two-step problems where BOTH steps involve multiplication (M -> M), but this sequence provides problems with multiplication followed by addition (M -> A). This directly contradicts the intended curriculum tasks and step-by-step explanation.",
+          "suggestions": "The problem type must be changed to 'Solve a two-step problem where both steps involve multiplication.' The example questions should be replaced with M -> M problems, such as 'A farmer plants 3 rows of carrots. Each row has 5 carrot plants. If each plant grows 2 carrots, how many carrots will the farmer have in total?'"
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Two-step word problems involving multiplication then subtraction (M -> S).",
+          "alignment_score": 0.1,
+          "should_keep": false,
+          "reasoning": "This sequence is fundamentally misaligned with the lesson's objective. The intended task is to solve two-step problems where BOTH steps are multiplication, but this sequence presents problems where the second step is subtraction.",
+          "suggestions": "The problem type must be changed to 'Two-step word problems involving two multiplication steps (M -> M)'. Examples should be rewritten to reflect this, such as 'There are 4 baskets. Each basket has 3 nests. If each nest has 2 eggs, how many eggs are there in total?'."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Two-step word problems involving two multiplication steps followed by addition.",
+          "alignment_score": 0.2,
+          "should_keep": false,
+          "reasoning": "This sequence is poorly aligned. It describes and provides examples of three-step problems (multiplication, multiplication, then addition), but the intended curriculum task is strictly a two-step problem where both steps involve multiplication. This introduces an extra operation (addition) that is not part of the lesson's core objective.",
+          "suggestions": "The problem type should be changed to 'Two-step problems where the result of the first multiplication is used in the second multiplication.' Examples should be rewritten to match this, like: 'A baker has 3 trays of cookies. Each tray has 4 rows, and each row has 5 cookies. How many cookies are there in total?'"
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Two-step multiplication problems (M -> M) with small intermediate products",
+          "example_questions": [
+            "There are 2 teams. Each team has 2 players. Each player scores 5 points. What is the total number of points scored?",
+            "Mom baked 2 pans of brownies. Each pan was cut into 2 rows. Each row had 4 brownies. How many brownies did Mom bake in total?",
+            "A farmer has 3 fields. He plants 2 rows of corn in each field. He plants 4 corn seeds in each row. How many corn seeds did he plant in total?"
+          ],
+          "visual_aids": [
+            "Diagrams of nested groups (e.g., circles within circles)",
+            "Arrays of arrays"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Two-step multiplication problems (M -> M) with larger intermediate products",
+          "example_questions": [
+            "There are 2 school buses. Each bus has 5 rows of seats. Each row can fit 2 students. How many students can ride the buses in total?",
+            "A pet store has 3 fish tanks. Each tank has 3 plants. There are 3 snails on each plant. How many snails are there in the store?",
+            "In a garden, there are 4 flower pots. Each pot has 2 flowers. Each flower has 5 petals. What is the total number of petals in the garden?"
+          ],
+          "visual_aids": [
+            "Bar models showing parts of parts",
+            "Tape diagrams"
+          ]
+        }
+      ],
+      "generation_reasoning": "The main issue with the original sequences was a fundamental misalignment with the lesson's core task. They introduced incorrect operations (addition, subtraction) or an incorrect number of steps (three steps), instead of focusing exclusively on two-step problems where both steps are multiplication (M -> M). The new sequences directly fix this by providing only M -> M problems, as suggested in the validation feedback. These new sequences align perfectly with the intended curriculum, which requires students to find and solve a first multiplication problem and then use that result to solve a second multiplication problem. To ensure strict boundary compliance, all numbers in the problems are 10 or less, and the problems are carefully designed so that the product of the first multiplication step is also 10 or less. This guarantees that the second multiplication step also uses facts within the required 10x10 assessment boundary. The sequences are scaffolded, with the first sequence using smaller intermediate products (e.g., 2x2=4) to introduce the concept, and the second sequence using larger intermediate products (e.g., 2x5=10) to build proficiency.",
+      "regenerated_at": "2025-10-31T12:28:51.330043"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+3",
+      "lesson_title": "Distributive Property",
+      "grade": "3.0",
+      "substandard_description": "Apply the distributive property as a strategy to multiply and divide whole numbers.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number factors, addends, products, dividends, and quotients only (no fractions, decimals, or negative numbers).\n- All factors, addends, divisors, and quotients must be single-digit numbers (1–10).\n- Products and dividends must not exceed 100.\n- Limited to 2 addends\n- Decomposition of a factor is limited to sums of whole numbers within 10 (e.g., 7 can be decomposed as 5 + 2, not 4 + 3 + 0).\n- Distributive property must be applied to multiplication and division expressions within 100.\n- Expressions should involve distributing a factor across a sum of two addends only (e.g., a × (b + c)), not more than two addends.\n- Parentheses may be used to indicate grouping, but not to introduce order of operations beyond multiplication and addition within the distributive property context.\n- No use of variables (e.g., n, x); use symbols such as □, ?, or __ for unknowns if needed.\n- Contexts and representations (objects, pictures, words, or symbols) are allowed but should remain simple and directly illustrate the distributive property.\n- Exclude multi-step problems or problems that require applying more than one property at once (focus solely on the distributive property for this substandard\n- No use of variables (e.g., a, n, x); use symbols such as a box (□), question mark (?), or blank line (__) for unknown values.\n- Cannot combine properties. Distributive property ONLY.",
+      "tasks": "- Use the distributive property to solve a multiplication problem by treating a larger number as the sum of two smaller ones. Use the same phrase in the example, just change the numbers \"Multiply: 5×3=?, 5×2=?, Now multiply the following, using your answers from above and the distributive property of multiplication: 5×5=?\"\n- Identify which equations correctly use the distributive property. (e.g. Which equation correctly uses the distributive property?)\n- Select the single multiplication expression that is equal to a given sum of two products. (\"Which of the following is equal to (4 × 5) + (4 × 2)?\")\n- Use the distributive property of multiplication to find the missing number. (e.g. 4 x 6 = (4 x 5) + (4 x ___)",
+      "step_by_step_explanation": "Task: Identify which equations correctly use the distributive property.  \nSTEP 1: Scan each choice for a factor multiplied by a sum, shown as a × (b + c).  \nSTEP 2: Check whether that choice rewrites the problem as (a × b) + (a × c).  \nSTEP 3: Pick the choice that follows both of those patterns.\n\nTask: Select the single multiplication expression that is equal to a given sum of two products.  \nSTEP 1: Spot the factor that is the same in both products.  \nSTEP 2: Add the two other factors to find the new addend sum.  \nSTEP 3: Form a new expression by multiplying the common factor by that sum.  \nSTEP 4: Choose the option that matches this new expression.\n\nTask: Use the distributive property of multiplication to find the missing number.  \nSTEP 1: Find the factor that was broken apart by looking at the original product and the two products on the right side.  \nSTEP 2: Subtract the known part of that factor from the whole factor to get the missing part.  \nSTEP 3: Fill the blank with this missing number.",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Representing the distributive property using array models.",
+          "example_questions": [
+            "An array shows 4 rows of 8 dots. It is split into an array with 4 rows of 5 and an array with 4 rows of 3. Write the full equation: 4 x 8 = 4 x (5 + 3) = (4 x 5) + (4 x 3) = __ + __ = __.",
+            "Look at the array for 6 x 7. It is broken into a 6x5 array and a 6x2 array. Fill in the blanks: 6 x 7 = 6 x (__ + __) = (6 x __) + (6 x __) = __."
+          ],
+          "visual_aids": [
+            "Array diagrams showing decomposition"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Solving multiplication problems using a given decomposition.",
+          "example_questions": [
+            "Solve 7 x 9. Use the expression 7 x (5 + 4). (7 x 5) + (7 x 4) = __ + __ = __.",
+            "Find the product of 8 x 6 using the distributive property. 8 x (2 + 4) = (8 x 2) + (8 x 4) = ?.",
+            "Complete the equation: 5 x 8 = 5 x (5 + 3) = (5 x __) + (5 x __) = __."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Decomposing a factor to apply the distributive property for multiplication.",
+          "example_questions": [
+            "Solve 9 x 7. First, break 7 into two smaller numbers. Then, write the full equation to find the answer. 9 x ( __ + __ ) = (9 x __ ) + (9 x __ ) = ?.",
+            "Use the distributive property to find the answer to 6 x 9. Decompose 9 and fill in the blanks: 6 x ( __ + __ ) = ( __ x __ ) + ( __ x __ ) = __ + __ = __."
+          ],
+          "visual_aids": [
+            "Equation templates with blanks"
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Solving division problems by distributing a divisor over a given sum.",
+          "example_questions": [
+            "Solve 15 ÷ 3. Use the expression (9 + 6) ÷ 3. (9 ÷ 3) + (6 ÷ 3) = __ + __ = __.",
+            "Find the answer to 16 ÷ 4 using the distributive property. Use (8 + 8) ÷ 4. (8 ÷ 4) + (8 ÷ 4) = ?.",
+            "Complete the equation: 18 ÷ 2 = (10 + 8) ÷ 2 = (__ ÷ 2) + (__ ÷ 2) = __."
+          ],
+          "visual_aids": [
+            "Number bond diagrams"
+          ]
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Representing the distributive property using array models.",
+          "alignment_score": 0.6,
+          "should_keep": false,
+          "reasoning": "This sequence focuses on interpreting array models to write a full equation. While conceptually related, it does not match any of the four specific, more abstract/symbolic task types listed in the intended curriculum, such as finding a single missing number or selecting a correct equation. It serves as a good introduction but misaligns with the specified practice activities.",
+          "suggestions": "To align, change the problem type to one of the intended tasks, such as 'Use the distributive property of multiplication to find the missing number.' The example questions should then be adjusted to match, for example: '4 x 9 = (4 x 5) + (4 x __)'."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Solving multiplication problems using a given decomposition.",
+          "alignment_score": 0.6,
+          "should_keep": false,
+          "reasoning": "This sequence focuses on guided calculation using a provided decomposition. While it adheres to all assessment boundaries and is conceptually related, it does not match any of the four specific problem types outlined in the 'INTENDED CURRICULUM - TASKS' section. The intended tasks involve identifying correct equations, finding a single missing number, or reversing the process, which represent different cognitive demands.",
+          "suggestions": "To improve alignment, modify the problem type to match one of the intended tasks. For instance, adopt the 'find the missing number' format with examples like '8 x 6 = (8 x 2) + (8 x ___)' or follow the specific three-question structure of the first intended task: 'Multiply: 7x5=?, 7x4=?, Now multiply... 7x9=?.'"
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Decomposing a factor to apply the distributive property for multiplication.",
+          "alignment_score": 0.6,
+          "should_keep": false,
+          "reasoning": "This sequence's task requires students to create their own decomposition of a factor and fill in an entire equation template. This specific format is not listed among the intended tasks, which focus on identifying correct usage, combining pre-written expressions, or finding a single missing number in an already structured decomposition.",
+          "suggestions": "To align with the curriculum, change the problem type to match one of the intended tasks. For example, adapt it to 'find the missing number' by presenting problems like '9 x 7 = (9 x 5) + (9 x __)', which directly matches the specified curriculum design and pedagogical steps."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Solving division problems by distributing a divisor over a given sum.",
+          "alignment_score": 0.1,
+          "should_keep": false,
+          "reasoning": "This sequence is rejected because it focuses on division, but the intended curriculum's tasks and step-by-step explanations are exclusively designed for multiplication. While the standard allows for division, this sequence completely deviates from the specified lesson plan, which details four distinct multiplication-based tasks.",
+          "suggestions": "To align with the curriculum, this sequence should be replaced with one of the four specified multiplication tasks. For example, create a sequence for 'Identify which equations correctly use the distributive property' or 'Use the distributive property of multiplication to find the missing number', using examples that fit the multiplication-focused lesson design."
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Using known products to solve a larger multiplication problem with the distributive property.",
+          "example_questions": [
+            "Multiply: 4×5=?, 4×2=?, Now multiply the following, using your answers from above and the distributive property of multiplication: 4×7=?",
+            "Multiply: 8×3=?, 8×4=?, Now multiply the following, using your answers from above and the distributive property of multiplication: 8×7=?"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Use the distributive property of multiplication to find the missing number.",
+          "example_questions": [
+            "Find the missing number: 8 x 6 = (8 x 2) + (8 x __).",
+            "Find the missing number: 7 x 9 = (7 x __) + (7 x 4).",
+            "Complete the equation: 5 x (3 + 6) = (5 x 3) + (__ x 6)."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identify which equations correctly use the distributive property.",
+          "example_questions": [
+            "Which equation correctly uses the distributive property to solve 6 x 8?",
+            "Which equation correctly shows 7 x 9 using the distributive property?"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Select the single multiplication expression that is equal to a given sum of two products.",
+          "example_questions": [
+            "Which multiplication expression is equal to (4 × 5) + (4 × 2)?",
+            "Which of the following is equal to (8 × 6) + (8 × 3)?"
+          ],
+          "visual_aids": null
+        }
+      ],
+      "generation_reasoning": "The original sequences were rejected due to a fundamental misalignment with the four specific, symbolic tasks outlined in the intended curriculum. They incorrectly focused on interpreting visual models, having students create their own decompositions, and applying the property to division, all of which deviated from the lesson's explicit plan. The new sequences directly address these failures. Each of the four new sequences now corresponds exactly to one of the four required task types. Sequence 1 uses the specified three-question scaffolding format. Sequence 2 focuses on finding a single missing number in a pre-structured equation. Sequence 3 is an identification task, and Sequence 4 requires students to reverse the process. The division sequence was replaced with a valid multiplication task. All visual model dependencies have been removed, and all numerical examples strictly adhere to the assessment boundaries (e.g., single-digit factors, products under 100).",
+      "regenerated_at": "2025-10-31T12:29:14.166803"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+6",
+      "lesson_title": "Identifying Reasonable Answers",
+      "grade": "3.0",
+      "substandard_description": "Judge whether a given estimate in a two-step word problem (addition, subtraction, multiplication, or division) is reasonable, too high, or too low with reasoning.",
+      "assessment_boundary": "Assessment is restricted to:\n- Facts limited to the 1 × 1 through 10 × 10 tables quotients ≤ 100.\n- Addition and subtraction involving number ≤ 100.",
+      "tasks": "- Evaluate whether an estimate in a two-step word problem (using addition, subtraction, multiplication, and/or division) is reasonable, too high, or too low.",
+      "step_by_step_explanation": "Task: Evaluate whether an estimate in a two-step word problem (using addition, subtraction, multiplication, and/or division) is reasonable, too high, or too low.\nSTEP 1: Read the problem and identify what number you need to find at the end.\nSTEP 2: Find the two steps you need to do to solve the problem.\nSTEP 3: Change the numbers in the problem to numbers that are close and easy to work with.\nSTEP 4: Do the first step using your easy numbers.\nSTEP 5: Do the second step using your easy numbers.\nSTEP 6: Compare your answer to the given estimate.\nSTEP 7: Decide if the given estimate is reasonable (close to your answer), too high (much bigger than your answer), or too low (much smaller than your answer).",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Judging a given estimate for a one-step addition/subtraction word problem when the exact answer is provided.",
+          "example_questions": [
+            "Maria has 28 stickers and gets 15 more. The exact total is 43 stickers. An estimate for the total is 50. Is the estimate of 50 too high, too low, or reasonable?",
+            "Leo had 75 cents and spent 25 cents. The exact amount remaining is 50 cents. An estimate for the remaining amount is 50 cents. Is the estimate too high, too low, or reasonable?",
+            "There are 42 birds in a tree. 19 fly away. The exact number of birds left is 23. An estimate for the birds left is 20. Is the estimate of 20 too high, too low, or reasonable?"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Calculating the exact answer for a one-step word problem (addition/subtraction) and then judging a given estimate.",
+          "example_questions": [
+            "A baker made 56 cookies and sold 30 of them. An estimate for how many are left is 25. First, find the exact answer. Then, state if the estimate is too high, too low, or reasonable.",
+            "Sara has 62 pencils. Her friend gives her 18 more. An estimate for the total is 80. First, find the exact answer. Then, state if the estimate is too high, too low, or reasonable."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Calculating the exact answer for a two-step word problem (addition and subtraction only) and then judging a given estimate.",
+          "example_questions": [
+            "Ben has 45 marbles. He loses 15, then finds 10 more. An estimate for his final total is 40. First, find the exact answer. Then, state if the estimate is too high, too low, or reasonable.",
+            "There were 80 people on a bus. At the first stop, 25 people got off. At the second stop, 15 people got on. An estimate for the number of people now on the bus is 70. First, find the exact answer. Then, state if the estimate is too high, too low, or reasonable.",
+            "Julie started with 90 stickers. She gave 32 to her brother and 20 to her sister. An estimate for the stickers she has left is 40. First, find the exact answer. Then, state if the estimate is too high, too low, or reasonable."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Calculating the exact answer for a two-step word problem (mixed operations) and then judging a given estimate.",
+          "example_questions": [
+            "Ken buys 4 packs of juice boxes. Each pack has 6 juice boxes. He and his friends drink 10 of them. An estimate for how many are left is 15. First, find the exact answer. Then, state if the estimate is too high, too low, or reasonable.",
+            "A teacher has 30 pencils to share equally among 5 students. She then gives each of those students 2 more pencils from her desk. An estimate for the total number of pencils each student has is 10. First, find the exact answer. Then, state if the estimate is too high, too low, or reasonable."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 5,
+          "problem_type": "Judging an estimate for a two-step problem and providing reasoning for the judgment.",
+          "example_questions": [
+            "Problem: Amir has 28 baseball cards and buys 42 more. He then splits them into 10 equal piles. Someone estimates each pile will have 7 cards. The exact answer is 7. Is the estimate reasonable? Explain how rounding the numbers at the start could lead to this estimate.",
+            "Problem: Li had 82 beads. She used 19 to make a bracelet, then bought 35 more. Someone estimates she now has 100 beads. The exact answer is 98. Is the estimate of 100 too high, too low, or reasonable? Explain how rounding each number to the nearest ten might lead to this estimate."
+          ],
+          "visual_aids": null
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Judging a given estimate for a one-step addition/subtraction word problem when the exact answer is provided.",
+          "alignment_score": 0.2,
+          "should_keep": false,
+          "reasoning": "This sequence fundamentally misaligns with the lesson's core objective, which is to evaluate estimates for two-step word problems. The provided examples are all one-step problems, and by giving the exact answer, the sequence bypasses the crucial skill of student-led estimation outlined in the curriculum.",
+          "suggestions": "The problem type must be revised to involve two-step word problems as required by the standard. Example questions should not provide the exact answer, thereby compelling students to generate their own estimate to compare against the given one, as intended by the pedagogical steps."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Calculating the exact answer for a one-step word problem (addition/subtraction) and then judging a given estimate.",
+          "alignment_score": 0.2,
+          "should_keep": false,
+          "reasoning": "This sequence fails to meet the core requirement of the lesson, which is to work with two-step word problems. The provided problem type and examples are exclusively one-step problems. This is a fundamental misalignment with the intended task described in the curriculum.",
+          "suggestions": "The problem type must be changed to require two steps. For example, a problem could be: 'A baker made 56 cookies. He sold 30 and then baked 20 more. An estimate for how many he has now is 45.' This would align with the 'two-step' requirement of the lesson."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Calculating the exact answer for a two-step word problem (addition and subtraction only) and then judging a given estimate.",
+          "alignment_score": 0.2,
+          "should_keep": false,
+          "reasoning": "This sequence fundamentally misunderstands the lesson's objective. It directs students to calculate the exact answer to judge an estimate, completely bypassing the intended skill of using estimation and mental math (rounding to easy numbers) to assess reasonableness, as detailed in the curriculum's step-by-step explanation.",
+          "suggestions": "The problem type should be revised to focus on estimation. Prompts should guide students to round the numbers in the problem first, calculate an approximate answer, and then use that approximation to judge if the given estimate is reasonable, too high, or too low."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Calculating the exact answer for a two-step word problem (mixed operations) and then judging a given estimate.",
+          "alignment_score": 0.3,
+          "should_keep": false,
+          "reasoning": "This sequence fundamentally misaligns with the lesson's pedagogy. It instructs students to calculate the 'exact answer' first, whereas the core of the lesson (Steps 3-5) is about creating one's own estimate with easy-to-use numbers to judge the reasonableness of a given estimate. By focusing on the exact answer, the sequence bypasses the intended skill of estimation entirely.",
+          "suggestions": "Change the problem type to align with the step-by-step instructions. Instead of asking for the exact answer, the prompt should guide students to round the numbers, perform the two steps with their rounded numbers, and then compare their own estimate to the one given in the problem."
+        },
+        {
+          "sequence_number": 5,
+          "problem_type": "Judging an estimate for a two-step problem and providing reasoning for the judgment.",
+          "alignment_score": 0.6,
+          "should_keep": false,
+          "reasoning": "The problem type aligns with the lesson, but the example questions are pedagogically misaligned. By providing the exact answer in each problem, the sequence prevents students from following the intended steps of creating their own estimate to judge the given one. This changes the task from a process-based evaluation to a simple comparison.",
+          "suggestions": "Remove the exact answer from the example questions. The problems should only provide the word problem and the estimate to be judged. This will require students to perform their own estimation to determine if the given estimate is reasonable, too high, or too low, directly aligning with the lesson's step-by-step process."
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Judging an estimate for a two-step word problem (addition/subtraction) by rounding and estimating.",
+          "example_questions": [
+            "Mia had 78 beads. She used 21 for a necklace and then bought 39 more. A friend estimates she now has about 100 beads. Is this estimate reasonable, too high, or too low? Use rounding to help you decide.",
+            "There were 92 people on a train. At the first stop, 28 people got off. At the second stop, 11 people got on. A conductor estimates there are now about 50 people on the train. Is this estimate reasonable, too high, or too low? Use rounding to help you decide."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Judging an estimate for a two-step word problem (mixed operations) by estimating.",
+          "example_questions": [
+            "Leo bought 4 boxes of crayons. Each box has 8 crayons. He then gave 9 crayons to his sister. His mom estimates he has about 20 crayons left. Is this estimate reasonable, too high, or too low?",
+            "A farmer has 42 eggs. She puts them into cartons that hold 6 eggs each. She then sells 3 of the cartons. She estimates she has 4 cartons left. Is this estimate reasonable, too high, or too low?",
+            "Sara wants to buy 3 toy cars that cost $7 each. She has $12 saved. She estimates she needs about $10 more. Is her estimate reasonable, too high, or too low?"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Judging an estimate for a two-step word problem and explaining the reasoning.",
+          "example_questions": [
+            "There are 5 bags of marbles with 9 marbles in each bag. 18 marbles are red. A student estimates that there are about 30 marbles that are not red. Is this estimate reasonable, too high, or too low? Explain why.",
+            "Liam has 81 stickers. He gives 29 to his friend and then gets 12 more from his teacher. His friend estimates he now has about 80 stickers. Is this estimate reasonable, too high, or too low? Explain your thinking.",
+            "A baker makes 8 batches of cookies, with 10 cookies in each batch. He sells 47 cookies. He estimates he has about 30 cookies left. Is this estimate reasonable, too high, or too low? Explain how you know."
+          ],
+          "visual_aids": null
+        }
+      ],
+      "generation_reasoning": "The original sequences were rejected because they fundamentally misaligned with the lesson's objective. Key issues included using one-step problems instead of the required two-step problems, and instructing students to find the 'exact answer' which bypassed the core skill of estimation. The new sequences correct these issues comprehensively. Every problem is now a two-step word problem, and prompts are explicitly framed to guide students to estimate (e.g., by rounding) and then use their own estimate to judge the given one. This structure directly mirrors the lesson's step-by-step pedagogical approach. The sequences progress from addition/subtraction to mixed operations, and finally to requiring a written explanation, creating a logical scaffold. All numbers used are strictly within the assessment boundaries for 3rd grade.",
+      "regenerated_at": "2025-10-31T12:29:44.169272"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+3",
+      "lesson_title": "Identify Rules in Addition and Subtraction Patterns",
+      "grade": "3.0",
+      "substandard_description": "Identify the rule for an addition or subtraction pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- All include images of tables where the question is asking for the rule but NO tables in the question stem\n- Whole numbers only; no fractions, decimals, or negative numbers are permitted in patterns, tables, or explanations.\n- Addition and subtraction patterns are limited to numbers within 100.\n- Input is in ascending order, but not necessarily consecutive or increasing by the same amount.\n- For missing output problems, the rule is not given.",
+      "tasks": "- Identify the rule for an  input/output table in which the rule is addition.\n- Identify the rule for an  input/output table in which the rule is subtraction.\n- Identify the missing input or output for an  input/output table in which the rule is addition.\n- Identify the missing input or output for an  input/output table in which the rule is subtraction.",
+      "step_by_step_explanation": "Task: Identify the rule for an  input/output table in which the rule is addition.  \nSTEP 1: Read each input and its output.  \nSTEP 2: Subtract the input from the output to find the difference.  \nSTEP 3: Check that the difference is the same for every row.  \nSTEP 4: State the rule as “add ___.”\n\nTask: Identify the rule for an  input/output table in which the rule is subtraction.  \nSTEP 1: Read each input and its output.  \nSTEP 2: Subtract the output from the input to find the difference.  \nSTEP 3: Check that the difference is the same for every row.  \nSTEP 4: State the rule as “subtract ___.”\n\nTask: Identify the missing output for an  input/output table in which the rule is addition.  \nSTEP 1: Look at a row that has both numbers.  \nSTEP 2: Subtract the input from the output to find how much is added.  \nSTEP 3: Add that same amount to the input with the blank space.  \nSTEP 4: Write the answer in the blank.\n\nTask: Identify the missing output for an  input/output table in which the rule is subtraction.  \nSTEP 1: Look at a row that has both numbers.  \nSTEP 2: Subtract the output from the input to find how much is taken away.  \nSTEP 3: Subtract that same amount from the input with the blank space.  \nSTEP 4: Write the answer in the blank.",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identify a single-digit addition rule from a table",
+          "example_questions": [
+            "A table shows these pairs of numbers: In: 5, Out: 10; In: 6, Out: 11; In: 7, Out: 12. What is the rule?",
+            "Look at this table. In: 10, Out: 12; In: 12, Out: 14; In: 15, Out: 17. Find the rule that changes the 'In' number to the 'Out' number.",
+            "What is the rule for this table? In: 20, Out: 29; In: 21, Out: 30; In: 25, Out: 34."
+          ],
+          "visual_aids": [
+            "Input-output table"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identify a two-digit addition rule from a table",
+          "example_questions": [
+            "Find the rule for the pattern in this table. In: 10, Out: 20; In: 20, Out: 30; In: 30, Out: 40.",
+            "What is the rule that changes the input to the output? In: 15, Out: 40; In: 30, Out: 55; In: 42, Out: 67.",
+            "A table shows these pairs: In: 50, Out: 62; In: 61, Out: 73; In: 75, Out: 87. What rule is used?"
+          ],
+          "visual_aids": [
+            "Input-output table"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identify a single-digit subtraction rule from a table",
+          "example_questions": [
+            "What rule is used in this table? In: 10, Out: 7; In: 11, Out: 8; In: 12, Out: 9.",
+            "Find the rule for this pattern table. In: 25, Out: 20; In: 30, Out: 25; In: 42, Out: 37.",
+            "What is the rule that changes the input to the output? In: 58, Out: 50; In: 65, Out: 57; In: 70, Out: 62."
+          ],
+          "visual_aids": [
+            "Input-output table"
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Identify the addition or subtraction rule from a mixed set of tables",
+          "example_questions": [
+            "Look at the table and find the rule. In: 22, Out: 32; In: 33, Out: 43; In: 44, Out: 54.",
+            "What is the rule for the pattern in this table? In: 80, Out: 65; In: 85, Out: 70; In: 90, Out: 75.",
+            "Identify the rule that links the input and output numbers in this table. In: 45, Out: 52; In: 50, Out: 57; In: 62, Out: 69."
+          ],
+          "visual_aids": [
+            "Input-output table"
+          ]
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identify a single-digit addition rule from a table",
+          "alignment_score": 0.6,
+          "should_keep": false,
+          "reasoning": "The sequence correctly targets the intended skill of identifying an addition rule from a table. However, it violates the assessment boundary stating 'NO tables in the question stem,' as the example questions list the input/output pairs directly in the text rather than referring to a separate visual.",
+          "suggestions": "The problem type is appropriate, but the example questions must be rewritten. The questions should refer to a visual aid, such as 'What is the rule for the input-output table shown below?', and the number pairs should be presented only in an image of a table."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identify a two-digit addition rule from a table",
+          "alignment_score": 0.5,
+          "should_keep": false,
+          "reasoning": "The sequence correctly identifies a relevant task (finding an addition rule). However, it violates a critical assessment boundary by presenting the table data directly within the example question text. The instructions explicitly state 'NO tables in the question stem' and require the use of table images.",
+          "suggestions": "The problem type is appropriate, but the example questions must be rewritten. The questions should be simple prompts like 'What is the rule for the table?' and the input/output data must be presented only in a visual table, not in the text of the question."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identify a single-digit subtraction rule from a table",
+          "alignment_score": 0.5,
+          "should_keep": false,
+          "reasoning": "The sequence correctly targets the intended skill of identifying a subtraction rule from a table. However, it violates a critical assessment boundary by presenting the input-output data directly within the question stem. The boundary explicitly states that questions must use images of tables and have 'NO tables in the question stem'.",
+          "suggestions": "To fix this, the example questions must be rephrased to refer to a visual table. For instance, a question should simply be 'What rule is used in this table?' and the data (In: 10, Out: 7, etc.) must be presented only in an accompanying image."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Identify the addition or subtraction rule from a mixed set of tables",
+          "alignment_score": 0.5,
+          "should_keep": false,
+          "reasoning": "The problem type correctly combines the intended tasks of identifying both addition and subtraction rules. However, the sequence is rejected because the example questions directly violate a critical Assessment Boundary constraint which states there should be 'NO tables in the question stem'. The examples embed the table data directly in the text.",
+          "suggestions": "The problem type is appropriate, but the example questions must be rewritten. They should be generic prompts that refer to an image of a table, such as 'What rule does the table follow?' or 'Find the rule for the input-output table shown.', instead of listing the data in the text."
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identify an addition rule from an input-output table",
+          "example_questions": [
+            "What is the rule for the input-output table shown?",
+            "Find the rule that changes the 'In' number to the 'Out' number in the table.",
+            "The table shows a pattern. What is the rule?"
+          ],
+          "visual_aids": [
+            "Input-output table"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identify a subtraction rule from an input-output table",
+          "example_questions": [
+            "What rule is used in the table below?",
+            "Look at the table. Find the rule that is used to get the 'Out' number.",
+            "Identify the rule for the pattern in the table."
+          ],
+          "visual_aids": [
+            "Input-output table"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Find a missing output in a table with an unstated addition rule",
+          "example_questions": [
+            "The table shows a pattern. What number is missing?",
+            "First, find the rule for the table. Then, find the missing output number.",
+            "What number belongs in the empty space in the output column?"
+          ],
+          "visual_aids": [
+            "Input-output table with a missing output value"
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Find a missing output in a table with an unstated subtraction rule",
+          "example_questions": [
+            "A number is missing from the table. What is the missing number?",
+            "Find the rule for the pattern. Use the rule to find the missing number.",
+            "What is the missing output in the table shown?"
+          ],
+          "visual_aids": [
+            "Input-output table with a missing output value"
+          ]
+        }
+      ],
+      "generation_reasoning": "The main issue with the original sequences was a critical violation of the assessment boundary that states 'NO tables in the question stem.' All previous example questions embedded the table data directly in the text. Additionally, the original sequences only covered two of the four intended tasks, omitting the tasks requiring students to find missing values. The new sequences fix these issues completely. First, every example question has been rewritten to be a generic prompt that refers to a separate visual aid (an input-output table), thus adhering to the assessment boundary. Second, the new set of four sequences directly and explicitly aligns with the four distinct tasks outlined in the 'INTENDED CURRICULUM - TASKS': identifying addition rules, identifying subtraction rules, finding missing outputs with addition, and finding missing outputs with subtraction. This ensures full curriculum coverage and a logical progression of skills, starting with identifying a rule and then applying it, which matches the provided step-by-step pedagogy.",
+      "regenerated_at": "2025-10-31T12:30:07.207389"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.A+3",
+      "lesson_title": "Graph Equivalent Fractions",
+      "grade": "3.0",
+      "substandard_description": "Given a fraction, graph and equivalent fraction on a number line.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- Number line always starts at 0",
+      "tasks": "- Given a simplified fraction, graph the corresponding point on a number line that is divided into equivalent fractions. For example, graph 1/4 on a number line that is partitioned into twelfths.\n- Given an improper fraction in simplest form (e.g., 5⁄3), students will accurately plot its location on a number line partitioned into equivalent unit fractions (e.g., sixths), demonstrating correct placement relative to whole-number benchmarks.\n- Given a proper fraction less than 1 (e.g., 1⁄3) and a 0–1 number line already partitioned into a different, equivalent set of fractional units (e.g., twelfths), plot the fraction’s location.\n- Given an improper fraction greater than 1 (e.g., 5⁄3) and an extended number line partitioned into a different, equivalent set of fractional units (e.g., sixths), plot the fraction’s location.",
+      "step_by_step_explanation": "Task 1: Graphing a Fraction Less Than 1 (Example: 1/4 on a number line divided into twelfths)\nThe number line is split into twelfths. To show 1/4, let’s compare.\n\nSTEP 1: Look at the top number line. From 0 to 1, there are 12 equal jumps. Each jump is one twelfth.\n0, 1/12, 2/12, 3/12 … 12/12.\n\nSTEP 2: Draw another number line below it. This time, split it into 4 equal jumps. Each jump is one fourth.\n0, 1/4, 2/4, 3/4, 1.\n\nSTEP 3: Match the points.\nNotice that 1/4 is the same place as 3/12.\nSo we put the point on 3/12 in the twelfths line.\n\nTask 2: Graphing a Fraction Greater Than 1 (Example: 5/3 on a number line divided into sixths)\nThe fraction is 5/3. That’s more than 1.\n\nSTEP 1: Look at the number line. Each whole is cut into 6 equal jumps. Each jump is one sixth.\n0, 1/6, 2/6, 3/6 … 6/6 (which is 1). Keep going: 7/6, 8/6 … up to 12/6 (which is 2).\n\nSTEP 2: Compare the fractions.\n5/3 means 5 pieces when the whole is cut into 3 parts.\nThat’s the same as 10/6.\n\nSTEP 3: Find 10/6 on the sixths number line.\nThe point for 5/3 goes at 10/6—just past 1, but not all the way to 2.\n\nTask 3: Graphing a Fraction Less Than 1 (Example: 1/3 on a number line divided into twelfths)\nThe number line is split into twelfths. We need to show 1/3.\n\nSTEP 1: Look at the top number line. Each jump is one twelfth.\n0, 1/12, 2/12, 3/12, 4/12 … 12/12.\n\nSTEP 2: Draw another line below it. Split it into 3 equal jumps. Each jump is one third.\n0, 1/3, 2/3, 1.\n\nSTEP 3: Match the points.\n1/3 lands in the same place as 4/12.\nSo we put the point on 4/12 in the twelfths line.\n\nTask 4: Graphing a Fraction Greater Than 1 (Example: 5/3 on a number line divided into sixths, extended past 1)\nThe number line goes past 1 and is split into sixths. We need 5/3.\n\nSTEP 1: Look at the top number line. Each jump is one sixth.\n0, 1/6, 2/6, 3/6 … 6/6 (that’s 1). Then keep counting: 7/6, 8/6, 9/6, 10/6, 11/6, 12/6 (that’s 2).\n\nSTEP 2: Compare.\n5/3 is the same as 10/6.\n\nSTEP 3: Find 10/6.\nMark the point at 10/6. That shows where 5/3 belongs—one whole and 4 more sixths.",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Locating a given fraction on a pre-partitioned number line",
+          "example_questions": [
+            "A number line is shown divided into fourths. Graph the point for 3/4.",
+            "A number line is shown divided into eighths. Graph the point for 5/8.",
+            "A number line is shown divided into sixths. Graph the point for 2/6."
+          ],
+          "visual_aids": [
+            "A number line from 0 to 1, pre-partitioned into the specified number of equal parts."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identifying equivalent fractions using two aligned number lines",
+          "example_questions": [
+            "One number line is divided into halves. An aligned number line below it is divided into fourths. What fraction on the bottom number line is at the same point as 1/2?",
+            "One number line is divided into thirds. An aligned number line below it is divided into sixths. What fraction on the bottom number line is at the same point as 2/3?",
+            "One number line is divided into fourths. An aligned number line below it is divided into eighths. What fraction on the bottom number line is at the same point as 3/4?"
+          ],
+          "visual_aids": [
+            "Two parallel, aligned number lines from 0 to 1, each partitioned with a different denominator."
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Given a fraction, graph its equivalent on a number line marked for both denominators",
+          "example_questions": [
+            "The fraction is 1/2. The number line is marked in both halves and eighths. Graph the point equivalent to 1/2 and write the new fraction.",
+            "The fraction is 4/6. The number line is marked in both sixths and thirds. Graph the point equivalent to 4/6 and write the new fraction."
+          ],
+          "visual_aids": [
+            "A single number line from 0 to 1 with partition marks for two different, related denominators (e.g., halves and eighths)."
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Given a fraction, graph an equivalent fraction on a number line",
+          "example_questions": [
+            "The fraction is 1/2. Graph an equivalent fraction with a denominator of 6 on the number line from 0 to 1.",
+            "The fraction is 2/3. Graph an equivalent fraction with a denominator of 6 on the number line from 0 to 1.",
+            "The fraction is 1/4. Graph an equivalent fraction with a denominator of 8 on the number line from 0 to 1."
+          ],
+          "visual_aids": [
+            "A number line from 0 to 1 with only the endpoints marked."
+          ]
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Locating a given fraction on a pre-partitioned number line",
+          "alignment_score": 0.2,
+          "should_keep": false,
+          "reasoning": "This sequence does not address the core learning objective of the lesson, which is graphing *equivalent* fractions. The examples ask students to locate a fraction on a number line with the same denominator (e.g., graph 3/4 on a fourths line), while the intended curriculum explicitly requires students to graph a fraction on a number line partitioned into different, equivalent units (e.g., graph 1/2 on a fourths line).",
+          "suggestions": "The problem type must be changed to require students to find an equivalent fraction. It should be something like: 'Given a simplified fraction, graph its location on a number line partitioned into a different, equivalent set of fractional units.' The examples must be updated accordingly, for instance: 'A number line is shown divided into eighths. Graph the point for 3/4.'"
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identifying equivalent fractions using two aligned number lines",
+          "alignment_score": 0.4,
+          "should_keep": false,
+          "reasoning": "This sequence requires students to identify an equivalent fraction from two pre-drawn, aligned number lines. The intended curriculum task is for the student to be given a single number line and be asked to *graph* or *plot* a point for a given fraction. This sequence assesses identification, not the target skill of graphing.",
+          "suggestions": "The problem type should be changed to 'Graph a given fraction on a number line that is partitioned into equivalent units.' Example questions should require plotting, such as 'The number line is divided into sixths. Place a point on the line to show the location of 2/3.'"
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Given a fraction, graph its equivalent on a number line marked for both denominators",
+          "alignment_score": 0.2,
+          "should_keep": false,
+          "reasoning": "This sequence fundamentally misunderstands the intended task. The curriculum requires students to graph a fraction on a number line partitioned into a *different* set of units, forcing them to reason about equivalence. This sequence provides a number line with *both* sets of markings, which turns the problem into a simple visual matching exercise and removes the intended cognitive demand.",
+          "suggestions": "The visual aid must be changed to a number line with only one set of partitions (the target equivalent denominator). The problem should ask students to plot the original fraction (e.g., 'Plot 1/2') on this number line (e.g., one partitioned into eighths), requiring them to find the equivalent location without visual aids showing both scales."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Given a fraction, graph an equivalent fraction on a number line",
+          "alignment_score": 0.3,
+          "should_keep": false,
+          "reasoning": "This sequence fundamentally misaligns with the intended task. The curriculum specifies that the number line should already be partitioned into the equivalent fractional units, focusing the student's task on finding the correct location. This sequence provides a blank number line, which requires the student to perform the partitioning themselves—a different and more advanced skill.",
+          "suggestions": "To align with the curriculum, the 'visual_aids' must be changed. For each example question, the visual aid should be a number line pre-partitioned into the target denominator (e.g., 'A number line from 0 to 1 partitioned into sixths'). This would correctly scaffold the task as intended by the lesson plan."
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Graphing a proper fraction on a number line partitioned into a different, equivalent denominator",
+          "example_questions": [
+            "The number line below is divided into sixths. Place a point on the line to show the location of 1/3.",
+            "The number line below is divided into fourths. Place a point on the line to show the location of 1/2.",
+            "The number line below is divided into eighths. Place a point on the line to show the location of 3/4."
+          ],
+          "visual_aids": [
+            "A single number line from 0 to 1, pre-partitioned into the specified equivalent denominator (e.g., sixths, fourths, or eighths)."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Graphing an improper fraction on a number line partitioned into a different, equivalent denominator",
+          "example_questions": [
+            "The number line below is divided into sixths. Place a point on the line to show the location of 4/3.",
+            "The number line below is divided into fourths. Place a point on the line to show the location of 3/2.",
+            "The number line below is divided into eighths. Place a point on the line to show the location of 6/4."
+          ],
+          "visual_aids": [
+            "A single number line from 0 to 2, pre-partitioned into the specified equivalent denominator (e.g., sixths, fourths, or eighths)."
+          ]
+        }
+      ],
+      "generation_reasoning": "The original sequences were rejected because they fundamentally failed to address the core learning objective: having a student graph a given fraction by finding its equivalent location on a number line partitioned into different units. The rejected sequences either tested a prerequisite skill (graphing 3/4 on a fourths line), provided excessive scaffolding that eliminated the cognitive task (showing two number lines or both partitions), or required a different skill altogether (partitioning a blank line).\n\nThese new sequences directly fix these issues. The problem types are now precisely aligned with the intended curriculum, focusing on graphing a fraction on a line with a *different, equivalent* denominator. The visual aids are corrected to be a single number line, pre-partitioned only with the target denominator, which forces the student to perform the intended cognitive work of finding the equivalent fraction's location. The sequences follow a logical progression, starting with proper fractions less than 1 (Sequence 1) and then moving to improper fractions greater than 1 (Sequence 2), directly mirroring the tasks outlined in the curriculum. All denominators (2, 3, 4, 6, 8) are within the assessment boundary, and all number lines correctly start at 0.",
+      "regenerated_at": "2025-10-31T12:30:32.091470"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.D+2",
+      "lesson_title": "Comparing Fractions with the Same Numerator",
+      "grade": "3.0",
+      "substandard_description": "Compare two fractions that have the same numerator.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- All fractions are less than 1\n- Answer choices must ALWAYS be '>','<','='\n- The answer is never \"=\"\n- Don't use 0 as numerator or denominator.",
+      "tasks": "- Compare two fractions with the same numerator using the inequality symbols",
+      "step_by_step_explanation": "**Task: Compare two fractions with the same numerator using the inequality symbols**\n\nSTEP 1: Check that both fractions have the same top number (numerator)\nSTEP 2: Look at the bottom numbers (denominators) of both fractions\nSTEP 3: Remember that when denominators are bigger, the fraction pieces are smaller\nSTEP 4: Choose the correct symbol: < means less than, > means greater than, = means equal to\nSTEP 5: Write the comparison using the inequality symbol\n\n**Task: Select the fractions less than the given fraction (all with the same numerator)**\n\nSTEP 1: Look at the top number (numerator) of the given fraction\nSTEP 2: Check that all answer choices have the same numerator\nSTEP 3: Find the bottom number (denominator) of the given fraction\nSTEP 4: Compare each answer choice's denominator to the given fraction's denominator\nSTEP 5: Select fractions that have larger denominators than the given fraction\n\n**Task: Select the fractions greater than the given fraction (all with the same numerator)**\n\nSTEP 1: Look at the top number (numerator) of the given fraction\nSTEP 2: Check that all answer choices have the same numerator\nSTEP 3: Find the bottom number (denominator) of the given fraction\nSTEP 4: Compare each answer choice's denominator to the given fraction's denominator\nSTEP 5: Select fractions that have smaller denominators than the given fraction",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Comparing unit fractions (numerator of 1) using visual models.",
+          "example_questions": [
+            "Use the fraction bars to compare 1/4 and 1/2. Choose the correct symbol: > or <.",
+            "Use the pie charts to compare 1/8 and 1/3. Choose the correct symbol: > or <.",
+            "Use the visual models to compare 1/6 and 1/4. Choose the correct symbol: > or <."
+          ],
+          "visual_aids": [
+            "Fraction bars",
+            "Pie charts"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Comparing non-unit fractions with the same numerator using visual models.",
+          "example_questions": [
+            "Look at the fraction bars to compare 2/6 and 2/3. Which symbol makes the statement true: > or <?",
+            "Using the models, compare 3/8 and 3/4. Choose the correct symbol: > or <.",
+            "Look at the pie charts to compare 2/4 and 2/8. Which is greater? Choose > or <."
+          ],
+          "visual_aids": [
+            "Fraction bars",
+            "Pie charts"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Comparing fractions with the same numerator without visual aids.",
+          "example_questions": [
+            "Compare 1/3 and 1/8. Choose the correct symbol: > or <.",
+            "Compare 3/4 and 3/6. Choose the correct symbol: > or <.",
+            "Compare 5/8 and 5/6. Choose the correct symbol: > or <.",
+            "Compare 2/4 and 2/3. Choose the correct symbol: > or <."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Mixed comparison problems with the same numerator to build fluency.",
+          "example_questions": [
+            "Which symbol makes the statement true? 4/6 __ 4/8. (> or <)",
+            "Which symbol makes the statement true? 1/2 __ 1/6. (> or <)",
+            "Which symbol makes the statement true? 2/8 __ 2/3. (> or <)"
+          ],
+          "visual_aids": null
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Comparing unit fractions (numerator of 1) using visual models.",
+          "alignment_score": 0.5,
+          "should_keep": false,
+          "reasoning": "This sequence has a significant pedagogical mismatch. The intended curriculum specifies a step-by-step process based on the abstract rule of comparing denominators, whereas this sequence relies entirely on visual models. Additionally, it narrows the scope to only unit fractions, while the lesson target is any fraction with the same numerator.",
+          "suggestions": "To align with the curriculum, remove the dependency on visual models and focus on the abstract comparison. The problems should also include non-unit fractions that have the same numerator (e.g., comparing 2/3 and 2/8) to match the full scope of the standard."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Comparing non-unit fractions with the same numerator using visual models.",
+          "alignment_score": 0.5,
+          "should_keep": false,
+          "reasoning": "This sequence focuses on comparing fractions using visual models, which is a different pedagogical approach from the one specified in the curriculum. The intended step-by-step explanation emphasizes the abstract rule about denominator size, not the interpretation of visual aids. While the topic is correct and boundaries are respected, the method of instruction does not align.",
+          "suggestions": "To align with the curriculum, remove the reliance on visual models. The problem type should be 'Compare two fractions with the same numerator using the inequality symbols' and examples should not direct students to look at models (e.g., 'Which symbol makes the statement true: 2/6 __ 2/3?'). This would assess the student's understanding of the abstract rule."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Comparing fractions with the same numerator without visual aids.",
+          "alignment_score": 0.6,
+          "should_keep": false,
+          "reasoning": "The problem type and examples strongly align with the core lesson objective of comparing fractions with the same numerator. However, the sequence is rejected because it violates a key assessment boundary. The example questions only offer '>' and '<' as answer choices, while the boundary requires that '>', '<', and '=' must always be presented as options.",
+          "suggestions": "Revise the example questions to include all three required inequality symbols as potential answers. For example, change 'Choose the correct symbol: > or <' to 'Choose the correct symbol: >, <, or =.' This will bring the sequence into full compliance with the assessment boundaries."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Mixed comparison problems with the same numerator to build fluency.",
+          "alignment_score": 0.6,
+          "should_keep": false,
+          "reasoning": "The sequence's problem type and examples align well with the core task of comparing fractions with the same numerator. However, it violates a key assessment boundary by only offering '>' and '<' as answer choices in the examples, whereas the boundary explicitly requires that '>', '<', and '=' must always be the options presented.",
+          "suggestions": "To fix this, ensure the answer choices presented to the student in every problem are always '>', '<', and '='. For example, the first question should be framed as 'Which symbol makes the statement true? 4/6 __ 4/8. (>, <, or =)'."
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Comparing two unit fractions (numerator of 1) using inequality symbols.",
+          "example_questions": [
+            "Which symbol makes the statement true? 1/6 __ 1/3. Choose from >, <, or =.",
+            "Compare 1/8 and 1/2. Choose the correct symbol: >, <, or =.",
+            "Fill in the blank with >, <, or =. 1/4 __ 1/8."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Comparing two non-unit fractions with the same numerator using inequality symbols.",
+          "example_questions": [
+            "Which symbol makes the statement true? 3/4 __ 3/8. Choose from >, <, or =.",
+            "Compare 2/6 and 2/3. Choose the correct symbol: >, <, or =.",
+            "Fill in the blank with >, <, or =. 5/8 __ 5/6."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Mixed practice comparing fractions with the same numerator.",
+          "example_questions": [
+            "Which symbol correctly compares the two fractions: 1/2 __ 1/6? Choose from >, <, or =.",
+            "Which symbol makes the statement true: 4/6 __ 4/8? Choose from >, <, or =.",
+            "Compare 2/8 and 2/3. Choose the correct symbol: >, <, or =."
+          ],
+          "visual_aids": null
+        }
+      ],
+      "generation_reasoning": "The original sequences were rejected due to two primary issues: 1) a pedagogical mismatch, where sequences relied on visual models instead of the intended abstract reasoning based on denominator size, and 2) a violation of the assessment boundary that requires '>', '<', and '=' to always be presented as answer choices. The new sequences rectify these issues completely. All visual aids have been removed, forcing students to apply the abstract rule as specified in the curriculum's step-by-step explanation. Every example question now explicitly includes '>', '<', or '=' as the required answer choices, ensuring full compliance with the assessment boundaries. The progression is logical, starting with unit fractions to establish the core concept, moving to non-unit fractions to generalize the skill, and finishing with mixed practice to build fluency, thereby aligning perfectly with the lesson's objective.",
+      "regenerated_at": "2025-10-31T12:31:09.576829"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+2",
+      "lesson_title": "Sorting Quadrilaterals",
+      "grade": "3.0",
+      "substandard_description": "Compare quadrilaterals to determine how shared attributes group them into larger or overlapping categories (e.g., explaining why every square is both a rectangle and a rhombus).",
+      "assessment_boundary": "Assessment is restricted to:\n- Shapes are limited to two-dimensional figures, specifically quadrilaterals: rhombuses, rectangles, squares, and parallelograms \n- Pictures of kites can be included but should only be referenced as quadrilaterals and not named.\n- Only geometric attributes appropriate for grade 3 are assessed: number of sides, number of angles, presence of right angles, and whether sides are of equal length or are straight lines.\n- Shapes may be presented in various orientations, but must remain recognizable and not be irregular or ambiguous.\n- No three-dimensional shapes or polygons with more or fewer than four sides.\n- No requirement to use or identify formal vocabulary for “perpendicular,” “congruent,” or “diagonal.”\n- Visual models (drawings, tables, or diagrams) may be used, but must clearly display the relevant attributes for comparison or classification.\n- No use of variables or algebraic symbols; only numeric values and shape names are used.\n- Shapes that are rhombuses need to indicate that side lengths are the same.\n- Question should ask, \"Select all the ________\"",
+      "tasks": "- Given a diagram of a quadrilateral, select the statement that accurately classifies the figure and explains why.\n(e.g., “It is a parallelogram because it has 2 pairs of parallel sides,” “It is a rhombus because it has 4 equal sides,” “It is a rhombus because it does not have 4 equal sides,” or “It is not a parallelogram because it lacks 2 pairs of parallel sides.”)\n- Pick all the names for a given shape (e.g. Pick all the names for a given shape. Rhombus, Square, Quadrilateral, Parallelogram, Rectangle)",
+      "step_by_step_explanation": "Task: Given a diagram of a quadrilateral, select the statement that accurately classifies the figure and explains why.\n(e.g., “It is a parallelogram because it has 2 pairs of parallel sides,” “It is a rhombus because it has 4 equal sides,” “It is a rhombus because it does not have 4 equal sides,” or “It is not a parallelogram because it lacks 2 pairs of parallel sides.”)\nSTEP 1: Count the sides to confirm there are 4.\nSTEP 2: Ignore how the shape is turned; focus on the marks for angles, equal sides, and parallel sides.\nSTEP 3: Look for 4 right-angle marks.\nSTEP 4: Choose the statement naming a square if it has 4 right angles and all 4 sides equal; otherwise choose the rectangle statement for 4 right angles.\nSTEP 5: If there are not 4 right angles, choose the rhombus statement if all 4 sides are equal.\nSTEP 6: If the sides are not all equal, choose the parallelogram statement if there are 2 pairs of parallel sides.\nSTEP 7: If there are not 2 pairs of parallel sides, choose the statement that says it is not a parallelogram.\n\nTask: Pick all the names for a given shape (e.g. Pick all the names for a given shape. Rhombus, Square, Quadrilateral, Parallelogram, Rectangle)\nSTEP 1: Count the sides and select Quadrilateral if there are 4.\nSTEP 2: Ignore how the shape is turned; focus on the marks for angles, equal sides, and parallel sides.\nSTEP 3: Look for 4 right-angle marks and select Rectangle if there are 4.\nSTEP 4: Look for matching marks on all sides and select Rhombus if all 4 sides are equal.\nSTEP 5: Select Square only if the shape has 4 right angles and all 4 sides are equal.\nSTEP 6: Select Parallelogram if there are 2 pairs of parallel sides, or if you already picked Rectangle, Square, or Rhombus.",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identifying a single type of quadrilateral by its defining attribute",
+          "example_questions": [
+            "Select all the squares.",
+            "Select all the rectangles.",
+            "Select all the rhombuses."
+          ],
+          "visual_aids": [
+            "A set of quadrilaterals (including squares, non-square rectangles, non-square rhombuses, and parallelograms) with markings for right angles and equal sides."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identifying how a specific shape fits into a broader category",
+          "example_questions": [
+            "Select all the rectangles.",
+            "Select all the rhombuses."
+          ],
+          "visual_aids": [
+            "A set of quadrilaterals where squares are included alongside non-square rectangles and non-square rhombuses, demonstrating the overlapping classification."
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identifying all shapes that belong to the general categories of parallelogram and quadrilateral",
+          "example_questions": [
+            "Select all the parallelograms.",
+            "Select all the quadrilaterals."
+          ],
+          "visual_aids": [
+            "A diverse set of four-sided figures, including squares, rectangles, rhombuses, other parallelograms, and kite shapes (referenced only as quadrilaterals)."
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Selecting all quadrilaterals based on a written description of shared attributes",
+          "example_questions": [
+            "Select all the shapes that have 4 right angles.",
+            "Select all the shapes that have 4 sides of equal length.",
+            "Select all the shapes that are quadrilaterals and have 4 right angles and 4 sides of equal length."
+          ],
+          "visual_aids": [
+            "A reference image displaying one of each shape type: a square, a non-square rectangle, a non-square rhombus, and a parallelogram, all with attributes clearly marked."
+          ]
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identifying a single type of quadrilateral by its defining attribute",
+          "alignment_score": 0.4,
+          "should_keep": false,
+          "reasoning": "This sequence proposes a simple identification task (finding all squares from a group), which does not match the specified curriculum tasks. The intended tasks require a deeper level of analysis on a single shape, either to apply all its possible names (hierarchical classification) or to justify its classification, which is the core of the standard.",
+          "suggestions": "The problem type should be changed to 'Pick all the names for a given shape' or 'Select the statement that accurately classifies a given shape and explains why.' This would require presenting a single shape for analysis, rather than a set of shapes for sorting, which better aligns with the step-by-step explanation."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identifying how a specific shape fits into a broader category",
+          "alignment_score": 0.4,
+          "should_keep": false,
+          "reasoning": "This sequence proposes a sorting task where students find all examples of a single category (e.g., 'Select all the rectangles') from a group of shapes. This does not align with the intended curriculum tasks, which focus on analyzing a single given shape to either select an explanatory statement or identify all of its applicable names.",
+          "suggestions": "To align, the task should present a single shape (e.g., a square) and ask the student to 'Select all the names for this shape' from a list of options (Quadrilateral, Parallelogram, Rectangle, Rhombus, Square). This would directly match the second intended curriculum task."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identifying all shapes that belong to the general categories of parallelogram and quadrilateral",
+          "alignment_score": 0.3,
+          "should_keep": false,
+          "reasoning": "This sequence's problem type does not align with the intended curriculum tasks. The sequence asks students to identify all shapes of a certain type from a group (e.g., 'Select all the parallelograms'), while the curriculum explicitly focuses on the deep classification of a single shape (either picking all its names or picking a classification with a reason). This represents a fundamental mismatch in the cognitive task.",
+          "suggestions": "The sequence should be redesigned to focus on a single shape at a time, as described in the curriculum tasks. For example, show a single square and ask the student to 'Select all the names for this shape' from a list including Quadrilateral, Parallelogram, Rectangle, and Rhombus. This would better assess the hierarchical understanding of shape categories."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Selecting all quadrilaterals based on a written description of shared attributes",
+          "alignment_score": 0.3,
+          "should_keep": false,
+          "reasoning": "This sequence does not align with either of the specified curriculum tasks. The intended tasks require a student to analyze a single given shape and select its names or classification. This sequence proposes the inverse: selecting multiple shapes that fit a given attribute description, which is a different cognitive task.",
+          "suggestions": "The problem type should be changed to match one of the two intended tasks. For example, it should be 'Given a diagram of a square, select all the names for the shape' from a list of options (e.g., Rhombus, Square, Quadrilateral, Parallelogram, Rectangle)."
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Picking all the names for a given shape, starting with the most specific case",
+          "example_questions": [
+            "A shape is shown with 4 equal sides and 4 right angles. Select all the names for this shape. (Options: Quadrilateral, Parallelogram, Rectangle, Rhombus, Square)",
+            "Look at the shape provided. It has 4 right angles and all its sides are the same length. Select all the names that correctly describe this shape. (Options: Square, Rectangle, Rhombus, Parallelogram, Quadrilateral)"
+          ],
+          "visual_aids": [
+            "A single, clear image of a square, with markings indicating 4 right angles and 4 equal side lengths."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Picking all the names for other given quadrilaterals",
+          "example_questions": [
+            "A shape is shown with 4 right angles, but its sides are not all equal. Select all the names for this shape. (Options: Quadrilateral, Parallelogram, Rectangle, Rhombus, Square)",
+            "A shape is shown with 4 equal sides, but it does not have any right angles. Select all the names for this shape. (Options: Quadrilateral, Parallelogram, Rectangle, Rhombus, Square)"
+          ],
+          "visual_aids": [
+            "A single image of a non-square rectangle with markings for 4 right angles.",
+            "A single image of a non-square rhombus with markings for 4 equal side lengths."
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Selecting all true statements that classify a shape and explain why",
+          "example_questions": [
+            "Look at the rectangle shown. Select all the statements that are true about this shape. (Options: 'This is a rectangle because it has 4 right angles.', 'This is a rhombus because it has 4 equal sides.', 'This is a parallelogram because it has 2 pairs of parallel sides.')",
+            "Look at the rhombus shown. Select all the statements that are true about this shape. (Options: 'This is a rhombus because it has 4 equal sides.', 'This is a rectangle because it has 4 right angles.', 'This is a quadrilateral because it has 4 sides.')"
+          ],
+          "visual_aids": [
+            "A single image of a non-square rectangle with markings for 4 right angles and parallel sides.",
+            "A single image of a non-square rhombus with markings for 4 equal sides and parallel sides."
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Selecting all true statements to distinguish a shape from other quadrilaterals using attributes",
+          "example_questions": [
+            "A parallelogram is shown that is not a rectangle or a rhombus. Select all the statements that are true about this shape. (Options: 'This is a parallelogram because it has 2 pairs of parallel sides.', 'This is not a rectangle because it does not have 4 right angles.', 'This is not a rhombus because its sides are not all equal.')",
+            "A quadrilateral is shown that is not a parallelogram. Select all the statements that are true about this shape. (Options: 'This is a quadrilateral because it has 4 sides.', 'This is not a parallelogram because it does not have 2 pairs of parallel sides.', 'This is a rectangle because it has 4 right angles.')"
+          ],
+          "visual_aids": [
+            "A single image of a parallelogram that is clearly not a rectangle or rhombus, with parallel side markings.",
+            "A single image of a kite shape, presented as a generic quadrilateral with no specific markings other than being a closed four-sided figure."
+          ]
+        }
+      ],
+      "generation_reasoning": "The original sequences were all rejected for a single, fundamental reason: they were structured as sorting tasks (e.g., 'Select all the squares from a group') which did not align with the intended curriculum. The curriculum requires the deep analysis of a single shape at a time, focusing on either hierarchical classification ('Pick all the names for this shape') or justification of classification ('Select the statement that explains why this shape is a rectangle'). My new sequences directly address this feedback. They are built around the two specified curriculum tasks, presenting students with one shape to analyze per question. The progression is logical: Sequence 1 and 2 focus on applying all possible names to a shape, starting with the most complex (square) and moving to others. Sequences 3 and 4 advance to the more difficult task of selecting statements that correctly classify a shape based on its attributes, including statements about what the shape is and is not. This structure directly fixes the core issue, aligns with the step-by-step pedagogy, and adheres to all assessment boundaries by using appropriate shapes, markings, and the required 'Select all' question format.",
+      "regenerated_at": "2025-10-31T12:31:36.080657"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.2+1",
+      "lesson_title": "Equal Parts and Unit Fractions",
+      "grade": "3.0",
+      "substandard_description": "Partition shapes into parts with equal areas. Express the area of each part as a unit fraction of the whole. For example, partition a shape into 4 parts with equal area, and describe the area of each part as 1/4 of the area of the shape",
+      "assessment_boundary": "x",
+      "tasks": "x",
+      "step_by_step_explanation": "I’m ready to write the step-by-step processes, but the task list and example questions are missing (they show “x”). Please paste the exact task statements you want me to use, and I’ll provide concise, kid-friendly steps for each, aligned to CCSS.MATH.CONTENT.3.G.A.2.",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identifying shapes partitioned into equal vs. unequal parts",
+          "example_questions": [
+            "Is this shape divided into parts with equal areas? Answer yes or no.",
+            "Look at the three rectangles. Which rectangle is partitioned into equal parts?",
+            "This circle has four parts. Are the areas of all four parts equal?"
+          ],
+          "visual_aids": [
+            "Image of a rectangle divided into four unequal parts",
+            "Image showing three rectangles: one in equal thirds, one in unequal thirds, one in equal halves",
+            "Image of a circle divided into four equal quadrants"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Naming the unit fraction for a shape partitioned into halves, fourths, or eighths",
+          "example_questions": [
+            "This square is divided into 4 equal parts. What fraction of the whole area is one part?",
+            "This circle is partitioned into 2 equal parts. Express the area of one part as a fraction of the whole.",
+            "This rectangle is divided into 8 equal parts, and one part is shaded. What fraction of the rectangle is shaded?"
+          ],
+          "visual_aids": [
+            "Image of a square divided into 4 equal quadrants",
+            "Image of a circle divided in half",
+            "Image of a rectangle divided into 8 equal vertical strips with one shaded"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Naming the unit fraction for a shape partitioned into thirds or sixths",
+          "example_questions": [
+            "This rectangle is divided into 3 parts with equal areas. What is the fraction for one part?",
+            "This circle is partitioned into 6 equal parts. Describe the area of one part as a fraction of the whole shape.",
+            "The whole shape is one hexagon. It is divided into 6 equal triangles. What fraction of the hexagon is one triangle?"
+          ],
+          "visual_aids": [
+            "Image of a rectangle divided into 3 equal horizontal strips",
+            "Image of a circle partitioned into 6 equal sectors ('pizza slices')",
+            "Image of a hexagon partitioned into 6 equilateral triangles"
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Partitioning a shape and naming the unit fraction",
+          "example_questions": [
+            "Partition this rectangle into 4 parts with equal areas. Then, write the fraction that describes the area of one part.",
+            "Divide this square into 3 equal parts. What fraction of the whole square is each part?",
+            "Partition this circle into 2 equal parts. Express the area of one of the parts as a fraction."
+          ],
+          "visual_aids": [
+            "Digital drawing tool or worksheet with an outline of a rectangle",
+            "Digital drawing tool or worksheet with an outline of a square",
+            "Digital drawing tool or worksheet with an outline of a circle"
+          ]
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identifying shapes partitioned into equal vs. unequal parts",
+          "alignment_score": 0.1,
+          "should_keep": false,
+          "reasoning": "A meaningful alignment score cannot be calculated because the 'INTENDED CURRICULUM - TASKS' and 'STEP BY STEP EXPLANATION' sections were not provided. It is impossible to determine if the sequence aligns with a non-existent instructional plan.",
+          "suggestions": "To enable evaluation, please provide the specific tasks and step-by-step explanations for the lesson. This context is required to determine if the AI-generated sequence is a good fit for the intended curriculum design."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Naming the unit fraction for a shape partitioned into halves, fourths, or eighths",
+          "alignment_score": 0.0,
+          "should_keep": false,
+          "reasoning": "Alignment cannot be determined because the 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections were not provided. It is impossible to evaluate if this sequence aligns with the specific intended lesson design without this critical information.",
+          "suggestions": "To enable a proper evaluation, please provide the complete 'INTENDED CURRICULUM' sections, including the list of tasks and the step-by-step explanation. The sequence itself appears relevant to the standard, but its fit within the lesson's flow is unknown."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Naming the unit fraction for a shape partitioned into thirds or sixths",
+          "alignment_score": 0.0,
+          "should_keep": false,
+          "reasoning": "Alignment cannot be determined because the 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections are missing. While the sequence generally addresses the substandard, its fit within the specific lesson's scope and sequence is impossible to verify.",
+          "suggestions": "To properly evaluate this sequence, please provide the complete 'INTENDED CURRICULUM' sections, including the list of tasks and the step-by-step pedagogical approach. Without this information, alignment cannot be confirmed."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Partitioning a shape and naming the unit fraction",
+          "alignment_score": 0.1,
+          "should_keep": false,
+          "reasoning": "The sequence cannot be evaluated for alignment because the 'Intended Curriculum - Tasks' and 'Step By Step Explanation' sections were not provided. While the sequence's content is relevant to the CCSS standard, its alignment with the specific, intended lesson flow and problem types is impossible to verify without the curriculum details.",
+          "suggestions": "To properly evaluate this sequence, please provide the complete 'Intended Curriculum' including the specific tasks and the step-by-step pedagogical plan. The sequence itself appears to be a good fit for the standard, but its role within the lesson cannot be confirmed."
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identifying partitions with equal areas",
+          "example_questions": [
+            "Look at this shape. Are the parts equal or unequal? Explain your reasoning.",
+            "Which of these three rectangles is partitioned into parts with equal areas?",
+            "This square is cut into two triangles by a line from one corner to the opposite corner. Do the two parts have equal areas?"
+          ],
+          "visual_aids": [
+            "Image of a circle divided into two very unequal pieces.",
+            "Image showing three rectangles: one divided into 4 equal vertical strips, one into 4 unequal vertical strips, and one into 4 unequal quadrants.",
+            "Image of a square cut by a diagonal line."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Naming the unit fraction based on a partitioned shape",
+          "example_questions": [
+            "This rectangle is divided into 4 equal parts. Each part is called one-______ of the whole.",
+            "This circle is partitioned into 6 equal parts. What is the name for the area of one part?",
+            "A whole is partitioned into 3 equal parts. What do we call one of those parts?"
+          ],
+          "visual_aids": [
+            "Image of a rectangle divided into 4 equal columns.",
+            "Image of a circle divided into 6 equal sectors ('pizza slices').",
+            "Image of a hexagon divided into 3 equal rhombuses."
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Writing the unit fraction symbol for a partitioned shape",
+          "example_questions": [
+            "This square is partitioned into 2 equal parts. Write the fraction that represents the area of one part.",
+            "A shape is divided into 8 equal parts, and one part is shaded. What fraction of the whole area is shaded?",
+            "This rectangle is partitioned into thirds. Express the area of one part as a fraction."
+          ],
+          "visual_aids": [
+            "Image of a square split in half vertically.",
+            "Image of a long rectangle partitioned into 8 equal squares, with the first square shaded.",
+            "Image of a rectangle partitioned into 3 equal horizontal rows."
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Partitioning a shape and writing the corresponding unit fraction",
+          "example_questions": [
+            "Draw lines to partition this rectangle into 4 parts with equal areas. Then, write the fraction that describes the area of one part.",
+            "Divide this square into halves. What fraction represents one of the parts?",
+            "Partition this rectangle into three equal parts. Write the unit fraction that describes the area of each part."
+          ],
+          "visual_aids": [
+            "Digital drawing tool or worksheet with an outline of a rectangle.",
+            "Digital drawing tool or worksheet with an outline of a square.",
+            "Digital drawing tool or worksheet with an outline of a rectangle."
+          ]
+        }
+      ],
+      "generation_reasoning": "The main issue with the original sequences was a lack of context; they were rejected because the 'INTENDED CURRICULUM - TASKS' and 'STEP BY STEP EXPLANATION' were missing, making alignment validation impossible. The sequences themselves were reasonable but could not be approved without a clear pedagogical framework to align with. \n\nMy new sequences fix this by being designed around a logical, inferred curriculum progression that directly addresses the standard CCSS.MATH.CONTENT.3.G.A.2. This inferred progression is as follows: 1) Understand the concept of 'equal areas'; 2) Connect the number of parts to the fraction name (e.g., 'one-fourth'); 3) Write the symbolic unit fraction (e.g., '1/4'); 4) Perform the partitioning action and then write the fraction. \n\nEach new sequence aligns with one step of this progression: \n- Sequence 1 focuses on the foundational concept of equal vs. unequal areas. \n- Sequence 2 bridges the visual model to the correct fraction vocabulary. \n- Sequence 3 moves from vocabulary to the required mathematical notation. \n- Sequence 4 synthesizes the skills by requiring students to both partition the shape and write the unit fraction, directly matching the full scope of the standard. \n\nThis new set provides a clear, scaffolded learning path that is pedagogically sound and fully aligned with the requirements of the substandard. No assessment boundaries were provided, so I have adhered to grade-appropriate practices for Grade 3, using simple shapes and common partitions (halves, thirds, fourths, sixths, eighths).",
+      "regenerated_at": "2025-10-31T12:32:05.992914"
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.5.B+1",
+      "lesson_title": "Counting to Find Area with Unit Squares",
+      "grade": "3.0",
+      "substandard_description": "Understand that the area of a plane figure is the number of unit squares needed to cover it without gaps or overlaps.",
+      "assessment_boundary": "x",
+      "tasks": "x",
+      "step_by_step_explanation": "I’m missing the task list and examples (they show as “x”). Please paste the exact tasks, and I’ll return step-by-step processes in the requested format for each.",
+      "original_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Counting unit squares in small, fully tiled rectangles",
+          "example_questions": [
+            "A figure is covered by unit squares. How many squares cover the figure? The area is __ square units.",
+            "What is the area of the shaded rectangle in square units? Count the squares.",
+            "This rectangle is covered by squares of the same size. What is its area?"
+          ],
+          "visual_aids": [
+            "Image of a small rectangle (e.g., 2x4) completely filled with unit squares.",
+            "Image of a 3x3 square tiled with unit squares."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identifying figures incorrectly tiled with gaps or overlaps",
+          "example_questions": [
+            "Look at this shape. The squares used to cover it have gaps. Can you find the area by counting these squares? Why or why not?",
+            "The squares on this figure are overlapping. Explain why this is not a correct way to measure area.",
+            "Which of these two figures is tiled correctly to find the area?"
+          ],
+          "visual_aids": [
+            "Image of a rectangle tiled with squares that have gaps between them.",
+            "Image of a rectangle tiled with squares that overlap.",
+            "Side-by-side comparison of a correctly tiled figure and an incorrectly tiled one."
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Counting unit squares in larger or irregularly oriented rectangles",
+          "example_questions": [
+            "Count the unit squares to find the area of this larger rectangle.",
+            "How many total square units are needed to cover this figure completely?",
+            "This rectangle is tilted, but it is still covered in unit squares. What is its area?"
+          ],
+          "visual_aids": [
+            "Image of a larger rectangle (e.g., 7x4) completely filled with unit squares.",
+            "Image of a long, thin rectangle (e.g., 1x8) completely filled with unit squares."
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Counting unit squares in tiled, irregular rectilinear shapes",
+          "example_questions": [
+            "What is the area of this L-shaped figure in square units? Count all the squares.",
+            "This figure is made of squares. Count them to find the total area.",
+            "How many square units cover this T-shaped figure?"
+          ],
+          "visual_aids": [
+            "Image of an L-shaped figure filled with unit squares.",
+            "Image of a T-shaped or U-shaped figure filled with unit squares."
+          ]
+        }
+      ],
+      "validation_feedback": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Counting unit squares in small, fully tiled rectangles",
+          "alignment_score": 0.5,
+          "should_keep": false,
+          "reasoning": "The 'INTENDED CURRICULUM' sections, which define the specific tasks and instructional flow, were not provided ('x'). Without this critical information, it is impossible to determine if the proposed sequence aligns with the intended lesson design. The sequence itself is plausible for the standard, but its alignment with the specific lesson plan cannot be verified.",
+          "suggestions": "Rejecting due to missing information. Please provide the 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections to allow for a proper evaluation of this sequence's alignment."
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identifying figures incorrectly tiled with gaps or overlaps",
+          "alignment_score": 0.1,
+          "should_keep": false,
+          "reasoning": "The evaluation cannot be performed because the 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections were not provided. Without this critical information, it is impossible to determine if the sequence aligns with the specific lesson design.",
+          "suggestions": "To enable a proper evaluation, please provide the complete 'INTENDED CURRICULUM' details, including the specific tasks and the step-by-step instructional plan."
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Counting unit squares in larger or irregularly oriented rectangles",
+          "alignment_score": 0.0,
+          "should_keep": false,
+          "reasoning": "Cannot evaluate for alignment. The 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections are missing. Without the specific curriculum details, it is impossible to determine if this sequence is appropriate or correctly placed.",
+          "suggestions": "To enable a proper evaluation, please provide the complete 'INTENDED CURRICULUM - TASKS' and 'STEP BY STEP EXPLANATION' sections. An assessment of content and pedagogical alignment requires the specific curriculum this sequence is intended to fit into."
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Counting unit squares in tiled, irregular rectilinear shapes",
+          "alignment_score": 0.0,
+          "should_keep": false,
+          "reasoning": "Alignment cannot be determined. The 'INTENDED CURRICULUM - TASKS' and 'INTENDED CURRICULUM - STEP BY STEP EXPLANATION' sections, which are the primary criteria for evaluation, are missing from the lesson plan.",
+          "suggestions": "To enable evaluation, please provide the specific tasks and pedagogical steps for the lesson. It is impossible to verify if this sequence aligns with an undefined curriculum plan."
+        }
+      ],
+      "regenerated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Determining the area of a rectangle by counting unit squares",
+          "example_questions": [
+            "A rectangle is completely covered by identical square tiles, as shown in the picture. Count the tiles to find the area of the rectangle in square units.",
+            "The top of a small box is covered in 1-inch squares. How many squares cover the box top? What is its area in square inches?"
+          ],
+          "visual_aids": [
+            "A 3x5 rectangle fully tiled with unit squares.",
+            "A 4x4 square fully tiled with unit squares."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Explaining why gaps or overlaps prevent accurate area measurement",
+          "example_questions": [
+            "Look at the two figures. Both are the same size. Which one is tiled correctly to measure its area? Explain why the other figure is tiled incorrectly.",
+            "Marco tried to find the area of a shape using square tiles, but he left gaps between them. Why will counting his tiles give him the wrong area?",
+            "Jasmine covered a shape with square tiles, but some of them overlap. Will counting the tiles she used give an area that is too big or too small? Explain your reasoning."
+          ],
+          "visual_aids": [
+            "A side-by-side comparison of a rectangle tiled correctly and the same rectangle tiled with gaps.",
+            "An image of a shape tiled with overlapping squares."
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Determining the area of an irregular rectilinear figure by counting unit squares",
+          "example_questions": [
+            "The shape shown is made of unit squares. Count all the squares to find the total area of the shape.",
+            "A garden path is built from square paving stones. What is the area of the path in square units?"
+          ],
+          "visual_aids": [
+            "An L-shaped figure fully tiled with unit squares.",
+            "A T-shaped figure superimposed on a grid where each grid cell is a unit square."
+          ]
+        }
+      ],
+      "generation_reasoning": "The primary issue with the original sequences was a procedural failure: they were rejected because the 'INTENDED CURRICULUM' was missing, making alignment impossible to verify. The feedback did not criticize the mathematical content itself but the lack of verifiable alignment. To fix this, I have created a new set of sequences based on a logical and standard-aligned pedagogical progression that can be inferred for this substandard. The new sequences now follow a clear progression: Sequence 1 establishes the core concept of counting squares in simple rectangles. Sequence 2 directly addresses the critical condition of 'without gaps or overlaps' from the substandard, moving to conceptual understanding. Sequence 3 generalizes the skill by applying it to more complex, irregular rectilinear shapes. This structure ensures a coherent learning path. The questions are rephrased to be more specific and include explicit prompts for explanation, ensuring a deeper understanding than simple counting alone. This approach rectifies the core issue by providing a clear, pedagogically sound structure that directly aligns with the components of the substandard.",
+      "regenerated_at": "2025-10-31T12:32:37.225648"
+    }
+  ]
+}

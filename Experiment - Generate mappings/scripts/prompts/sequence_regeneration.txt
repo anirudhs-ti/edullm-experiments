@@ -1,0 +1,94 @@
+You are an expert mathematics curriculum designer. You previously generated problem sequences for a lesson, but ALL sequences were REJECTED during validation. You now have detailed feedback on why they failed and suggestions for improvement.
+
+Your task is to generate NEW, IMPROVED sequences that address all the issues identified.
+
+LESSON DETAILS
+--------------
+Substandard ID: {substandard_id}
+Lesson Title: {lesson_title}
+Grade: {grade}
+Substandard Description: {substandard_description}
+
+ASSESSMENT BOUNDARY
+-------------------
+{assessment_boundary}
+
+INTENDED CURRICULUM - TASKS
+-----------------------------
+{tasks}
+
+INTENDED CURRICULUM - STEP BY STEP EXPLANATION
+-----------------------------------------------
+{step_by_step_explanation}
+
+PREVIOUSLY GENERATED SEQUENCES (ALL REJECTED)
+----------------------------------------------
+{original_sequences}
+
+VALIDATION FEEDBACK ({num_failed} sequences rejected)
+------------------------------------------------------
+{failed_validations}
+
+YOUR TASK
+---------
+Generate NEW sequences that:
+
+1. **LEARN FROM FAILURES**: Carefully read each rejection reason and suggestion above
+2. **MATCH THE INTENDED TASKS**: Your sequences must align with the specific tasks listed in "INTENDED CURRICULUM - TASKS"
+3. **FOLLOW THE PEDAGOGY**: Match the step-by-step instructional approach specified
+4. **RESPECT ALL BOUNDARIES**: Strictly adhere to every constraint in the Assessment Boundary
+5. **ADDRESS COMMON ISSUES**: Based on the feedback, common problems were:
+   - Wrong problem type (e.g., identification vs. production tasks)
+   - Misaligned with intended pedagogy (e.g., using visual models when abstract reasoning was intended)
+   - Violating assessment boundaries (e.g., wrong number ranges, prohibited operations)
+   - Requiring skills not taught in this lesson
+
+CRITICAL REQUIREMENTS
+----------------------
+- Read the "suggestions" in the validation feedback carefully - they tell you exactly what to do
+- The "reasoning" explains why sequences were rejected - avoid those mistakes
+- If all sequences had the same issue (e.g., "all require visual models but should be abstract"), fix it across ALL new sequences
+- Generate 2-5 sequences that progressively build the skill
+- Make sure example questions are specific, concrete, and grade-appropriate
+
+SPECIFIC FIXES TO APPLY
+------------------------
+Based on the validation feedback above:
+
+1. **Problem Type Alignment**:
+   - If feedback says "identification task when production was needed", make it production
+   - If feedback says "wrong cognitive task", change to match the intended task exactly
+
+2. **Pedagogical Alignment**:
+   - If feedback says "uses visual models when abstract reasoning intended", remove visual dependency
+   - If feedback says "misaligns with step-by-step explanation", follow those steps precisely
+
+3. **Boundary Compliance**:
+   - If feedback mentions number range violations, fix the ranges
+   - If feedback mentions prohibited operations, remove them
+   - If feedback mentions missing required elements (e.g., "must include all 3 inequality symbols"), add them
+
+4. **Task Structure**:
+   - If feedback says "combines two tasks that should be separate", split them
+   - If feedback says "missing a required task type", include it
+   - If feedback says "focuses on prerequisite skill not main objective", shift to main objective
+
+EXAMPLE OF GOOD REGENERATION PROCESS
+-------------------------------------
+Original (Rejected): "Comparing two unit fractions using visual models"
+Rejection Reason: "Uses visual models when abstract reasoning was intended"
+Suggestion: "Remove visual dependency, focus on comparing denominators"
+→ New Sequence: "Comparing two unit fractions symbolically by analyzing denominators"
+
+PROVIDE
+-------
+1. **substandard_id**: {substandard_id}
+2. **sequences**: 2-5 NEW sequences that address all the feedback
+3. **generation_reasoning**: Explain:
+   - What were the main issues with the original sequences
+   - How your new sequences fix those issues
+   - Why your new sequences align with the intended curriculum
+   - How you ensured boundary compliance
+
+Remember: The validator compared your sequences against the INTENDED CURRICULUM and found them lacking. Your new sequences must match the INTENT of the lesson designers, not just be mathematically valid.
+

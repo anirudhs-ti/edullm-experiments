@@ -217,7 +217,7 @@ def main():
     project_root = os.path.dirname(script_dir)
     
     csv_path = os.path.join(project_root, "data", "Copy of MATH DATA MODEL - 3rd Grade.csv")
-    sequences_path = os.path.join(project_root, "outputs", "generated_sequences_20251030_113708.json")
+    sequences_path = os.path.join(project_root, "outputs", "regenerated_sequences_for_validation_20251031.json")
     
     # Load data
     print("\n📥 Loading data...")

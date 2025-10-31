@@ -1,0 +1,470 @@
+{
+  "metadata": {
+    "generation_timestamp": "2025-10-31T12:37:24.007924",
+    "total_substandards_processed": 10,
+    "llm_model": "gemini-2.5-pro",
+    "generation_version": "2.0_with_feedback",
+    "source": "Transformed from regenerated_sequences_20251031_123237.json"
+  },
+  "generated_sequences": [
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+4",
+      "grade": 3.0,
+      "substandard_description": "Identify the properties of multiplication.",
+      "assessment_boundary": "Assessment is restricted to:\n- commutative property of multiplication, associative property of multiplication, identity property of mutliplication, zero property of multiplication, and distributive property of mutliplication\n- Only ONE property should be used in an example at one time",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identify an example of the zero property of multiplication",
+          "example_questions": [
+            "Which equation is an example of the zero property of multiplication? A) 18 x 1 = 18, B) 18 + 0 = 18, C) 18 x 0 = 0, D) 18 - 18 = 0",
+            "Which statement correctly shows the zero property of multiplication? A) 43 x 0 = 0, B) 43 x 1 = 43, C) 1 x 43 = 43, D) 43 + 0 = 43"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identify an example of the identity property of multiplication",
+          "example_questions": [
+            "Which equation is an example of the identity property of multiplication? A) 32 x 0 = 0, B) 32 x 1 = 32, C) 32 + 1 = 33, D) 32 - 1 = 31",
+            "Which statement correctly shows the identity property of multiplication? A) 7 x 8 = 8 x 7, B) 1 + 8 = 9, C) 8 x 0 = 0, D) 8 x 1 = 8"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identify an example of the commutative property of multiplication",
+          "example_questions": [
+            "Which choice is an example of the commutative property of multiplication? A) 5 x 9 = 9 x 5, B) 5 + 9 = 9 + 5, C) (5 x 9) x 2 = 5 x (9 x 2), D) 5 x 1 = 5",
+            "Which pair of equations shows the commutative property of multiplication? A) 3 x 7 = 21 and 7 x 3 = 21, B) 3 x 7 = 21 and 3 x 1 = 3, C) (3 x 7) x 2 = 42 and 3 x (7 x 2) = 42, D) 3 x (7 + 2) = (3 x 7) + (3 x 2)"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Identify an example of the associative property of multiplication",
+          "example_questions": [
+            "Which equation shows the associative property of multiplication? A) 8 x 3 = 3 x 8, B) 8 x (3 + 4) = (8 x 3) + (8 x 4), C) (8 x 3) x 4 = 8 x (3 x 4), D) 8 + (3 + 4) = (8 + 3) + 4",
+            "Which statement is an example of the associative property of multiplication? A) (2 x 5) x 6 = 2 x (5 x 6), B) 2 x 5 = 5 x 2, C) 2 x (5 + 6) = (2 x 5) + (2 x 6), D) 2 x 1 = 2"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 5,
+          "problem_type": "Identify an example of the distributive property of multiplication",
+          "example_questions": [
+            "Which equation shows the distributive property of multiplication? A) 7 x (2 + 5) = (7 x 2) + (7 x 5), B) (7 x 2) x 5 = 7 x (2 x 5), C) 7 x 2 = 2 x 7, D) 7 x 1 = 7",
+            "Which statement correctly shows the distributive property? A) 4 x (5 + 3) = (4 x 5) + (4 x 3), B) 4 + (5 x 3) = 19, C) (4 x 5) x 3 = 4 x (5 x 3), D) 4 x 5 = 5 x 4"
+          ],
+          "visual_aids": null
+        }
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.A.3+2",
+      "grade": 3.0,
+      "substandard_description": "Solve word problems involving two step multiplication.",
+      "assessment_boundary": "Assessment is restricted to:\n- Single-digit multipliers and multiplicands (up to 10 × 10)\n- Must be two step problems involving multiplication.\n- No step can require mutliplication that uses facts outside of 10 x 10.",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Two-step multiplication problems (M -> M) with small intermediate products",
+          "example_questions": [
+            "There are 2 teams. Each team has 2 players. Each player scores 5 points. What is the total number of points scored?",
+            "Mom baked 2 pans of brownies. Each pan was cut into 2 rows. Each row had 4 brownies. How many brownies did Mom bake in total?",
+            "A farmer has 3 fields. He plants 2 rows of corn in each field. He plants 4 corn seeds in each row. How many corn seeds did he plant in total?"
+          ],
+          "visual_aids": [
+            "Diagrams of nested groups (e.g., circles within circles)",
+            "Arrays of arrays"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Two-step multiplication problems (M -> M) with larger intermediate products",
+          "example_questions": [
+            "There are 2 school buses. Each bus has 5 rows of seats. Each row can fit 2 students. How many students can ride the buses in total?",
+            "A pet store has 3 fish tanks. Each tank has 3 plants. There are 3 snails on each plant. How many snails are there in the store?",
+            "In a garden, there are 4 flower pots. Each pot has 2 flowers. Each flower has 5 petals. What is the total number of petals in the garden?"
+          ],
+          "visual_aids": [
+            "Bar models showing parts of parts",
+            "Tape diagrams"
+          ]
+        }
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.B.5+3",
+      "grade": 3.0,
+      "substandard_description": "Apply the distributive property as a strategy to multiply and divide whole numbers.",
+      "assessment_boundary": "Assessment is restricted to:\n- Whole number factors, addends, products, dividends, and quotients only (no fractions, decimals, or negative numbers).\n- All factors, addends, divisors, and quotients must be single-digit numbers (1–10).\n- Products and dividends must not exceed 100.\n- Limited to 2 addends\n- Decomposition of a factor is limited to sums of whole numbers within 10 (e.g., 7 can be decomposed as 5 + 2, not 4 + 3 + 0).\n- Distributive property must be applied to multiplication and division expressions within 100.\n- Expressions should involve distributing a factor across a sum of two addends only (e.g., a × (b + c)), not more than two addends.\n- Parentheses may be used to indicate grouping, but not to introduce order of operations beyond multiplication and addition within the distributive property context.\n- No use of variables (e.g., n, x); use symbols such as □, ?, or __ for unknowns if needed.\n- Contexts and representations (objects, pictures, words, or symbols) are allowed but should remain simple and directly illustrate the distributive property.\n- Exclude multi-step problems or problems that require applying more than one property at once (focus solely on the distributive property for this substandard\n- No use of variables (e.g., a, n, x); use symbols such as a box (□), question mark (?), or blank line (__) for unknown values.\n- Cannot combine properties. Distributive property ONLY.",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Using known products to solve a larger multiplication problem with the distributive property.",
+          "example_questions": [
+            "Multiply: 4×5=?, 4×2=?, Now multiply the following, using your answers from above and the distributive property of multiplication: 4×7=?",
+            "Multiply: 8×3=?, 8×4=?, Now multiply the following, using your answers from above and the distributive property of multiplication: 8×7=?"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Use the distributive property of multiplication to find the missing number.",
+          "example_questions": [
+            "Find the missing number: 8 x 6 = (8 x 2) + (8 x __).",
+            "Find the missing number: 7 x 9 = (7 x __) + (7 x 4).",
+            "Complete the equation: 5 x (3 + 6) = (5 x 3) + (__ x 6)."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Identify which equations correctly use the distributive property.",
+          "example_questions": [
+            "Which equation correctly uses the distributive property to solve 6 x 8?",
+            "Which equation correctly shows 7 x 9 using the distributive property?"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Select the single multiplication expression that is equal to a given sum of two products.",
+          "example_questions": [
+            "Which multiplication expression is equal to (4 × 5) + (4 × 2)?",
+            "Which of the following is equal to (8 × 6) + (8 × 3)?"
+          ],
+          "visual_aids": null
+        }
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.8+6",
+      "grade": 3.0,
+      "substandard_description": "Judge whether a given estimate in a two-step word problem (addition, subtraction, multiplication, or division) is reasonable, too high, or too low with reasoning.",
+      "assessment_boundary": "Assessment is restricted to:\n- Facts limited to the 1 × 1 through 10 × 10 tables quotients ≤ 100.\n- Addition and subtraction involving number ≤ 100.",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Judging an estimate for a two-step word problem (addition/subtraction) by rounding and estimating.",
+          "example_questions": [
+            "Mia had 78 beads. She used 21 for a necklace and then bought 39 more. A friend estimates she now has about 100 beads. Is this estimate reasonable, too high, or too low? Use rounding to help you decide.",
+            "There were 92 people on a train. At the first stop, 28 people got off. At the second stop, 11 people got on. A conductor estimates there are now about 50 people on the train. Is this estimate reasonable, too high, or too low? Use rounding to help you decide."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Judging an estimate for a two-step word problem (mixed operations) by estimating.",
+          "example_questions": [
+            "Leo bought 4 boxes of crayons. Each box has 8 crayons. He then gave 9 crayons to his sister. His mom estimates he has about 20 crayons left. Is this estimate reasonable, too high, or too low?",
+            "A farmer has 42 eggs. She puts them into cartons that hold 6 eggs each. She then sells 3 of the cartons. She estimates she has 4 cartons left. Is this estimate reasonable, too high, or too low?",
+            "Sara wants to buy 3 toy cars that cost $7 each. She has $12 saved. She estimates she needs about $10 more. Is her estimate reasonable, too high, or too low?"
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Judging an estimate for a two-step word problem and explaining the reasoning.",
+          "example_questions": [
+            "There are 5 bags of marbles with 9 marbles in each bag. 18 marbles are red. A student estimates that there are about 30 marbles that are not red. Is this estimate reasonable, too high, or too low? Explain why.",
+            "Liam has 81 stickers. He gives 29 to his friend and then gets 12 more from his teacher. His friend estimates he now has about 80 stickers. Is this estimate reasonable, too high, or too low? Explain your thinking.",
+            "A baker makes 8 batches of cookies, with 10 cookies in each batch. He sells 47 cookies. He estimates he has about 30 cookies left. Is this estimate reasonable, too high, or too low? Explain how you know."
+          ],
+          "visual_aids": null
+        }
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.OA.D.9+3",
+      "grade": 3.0,
+      "substandard_description": "Identify the rule for an addition or subtraction pattern.",
+      "assessment_boundary": "Assessment is restricted to:\n- All include images of tables where the question is asking for the rule but NO tables in the question stem\n- Whole numbers only; no fractions, decimals, or negative numbers are permitted in patterns, tables, or explanations.\n- Addition and subtraction patterns are limited to numbers within 100.\n- Input is in ascending order, but not necessarily consecutive or increasing by the same amount.\n- For missing output problems, the rule is not given.",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identify an addition rule from an input-output table",
+          "example_questions": [
+            "What is the rule for the input-output table shown?",
+            "Find the rule that changes the 'In' number to the 'Out' number in the table.",
+            "The table shows a pattern. What is the rule?"
+          ],
+          "visual_aids": [
+            "Input-output table"
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Identify a subtraction rule from an input-output table",
+          "example_questions": [
+            "What rule is used in the table below?",
+            "Look at the table. Find the rule that is used to get the 'Out' number.",
+            "Identify the rule for the pattern in the table."
+          ],
+          "visual_aids": [
+            "Input-output table"
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Find a missing output in a table with an unstated addition rule",
+          "example_questions": [
+            "The table shows a pattern. What number is missing?",
+            "First, find the rule for the table. Then, find the missing output number.",
+            "What number belongs in the empty space in the output column?"
+          ],
+          "visual_aids": [
+            "Input-output table with a missing output value"
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Find a missing output in a table with an unstated subtraction rule",
+          "example_questions": [
+            "A number is missing from the table. What is the missing number?",
+            "Find the rule for the pattern. Use the rule to find the missing number.",
+            "What is the missing output in the table shown?"
+          ],
+          "visual_aids": [
+            "Input-output table with a missing output value"
+          ]
+        }
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.A+3",
+      "grade": 3.0,
+      "substandard_description": "Given a fraction, graph and equivalent fraction on a number line.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- Number line always starts at 0",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Graphing a proper fraction on a number line partitioned into a different, equivalent denominator",
+          "example_questions": [
+            "The number line below is divided into sixths. Place a point on the line to show the location of 1/3.",
+            "The number line below is divided into fourths. Place a point on the line to show the location of 1/2.",
+            "The number line below is divided into eighths. Place a point on the line to show the location of 3/4."
+          ],
+          "visual_aids": [
+            "A single number line from 0 to 1, pre-partitioned into the specified equivalent denominator (e.g., sixths, fourths, or eighths)."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Graphing an improper fraction on a number line partitioned into a different, equivalent denominator",
+          "example_questions": [
+            "The number line below is divided into sixths. Place a point on the line to show the location of 4/3.",
+            "The number line below is divided into fourths. Place a point on the line to show the location of 3/2.",
+            "The number line below is divided into eighths. Place a point on the line to show the location of 6/4."
+          ],
+          "visual_aids": [
+            "A single number line from 0 to 2, pre-partitioned into the specified equivalent denominator (e.g., sixths, fourths, or eighths)."
+          ]
+        }
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.NF.A.3.D+2",
+      "grade": 3.0,
+      "substandard_description": "Compare two fractions that have the same numerator.",
+      "assessment_boundary": "Assessment is restricted to:\n- Fractions must have denominators of 2, 3, 4, 6, or 8.\n- All fractions are less than 1\n- Answer choices must ALWAYS be '>','<','='\n- The answer is never \"=\"\n- Don't use 0 as numerator or denominator.",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Comparing two unit fractions (numerator of 1) using inequality symbols.",
+          "example_questions": [
+            "Which symbol makes the statement true? 1/6 __ 1/3. Choose from >, <, or =.",
+            "Compare 1/8 and 1/2. Choose the correct symbol: >, <, or =.",
+            "Fill in the blank with >, <, or =. 1/4 __ 1/8."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Comparing two non-unit fractions with the same numerator using inequality symbols.",
+          "example_questions": [
+            "Which symbol makes the statement true? 3/4 __ 3/8. Choose from >, <, or =.",
+            "Compare 2/6 and 2/3. Choose the correct symbol: >, <, or =.",
+            "Fill in the blank with >, <, or =. 5/8 __ 5/6."
+          ],
+          "visual_aids": null
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Mixed practice comparing fractions with the same numerator.",
+          "example_questions": [
+            "Which symbol correctly compares the two fractions: 1/2 __ 1/6? Choose from >, <, or =.",
+            "Which symbol makes the statement true: 4/6 __ 4/8? Choose from >, <, or =.",
+            "Compare 2/8 and 2/3. Choose the correct symbol: >, <, or =."
+          ],
+          "visual_aids": null
+        }
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.1+2",
+      "grade": 3.0,
+      "substandard_description": "Compare quadrilaterals to determine how shared attributes group them into larger or overlapping categories (e.g., explaining why every square is both a rectangle and a rhombus).",
+      "assessment_boundary": "Assessment is restricted to:\n- Shapes are limited to two-dimensional figures, specifically quadrilaterals: rhombuses, rectangles, squares, and parallelograms \n- Pictures of kites can be included but should only be referenced as quadrilaterals and not named.\n- Only geometric attributes appropriate for grade 3 are assessed: number of sides, number of angles, presence of right angles, and whether sides are of equal length or are straight lines.\n- Shapes may be presented in various orientations, but must remain recognizable and not be irregular or ambiguous.\n- No three-dimensional shapes or polygons with more or fewer than four sides.\n- No requirement to use or identify formal vocabulary for “perpendicular,” “congruent,” or “diagonal.”\n- Visual models (drawings, tables, or diagrams) may be used, but must clearly display the relevant attributes for comparison or classification.\n- No use of variables or algebraic symbols; only numeric values and shape names are used.\n- Shapes that are rhombuses need to indicate that side lengths are the same.\n- Question should ask, \"Select all the ________\"",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Picking all the names for a given shape, starting with the most specific case",
+          "example_questions": [
+            "A shape is shown with 4 equal sides and 4 right angles. Select all the names for this shape. (Options: Quadrilateral, Parallelogram, Rectangle, Rhombus, Square)",
+            "Look at the shape provided. It has 4 right angles and all its sides are the same length. Select all the names that correctly describe this shape. (Options: Square, Rectangle, Rhombus, Parallelogram, Quadrilateral)"
+          ],
+          "visual_aids": [
+            "A single, clear image of a square, with markings indicating 4 right angles and 4 equal side lengths."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Picking all the names for other given quadrilaterals",
+          "example_questions": [
+            "A shape is shown with 4 right angles, but its sides are not all equal. Select all the names for this shape. (Options: Quadrilateral, Parallelogram, Rectangle, Rhombus, Square)",
+            "A shape is shown with 4 equal sides, but it does not have any right angles. Select all the names for this shape. (Options: Quadrilateral, Parallelogram, Rectangle, Rhombus, Square)"
+          ],
+          "visual_aids": [
+            "A single image of a non-square rectangle with markings for 4 right angles.",
+            "A single image of a non-square rhombus with markings for 4 equal side lengths."
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Selecting all true statements that classify a shape and explain why",
+          "example_questions": [
+            "Look at the rectangle shown. Select all the statements that are true about this shape. (Options: 'This is a rectangle because it has 4 right angles.', 'This is a rhombus because it has 4 equal sides.', 'This is a parallelogram because it has 2 pairs of parallel sides.')",
+            "Look at the rhombus shown. Select all the statements that are true about this shape. (Options: 'This is a rhombus because it has 4 equal sides.', 'This is a rectangle because it has 4 right angles.', 'This is a quadrilateral because it has 4 sides.')"
+          ],
+          "visual_aids": [
+            "A single image of a non-square rectangle with markings for 4 right angles and parallel sides.",
+            "A single image of a non-square rhombus with markings for 4 equal sides and parallel sides."
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Selecting all true statements to distinguish a shape from other quadrilaterals using attributes",
+          "example_questions": [
+            "A parallelogram is shown that is not a rectangle or a rhombus. Select all the statements that are true about this shape. (Options: 'This is a parallelogram because it has 2 pairs of parallel sides.', 'This is not a rectangle because it does not have 4 right angles.', 'This is not a rhombus because its sides are not all equal.')",
+            "A quadrilateral is shown that is not a parallelogram. Select all the statements that are true about this shape. (Options: 'This is a quadrilateral because it has 4 sides.', 'This is not a parallelogram because it does not have 2 pairs of parallel sides.', 'This is a rectangle because it has 4 right angles.')"
+          ],
+          "visual_aids": [
+            "A single image of a parallelogram that is clearly not a rectangle or rhombus, with parallel side markings.",
+            "A single image of a kite shape, presented as a generic quadrilateral with no specific markings other than being a closed four-sided figure."
+          ]
+        }
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.G.A.2+1",
+      "grade": 3.0,
+      "substandard_description": "Partition shapes into parts with equal areas. Express the area of each part as a unit fraction of the whole. For example, partition a shape into 4 parts with equal area, and describe the area of each part as 1/4 of the area of the shape",
+      "assessment_boundary": "x",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Identifying partitions with equal areas",
+          "example_questions": [
+            "Look at this shape. Are the parts equal or unequal? Explain your reasoning.",
+            "Which of these three rectangles is partitioned into parts with equal areas?",
+            "This square is cut into two triangles by a line from one corner to the opposite corner. Do the two parts have equal areas?"
+          ],
+          "visual_aids": [
+            "Image of a circle divided into two very unequal pieces.",
+            "Image showing three rectangles: one divided into 4 equal vertical strips, one into 4 unequal vertical strips, and one into 4 unequal quadrants.",
+            "Image of a square cut by a diagonal line."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Naming the unit fraction based on a partitioned shape",
+          "example_questions": [
+            "This rectangle is divided into 4 equal parts. Each part is called one-______ of the whole.",
+            "This circle is partitioned into 6 equal parts. What is the name for the area of one part?",
+            "A whole is partitioned into 3 equal parts. What do we call one of those parts?"
+          ],
+          "visual_aids": [
+            "Image of a rectangle divided into 4 equal columns.",
+            "Image of a circle divided into 6 equal sectors ('pizza slices').",
+            "Image of a hexagon divided into 3 equal rhombuses."
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Writing the unit fraction symbol for a partitioned shape",
+          "example_questions": [
+            "This square is partitioned into 2 equal parts. Write the fraction that represents the area of one part.",
+            "A shape is divided into 8 equal parts, and one part is shaded. What fraction of the whole area is shaded?",
+            "This rectangle is partitioned into thirds. Express the area of one part as a fraction."
+          ],
+          "visual_aids": [
+            "Image of a square split in half vertically.",
+            "Image of a long rectangle partitioned into 8 equal squares, with the first square shaded.",
+            "Image of a rectangle partitioned into 3 equal horizontal rows."
+          ]
+        },
+        {
+          "sequence_number": 4,
+          "problem_type": "Partitioning a shape and writing the corresponding unit fraction",
+          "example_questions": [
+            "Draw lines to partition this rectangle into 4 parts with equal areas. Then, write the fraction that describes the area of one part.",
+            "Divide this square into halves. What fraction represents one of the parts?",
+            "Partition this rectangle into three equal parts. Write the unit fraction that describes the area of each part."
+          ],
+          "visual_aids": [
+            "Digital drawing tool or worksheet with an outline of a rectangle.",
+            "Digital drawing tool or worksheet with an outline of a square.",
+            "Digital drawing tool or worksheet with an outline of a rectangle."
+          ]
+        }
+      ]
+    },
+    {
+      "substandard_id": "CCSS.MATH.CONTENT.3.MD.C.5.B+1",
+      "grade": 3.0,
+      "substandard_description": "Understand that the area of a plane figure is the number of unit squares needed to cover it without gaps or overlaps.",
+      "assessment_boundary": "x",
+      "generated_sequences": [
+        {
+          "sequence_number": 1,
+          "problem_type": "Determining the area of a rectangle by counting unit squares",
+          "example_questions": [
+            "A rectangle is completely covered by identical square tiles, as shown in the picture. Count the tiles to find the area of the rectangle in square units.",
+            "The top of a small box is covered in 1-inch squares. How many squares cover the box top? What is its area in square inches?"
+          ],
+          "visual_aids": [
+            "A 3x5 rectangle fully tiled with unit squares.",
+            "A 4x4 square fully tiled with unit squares."
+          ]
+        },
+        {
+          "sequence_number": 2,
+          "problem_type": "Explaining why gaps or overlaps prevent accurate area measurement",
+          "example_questions": [
+            "Look at the two figures. Both are the same size. Which one is tiled correctly to measure its area? Explain why the other figure is tiled incorrectly.",
+            "Marco tried to find the area of a shape using square tiles, but he left gaps between them. Why will counting his tiles give him the wrong area?",
+            "Jasmine covered a shape with square tiles, but some of them overlap. Will counting the tiles she used give an area that is too big or too small? Explain your reasoning."
+          ],
+          "visual_aids": [
+            "A side-by-side comparison of a rectangle tiled correctly and the same rectangle tiled with gaps.",
+            "An image of a shape tiled with overlapping squares."
+          ]
+        },
+        {
+          "sequence_number": 3,
+          "problem_type": "Determining the area of an irregular rectilinear figure by counting unit squares",
+          "example_questions": [
+            "The shape shown is made of unit squares. Count all the squares to find the total area of the shape.",
+            "A garden path is built from square paving stones. What is the area of the path in square units?"
+          ],
+          "visual_aids": [
+            "An L-shaped figure fully tiled with unit squares.",
+            "A T-shaped figure superimposed on a grid where each grid cell is a unit square."
+          ]
+        }
+      ]
+    }
+  ]
+}

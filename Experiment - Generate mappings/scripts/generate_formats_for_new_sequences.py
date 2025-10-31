@@ -92,8 +92,10 @@ def load_generated_sequences():
     script_dir = os.path.dirname(os.path.abspath(__file__))
     outputs_dir = os.path.join(os.path.dirname(script_dir), "outputs")
     
-    # Find the most recent generated_sequences file
-    generated_files = [f for f in os.listdir(outputs_dir) if f.startswith('generated_sequences_') and f.endswith('.json')]
+    # Find the most recent generated or regenerated sequences file
+    generated_files = [f for f in os.listdir(outputs_dir) 
+                      if (f.startswith('generated_sequences_') or f.startswith('regenerated_sequences_for_validation_')) 
+                      and f.endswith('.json')]
     
     if not generated_files:
         print("❌ No generated sequences files found")
@@ -206,7 +208,7 @@ def save_generated_formats(results: list, output_filename: str = None):
     
     if output_filename is None:
         timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-        output_filename = f"generated_formats_new_sequences_{timestamp}.json"
+        output_filename = f"generated_formats_regenerated_sequences_{timestamp}.json"
     
     script_dir = os.path.dirname(os.path.abspath(__file__))
     outputs_dir = os.path.join(os.path.dirname(script_dir), "outputs")
@@ -272,7 +274,7 @@ def main():
     
     generated_sequences = generated_data.get('generated_sequences', [])
     
-    # Process first 3 for testing (change to all for full run)
+    # Process all sequences
     for i, substandard_data in enumerate(generated_sequences, 1):
         print(f"\n[Substandard {i}/{len(generated_sequences)}] {substandard_data['substandard_id']}")
         
@@ -315,7 +317,7 @@ def main():
         print(f"\n{'='*80}")
         print("SUMMARY")
         print(f"{'='*80}")
-        print(f"Substandards processed: {min(3, len(generated_sequences))}")
+        print(f"Substandards processed: {len(generated_sequences)}")
         print(f"Formats generated: {len(results)}")
         print(f"Output: {output_path}")
     else:
