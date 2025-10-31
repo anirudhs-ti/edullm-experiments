@@ -173,7 +173,7 @@ def retry_with_backoff(max_retries: int = 3, initial_delay: float = 30.0):
 
 @observe(name="format_to_scaffolding")
 @retry_with_backoff(max_retries=3, initial_delay=30.0)
-def convert_format_to_scaffolding(format_data: Dict, model: str = "gemini/gemini-2.0-flash-exp") -> str:
+def convert_format_to_scaffolding(format_data: Dict, model: str = "gemini/gemini-2.5-flash") -> str:
     """Convert DI format to scaffolding using LLM."""
     time.sleep(2)  # Rate limiting
     
@@ -219,7 +219,7 @@ Generate a natural explanation:"""
 @observe(name="generate_plan")
 @retry_with_backoff(max_retries=3, initial_delay=30.0)
 def generate_plan(substandard_data: SubstandardData, misconceptions: List[str],
-                 template: str, model: str = "gemini/gemini-2.0-flash-exp") -> str:
+                 template: str, model: str = "gemini/gemini-2.5-flash") -> str:
     """Generate question plan (System A)."""
     time.sleep(2)  # Rate limiting
     
@@ -259,7 +259,7 @@ def generate_plan(substandard_data: SubstandardData, misconceptions: List[str],
 @retry_with_backoff(max_retries=3, initial_delay=30.0)
 def generate_question(plan: str, scaffolding: str, substandard_data: SubstandardData,
                      question_id: str, template: str, 
-                     model: str = "gemini/gemini-2.0-flash-exp") -> Dict:
+                     model: str = "gemini/gemini-2.5-flash") -> Dict:
     """Generate final question JSON (System B)."""
     time.sleep(2)  # Rate limiting
     

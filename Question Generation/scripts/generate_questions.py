@@ -38,7 +38,7 @@ class QuestionGenerator:
         misconceptions_csv_path: str,
         num_substandards: int = 30,
         random_seed: int = None,
-        model: str = "gemini/gemini-2.0-flash-exp"
+        model: str = "gemini/gemini-2.5-flash"
     ):
         self.num_substandards = num_substandards
         self.model = model
@@ -162,7 +162,7 @@ def main(num_substandards: int = 30, seed: int = 42):
     output_json = base_path / "Question Generation" / "outputs" / f"generated_questions_{datetime.now().strftime('%Y%m%d_%H%M%S')}.json"
     
     # Configuration
-    MODEL = "gemini/gemini-2.0-flash-exp"
+    MODEL = "gemini/gemini-2.5-flash"
     GRADE = 3
     
     # Generate
